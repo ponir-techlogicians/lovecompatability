@@ -1,0 +1,76 @@
+{% extends "layout/main.html" %}
+{% block content %}
+<div class="loveWrap result">
+    <div class="result__info">
+      <a href="#a" class="result__set">how stroke we set</a>
+    </div>
+    <div class="result__tit">
+      Result
+    </div>
+    <div class="result__nameBox">
+      {% for name in name_parts %}
+        <div class="result__name"><span>{{ name }}</span></div>
+      {% endfor %}
+{#      {% comment %}<div class="result__name"><span>Jennifer</span></div>#}
+{#      <div class="result__name"><span>Dicaprio</span></div>#}
+{#      <div class="result__name"><span>Shrader</span></div>#}
+{#      <div class="result__name"><span></span></div>#}
+{#      <div class="result__name"><span>Lawrence</span></div>{% endcomment %}#}
+    </div>
+    <div class="result__point">
+      <div class="row">
+        <div class="result__point__item">24</div>
+        <div class="result__point__item">15</div>
+        <div class="result__point__item">12</div>
+        <div class="result__point__item">12</div>
+        <div class="result__point__item">0</div>
+        <div class="result__point__item">15</div>
+      </div>
+      <div class="row">
+        <div class="result__point__item">24</div>
+        <div class="result__point__item">15</div>
+        <div class="result__point__item">12</div>
+        <div class="result__point__item">12</div>
+        <div class="result__point__item">0</div>
+      </div>
+      <div class="row">
+        <div class="result__point__item">24</div>
+        <div class="result__point__item">15</div>
+        <div class="result__point__item">12</div>
+        <div class="result__point__item">12</div>
+      </div>
+      <div class="row">
+        <div class="result__point__item">24</div>
+        <div class="result__point__item">15</div>
+        <div class="result__point__item">12</div>
+      </div>
+      <div class="row">
+        <div class="result__point__item">24</div>
+        <div class="result__point__item">15</div>
+      </div>
+    </div>
+    <div class="result__text">
+        {{ name1 }} likes {{ name2 }} with a <br>
+      <b>{{ compatibility_score }}%</b> probability.
+    </div>
+    <button type="button" class="result__btn" onclick="goto();">
+      How many people mentioned me?
+    </button>
+{#    <a type="button" class="result__btn" href="{% url 'search' %}">#}
+{#      How many people mentioned me?#}
+{#    </a>#}
+    <div class="loveWrap__ad"></div>
+    <div class="result__circle">
+      <div class="circleBox"></div>
+      <div class="circleBox"></div>
+      <div class="circleBox"></div>
+      <div class="circleBox"></div>
+    </div>
+</div>
+
+<script>
+     function goto(){
+         window.location.href = '{% url 'search' %}';
+     }
+</script>
+{% endblock %}

@@ -1,0 +1,57 @@
+{% extends "layout/main.html" %}
+{% block content %}
+<div class="loveWrap tested">
+    <div class="tested__tit">
+      Who tested with <br><span>{{ search_key }}</span>?
+    </div>
+
+    <!-- Remove the blur class when the button is clicked. -->
+    <ul class="tested__list blur">
+      {% for result in results %}
+      <li class="row">
+        <div class="tested__list__item">{{ forloop.counter }}</div>
+        <div class="tested__list__item">
+          <div class="user">{{ result.name1 }}</div>
+          <div class="user">{{ result.name2 }}</div>
+        </div>
+        <div class="tested__list__item">{{ result.compatibility_score }}%</div>
+      </li>
+      {% endfor %}
+{#      <li class="row">#}
+{#        <div class="tested__list__item">1</div>#}
+{#        <div class="tested__list__item">#}
+{#          <div class="user">Leonardo Dicaprio</div>#}
+{#          <div class="user">Jennifer Lawrence</div>#}
+{#        </div>#}
+{#        <div class="tested__list__item">96%</div>#}
+{#      </li>#}
+{#      <li class="row">#}
+{#        <div class="tested__list__item">1</div>#}
+{#        <div class="tested__list__item">#}
+{#          <div class="user">Leonardo Dicaprio</div>#}
+{#          <div class="user">Jennifer Lawrence</div>#}
+{#        </div>#}
+{#        <div class="tested__list__item">96%</div>#}
+{#      </li>#}
+{#      <li class="row">#}
+{#        <div class="tested__list__item">1</div>#}
+{#        <div class="tested__list__item">#}
+{#          <div class="user">Leonardo Dicaprio</div>#}
+{#          <div class="user">Jennifer Lawrence</div>#}
+{#        </div>#}
+{#        <div class="tested__list__item">96%</div>#}
+{#      </li>#}
+{#      <li class="row">#}
+{#        <div class="tested__list__item">1</div>#}
+{#        <div class="tested__list__item">#}
+{#          <div class="user">Leonardo Dicaprio</div>#}
+{#          <div class="user">Jennifer Lawrence</div>#}
+{#        </div>#}
+{#        <div class="tested__list__item">96%</div>#}
+{#      </li>#}
+    </ul>
+    <button type="button" class="tested__btn">
+      Open to see <br>3$
+    </button>
+  </div>
+{% endblock %}

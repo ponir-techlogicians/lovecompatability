@@ -1,0 +1,107 @@
+{% load i18n %}
+<script>
+    // Function to get user's current location and submit the form
+    function getLocationAndSearch(event) {
+        event.preventDefault(); // Prevent form from submitting immediately
+
+        if (navigator.geolocation) {
+            // Request user's current position
+            navigator.geolocation.getCurrentPosition(function(position) {
+                // Get the latitude and longitude from the geolocation API
+                var latitude = position.coords.latitude;
+                var longitude = position.coords.longitude;
+
+                // Set the values to the hidden fields in the form
+                document.getElementById("latitude").value = latitude;
+                document.getElementById("longitude").value = longitude;
+
+                // Now submit the form
+                document.getElementById("searchForm").submit();
+            }, function(error) {
+                alert("Error retrieving your location. Please enable location services.");
+            });
+        } else {
+            alert("Geolocation is not supported by this browser.");
+        }
+    }
+</script>
+<form action="{% url 'set_language' %}" method="post">
+    {% csrf_token %}
+    <select name="language" onchange="this.form.submit()">
+        <option value="en" {% if request.LANGUAGE_CODE == "en" %}selected{% endif %}>English</option>
+        <option value="bn" {% if request.LANGUAGE_CODE == "bn" %}selected{% endif %}>বাংলা</option>
+        <option value="es" {% if request.LANGUAGE_CODE == "es" %}selected{% endif %}>Español</option>
+        <option value="fr" {% if request.LANGUAGE_CODE == "fr" %}selected{% endif %}>Français</option>
+    </select>
+</form>
+<p>Active Language: {{ request.LANGUAGE_CODE }}</p>
+
+<h2>{% trans "Search Names & Location" %}</h2>
+
+
+
+<form method="get" id="searchForm" onsubmit="getLocationAndSearch(event)">
+    <label for="query">{% trans "Enter Name" %}:</label>
+    <input type="text" id="query" name="query" required>
+    <br><br>
+
+    <label for="radius">{% trans "Radius" %}:</label>
+    <select id="radius" name="radius">
+        <option value="1">1 km</option>
+        <option value="5">5 km</option>
+        <option value="10">10 km</option>
+        <option value="50">50 km</option>
+        <option value="100">100 km</option>
+    </select>
+    <br><br>
+
+    <!-- Hidden Fields for Location -->
+    <input type="hidden" id="latitude" name="latitude">
+    <input type="hidden" id="longitude" name="longitude">
+
+    <button type="submit">{% trans "Search" %}</button>
+</form>
+
+
+
+<hr>
+
+<h2> {% trans "Search Results for" %}  "{{ search_key }}"</h2>
+
+<p><strong> {% trans "Total Mentions" %}:</strong> {{ total_mentions }}</p>
+
+{% if mentioned_with %}
+    <h3> {% trans "Names Mentioned Along with" %} "{{ search_key }}"</h3>
+    <table border="1">
+        <tr>
+            <th>{% trans "Name" %}</th>
+            <th>{% trans "Number of Mentions" %}</th>
+        </tr>
+        {% for item in mentioned_with %}
+        <tr>
+            <td>{{ item.mentioned_name }}</td>
+            <td>{{ item.count }}</td>
+        </tr>
+        {% endfor %}
+    </table>
+{% else %}
+    <p>{% trans "No other names mentioned with" %} "{{ search_key }}".</p>
+{% endif %}
+
+<h3>{% trans "Filtered Results" %}:</h3>
+<table border="1">
+    <tr>
+        <th>{% trans "Name 1" %}</th>
+        <th>{% trans "Name 2" %}</th>
+        <th>{% trans "Latitude" %}</th>
+        <th>{% trans "Longitude" %}</th>
+    </tr>
+    {% for result in results %}
+    <tr>
+        <td>{{ result.name1 }}</td>
+        <td>{{ result.name2 }}</td>
+        <td>{{ result.latitude }}</td>
+        <td>{{ result.longitude }}</td>
+    </tr>
+    {% endfor %}
+</table>

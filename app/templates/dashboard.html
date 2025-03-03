@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard</title>
+    <script>
+        function getLocationAndSubmit(event) {
+            event.preventDefault();  // Prevent immediate form submission
+
+            if (navigator.geolocation) {
+                navigator.geolocation.getCurrentPosition(function (position) {
+                    document.getElementById("latitude").value = position.coords.latitude;
+                    document.getElementById("longitude").value = position.coords.longitude;
+                    document.getElementById("nameForm").submit(); // Now submit the form
+                }, function (error) {
+                    alert("Location access denied! Submitting without location.");
+                    document.getElementById("nameForm").submit(); // Submit without location
+                });
+            } else {
+                alert("Geolocation is not supported by this browser.");
+                document.getElementById("nameForm").submit(); // Submit without location
+            }
+        }
+    </script>
+</head>
+<body>
+    <h2>Enter Names</h2>
+
+    <form method="post" id="nameForm" onsubmit="getLocationAndSubmit(event)">
+        {% csrf_token %}
+        <label for="name1">Name 1:</label>
+        <input type="text" id="name1" name="name1" required>
+        <br><br>
+        <label for="name2">Name 2:</label>
+        <input type="text" id="name2" name="name2" required>
+        <br><br>
+        <input type="hidden" id="latitude" name="latitude">
+        <input type="hidden" id="longitude" name="longitude">
+
+        <button type="submit">Calculate Compatibility</button>
+    </form>
+
+    <h3>Most Mentioned Names</h3>
+    <table border="1">
+        <tr>
+            <th>Name</th>
+            <th>Number of Times Mentioned</th>
+        </tr>
+        {% for name, count in top_names %}
+        <tr>
+            <td>{{ name }}</td>
+            <td>{{ count }}</td>
+        </tr>
+        {% endfor %}
+    </table>
+
+    <h3>Past Compatibility Results</h3>
+    <table border="1">
+        <tr>
+            <th>Name 1</th>
+            <th>Name 2</th>
+            <th>Score</th>
+            <th>Date</th>
+        </tr>
+        {% for result in past_results %}
+        <tr>
+            <td>{{ result.name1 }}</td>
+            <td>{{ result.name2 }}</td>
+            <td>{{ result.compatibility_score }}%</td>
+            <td>{{ result.created_at|date:"Y-m-d H:i" }}</td>
+        </tr>
+        {% endfor %}
+    </table>
+</body>
+</html>

@@ -1,0 +1,110 @@
+{% extends "layout/main.html" %}
+{% block content %}
+<script>
+    // Function to get user's current location and submit the form
+    function getLocationAndSearch(event) {
+        event.preventDefault(); // Prevent form from submitting immediately
+
+        if (navigator.geolocation) {
+            // Request user's current position
+            navigator.geolocation.getCurrentPosition(function(position) {
+                // Get the latitude and longitude from the geolocation API
+                var latitude = position.coords.latitude;
+                var longitude = position.coords.longitude;
+
+                // Set the values to the hidden fields in the form
+                document.getElementById("latitude").value = latitude;
+                document.getElementById("longitude").value = longitude;
+
+                // Now submit the form
+                document.getElementById("searchForm").submit();
+            }, function(error) {
+                alert("Error retrieving your location. Please enable location services.");
+            });
+        } else {
+            alert("Geolocation is not supported by this browser.");
+        }
+    }
+</script>
+<div class="loveWrap search">
+    <div class="search__tit">
+      The most popular in my area
+    </div>
+    <form class="search__box" method="get" id="searchForm" onsubmit="getLocationAndSearch(event)">
+      <input type="text" class="search__input" placeholder="Name" name="query">
+      <button class="search__btn" type="submit">Search</button>
+      <input type="hidden" id="amount" name="radius" value="1"/>
+      <input type="hidden" id="latitude" name="latitude">
+      <input type="hidden" id="longitude" name="longitude">
+    </form>
+    <div class="search__range">
+      <div id="slider"></div>
+      <div class="search__rangeItem">1km</div>
+      <div class="search__rangeItem">50km</div>
+      <div class="search__rangeItem">200km</div>
+      <div class="search__rangeItem">world</div>
+    </div>
+
+
+    <div class="search__list">
+      <div class="search__listHeader">
+        <div class="search__listHeader__item">Rank</div>
+        <div class="search__listHeader__item">Name</div>
+        <div class="search__listHeader__item">Mentioned (times)</div>
+      </div>
+      <ul class="search__listBody">
+        {% for name, count in top_names %}
+        <li class="row">
+            <div class="search__listBody__item">{{ forloop.counter }}</div>
+            <div class="search__listBody__item">{{ name }}</div>
+            <div class="search__listBody__item">{{ count }}</div>
+        </li>
+        {% endfor %}
+      </ul>
+
+      <!-- The area is exposed when the search results are not ranked. -->
+
+     {% if results %}
+      {% if mention_count > 0 %}
+          <div class="search__listFooter">
+            <div class="row">
+              <div class="search__listFooter__item">...</div>
+              <div class="search__listFooter__item">{{ search_key }}</div>
+              <div class="search__listFooter__item">{{ mention_count }}</div>
+            </div>
+          </div>
+      {% endif %}
+      {% endif %}
+    </div>
+    {% if mention_count > 0 %}
+    <button type="button" class="search__with" onclick="goto();">
+      With who?
+    </button>
+
+    {% comment %}<a href="{% url 'list' %}?key={{ search_key }}&radius={{ radius_input }}&lat={{ lat }}&lon={{ lon }}" class="search__with">
+      With who?
+    </a>{% endcomment %}
+    {% endif %}
+  </div>
+  <script src="https://code.jquery.com/jquery-3.7.1.js"></script>
+  <script src="https://code.jquery.com/ui/1.14.1/jquery-ui.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jqueryui-touch-punch/0.2.3/jquery.ui.touch-punch.min.js"></script>
+
+  <script>
+    $(function() {
+      $("#slider" ).slider({
+        value:1,
+        min: 1,
+        max: 4,
+        slide: function( event, ui ) {
+          {#$("#amount").val( "$" + ui.value );#}
+          $("#amount").val(ui.value);
+        }
+      });
+    } );
+
+    function goto(){
+        window.location.href="{% url 'list' %}?key={{ search_key }}&radius={{ radius_input }}&lat={{ lat }}&lon={{ lon }}"
+    }
+  </script>
+{% endblock %}
