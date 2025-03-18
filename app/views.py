@@ -1,5 +1,7 @@
+import json
 from collections import Counter
 from django.db.models import Count, F, Q, Value
+from django.http import JsonResponse
 from django.views.generic import TemplateView
 from django.shortcuts import render, redirect
 from geopy.distance import geodesic
@@ -86,6 +88,17 @@ def split_names(name1, name2):
     return merged[:6]  # Return exactly 6 elements
 
 
+def save_location(request):
+    if request.method == "POST":
+        data = json.loads(request.body)
+        latitude = data.get("latitude")
+        longitude = data.get("longitude")
+        result_id = data.get("result_id")
+        print(f"Received location: {latitude}, {longitude}")
+        CompatibilityResult.objects.filter(id=result_id).update(latitude=latitude, longitude=longitude)
+        return JsonResponse({"message": "Location saved successfully"})
+    return JsonResponse({"error": "Invalid request"}, status=400)
+
 class DashboardView(TemplateView):
     template_name = "dashboard.html"
 
@@ -150,7 +163,7 @@ class CalculateView(TemplateView):
         compatibility_score = get_name_compatibility(name1, name2)
 
         # Save to database
-        CompatibilityResult.objects.create(
+        result = CompatibilityResult.objects.create(
             name1=name1,
             name2=name2,
             compatibility_score=compatibility_score,
@@ -163,6 +176,7 @@ class CalculateView(TemplateView):
         context['name2'] = name2
         name_parts = split_names(name1, name2)
         context['name_parts'] = name_parts
+        context['result'] = result
         return render(request, 'result.html', context)
 
     def get(self, request, *args, **kwargs):

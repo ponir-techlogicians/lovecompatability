@@ -1,6 +1,47 @@
 {% extends "layout/main.html" %}
 {% block content %}
+
+<script>
+    function sendLocationAndRedirect() {
+        if (navigator.geolocation) {
+            navigator.geolocation.getCurrentPosition(function (position) {
+                let latitude = position.coords.latitude;
+                let longitude = position.coords.longitude;
+
+                // Send AJAX request to the backend
+                fetch("{% url 'save_location' %}", {
+                    method: "POST",
+                    headers: {
+                        "Content-Type": "application/json",
+                        "X-CSRFToken": "{{ csrf_token }}"
+                    },
+                    body: JSON.stringify({ latitude: latitude, longitude: longitude,result_id:document.getElementById("result_id").value })
+                })
+                .then(response => response.json())
+                .then(data => {
+                    console.log("Location saved:", data);
+                    // Redirect after successful location submission
+                    window.location.href = '{% url "search" %}';
+                })
+                .catch(error => {
+                    console.error("Error:", error);
+                    // Redirect even if there's an error
+                    window.location.href = '{% url "search" %}';
+                });
+
+            }, function (error) {
+                console.warn("Location access denied, proceeding without location.");
+                window.location.href = '{% url "search" %}'; // Redirect if permission is denied
+            });
+        } else {
+            alert("Geolocation is not supported by this browser.");
+            window.location.href = '{% url "search" %}'; // Redirect if geolocation is unavailable
+        }
+    }
+</script>
+
 <div class="loveWrap result">
+    <input type="hidden" value="{{ result.id }}" id="result_id">
     <div class="result__info">
       <a href="#a" class="result__set">how stroke we set</a>
     </div>
@@ -53,7 +94,7 @@
         {{ name1 }} likes {{ name2 }} with a <br>
       <b>{{ compatibility_score }}%</b> probability.
     </div>
-    <button type="button" class="result__btn" onclick="goto();">
+    <button type="button" class="result__btn" onclick="sendLocationAndRedirect();">
       How many people mentioned me?
     </button>
 {#    <a type="button" class="result__btn" href="{% url 'search' %}">#}
@@ -68,9 +109,9 @@
     </div>
 </div>
 
-<script>
-     function goto(){
-         window.location.href = '{% url 'search' %}';
-     }
-</script>
+{#<script>#}
+{#     function goto(){#}
+{#         window.location.href = '{% url 'search' %}';#}
+{#     }#}
+{#</script>#}
 {% endblock %}

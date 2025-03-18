@@ -3,8 +3,8 @@
  <script>
     function getLocationAndSubmit(event) {
         event.preventDefault();  // Prevent immediate form submission
-
-        if (navigator.geolocation) {
+        document.getElementById("nameForm").submit();
+        /*if (navigator.geolocation) {
             navigator.geolocation.getCurrentPosition(function (position) {
                 document.getElementById("latitude").value = position.coords.latitude;
                 document.getElementById("longitude").value = position.coords.longitude;
@@ -16,8 +16,18 @@
         } else {
             alert("Geolocation is not supported by this browser.");
             document.getElementById("nameForm").submit(); // Submit without location
-        }
+        }*/
     }
+</script>
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-2655483668363741"
+     crossorigin="anonymous"></script>
+<!-- calculate page -->
+<ins class="adsbygoogle"
+     style="display:inline-block;width:390px;height:78px"
+     data-ad-client="ca-pub-2655483668363741"
+     data-ad-slot="8896461168"></ins>
+<script>
+     (adsbygoogle = window.adsbygoogle || []).push({});
 </script>
 <form class="loveWrap" method="post" id="nameForm" onsubmit="getLocationAndSubmit(event)">
     {% csrf_token %}
@@ -33,8 +43,8 @@
     <div class="loveWrap__info">
       <a href="#a" class="loveWrap__infoLink">You don’t know friend’s last name?</a>
     </div>
-    <input type="hidden" id="latitude" name="latitude">
-    <input type="hidden" id="longitude" name="longitude">
+    {% comment %}<input type="hidden" id="latitude" name="latitude">
+    <input type="hidden" id="longitude" name="longitude">{% endcomment %}
     <button type="submit" class="loveWrap__btn">Calculate</button>
     <div class="loveWrap__ad"></div>
 </form>
