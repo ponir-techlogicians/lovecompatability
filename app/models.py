@@ -11,3 +11,6 @@ class CompatibilityResult(models.Model):
     def __str__(self):
         return f"{self.name1} & {self.name2}: {self.compatibility_score}%"
 
+    def get_absolute_url(self):
+        from django.urls import reverse
+        return reverse('compatibility_result_detail', kwargs={'id': self.id})

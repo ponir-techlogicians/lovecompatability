@@ -2,7 +2,7 @@ import json
 from collections import Counter
 from django.db.models import Count, F, Q, Value
 from django.http import JsonResponse
-from django.views.generic import TemplateView
+from django.views.generic import TemplateView, DetailView
 from django.shortcuts import render, redirect
 from geopy.distance import geodesic
 
@@ -170,14 +170,16 @@ class CalculateView(TemplateView):
             latitude=latitude if latitude else None,
             longitude=longitude if longitude else None
         )
-        context = self.get_context_data()
-        context['compatibility_score'] = compatibility_score
-        context['name1'] = name1
-        context['name2'] = name2
-        name_parts = split_names(name1, name2)
-        context['name_parts'] = name_parts
-        context['result'] = result
-        return render(request, 'result.html', context)
+        # context = self.get_context_data()
+        # context['compatibility_score'] = compatibility_score
+        # context['name1'] = name1
+        # context['name2'] = name2
+        # name_parts = split_names(name1, name2)
+        # context['name_parts'] = name_parts
+        # context['result'] = result
+        # return render(request, 'result.html', context)
+
+        return redirect(result.get_absolute_url())
 
     def get(self, request, *args, **kwargs):
         # Retrieve past results
@@ -207,6 +209,24 @@ class CalculateView(TemplateView):
         context["past_results"] = past_results
         context["top_names"] = top_names  # Send top names to template
         return render(request, self.template_name, context)
+
+
+class ResultDetailView(DetailView):
+    model = CompatibilityResult
+    template_name = "result.html"
+    context_object_name = "result"
+    pk_url_kwarg = "id"
+
+    def get_context_data(self, **kwargs):
+        context = super().get_context_data(**kwargs)
+        result = self.get_object()
+        context['compatibility_score'] = result.compatibility_score
+        context['name1'] = result.name1
+        context['name2'] = result.name2
+        context['name_parts'] = split_names(result.name1, result.name2)
+        context['result'] = result
+
+        return context
 
 class SearchView(TemplateView):
     template_name = "search.html"
