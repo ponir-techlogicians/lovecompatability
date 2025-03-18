@@ -1,12 +1,13 @@
 {% extends "layout/main.html" %}
 {% block content %}
+<script src="https://js.stripe.com/v3/"></script>
 <div class="loveWrap tested">
     <div class="tested__tit">
       Who tested with <br><span>{{ search_key }}</span>?
     </div>
 
     <!-- Remove the blur class when the button is clicked. -->
-    <ul class="tested__list blur">
+    <ul class="tested__list {% if success != 'true' %} blur {% endif %}" >
       {% for result in results %}
       <li class="row">
         <div class="tested__list__item">{{ forloop.counter }}</div>
@@ -50,8 +51,25 @@
 {#        <div class="tested__list__item">96%</div>#}
 {#      </li>#}
     </ul>
-    <button type="button" class="tested__btn">
+    {% if success != 'true' %}
+    <button type="button" class="tested__btn" id="checkout-button">
       Open to see <br>3$
     </button>
+    {% endif %}
   </div>
+ <script>
+    var stripe = Stripe("{{ STRIPE_PUBLISHABLE_KEY }}");
+
+    document.getElementById("checkout-button").addEventListener("click", function () {
+        let currentUrl = window.location.href;
+        fetch(`/app/create-checkout-session/?success_url=${encodeURIComponent(currentUrl+'&success=true')}&cancel_url=${encodeURIComponent(currentUrl)}`, {
+            method: "GET"
+        })
+        .then(response => response.json())
+        .then(session => {
+            return stripe.redirectToCheckout({ sessionId: session.session_id });
+        })
+        .catch(error => console.error("Error:", error));
+    });
+</script>
 {% endblock %}

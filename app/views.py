@@ -9,8 +9,9 @@ from geopy.distance import geodesic
 from lovecompitability import settings
 from lovecompitability.settings import LANGUAGE_SESSION_KEY
 from .models import CompatibilityResult
-
+import stripe
 from django.utils.translation import activate, get_language
+stripe.api_key = settings.STRIPE_SECRET_KEY
 
 def set_language_view(request):
     if request.method == "POST":
@@ -98,6 +99,31 @@ def save_location(request):
         CompatibilityResult.objects.filter(id=result_id).update(latitude=latitude, longitude=longitude)
         return JsonResponse({"message": "Location saved successfully"})
     return JsonResponse({"error": "Invalid request"}, status=400)
+
+
+
+def create_checkout_session(request):
+    success_url = request.GET.get("success_url", "https://yourwebsite.com/success")
+    cancel_url = request.GET.get("cancel_url", "https://yourwebsite.com/cancel")
+
+    session = stripe.checkout.Session.create(
+        payment_method_types=["card"],
+        line_items=[
+            {
+                "price_data": {
+                    "currency": "usd",
+                    "product_data": {"name": "Fixed Payment"},
+                    "unit_amount": 300,  # $3 in cents
+                },
+                "quantity": 1,
+            }
+        ],
+        mode="payment",
+        success_url=success_url,
+        cancel_url=cancel_url,
+    )
+
+    return JsonResponse({"session_id": session.id})
 
 class DashboardView(TemplateView):
     template_name = "dashboard.html"
@@ -320,6 +346,7 @@ class ListView(TemplateView):
         latitude = request.GET.get("lat", None)
         longitude = request.GET.get("lon", None)
         radius_input = request.GET.get("radius", None)
+        success = request.GET.get("success", None)
         results = CompatibilityResult.objects.all()
         mention_count = 0
         # Filter by Name
@@ -367,6 +394,8 @@ class ListView(TemplateView):
             "radius_input" : radius_input,
             "lat" : latitude if latitude else None,
             "lon" : longitude if longitude else None,
+            "STRIPE_PUBLISHABLE_KEY":settings.STRIPE_PUBLISHABLE_KEY,
+            "success":success
         }
 
         print(results)

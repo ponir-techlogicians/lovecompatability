@@ -157,5 +157,7 @@ CORS_ALLOWED_ORIGINS = [
     "https://crush-o-meter.com",
 ]
 
+STRIPE_PUBLISHABLE_KEY = 'pk_test_51IiO7DBH8Pgfzx7JR3sLT5lz3TwoZU9BVonntulHQWbzVWJ2zq6S7Q12C8hlRj7Gdmb1MvgqyR3tzBIH7Efq7Mjl00yuGsZThY'
+STRIPE_SECRET_KEY = 'sk_test_51IiO7DBH8Pgfzx7J1Y9m3u2p5097JDmKoSqckPpmOwfdzYGECFcI3PtyUuCaNoh3yroPXxAcsmlMYvsPgPC9VHCD00qm0HMC5P'
 
 # settings.py
