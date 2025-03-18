@@ -244,18 +244,19 @@ class SearchView(TemplateView):
             # results = results.filter(Q(name1__icontains=query) | Q(name2__icontains=query))
             results = results.filter(Q(name1=query) | Q(name2=query))
 
+        # print(results)
         # Filter by Location Radius
         if latitude and longitude and radius_input:
             try:
                 user_location = (float(latitude), float(longitude))
                 radius = 1
-                if radius_input == 1:
+                if radius_input == '1':
                     radius = 1
-                if radius_input == 2:
+                if radius_input == '2':
                     radius = 50
-                if radius_input == 3:
+                if radius_input == '3':
                     radius = 200
-                if radius_input == 4:
+                if radius_input == '4':
                     radius = 99999999999
 
                 radius = float(radius)
@@ -267,6 +268,7 @@ class SearchView(TemplateView):
                     if record.latitude and record.longitude:
                         record_location = (record.latitude, record.longitude)
                         distance = geodesic(user_location, record_location).km
+                        print(distance,radius)
                         if distance <= radius:
                             filtered_results.append(record)
                             if query.lower() == record.name1.lower():
@@ -330,13 +332,13 @@ class ListView(TemplateView):
             try:
                 user_location = (float(latitude), float(longitude))
                 radius = 1
-                if radius_input == 1:
+                if radius_input == '1':
                     radius = 1
-                if radius_input == 2:
+                if radius_input == '2':
                     radius = 50
-                if radius_input == 3:
+                if radius_input == '3':
                     radius = 200
-                if radius_input == 4:
+                if radius_input == '4':
                     radius = 99999999999
 
                 radius = float(radius)
