@@ -1,9 +1,9 @@
 from django.urls import path
 
 from django.contrib.auth import views as auth_views
-from rest_framework.generics import ListAPIView
 
-from app.api_views import CalculateAPIView, ResultDetailAPIView, SaveLocationAPIView,CreatePaymentIntentAPIView
+
+from app.api_views import CalculateAPIView, ResultDetailAPIView, SaveLocationAPIView,CreatePaymentIntentAPIView,ListAPIView
 from app.views import DashboardView, SearchBasicView, set_language_view, CalculateView, SearchView, ListView, \
     save_location, ResultDetailView, create_checkout_session
 
