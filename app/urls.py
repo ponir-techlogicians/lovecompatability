@@ -3,7 +3,8 @@ from django.urls import path
 from django.contrib.auth import views as auth_views
 
 
-from app.api_views import CalculateAPIView, ResultDetailAPIView, SaveLocationAPIView,CreatePaymentIntentAPIView,ListAPIView
+from app.api_views import CalculateAPIView, ResultDetailAPIView, SaveLocationAPIView, CreatePaymentIntentAPIView, \
+    ListAPIView, SearchAPIView
 from app.views import DashboardView, SearchBasicView, set_language_view, CalculateView, SearchView, ListView, \
     save_location, ResultDetailView, create_checkout_session
 
@@ -25,6 +26,8 @@ urlpatterns = [
     path('api/result/<int:id>/', ResultDetailAPIView.as_view(), name='result-detail-api'),
 
     path('api/save-location/', SaveLocationAPIView.as_view(), name='save-location-api'),
+
+    path('api/search/', SearchAPIView.as_view(), name='search-api'),
 
     path('api/list/', ListAPIView.as_view(), name='list-api'),
 
