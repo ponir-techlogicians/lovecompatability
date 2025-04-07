@@ -1,4 +1,5 @@
 {% extends "layout/main.html" %}
+{% load static %}
 {% block content %}
  <script>
     function getLocationAndSubmit(event) {
@@ -31,14 +32,14 @@
 </script>
 <form class="loveWrap" method="post" id="nameForm" onsubmit="getLocationAndSubmit(event)">
     {% csrf_token %}
-    <div class="loveWrap__tit">Love compatibility</div>
+    <div class="loveWrap__titImg"><img src="{% static 'app/img/img_calc.png' %}" alt=""></div>
     <div class="loveWrap__inputBox">
-      <div class="loveWrap__label">Name 1</div>
-      <input class="loveWrap__input" type="text" name="name1"  placeholder="First name & Last name">
+      <div class="loveWrap__label">Name A (First name & Last name)</div>
+      <input class="loveWrap__input" type="text" name="name1"   placeholder="e.g. Jennifer Lawrence">
     </div>
     <div class="loveWrap__inputBox">
-      <div class="loveWrap__label">Name 2</div>
-      <input class="loveWrap__input" type="text" name="name2"  placeholder="First name & Last name">
+      <div class="loveWrap__label">Name B (First name & Last name)</div>
+      <input class="loveWrap__input" type="text" name="name2"  placeholder="e.g. Leonardo Dicaprio">
     </div>
     <div class="loveWrap__info">
       <a href="#a" class="loveWrap__infoLink">You don’t know friend’s last name?</a>
@@ -46,6 +47,8 @@
     {% comment %}<input type="hidden" id="latitude" name="latitude">
     <input type="hidden" id="longitude" name="longitude">{% endcomment %}
     <button type="submit" class="loveWrap__btn">Calculate</button>
-    <div class="loveWrap__ad"></div>
+    <div class="loveWrap__ad">
+      <img src="{% static 'app/img/banner01.png' %}" alt="">
+    </div>
 </form>
 {% endblock %}

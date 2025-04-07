@@ -71,17 +71,36 @@ body {
   width: 100%;
   max-width: 390px;
   margin: 0 auto;
+  background: #23183C;
   &__tit {
     font-size: vw(34px);
     font-weight: 700;
     text-align: center;
     letter-spacing: -0.03rem;
-    margin-top: vw(64px);
-    margin-bottom: vw(76px);
+    padding-top: vw(64px);
+    padding-bottom: vw(76px);
+    img {
+      display: block;
+      width: 90%;
+      margin:0 auto;
+    }
     @include min-width {
       font-size: 34px;
-      margin-top: 64px;
-      margin-bottom: 76px;
+      padding-top: 64px;
+      padding-bottom: 76px;
+    }
+  }
+  &__titImg {
+    padding-top: vw(40px);
+    padding-bottom: vw(10px);
+    img {
+      display: block;
+      width: 90%;
+      margin:0 auto;
+    }
+    @include min-width {
+      padding-top: 40px;
+      padding-bottom: 10px;
     }
   }
   &__inputBox {
@@ -98,7 +117,7 @@ body {
   }
   &__label {
     position: absolute;
-    color:#64748B;
+    color:#fff;
     font-size: vw(12px);
     left: vw(16px);
     top: vw(8px);
@@ -109,14 +128,15 @@ body {
     }
   }
   &__input {
-    border: 1px solid #94A3B8;
+    border: 1px solid #fff;
     width: 100%;
     height: vw(56px);
     border-radius: vw(8px);
     padding-left: vw(13px);
     font-size: vw(16px);
-    color:#020617;
+    color:#fff;
     padding-top: vw(15px);
+    background-color: rgba(255,255,255,.1);
     @include min-width {
       height: 56px;
       border-radius: 8px;
@@ -135,7 +155,7 @@ body {
       font-size: 15px;
     }
     &Link {
-      color:#000;
+      color:#fff;
       padding-right: vw(20px);
       background: url("../img/ico_point.svg") no-repeat 100%  50% / 4vw;
       @include min-width {
@@ -148,18 +168,19 @@ body {
     display: flex;
     align-items: center;
     justify-content: center;
-    margin:0 auto;
-    width: vw(335px);
-    height: vw(59px);
-    background-color: #7E49FF;
+    margin:0 auto vw(60px);
+    width: vw(353px);
+    height: vw(70px);
+    background-color: #5B17FF;
     border-radius: vw(43px);
     color:#fff;
     font-size: vw(20px);
     font-weight: 500;
     cursor: pointer;
     @include min-width {
-      width: 335px;
-      height: 59px;
+      width: 353px;
+      height: 70px;
+      margin-bottom: 60px;
       border-radius: 43px;
       font-size: 20px;
     }
@@ -171,24 +192,36 @@ body {
   &__ad {
     width: 100%;
     height: vw(78px);
-    background-color: #D9D9D9;
+    padding-top: vw(10px);
+    background: #fff;
     @include min-width {
       height: 78px;
+      padding-top:10px;
     }
   }
 }
 .result {
   position: relative;
-  padding-top: vw(73px);
+  padding-bottom: vw(50px);
   @include min-width {
-    padding-top: 73px;
+    padding-bottom: 50px;
+  }
+  &__ad {
+    background-color: #D9D9D9;
+    height: vw(78px);
+    @include min-width {
+      height: 78px;
+    }
+  }
+  &__info {
+    position: relative;
   }
   &__set {
     position: absolute;
     top: vw(18px);
     right: vw(18px);
     font-size: vw(15px);
-    color:#000;
+    color:#fff;
     @include min-width {
       right: 18px;
       top: 18px;
@@ -200,9 +233,12 @@ body {
     font-size: vw(44px);
     font-weight: 700;
     letter-spacing: -0.03rem;
+    margin-top: vw(65px);
     margin-bottom: vw(35px);
+    color:#fff;
     @include min-width {
-     margin-bottom: 35px;
+      margin-bottom: 35px;
+      margin-top: 65px;
       font-size: 44px;
     }
   }
@@ -223,6 +259,7 @@ body {
     font-size: vw(16px);
     font-weight: 500;
     color:#F99335;
+    background-color: #fff;
     text-align: center;
     padding-inline: vw(5px);
     &:nth-child(odd) {
@@ -298,6 +335,7 @@ body {
       box-sizing: border-box;
       text-align: center;
       font-size: vw(15px);
+      color:#fff;
       @include min-width {
         font-size: 15px
       }
@@ -307,6 +345,7 @@ body {
     text-align: center;
     font-size: vw(20px);
     margin:vw(37px) auto;
+    color:#fff;
     @include min-width {
       font-size: 20px;
       margin:37px auto;
@@ -348,10 +387,16 @@ body {
     gap: vw(8px);
     margin-top: vw(25px);
     padding-right: vw(35px);
+    img {
+      width: vw(302px);
+    }
     @include min-width {
       gap: 8px;
       margin-top: 25px;
       padding-right: 35px;
+      img {
+        width: 302px;
+      }
     }
     .circleBox {
       width: vw(56px);
@@ -367,15 +412,18 @@ body {
   }
 }
 .search {
-  padding-top: vw(70px);
+  padding-top: vw(54px);
+  padding-bottom: vw(50px);
   @include min-width {
-    padding-top: 70px;
+    padding-top: 54px;
+    padding-bottom: 50px;
   }
   &__tit {
     font-size: vw(24px);
     text-align: center;
     font-weight: 600;
     letter-spacing: -0.01em;
+    color:#fff;
     @include min-width {
       font-size: 24px;
     }
@@ -390,7 +438,7 @@ body {
       margin-top: 50px;
       margin-bottom: 45px;
       gap: 5px;
-      padding-inline: 0;
+      padding-inline: 20px;
     }
 
   }
@@ -401,6 +449,7 @@ body {
     font-size: vw(16px);
     border: 1px solid #E2E8F0;
     padding:vw(16px);
+    background-color: #fff;
     @include min-width {
       width: 267px;
       height: 56px;
@@ -437,6 +486,7 @@ body {
       font-size: vw(15px);
       letter-spacing: -0.02em;
       width: calc(100% / 4);
+      color:#fff;
       @include min-width {
         font-size:  15px;
       }
@@ -458,7 +508,7 @@ body {
     }
     @include min-width {
       padding-top: 10px;
-      padding-inline: 0;
+      padding-inline: 20px;
       margin-bottom: 80px;
     }
   }
@@ -468,6 +518,7 @@ body {
     padding-inline: vw(10px);
     border-bottom: 1px solid #C8C8C8;
     padding-bottom: vw(10px);
+    color:#fff;
     &__item {
       word-break: keep-all;
       text-align: center;
@@ -492,7 +543,7 @@ body {
       }
     }
     @include min-width {
-      padding-inline: 0;
+      padding-inline: 10px;
       padding-bottom: 10px;
     }
   }
@@ -507,7 +558,7 @@ body {
       }
       & + .rank {
         .search__listBody__item {
-          color:#7E49FF;
+          color:#fff;
         }
       }
     }
@@ -515,6 +566,7 @@ body {
       padding-block: vw(20px);
       text-align: center;
       font-size: vw(18px);
+      color:#fff;
       &:first-child {
         width: 12%;
       }
@@ -581,11 +633,12 @@ body {
     font-size: vw(20px);
     border-radius: vw(43px);
     cursor: pointer;
+    padding-inline: vw(20px);
     @include min-width {
       height: 59px;
       font-size: 20px;
       border-radius: 43px;
-      width: 100%;
+      width: calc(100% - 40px);
       margin-top: 10px;
     }
     &:hover,
@@ -596,10 +649,12 @@ body {
 }
 .tested {
   padding-top: vw(50px);
+  padding-bottom: vw(50px);
   &__tit {
     font-size: vw(24px);
     font-weight: 600;
     text-align: center;
+    color:#fff;
     span  {
       color: #7E49FF;
     }
@@ -609,6 +664,7 @@ body {
   }
   @include min-width {
     padding-top: 50px;
+    padding-bottom: 50px;
   }
   &__list {
     margin-top: vw(100px);
@@ -637,6 +693,7 @@ body {
       padding-block: vw(15px);
       text-align: center;
       font-size: vw(18px);
+      color:#fff;
       &:first-child {
         width: 15%;
       }
@@ -653,6 +710,7 @@ body {
         font-size: 18px;
       }
       .user {
+        color:#fff;
         &:first-child {
           color:#7E49FF;
         }
@@ -673,7 +731,7 @@ body {
       padding-block: 20px;
       border-right: 43px;
       font-size: 20px;
-      width: 100%;
+      width: calc(100% - 40px);
       margin-top: 20px;
     }
     &:hover,
@@ -704,7 +762,7 @@ body {
     }
   }
   @include min-width {
-    width: 100%;
-    left: 0;
+    width: calc(100% - 40px);
+    left: 20px;
   }
 }
