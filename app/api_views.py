@@ -5,7 +5,8 @@ from rest_framework import status
 from lovecompitability import settings
 from .models import CompatibilityResult
 from .serializers import CompatibilityResultSerializer
-from .utils import get_name_compatibility, split_names
+from .utils import get_name_compatibility, split_names, get_name_compatibility_with_steps, \
+    get_name_compatibility_with_5steps
 from geopy.distance import geodesic
 from collections import Counter
 from django.db.models import Q, Count
@@ -22,7 +23,14 @@ class CalculateAPIView(APIView):
         if not name1 or not name2:
             return Response({"error": "Both names are required."}, status=status.HTTP_400_BAD_REQUEST)
 
-        compatibility_score = get_name_compatibility(name1, name2)
+        # compatibility_score = get_name_compatibility(name1, name2)
+        compatibility_score, steps = get_name_compatibility_with_5steps(name1, name2)
+        print(compatibility_score)
+        print("Compatibility Score:", compatibility_score)
+        print("Steps:")
+        for i, step in enumerate(steps):
+            print(f"Step {i}: {step}")
+
         result = CompatibilityResult.objects.create(
             name1=name1,
             name2=name2,
@@ -32,7 +40,8 @@ class CalculateAPIView(APIView):
         )
 
         serializer = CompatibilityResultSerializer(result)
-        return Response(serializer.data, status=status.HTTP_201_CREATED)
+        serializer.data['steps'] = steps
+        return Response({'data':serializer.data,'steps':steps}, status=status.HTTP_201_CREATED)
 
 
 class ResultDetailAPIView(APIView):

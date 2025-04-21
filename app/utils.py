@@ -33,6 +33,38 @@ def adjacency_sum(arr: list) -> list:
         arr = [(arr[i] + arr[i + 1]) % 10 for i in range(len(arr) - 1)]
     return arr
 
+def adjacency_sum_steps(arr: list) -> list:
+    """Return a list of each step taken during adjacency summing until two digits remain."""
+    steps = [arr[:]]  # Store the initial array
+    while len(arr) > 2:
+        arr = [(arr[i] + arr[i + 1]) % 10 for i in range(len(arr) - 1)]
+        steps.append(arr[:])
+    return steps
+
+def adjacency_sum_steps_fixed(arr: list, total_steps: int = 5) -> list:
+    """Return a fixed number of adjacency sum steps (default 5).
+    If the result reaches two digits early, repeat the last step."""
+    steps = [arr[:]]  # Start with the initial array
+
+    while len(steps) < total_steps:
+        if len(arr) <= 2:
+            # Repeat the last step if already reduced
+            steps.append(arr[:])
+        else:
+            arr = [(arr[i] + arr[i + 1]) % 10 for i in range(len(arr) - 1)]
+            steps.append(arr[:])
+    return steps
+
+
+def get_name_compatibility_with_steps(name1: str, name2: str) -> tuple:
+    """Calculate compatibility score and return 5 adjacency sum steps."""
+    merged_tokens = interleave_tokens(name1, name2)
+    stroke_list = [stroke for token in merged_tokens for stroke in get_strokes_for_word(token)]
+    steps = adjacency_sum_steps_fixed(stroke_list, total_steps=5)
+    final_score = int("".join(map(str, steps[-1])))  # From the last step
+    return final_score, steps
+
+
 
 def get_name_compatibility(name1: str, name2: str) -> int:
     """Calculate the compatibility score between two names."""
@@ -61,3 +93,48 @@ def split_names(name1, name2):
         merged.append("_")
 
     return merged[:6]  # Return exactly 6 elements
+
+
+def get_total_stroke(word: str) -> int:
+    """Return the total stroke count for a word."""
+    return sum(stroke_dict.get(ch, 0) for ch in word.upper())
+
+
+def split_names_into_6(name1: str, name2: str) -> list:
+    """Split both names and interleave up to 3 parts each to get 6 tokens."""
+    parts1 = name1.split()
+    parts2 = name2.split()
+
+    merged = []
+    for i in range(3):
+        if i < len(parts1):
+            merged.append(parts1[i])
+        else:
+            merged.append("_")
+        if i < len(parts2):
+            merged.append(parts2[i])
+        else:
+            merged.append("_")
+    return merged
+
+
+def adjacency_sum_steps_fixed_5(arr: list) -> list:
+    """Return 5 steps of adjacency summing (even if 2 elements reached early)."""
+    steps = [arr[:]]
+    while len(steps) < 5:
+        if len(arr) <= 2:
+            steps.append(arr[:])
+        else:
+            arr = [(arr[i] + arr[i + 1]) % 10 for i in range(len(arr) - 1)]
+            steps.append(arr[:])
+    return steps
+
+
+def get_name_compatibility_with_5steps(name1: str, name2: str) -> tuple:
+    """Get compatibility score with 5 steps starting from 6 tokens."""
+    six_parts = split_names_into_6(name1, name2)
+    print(six_parts)
+    initial_strokes = [get_total_stroke(word) for word in six_parts]
+    steps = adjacency_sum_steps_fixed_5(initial_strokes)
+    final_score = int("".join(map(str, steps[-1])))
+    return final_score, steps
