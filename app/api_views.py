@@ -1,12 +1,18 @@
+import base64
+import json
+
 from rest_framework.views import APIView
 from rest_framework.response import Response
 from rest_framework import status
 
 from lovecompitability import settings
-from .models import CompatibilityResult
+from .helper import validate_with_apple, validate_with_google, parse_apple_datetime
+from .models import CompatibilityResult, SubscriptionUser
 from .serializers import CompatibilityResultSerializer
 from .utils import get_name_compatibility, split_names, get_name_compatibility_with_steps, \
     get_name_compatibility_with_5steps
+from django.utils.dateparse import parse_datetime
+from django.utils.timezone import make_aware
 from geopy.distance import geodesic
 from collections import Counter
 from django.db.models import Q, Count
@@ -141,53 +147,64 @@ class SearchAPIView(APIView):
 
 class ListAPIView(APIView):
     def get(self, request, *args, **kwargs):
-        query = request.GET.get("key", "").strip()
-        latitude = request.GET.get("lat", None)
-        longitude = request.GET.get("lon", None)
-        radius_input = request.GET.get("radius", None)
-        success = request.GET.get("success", None)
+        user_id = request.GET.get("user_id", None)
+        user = SubscriptionUser.objects.filter(id=user_id).first()
+        limit = user.limit
+        if user_id:
+            if limit == 0:
+                return Response({'success':False,'reason':'not_limit'},status=status.HTTP_400_BAD_REQUEST)
 
-        results = CompatibilityResult.objects.all()
-        mention_count = 0
+            if user.is_expired():
+                return Response({'success':False,'reason':'expired'},status=status.HTTP_400_BAD_REQUEST)
 
-        # Filter by Name
-        if query:
-            results = results.filter(Q(name1=query) | Q(name2=query))
+            query = request.GET.get("key", "").strip()
+            latitude = request.GET.get("lat", None)
+            longitude = request.GET.get("lon", None)
+            radius_input = request.GET.get("radius", None)
+            success = request.GET.get("success", None)
 
-        # Filter by Location Radius
-        if latitude and longitude and radius_input:
-            try:
-                user_location = (float(latitude), float(longitude))
-                radius_map = {'1': 1, '2': 50, '3': 200, '4': 99999999999}
-                radius = float(radius_map.get(radius_input, 1))
+            results = CompatibilityResult.objects.all()
+            mention_count = 0
 
-                filtered_results = []
-                for record in results:
-                    if record.latitude and record.longitude:
-                        record_location = (record.latitude, record.longitude)
-                        distance = geodesic(user_location, record_location).km
-                        if distance <= radius:
-                            filtered_results.append(record)
-                            if query.lower() == record.name1.lower():
-                                mention_count += 1
-                            if query.lower() == record.name2.lower():
-                                mention_count += 1
-                results = filtered_results
-            except ValueError:
-                pass
+            # Filter by Name
+            if query:
+                results = results.filter(Q(name1=query) | Q(name2=query))
 
-        data = {
-            "results": CompatibilityResultSerializer(results, many=True).data,
-            "search_key": query,
-            "mention_count": mention_count,
-            "radius_input": radius_input,
-            "lat": latitude if latitude else None,
-            "lon": longitude if longitude else None,
-            "STRIPE_PUBLISHABLE_KEY": settings.STRIPE_PUBLISHABLE_KEY,
-            "success": success
-        }
+            # Filter by Location Radius
+            if latitude and longitude and radius_input:
+                try:
+                    user_location = (float(latitude), float(longitude))
+                    radius_map = {'1': 1, '2': 50, '3': 200, '4': 99999999999}
+                    radius = float(radius_map.get(radius_input, 1))
 
-        return Response(data, status=status.HTTP_200_OK)
+                    filtered_results = []
+                    for record in results:
+                        if record.latitude and record.longitude:
+                            record_location = (record.latitude, record.longitude)
+                            distance = geodesic(user_location, record_location).km
+                            if distance <= radius:
+                                filtered_results.append(record)
+                                if query.lower() == record.name1.lower():
+                                    mention_count += 1
+                                if query.lower() == record.name2.lower():
+                                    mention_count += 1
+                    results = filtered_results
+                except ValueError:
+                    pass
+
+            data = {
+                "results": CompatibilityResultSerializer(results, many=True).data,
+                "search_key": query,
+                "mention_count": mention_count,
+                "radius_input": radius_input,
+                "lat": latitude if latitude else None,
+                "lon": longitude if longitude else None,
+                "STRIPE_PUBLISHABLE_KEY": settings.STRIPE_PUBLISHABLE_KEY,
+                "success": success
+            }
+            user.limit -= 1
+            user.save()
+            return Response(data, status=status.HTTP_200_OK)
 
 class CreatePaymentIntentAPIView(APIView):
     def post(self, request, *args, **kwargs):
@@ -214,3 +231,144 @@ class CreatePaymentIntentAPIView(APIView):
             return Response({
                 'error': str(e)
             }, status=status.HTTP_400_BAD_REQUEST)
+
+class SubscriptionValidationView(APIView):
+    def post(self, request):
+        platform = request.data.get('platform')
+
+        if platform == 'apple':
+            receipt_data = request.data.get('receipt_data')
+            receipt_info = validate_with_apple(receipt_data)
+            print(receipt_info)
+            if not receipt_info:
+                return Response({'error': 'Invalid Apple receipt'}, status=status.HTTP_400_BAD_REQUEST)
+
+            unique_id = receipt_info['original_transaction_id']
+            product_id = receipt_info['product_id']
+            expires_str = receipt_info.get('expires_date')
+            expiry =  parse_apple_datetime(expires_str) if expires_str else None
+            auto_renew = receipt_info.get('auto_renew_status', False)
+
+        elif platform == 'google':
+            token = request.data.get('receipt_data')
+            package_name = request.data.get('package_name')
+            subscription_id = request.data.get('subscription_id')
+
+            purchase_info = validate_with_google(package_name, subscription_id, token)
+
+            if not purchase_info:
+                return Response({'error': 'Invalid Google receipt'}, status=status.HTTP_400_BAD_REQUEST)
+
+            unique_id = purchase_info['purchaseToken']
+            product_id = subscription_id
+            expiry = make_aware(parse_datetime(purchase_info['expiryTime']))
+            auto_renew = purchase_info.get('autoRenewing', False)
+
+        else:
+            return Response({'error': 'Unsupported platform'}, status=status.HTTP_400_BAD_REQUEST)
+
+        sub_user, created = SubscriptionUser.objects.update_or_create(
+            unique_subscription_id=unique_id,
+            defaults={
+                'platform': platform,
+                'product_id': product_id,
+                'expiration_date': expiry,
+                'auto_renewing': auto_renew
+            }
+        )
+
+        return Response({
+            'status': 'ok',
+            'user_id': sub_user.id,
+            'is_new': created
+        })
+
+class RestorPurchaseView(APIView):
+
+    def post(self, request):
+        platform = request.data.get('platform')
+        if platform == 'apple':
+            receipt_data = request.data.get('receipt_data')
+            receipt_info = validate_with_apple(receipt_data)
+            print(receipt_info)
+            if not receipt_info:
+                return Response({'error': 'Invalid Apple receipt'}, status=status.HTTP_400_BAD_REQUEST)
+            unique_id = receipt_info['original_transaction_id']
+        elif platform == 'google':
+            token = request.data.get('receipt_data')
+            package_name = request.data.get('package_name')
+            subscription_id = request.data.get('subscription_id')
+
+            purchase_info = validate_with_google(package_name, subscription_id, token)
+
+            if not purchase_info:
+                return Response({'error': 'Invalid Google receipt'}, status=status.HTTP_400_BAD_REQUEST)
+
+            unique_id = purchase_info['purchaseToken']
+        else:
+            return Response({'error': 'Unsupported platform'}, status=status.HTTP_400_BAD_REQUEST)
+
+        sub_user = SubscriptionUser.objects.filter(
+            unique_subscription_id=unique_id,
+        )
+        if sub_user.exists():
+            return Response({
+                    'status': 'ok',
+                    'user_id': sub_user.id,
+
+                })
+        else:
+            return Response({{
+                    'status': 'not_found',
+                }})
+
+class GooglePlayBillingNotification(APIView):
+    def post(self, request, *args, **kwargs):
+        try:
+            response = request.data
+            data_string = response['message']['data']
+            decoded_bytes = base64.b64decode(data_string)
+            decoded_string = json.loads(decoded_bytes.decode('utf-8'))
+
+            if 'subscriptionNotification' in decoded_string:
+                notification = decoded_string['subscriptionNotification']
+                purchase_token = notification['purchaseToken']
+                notification_type = notification['notificationType']
+
+                if notification_type in [3, 13,2]:
+                    user = SubscriptionUser.objects.filter(unique_subscription_id=purchase_token)
+                    if user.exists():
+                        user = user.last()
+                        if notification_type == 2:
+                            user.status = 'active'
+                        else:
+                            user.status = 'cancelled'
+                        user.save()
+        except Exception as e:
+            return Response({'error': str(e)}, status=status.HTTP_400_BAD_REQUEST)
+
+        return Response(status=status.HTTP_200_OK)
+
+
+class IosBillingNotification(APIView):
+    def post(self, request, *args, **kwargs):
+        try:
+            response = request.data
+            if response.get('notification_type') == 'DID_CHANGE_RENEWAL_STATUS' and response.get('auto_renew_status') == 'false':
+                original_transaction_id = response['original_transaction_id']
+                user = SubscriptionUser.objects.filter(unique_subscription_id=original_transaction_id)
+                if user.exists():
+                    user = user.last()
+                    user.status = 'cancelled'
+                    user.save()
+            if response.get('notification_type') == 'DID_RENEW':
+                original_transaction_id = response['original_transaction_id']
+                user = SubscriptionUser.objects.filter(unique_subscription_id=original_transaction_id)
+                if user.exists():
+                    user = user.last()
+                    user.status = 'active'
+                    user.save()
+        except Exception as e:
+            return Response({'error': str(e)}, status=status.HTTP_400_BAD_REQUEST)
+
+        return Response(status=status.HTTP_200_OK)

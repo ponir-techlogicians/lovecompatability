@@ -11,6 +11,9 @@ from lovecompitability.settings import LANGUAGE_SESSION_KEY
 from .models import CompatibilityResult
 import stripe
 from django.utils.translation import activate, get_language
+
+from .utils import get_name_compatibility_with_5steps
+
 stripe.api_key = settings.STRIPE_SECRET_KEY
 
 def set_language_view(request):
@@ -187,6 +190,7 @@ class CalculateView(TemplateView):
         longitude = request.POST.get("longitude")  # Get longitude from form
 
         compatibility_score = get_name_compatibility(name1, name2)
+        compatibility_score,steps = get_name_compatibility_with_5steps(name1, name2)
 
         # Save to database
         result = CompatibilityResult.objects.create(
@@ -251,7 +255,9 @@ class ResultDetailView(DetailView):
         context['name2'] = result.name2
         context['name_parts'] = split_names(result.name1, result.name2)
         context['result'] = result
-
+        compatibility_score, steps = get_name_compatibility_with_5steps(result.name1, result.name2)
+        print(steps)
+        context['steps'] = steps
         return context
 
 class SearchView(TemplateView):

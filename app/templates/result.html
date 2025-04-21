@@ -60,36 +60,35 @@
 {#      <div class="result__name"><span>Lawrence</span></div>{% endcomment %}#}
     </div>
     <div class="result__point">
-      <div class="row">
-        <div class="result__point__item">24</div>
-        <div class="result__point__item">15</div>
-        <div class="result__point__item">12</div>
-        <div class="result__point__item">12</div>
-        <div class="result__point__item">0</div>
-        <div class="result__point__item">15</div>
-      </div>
-      <div class="row">
-        <div class="result__point__item">24</div>
-        <div class="result__point__item">15</div>
-        <div class="result__point__item">12</div>
-        <div class="result__point__item">12</div>
-        <div class="result__point__item">0</div>
-      </div>
-      <div class="row">
-        <div class="result__point__item">24</div>
-        <div class="result__point__item">15</div>
-        <div class="result__point__item">12</div>
-        <div class="result__point__item">12</div>
-      </div>
-      <div class="row">
-        <div class="result__point__item">24</div>
-        <div class="result__point__item">15</div>
-        <div class="result__point__item">12</div>
-      </div>
-      <div class="row">
-        <div class="result__point__item">24</div>
-        <div class="result__point__item">15</div>
-      </div>
+        {% for step_group in steps %}
+          <div class="row">
+            {% for step in step_group %}
+              <div class="result__point__item">{{ step }}</div>
+            {% endfor %}
+          </div>
+        {% endfor %}
+{#      <div class="row">#}
+{#        <div class="result__point__item">24</div>#}
+{#        <div class="result__point__item">15</div>#}
+{#        <div class="result__point__item">12</div>#}
+{#        <div class="result__point__item">12</div>#}
+{#        <div class="result__point__item">0</div>#}
+{#      </div>#}
+{#      <div class="row">#}
+{#        <div class="result__point__item">24</div>#}
+{#        <div class="result__point__item">15</div>#}
+{#        <div class="result__point__item">12</div>#}
+{#        <div class="result__point__item">12</div>#}
+{#      </div>#}
+{#      <div class="row">#}
+{#        <div class="result__point__item">24</div>#}
+{#        <div class="result__point__item">15</div>#}
+{#        <div class="result__point__item">12</div>#}
+{#      </div>#}
+{#      <div class="row">#}
+{#        <div class="result__point__item">24</div>#}
+{#        <div class="result__point__item">15</div>#}
+{#      </div>#}
     </div>
     <div class="result__text">
         {{ name1 }} likes {{ name2 }} with a <br>

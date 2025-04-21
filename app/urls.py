@@ -4,7 +4,7 @@ from django.contrib.auth import views as auth_views
 
 
 from app.api_views import CalculateAPIView, ResultDetailAPIView, SaveLocationAPIView, CreatePaymentIntentAPIView, \
-    ListAPIView, SearchAPIView
+    ListAPIView, SearchAPIView, SubscriptionValidationView, RestorPurchaseView
 from app.views import DashboardView, SearchBasicView, set_language_view, CalculateView, SearchView, ListView, \
     save_location, ResultDetailView, create_checkout_session
 
@@ -32,4 +32,7 @@ urlpatterns = [
     path('api/list/', ListAPIView.as_view(), name='list-api'),
 
     path('api/create-payment-intent/', CreatePaymentIntentAPIView.as_view(), name='create-payment-intent'),
+
+    path('api/validate-subscription/', SubscriptionValidationView.as_view(), name='validate_subscription'),
+    path('api/restore-subscription/', RestorPurchaseView.as_view(), name='restore_subscription'),
 ]
