@@ -232,6 +232,15 @@ class CreatePaymentIntentAPIView(APIView):
                 'error': str(e)
             }, status=status.HTTP_400_BAD_REQUEST)
 
+class UsageLeftView(APIView):
+
+    def get(self, request, *args, **kwargs):
+        user_id = request.GET.get("user_id", None)
+        user = SubscriptionUser.objects.filter(id=user_id).first()
+        limit = user.limit
+        if user_id:
+            return Response({'success':True,'limit':limit},status=status.HTTP_200_OK)
+
 class SubscriptionValidationView(APIView):
     def post(self, request):
         platform = request.data.get('platform')
@@ -273,7 +282,8 @@ class SubscriptionValidationView(APIView):
                 'platform': platform,
                 'product_id': product_id,
                 'expiration_date': expiry,
-                'auto_renewing': auto_renew
+                'auto_renewing': auto_renew,
+                'limit': 3
             }
         )
 
@@ -314,8 +324,8 @@ class RestorPurchaseView(APIView):
         if sub_user.exists():
             return Response({
                     'status': 'ok',
-                    'user_id': sub_user.id,
-
+                    'user_id': sub_user.first().id,
+                    'limit': sub_user.first().limit,
                 })
         else:
             return Response({{
@@ -340,6 +350,7 @@ class GooglePlayBillingNotification(APIView):
                     if user.exists():
                         user = user.last()
                         if notification_type == 2:
+                            user.limit = 3
                             user.status = 'active'
                         else:
                             user.status = 'cancelled'
@@ -367,6 +378,7 @@ class IosBillingNotification(APIView):
                 if user.exists():
                     user = user.last()
                     user.status = 'active'
+                    user.limit = 3
                     user.save()
         except Exception as e:
             return Response({'error': str(e)}, status=status.HTTP_400_BAD_REQUEST)

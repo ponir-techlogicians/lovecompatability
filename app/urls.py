@@ -4,7 +4,8 @@ from django.contrib.auth import views as auth_views
 
 
 from app.api_views import CalculateAPIView, ResultDetailAPIView, SaveLocationAPIView, CreatePaymentIntentAPIView, \
-    ListAPIView, SearchAPIView, SubscriptionValidationView, RestorPurchaseView
+    ListAPIView, SearchAPIView, SubscriptionValidationView, RestorPurchaseView, GooglePlayBillingNotification, \
+    IosBillingNotification, UsageLeftView
 from app.views import DashboardView, SearchBasicView, set_language_view, CalculateView, SearchView, ListView, \
     save_location, ResultDetailView, create_checkout_session
 
@@ -30,9 +31,12 @@ urlpatterns = [
     path('api/search/', SearchAPIView.as_view(), name='search-api'),
 
     path('api/list/', ListAPIView.as_view(), name='list-api'),
+    path('api/usage-left/', UsageLeftView.as_view(), name='usage-left-api'),
 
     path('api/create-payment-intent/', CreatePaymentIntentAPIView.as_view(), name='create-payment-intent'),
 
     path('api/validate-subscription/', SubscriptionValidationView.as_view(), name='validate_subscription'),
     path('api/restore-subscription/', RestorPurchaseView.as_view(), name='restore_subscription'),
+    path('api/google-play-billing-notification/', GooglePlayBillingNotification.as_view(), name='google-play-billing-notification'),
+    path('api/ios-billing-notification/', IosBillingNotification.as_view(), name='ios-billing-notification'),
 ]
