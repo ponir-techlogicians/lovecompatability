@@ -328,9 +328,9 @@ class RestorPurchaseView(APIView):
                     'limit': sub_user.first().limit,
                 })
         else:
-            return Response({{
+            return Response({
                     'status': 'not_found',
-                }})
+                })
 
 class GooglePlayBillingNotification(APIView):
     def post(self, request, *args, **kwargs):
