@@ -259,10 +259,13 @@ class SubscriptionValidationView(APIView):
             auto_renew = receipt_info.get('auto_renew_status', False)
 
         elif platform == 'google':
-            token = request.data.get('receipt_data')
-            package_name = request.data.get('package_name')
-            subscription_id = request.data.get('subscription_id')
-
+            gplay_response = request.data.get('response')
+            token = gplay_response.get('purchaseToken')
+            # token = request.data.get('receipt_data')
+            # package_name = request.data.get('package_name')
+            # subscription_id = request.data.get('subscription_id')
+            package_name = 'com.crushometer.crushometerapp'
+            subscription_id = gplay_response.get('productId')
             purchase_info = validate_with_google(package_name, subscription_id, token)
 
             if not purchase_info:
@@ -305,9 +308,13 @@ class RestorPurchaseView(APIView):
                 return Response({'error': 'Invalid Apple receipt'}, status=status.HTTP_400_BAD_REQUEST)
             unique_id = receipt_info['original_transaction_id']
         elif platform == 'google':
-            token = request.data.get('receipt_data')
-            package_name = request.data.get('package_name')
-            subscription_id = request.data.get('subscription_id')
+            gplay_response = request.data.get('response')
+            token = gplay_response.get('purchaseToken')
+            # token = request.data.get('receipt_data')
+            # package_name = request.data.get('package_name')
+            # subscription_id = request.data.get('subscription_id')
+            package_name = 'com.crushometer.crushometerapp'
+            subscription_id = gplay_response.get('productId')
 
             purchase_info = validate_with_google(package_name, subscription_id, token)
 
