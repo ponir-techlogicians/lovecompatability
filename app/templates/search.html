@@ -1,4 +1,5 @@
 {% extends "layout/main.html" %}
+{% load static %}
 {% block content %}
 <script>
     // Function to get user's current location and submit the form
@@ -26,6 +27,9 @@
         }
     }
 </script>
+<div class="topBanner pc">
+  <img src="{% static 'app/img/pc_top.png' %}" alt="">
+</div>
 <div class="loveWrap search">
     <div class="search__tit">
       The most popular in my area
@@ -85,6 +89,10 @@
       With who?
     </a>{% endcomment %}
     {% endif %}
+  </div>
+  <div class="loveWrap__ad">
+      <img src="{% static 'app/img/banner01.png' %}" alt="">
+      <p>We will resolve your curiosities</p>
   </div>
   <script src="https://code.jquery.com/jquery-3.7.1.js"></script>
   <script src="https://code.jquery.com/ui/1.14.1/jquery-ui.js"></script>

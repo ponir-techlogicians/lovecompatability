@@ -1,6 +1,10 @@
 {% extends "layout/main.html" %}
+{% load static %}
 {% block content %}
 <script src="https://js.stripe.com/v3/"></script>
+<div class="topBanner pc">
+  <img src="{% static 'app/img/pc_top.png' %}" alt="">
+</div>
 <div class="loveWrap tested">
     <div class="tested__tit">
       Who tested with <br><span>{{ search_key }}</span>?
@@ -56,6 +60,10 @@
       Open to see <br>3$
     </button>
     {% endif %}
+  </div>
+  <div class="loveWrap__ad">
+      <img src="{% static 'app/img/banner01.png' %}" alt="">
+      <p>We will resolve your curiosities</p>
   </div>
  <script>
     var stripe = Stripe("{{ STRIPE_PUBLISHABLE_KEY }}");

@@ -1,4 +1,5 @@
 {% extends "layout/main.html" %}
+{% load static %}
 {% block content %}
 
 <script>
@@ -39,9 +40,11 @@
         }
     }
 </script>
-
+<div class="topBanner pc">
+  <img src="{% static 'app/img/pc_top.png' %}" alt="">
+</div>
 <div class="loveWrap result">
-    <div class="result__ad">ad</div>
+{#    <div class="result__ad">ad</div>#}
     <input type="hidden" value="{{ result.id }}" id="result_id">
     <div class="result__info">
       <a href="#a" class="result__set">how stroke we set</a>
@@ -100,7 +103,7 @@
 {#    <a type="button" class="result__btn" href="{% url 'search' %}">#}
 {#      How many people mentioned me?#}
 {#    </a>#}
-    <div class="loveWrap__ad"></div>
+
     <div class="result__circle">
 {#      <div class="circleBox"></div>#}
 {#      <div class="circleBox"></div>#}
@@ -117,6 +120,10 @@
             <a class="a2a_button_bluesky"></a>
         </div>
     </div>
+</div>
+<div class="loveWrap__ad">
+  <img src="{% static 'app/img/banner01.png' %}" alt="">
+  <p>We will resolve your curiosities</p>
 </div>
 
 {#<script>#}

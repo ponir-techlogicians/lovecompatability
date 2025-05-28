@@ -81,3 +81,8 @@ def validate_with_google(package_name, subscription_id, token):
         'expiryTime': data['expiryTimeMillis'],
         'autoRenewing': data.get('autoRenewing', False)
     }
+
+def get_app_info(response):
+    package_name = 'com.crushometer.crushometerapp'
+    product_id = 'com.crushometer.unlockcrush'
+    purchase_token = response['purchaseToken']
