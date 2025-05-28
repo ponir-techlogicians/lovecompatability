@@ -131,7 +131,17 @@ class SearchAPIView(APIView):
         for entry in name2_counts:
             name_counter[entry["name2"]] += entry["count"]
 
-        top_names = name_counter.most_common(10)
+        # top_names = name_counter.most_common(10)
+        sorted_names = name_counter.most_common()
+        top_names = sorted_names[:10]
+
+        # Get rank of the query
+        search_rank = None
+        query_lower = query.lower()
+        for idx, (name, _) in enumerate(sorted_names, start=1):
+            if name.lower() == query_lower:
+                search_rank = idx
+                break
 
         data = {
             "results": CompatibilityResultSerializer(results, many=True).data,
@@ -139,6 +149,7 @@ class SearchAPIView(APIView):
             "mention_count": mention_count,
             "top_names": top_names,
             "radius_input": radius_input,
+            "search_rank": search_rank,
             "lat": latitude if latitude else None,
             "lon": longitude if longitude else None,
         }
