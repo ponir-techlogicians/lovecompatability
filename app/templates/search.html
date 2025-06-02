@@ -35,7 +35,7 @@
       The most popular in my area
     </div>
     <form class="search__box" method="get" id="searchForm" onsubmit="getLocationAndSearch(event)">
-      <input type="text" class="search__input" placeholder="Name" name="query">
+      <input type="text" class="search__input" placeholder="Name" name="query" value="{{ search_key }}">
       <button class="search__btn" type="submit">Search</button>
       <input type="hidden" id="amount" name="radius" value="1"/>
       <input type="hidden" id="latitude" name="latitude">
@@ -72,7 +72,7 @@
       {% if mention_count > 0 %}
           <div class="search__listFooter">
             <div class="row">
-              <div class="search__listFooter__item">...</div>
+              <div class="search__listFooter__item">{{search_rank}}</div>
               <div class="search__listFooter__item">{{ search_key }}</div>
               <div class="search__listFooter__item">{{ mention_count }}</div>
             </div>
@@ -107,8 +107,22 @@
         slide: function( event, ui ) {
           {#$("#amount").val( "$" + ui.value );#}
           $("#amount").val(ui.value);
+
         }
       });
+      {% if radius_input == '1' %}
+          $("#slider").slider("value", 1);
+      {% endif %}
+      {% if radius_input == '2' %}
+          $("#slider").slider("value", 2);
+      {% endif %}
+      {% if radius_input == '3' %}
+          $("#slider").slider("value", 3);
+      {% endif %}
+      {% if radius_input == '4' %}
+          $("#slider").slider("value", 4);
+      {% endif %}
+
     } );
 
     function goto(){
