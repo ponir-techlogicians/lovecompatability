@@ -22,12 +22,12 @@
                 .then(data => {
                     console.log("Location saved:", data);
                     // Redirect after successful location submission
-                    window.location.href = '{% url "search" %}';
+                    window.location.href = '{% url "search" %}?latitude'+'='+latitude+'&longitude='+longitude+'&radius=1';
                 })
                 .catch(error => {
                     console.error("Error:", error);
                     // Redirect even if there's an error
-                    window.location.href = '{% url "search" %}';
+                    window.location.href = '{% url "search" %}?latitude'+'='+latitude+'&longitude='+longitude+'&radius=1';
                 });
 
             }, function (error) {

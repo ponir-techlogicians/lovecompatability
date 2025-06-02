@@ -271,13 +271,11 @@ class SearchView(TemplateView):
 
         results = CompatibilityResult.objects.all()
         mention_count = 0
-        # Filter by Name
-        if query:
-            # results = results.filter(Q(name1__icontains=query) | Q(name2__icontains=query))
-            results = results.filter(Q(name1=query) | Q(name2=query))
 
-        # print(results)
-        # Filter by Location Radius
+        # if query:
+        #     # results = results.filter(Q(name1__icontains=query) | Q(name2__icontains=query))
+        #     results = results.filter(Q(name1=query) | Q(name2=query))
+
         if latitude and longitude and radius_input:
             try:
                 user_location = (float(latitude), float(longitude))
@@ -312,24 +310,14 @@ class SearchView(TemplateView):
             except ValueError:
                 pass  # Ignore errors if input is incorrect
 
-        name1_counts = (
-            CompatibilityResult.objects.values("name1")
-            .annotate(count=Count("name1"))
-        )
-        name2_counts = (
-            CompatibilityResult.objects.values("name2")
-            .annotate(count=Count("name2"))
-        )
 
-        # Merge both counts using Counter
+        # Initialize name counter after filtering
         name_counter = Counter()
-        for entry in name1_counts:
-            name_counter[entry["name1"]] += entry["count"]
-        for entry in name2_counts:
-            name_counter[entry["name2"]] += entry["count"]
+        for result in results:
+            name_counter[result.name1] += 1
+            name_counter[result.name2] += 1
 
-        # Get the 10 most common names
-        # top_names = name_counter.most_common(10)
+        # Get sorted names and top 10
         sorted_names = name_counter.most_common()
         top_names = sorted_names[:10]
 
@@ -415,7 +403,7 @@ class ListView(TemplateView):
             "success":success
         }
 
-        print(results)
+        print(f"Filtered results: {len(results)}")
 
         return render(request, self.template_name, context)
 
