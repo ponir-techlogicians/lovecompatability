@@ -2,6 +2,7 @@ import json
 from collections import Counter
 from django.db.models import Count, F, Q, Value
 from django.http import JsonResponse
+from django.views.decorators.csrf import csrf_exempt
 from django.views.generic import TemplateView, DetailView
 from django.shortcuts import render, redirect
 from geopy.distance import geodesic
@@ -102,31 +103,38 @@ def save_location(request):
         CompatibilityResult.objects.filter(id=result_id).update(latitude=latitude, longitude=longitude)
         return JsonResponse({"message": "Location saved successfully"})
     return JsonResponse({"error": "Invalid request"}, status=400)
-
-
-
+@csrf_exempt
 def create_checkout_session(request):
-    success_url = request.GET.get("success_url", "https://yourwebsite.com/success")
-    cancel_url = request.GET.get("cancel_url", "https://yourwebsite.com/cancel")
+    # success_url = request.GET.get("success_url", "https://yourwebsite.com/success")
+    # cancel_url = request.GET.get("cancel_url", "https://yourwebsite.com/cancel")
+    #
+    # session = stripe.checkout.Session.create(
+    #     payment_method_types=["card"],
+    #     line_items=[
+    #         {
+    #             "price_data": {
+    #                 "currency": "usd",
+    #                 "product_data": {"name": "Fixed Payment"},
+    #                 "unit_amount": 300,  # $3 in cents
+    #             },
+    #             "quantity": 1,
+    #         }
+    #     ],
+    #     mode="payment",
+    #     success_url=success_url,
+    #     cancel_url=cancel_url,
+    # )
+    #
+    # return JsonResponse({"session_id": session.id})
 
-    session = stripe.checkout.Session.create(
-        payment_method_types=["card"],
-        line_items=[
-            {
-                "price_data": {
-                    "currency": "usd",
-                    "product_data": {"name": "Fixed Payment"},
-                    "unit_amount": 300,  # $3 in cents
-                },
-                "quantity": 1,
-            }
-        ],
-        mode="payment",
-        success_url=success_url,
-        cancel_url=cancel_url,
-    )
-
-    return JsonResponse({"session_id": session.id})
+    try:
+        intent = stripe.PaymentIntent.create(
+            amount=300,  # Amount in cents ($10)
+            currency="usd",
+        )
+        return JsonResponse({'client_secret': intent.client_secret})
+    except Exception as e:
+        return JsonResponse({'error': str(e)}, status=500)
 
 class DashboardView(TemplateView):
     template_name = "dashboard.html"

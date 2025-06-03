@@ -1,6 +1,46 @@
 {% extends "layout/main.html" %}
 {% load static %}
 {% block content %}
+<style>
+    .popup-overlay {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background: rgba(0, 0, 0, 0.5);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        z-index: 1000;
+    }
+
+    .popup-content {
+        background: white;
+        padding: 20px;
+        border-radius: 5px;
+        width: 80%;
+        max-width: 500px;
+    }
+
+    .popup-header {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin-bottom: 15px;
+    }
+
+    .close-popup {
+        border: none;
+        background: none;
+        font-size: 24px;
+        cursor: pointer;
+    }
+
+    .hidden {
+        display: none;
+    }
+</style>
 <script src="https://js.stripe.com/v3/"></script>
 <div class="topBanner pc">
   <img src="{% static 'app/img/pc_top.png' %}" alt="">
@@ -11,7 +51,7 @@
     </div>
 
     <!-- Remove the blur class when the button is clicked. -->
-    <ul class="tested__list {% if success != 'true' %} blur {% endif %}" >
+    <ul class="tested__list {% if success != 'true' %} blur {% endif %}" id="list" >
       {% for result in results %}
       <li class="row">
         <div class="tested__list__item">{{ forloop.counter }}</div>
@@ -65,10 +105,73 @@
       <img src="{% static 'app/img/banner01.png' %}" alt="">
       <p>We will resolve your curiosities</p>
   </div>
- <script>
-    var stripe = Stripe("{{ STRIPE_PUBLISHABLE_KEY }}");
 
-    document.getElementById("checkout-button").addEventListener("click", function () {
+    <div class="popup-overlay hidden" id="popup">
+        <div class="popup-content">
+            <div class="popup-header">
+                <h3>Payment</h3>
+                <button class="close-popup">&times;</button>
+            </div>
+            <div class="popup-body">
+                <div id="stripe-payment">
+                    <form id="payment-form">
+                        <div id="card-element"></div>
+                        <button class="tested__btn" id="paymentBtn">
+                            Pay now
+                        </button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script>
+
+     let stripe = Stripe('{{ STRIPE_PUBLISHABLE_KEY }}');
+     let elements = stripe.elements();
+     let cardElement = elements.create("card");
+     cardElement.mount("#card-element");
+
+     document.getElementById('payment-form').addEventListener('submit', async function (event) {
+         event.preventDefault();
+
+         try {
+             const response = await fetch('/app/create-checkout-session/', {
+                 method: 'POST',
+                 headers: {
+                     'Content-Type': 'application/json',
+                 }
+             });
+
+             const data = await response.json();
+
+             const result = await stripe.confirmCardPayment(data.client_secret, {
+                 payment_method: {
+                     card: cardElement,
+                 }
+             });
+
+             if (result.error) {
+                 alert(result.error.message);
+             } else {
+                 if (result.paymentIntent.status === 'succeeded') {
+                     alert('Payment successful!');
+                     document.getElementById('list').classList.remove('blur');
+                     document.getElementById('popup').classList.add('hidden');
+                     let currentUrl = window.location.href;
+                     if (currentUrl.includes('?')) {
+                         window.history.pushState({}, '', currentUrl + '&success=true');
+                     } else {
+                         window.history.pushState({}, '', currentUrl + '?success=true');
+                     }
+                 }
+             }
+         } catch (error) {
+             console.error('Error:', error);
+             alert('Payment failed');
+         }
+     });
+    /*document.getElementById("checkout-button").addEventListener("click", function () {
         let currentUrl = window.location.href;
         fetch(`/app/create-checkout-session/?success_url=${encodeURIComponent(currentUrl+'&success=true')}&cancel_url=${encodeURIComponent(currentUrl)}`, {
             method: "GET"
@@ -78,6 +181,20 @@
             return stripe.redirectToCheckout({ sessionId: session.session_id });
         })
         .catch(error => console.error("Error:", error));
+    });*/
+    document.getElementById("checkout-button").addEventListener("click", function () {
+        document.getElementById("popup").classList.remove("hidden");
+    });
+
+    document.querySelector(".close-popup").addEventListener("click", function () {
+        document.getElementById("popup").classList.add("hidden");
+    });
+
+    // Close popup when clicking outside
+    document.getElementById("popup").addEventListener("click", function (e) {
+        if (e.target === this) {
+            this.classList.add("hidden");
+        }
     });
 </script>
 {% endblock %}
