@@ -59,9 +59,9 @@
       <ul class="search__listBody">
         {% for name, count in top_names %}
         <li class="row">
-            <div class="search__listBody__item">{{ forloop.counter }}</div>
-            <div class="search__listBody__item">{{ name }}</div>
-            <div class="search__listBody__item">{{ count }}</div>
+            <div class="search__listBody__item {% if forloop.counter ==  search_rank %} search__listFooter__item {% endif %}">{{ forloop.counter }}</div>
+            <div class="search__listBody__item {% if forloop.counter ==  search_rank %} search__listFooter__item {% endif %}">{{ name }}</div>
+            <div class="search__listBody__item {% if forloop.counter ==  search_rank %} search__listFooter__item {% endif %}">{{ count }}</div>
         </li>
         {% endfor %}
       </ul>
@@ -69,7 +69,7 @@
       <!-- The area is exposed when the search results are not ranked. -->
 
      {% if results %}
-      {% if mention_count > 0 %}
+      {% if mention_count > 0 and search_rank > 10 %}
           <div class="search__listFooter">
             <div class="row">
               <div class="search__listFooter__item">{{search_rank}}</div>
@@ -107,7 +107,10 @@
         slide: function( event, ui ) {
           {#$("#amount").val( "$" + ui.value );#}
           $("#amount").val(ui.value);
-
+        var currentUrl = new URL(window.location.href);
+        currentUrl.searchParams.set('radius', ui.value);
+        window.history.replaceState({}, '', currentUrl);
+        window.location.reload();
         }
       });
       {% if radius_input == '1' %}
