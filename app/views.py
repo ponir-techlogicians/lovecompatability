@@ -87,10 +87,15 @@ def split_names(name1, name2):
             merged.append(words2[i])
 
     # Ensure the final list has exactly 6 elements, filling with "_"
-    while len(merged) < 6:
-        merged.append("_")
-
-    return merged[:6]  # Return exactly 6 elements
+    if len(merged) <= 4:
+        while len(merged) <= 4:
+            merged.append("_")
+        return merged[:4]
+    if len(merged) > 4:
+        while len(merged) < 6:
+            merged.append("_")
+        return merged[:6]
+        # Return exactly 6 elements
 
 
 def save_location(request):
@@ -197,7 +202,7 @@ class CalculateView(TemplateView):
         latitude = request.POST.get("latitude")  # Get latitude from form
         longitude = request.POST.get("longitude")  # Get longitude from form
 
-        compatibility_score = get_name_compatibility(name1, name2)
+        # compatibility_score = get_name_compatibility(name1, name2)
         compatibility_score,steps = get_name_compatibility_with_5steps(name1, name2)
 
         # Save to database

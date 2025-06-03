@@ -117,6 +117,36 @@ def split_names_into_6(name1: str, name2: str) -> list:
             merged.append("_")
     return merged
 
+def split_names_into_4(name1: str, name2: str) -> list:
+    """Split both names and interleave up to 3 parts each to get 6 tokens."""
+    parts1 = name1.split()
+    parts2 = name2.split()
+
+    merged = []
+    for i in range(2):
+        if i < len(parts1):
+            merged.append(parts1[i])
+        else:
+            merged.append("_")
+        if i < len(parts2):
+            merged.append(parts2[i])
+        else:
+            merged.append("_")
+    return merged
+
+
+def get_number_of_split(name1: str, name2: str) -> int:
+    """Return the number of times the names are split into 6 tokens."""
+    parts1 = name1.split()
+    parts2 = name2.split()
+    merged = []
+    for i in range(3):
+        if i < len(parts1):
+            merged.append(parts1[i])
+        if i < len(parts2):
+            merged.append(parts2[i])
+
+    return merged
 
 def adjacency_sum_steps_fixed_5(arr: list) -> list:
     """Return 5 steps of adjacency summing (even if 2 elements reached early)."""
@@ -129,12 +159,29 @@ def adjacency_sum_steps_fixed_5(arr: list) -> list:
             steps.append(arr[:])
     return steps
 
+def adjacency_sum_steps_fixed_3(arr: list) -> list:
+    """Return 5 steps of adjacency summing (even if 2 elements reached early)."""
+    steps = [arr[:]]
+    while len(steps) < 3:
+        if len(arr) <= 2:
+            steps.append(arr[:])
+        else:
+            arr = [(arr[i] + arr[i + 1]) % 10 for i in range(len(arr) - 1)]
+            steps.append(arr[:])
+    return steps
 
 def get_name_compatibility_with_5steps(name1: str, name2: str) -> tuple:
     """Get compatibility score with 5 steps starting from 6 tokens."""
-    six_parts = split_names_into_6(name1, name2)
-    print(six_parts)
-    initial_strokes = [get_total_stroke(word) for word in six_parts]
-    steps = adjacency_sum_steps_fixed_5(initial_strokes)
-    final_score = int("".join(map(str, steps[-1])))
-    return final_score, steps
+    splits = get_number_of_split(name1, name2)
+    if len(splits) > 4:
+        six_parts = split_names_into_6(name1, name2)
+        initial_strokes = [get_total_stroke(word) for word in six_parts]
+        steps = adjacency_sum_steps_fixed_5(initial_strokes)
+        final_score = int("".join(map(str, steps[-1])))
+        return final_score, steps
+    else:
+        four_parts = split_names_into_4(name1, name2)
+        initial_strokes = [get_total_stroke(word) for word in four_parts]
+        steps = adjacency_sum_steps_fixed_3(initial_strokes)
+        final_score = int("".join(map(str, steps[-1])))
+        return final_score, steps
