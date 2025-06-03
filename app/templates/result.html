@@ -1,5 +1,6 @@
 {% extends "layout/main.html" %}
 {% load static %}
+{% load i18n %}
 {% block content %}
 
 <script>
@@ -35,7 +36,7 @@
                 window.location.href = '{% url "search" %}'; // Redirect if permission is denied
             });
         } else {
-            alert("Geolocation is not supported by this browser.");
+            alert("{% trans 'Geolocation is not supported by this browser.' %}");
             window.location.href = '{% url "search" %}'; // Redirect if geolocation is unavailable
         }
     }
@@ -47,10 +48,10 @@
 {#    <div class="result__ad">ad</div>#}
     <input type="hidden" value="{{ result.id }}" id="result_id">
     <div class="result__info">
-      <a href="#a" class="result__set">how stroke we set</a>
+        <a href="#a" class="result__set">{% trans "how stroke we set" %}</a>
     </div>
     <div class="result__tit">
-      Result
+        {% trans "Result" %}
     </div>
     <div class="result__nameBox">
       {% for name in name_parts %}
@@ -94,11 +95,11 @@
 {#      </div>#}
     </div>
     <div class="result__text">
-        {{ name1 }} likes {{ name2 }} with a <br>
-      <b>{{ compatibility_score }}%</b> probability.
+        {% blocktrans %}{{ name1 }} likes {{ name2 }} with a <br>
+            <b>{{ compatibility_score }}%</b> probability.{% endblocktrans %}
     </div>
     <button type="button" class="result__btn" onclick="sendLocationAndRedirect();">
-      How many people mentioned me?
+        {% trans "How many people mentioned me?" %}
     </button>
 {#    <a type="button" class="result__btn" href="{% url 'search' %}">#}
 {#      How many people mentioned me?#}
@@ -123,7 +124,7 @@
 </div>
 <div class="loveWrap__ad">
   <img src="{% static 'app/img/banner01.png' %}" alt="">
-  <p>We will resolve your curiosities</p>
+    <p>{% trans "We will resolve your curiosities" %}</p>
 </div>
 
 {#<script>#}

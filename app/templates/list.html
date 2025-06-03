@@ -1,5 +1,6 @@
 {% extends "layout/main.html" %}
 {% load static %}
+{% load i18n %}
 {% block content %}
 <style>
     .popup-overlay {
@@ -47,7 +48,7 @@
 </div>
 <div class="loveWrap tested">
     <div class="tested__tit">
-      Who tested with <br><span>{{ search_key }}</span>?
+        {% trans "Who tested with" %} <br><span>{{ search_key }}</span>?
     </div>
 
     <!-- Remove the blur class when the button is clicked. -->
@@ -97,19 +98,19 @@
     </ul>
     {% if success != 'true' %}
     <button type="button" class="tested__btn" id="checkout-button">
-      Open to see <br>3$
+        {% trans "Open to see" %} <br>3$
     </button>
     {% endif %}
   </div>
   <div class="loveWrap__ad">
       <img src="{% static 'app/img/banner01.png' %}" alt="">
-      <p>We will resolve your curiosities</p>
+      <p>{% trans "We will resolve your curiosities" %}</p>
   </div>
 
     <div class="popup-overlay hidden" id="popup">
         <div class="popup-content">
             <div class="popup-header">
-                <h3>Payment</h3>
+                <h3>{% trans "Payment" %}</h3>
                 <button class="close-popup">&times;</button>
             </div>
             <div class="popup-body">
@@ -117,7 +118,7 @@
                     <form id="payment-form">
                         <div id="card-element"></div>
                         <button class="tested__btn" id="paymentBtn">
-                            Pay now
+                            {% trans "Pay now" %}
                         </button>
                     </form>
                 </div>
@@ -155,7 +156,7 @@
                  alert(result.error.message);
              } else {
                  if (result.paymentIntent.status === 'succeeded') {
-                     alert('Payment successful!');
+                     alert('{% trans "Payment successful!" %}');
                      document.getElementById('list').classList.remove('blur');
                      document.getElementById('popup').classList.add('hidden');
                      let currentUrl = window.location.href;
@@ -168,7 +169,7 @@
              }
          } catch (error) {
              console.error('Error:', error);
-             alert('Payment failed');
+             alert('{% trans "Payment failed" %}');
          }
      });
     /*document.getElementById("checkout-button").addEventListener("click", function () {

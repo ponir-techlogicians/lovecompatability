@@ -1,0 +1,205 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2025-06-03 15:50+0600\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+#: app/templates/calculate.html:50
+msgid "Name A (First name & Last name)"
+msgstr "Name A (First name & Last name)"
+
+#: app/templates/calculate.html:51
+msgid "e.g. Jennifer Lawrence"
+msgstr "e.g. Jennifer Lawrence"
+
+#: app/templates/calculate.html:54
+msgid "Name B (First name & Last name)"
+msgstr "Name B (First name & Last name)"
+
+#: app/templates/calculate.html:55
+msgid "e.g. Leonardo Dicaprio"
+msgstr "e.g. Leonardo Dicaprio"
+
+#: app/templates/calculate.html:58
+msgid "You don’t know friend’s last name?"
+msgstr ""
+
+#: app/templates/calculate.html:63
+msgid "Calculate"
+msgstr "Calculate"
+
+#: app/templates/calculate.html:68 app/templates/list.html:107
+#: app/templates/result.html:127 app/templates/search.html:97
+msgid "We will resolve your curiosities"
+msgstr "We will resolve your curiosities"
+
+#: app/templates/list.html:51
+msgid "Who tested with"
+msgstr "Who tested with"
+
+#: app/templates/list.html:101
+msgid "Open to see"
+msgstr "Open to see"
+
+#: app/templates/list.html:113
+msgid "Payment"
+msgstr "Payment"
+
+#: app/templates/list.html:121
+msgid "Pay now"
+msgstr "Pay now"
+
+#: app/templates/list.html:159
+msgid "Payment successful!"
+msgstr "Payment successful!"
+
+#: app/templates/list.html:172
+msgid "Payment failed"
+msgstr "Payment failed"
+
+#: app/templates/result.html:39 app/templates/search.html:27
+msgid "Geolocation is not supported by this browser."
+msgstr "Geolocation is not supported by this browser."
+
+#: app/templates/result.html:51
+msgid "how stroke we set"
+msgstr "how stroke we set"
+
+#: app/templates/result.html:54
+msgid "Result"
+msgstr "Result"
+
+#: app/templates/result.html:98
+#, python-format
+msgid "%(name1)s likes %(name2)s with a <br>\n<b>%(compatibility_score)s%%</b> probability."
+msgstr "%(name1)s likes %(name2)s with a <br>\n<b>%(compatibility_score)s%%</b> probability."
+
+#: app/templates/result.html:102
+msgid "How many people mentioned me?"
+msgstr "How many people mentioned me?"
+
+#: app/templates/search.html:24
+msgid "Error retrieving your location. Please enable location services."
+msgstr "Error retrieving your location. Please enable location services."
+
+#: app/templates/search.html:36
+msgid "The most popular in my area"
+msgstr "The most popular in my area"
+
+#: app/templates/search.html:39 app/templates/search.html:57
+#: app/templates/search_basic.html:77
+msgid "Name"
+msgstr "Name"
+
+#: app/templates/search.html:40 app/templates/search_basic.html:62
+msgid "Search"
+msgstr "Search"
+
+#: app/templates/search.html:47
+msgid "1km"
+msgstr "1km"
+
+#: app/templates/search.html:48
+msgid "50km"
+msgstr "50km"
+
+#: app/templates/search.html:49
+msgid "200km"
+msgstr "200km"
+
+#: app/templates/search.html:50
+msgid "world"
+msgstr "world"
+
+#: app/templates/search.html:56
+msgid "Rank"
+msgstr "Rank"
+
+#: app/templates/search.html:58
+msgid "Mentioned (times)"
+msgstr "Mentioned (times)"
+
+#: app/templates/search.html:86
+msgid "With who?"
+msgstr "With who?"
+
+#: app/templates/search_basic.html:39
+msgid "Search Names & Location"
+msgstr "Search Names & Location"
+
+#: app/templates/search_basic.html:44
+msgid "Enter Name"
+msgstr "Enter Name"
+
+#: app/templates/search_basic.html:48
+msgid "Radius"
+msgstr "Radius"
+
+#: app/templates/search_basic.html:69
+msgid "Search Results for"
+msgstr "Search Results for"
+
+#: app/templates/search_basic.html:71
+msgid "Total Mentions"
+msgstr "Total Mentions"
+
+#: app/templates/search_basic.html:74
+msgid "Names Mentioned Along with"
+msgstr "Names Mentioned Along with"
+
+#: app/templates/search_basic.html:78
+msgid "Number of Mentions"
+msgstr "Number of Mentions"
+
+#: app/templates/search_basic.html:88
+msgid "No other names mentioned with"
+msgstr "No other names mentioned with"
+
+#: app/templates/search_basic.html:91
+msgid "Filtered Results"
+msgstr "Filtered Results"
+
+#: app/templates/search_basic.html:94
+msgid "Name 1"
+msgstr "Name 1"
+
+#: app/templates/search_basic.html:95
+msgid "Name 2"
+msgstr "Name 2"
+
+#: app/templates/search_basic.html:96
+msgid "Latitude"
+msgstr "Latitude"
+
+#: app/templates/search_basic.html:97
+msgid "Longitude"
+msgstr "Longitude"
+
+#: lovecompitability/settings.py:62
+msgid "English"
+msgstr "English"
+
+#: lovecompitability/settings.py:63
+msgid "Bengali"
+msgstr "Bengali"
+
+#: lovecompitability/settings.py:64
+msgid "Spanish"
+msgstr "Spanish"
+
+#: lovecompitability/settings.py:65
+msgid "French"
+msgstr "French"

@@ -1,4 +1,42 @@
 # Stroke dictionary for each letter
+
+from django.utils.translation import get_language
+GLOBAL_STROKE_DICT = {
+    'en': {
+        'A': 3, 'B': 3, 'C': 1, 'D': 2, 'E': 3, 'F': 2, 'G': 2, 'H': 3,
+        'I': 1, 'J': 2, 'K': 3, 'L': 2, 'M': 4, 'N': 3, 'O': 1, 'P': 2,
+        'Q': 2, 'R': 3, 'S': 4, 'T': 2, 'U': 3, 'V': 2, 'W': 4, 'X': 2,
+        'Y': 3, 'Z': 3
+    },
+    'es':{
+        'A': 3, 'Á': 4,
+        'B': 3,
+        'C': 1,
+        'D': 2,
+        'E': 3, 'É': 4,
+        'F': 2,
+        'G': 2,
+        'H': 3,
+        'I': 1, 'Í': 2,
+        'J': 2,
+        'K': 3,
+        'L': 2,
+        'M': 4,
+        'N': 3, 'Ñ': 4,
+        'O': 1, 'Ó': 2,
+        'P': 2,
+        'Q': 2,
+        'R': 3,
+        'S': 4,
+        'T': 2,
+        'U': 3, 'Ú': 4, 'Ü': 3,  # Ü typically adds diaeresis, ~1 extra stroke
+        'V': 2,
+        'W': 4,
+        'X': 2,
+        'Y': 3,
+        'Z': 3
+    }
+}
 stroke_dict = {
     'A': 3, 'B': 3, 'C': 1, 'D': 2, 'E': 3, 'F': 2, 'G': 2, 'H': 3,
     'I': 1, 'J': 2, 'K': 3, 'L': 2, 'M': 4, 'N': 3, 'O': 1, 'P': 2,
@@ -6,9 +44,9 @@ stroke_dict = {
     'Y': 3, 'Z': 3
 }
 
-
 def get_strokes_for_word(word: str) -> list:
     """Convert a word into a list of stroke counts for each letter."""
+    stroke_dict = GLOBAL_STROKE_DICT.get(get_language())
     return [stroke_dict[ch] for ch in word.upper() if ch in stroke_dict]
 
 
@@ -94,9 +132,36 @@ def split_names(name1, name2):
 
     return merged[:6]  # Return exactly 6 elements
 
+def split_names_safe(name1, name2):
+    words1 = name1.split()  # Split name1 into words
+    words2 = name2.split()  # Split name2 into words
+
+    merged = []
+    max_len = max(len(words1), len(words2))
+
+    # Merge names in an alternating pattern
+    for i in range(max_len):
+        if i < len(words1):
+            merged.append(words1[i])
+        if i < len(words2):
+            merged.append(words2[i])
+
+    # Ensure the final list has exactly 6 elements, filling with "_"
+    if len(merged) <= 4:
+        while len(merged) <= 4:
+            merged.append("_")
+        return merged[:4]
+    if len(merged) > 4:
+        while len(merged) < 6:
+            merged.append("_")
+        return merged[:6]
 
 def get_total_stroke(word: str) -> int:
     """Return the total stroke count for a word."""
+    # for ch in word.upper():
+    #     print(stroke_dict)
+    #     print(ch,stroke_dict.get(ch, 0))
+    stroke_dict = GLOBAL_STROKE_DICT.get(get_language())
     return sum(stroke_dict.get(ch, 0) for ch in word.upper())
 
 
@@ -172,6 +237,7 @@ def adjacency_sum_steps_fixed_3(arr: list) -> list:
 
 def get_name_compatibility_with_5steps(name1: str, name2: str) -> tuple:
     """Get compatibility score with 5 steps starting from 6 tokens."""
+    #set_current_language()
     splits = get_number_of_split(name1, name2)
     if len(splits) > 4:
         six_parts = split_names_into_6(name1, name2)

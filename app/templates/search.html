@@ -1,5 +1,6 @@
 {% extends "layout/main.html" %}
 {% load static %}
+{% load i18n %}
 {% block content %}
 <script>
     // Function to get user's current location and submit the form
@@ -20,10 +21,10 @@
                 // Now submit the form
                 document.getElementById("searchForm").submit();
             }, function(error) {
-                alert("Error retrieving your location. Please enable location services.");
+                alert("{% trans 'Error retrieving your location. Please enable location services.' %}");
             });
         } else {
-            alert("Geolocation is not supported by this browser.");
+            alert("{% trans 'Geolocation is not supported by this browser.' %}");
         }
     }
 </script>
@@ -32,29 +33,29 @@
 </div>
 <div class="loveWrap search">
     <div class="search__tit">
-      The most popular in my area
+        {% trans "The most popular in my area" %}
     </div>
     <form class="search__box" method="get" id="searchForm" onsubmit="getLocationAndSearch(event)">
-      <input type="text" class="search__input" placeholder="Name" name="query" value="{{ search_key }}">
-      <button class="search__btn" type="submit">Search</button>
-      <input type="hidden" id="amount" name="radius" value="1"/>
+        <input type="text" class="search__input" placeholder="{% trans 'Name' %}" name="query" value="{{ search_key }}">
+        <button class="search__btn" type="submit">{% trans "Search" %}</button>
+        <input type="hidden" id="amount" name="radius" value="1"/>
       <input type="hidden" id="latitude" name="latitude">
       <input type="hidden" id="longitude" name="longitude">
     </form>
     <div class="search__range">
       <div id="slider"></div>
-      <div class="search__rangeItem">1km</div>
-      <div class="search__rangeItem">50km</div>
-      <div class="search__rangeItem">200km</div>
-      <div class="search__rangeItem">world</div>
+        <div class="search__rangeItem">{% trans "1km" %}</div>
+        <div class="search__rangeItem">{% trans "50km" %}</div>
+        <div class="search__rangeItem">{% trans "200km" %}</div>
+        <div class="search__rangeItem">{% trans "world" %}</div>
     </div>
 
 
     <div class="search__list">
       <div class="search__listHeader">
-        <div class="search__listHeader__item">Rank</div>
-        <div class="search__listHeader__item">Name</div>
-        <div class="search__listHeader__item">Mentioned (times)</div>
+          <div class="search__listHeader__item">{% trans "Rank" %}</div>
+          <div class="search__listHeader__item">{% trans "Name" %}</div>
+          <div class="search__listHeader__item">{% trans "Mentioned (times)" %}</div>
       </div>
       <ul class="search__listBody">
         {% for name, count in top_names %}
@@ -82,7 +83,7 @@
     </div>
     {% if mention_count > 0 %}
     <button type="button" class="search__with" onclick="goto();">
-      With who?
+        {% trans "With who?" %}
     </button>
 
     {% comment %}<a href="{% url 'list' %}?key={{ search_key }}&radius={{ radius_input }}&lat={{ lat }}&lon={{ lon }}" class="search__with">
@@ -92,7 +93,7 @@
   </div>
   <div class="loveWrap__ad">
       <img src="{% static 'app/img/banner01.png' %}" alt="">
-      <p>We will resolve your curiosities</p>
+      <p>{% trans "We will resolve your curiosities" %}</p>
   </div>
   <script src="https://code.jquery.com/jquery-3.7.1.js"></script>
   <script src="https://code.jquery.com/ui/1.14.1/jquery-ui.js"></script>

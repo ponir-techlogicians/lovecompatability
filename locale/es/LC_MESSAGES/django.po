@@ -1,0 +1,158 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2025-06-03 16:07+0600\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=3; plural=n == 1 ? 0 : n != 0 && n % 1000000 == 0 ? "
+"1 : 2;\n"
+
+msgid "Latitude"
+msgstr "Latitude"
+
+msgid "Longitude"
+msgstr "Longitude"
+
+msgid "English"
+msgstr "Inglés"
+
+msgid "Bengali"
+msgstr "Bengalí"
+
+msgid "Spanish"
+msgstr "Español"
+
+msgid "French"
+msgstr "Francés"
+
+msgid "Name"
+msgstr "Name"
+
+msgid "Search"
+msgstr "Buscar"
+
+msgid "1km"
+msgstr "1km"
+
+msgid "50km"
+msgstr "50km"
+
+msgid "200km"
+msgstr "200km"
+
+msgid "world"
+msgstr "mundo"
+
+msgid "Rank"
+msgstr "Rango"
+
+msgid "Mentioned (times)"
+msgstr "Mencionado (veces)"
+
+msgid "With who?"
+msgstr "¿Con quién?"
+
+msgid "Search Names & Location"
+msgstr "Buscar Nombres y Ubicación"
+
+msgid "Enter Name"
+msgstr "Introduzca el nombre"
+
+msgid "Radius"
+msgstr "Radio"
+
+msgid "Search Results for"
+msgstr "Resultados de búsqueda para"
+
+msgid "Total Mentions"
+msgstr "Menciones totales"
+
+msgid "Names Mentioned Along with"
+msgstr "Nombres mencionados junto con"
+
+msgid "Number of Mentions"
+msgstr "Número de menciones"
+
+msgid "No other names mentioned with"
+msgstr "No se mencionan otros nombres con"
+
+msgid "Filtered Results"
+msgstr "Resultados filtrados"
+
+msgid "Name 1"
+msgstr "Nombre 1"
+
+msgid "Name 2"
+msgstr "Nombre 2"
+
+msgid "Name A (First name & Last name)"
+msgstr "Name A (First name & Last name)"
+
+msgid "e.g. Jennifer Lawrence"
+msgstr "p.ej. Jennifer Lawrence"
+
+msgid "Name B (First name & Last name)"
+msgstr "Name B (First name & Last name)"
+
+msgid "e.g. Leonardo Dicaprio"
+msgstr "p.ej. Leonardo Dicaprio"
+
+msgid "You don’t know friend’s last name?"
+msgstr "¿No sabes el apellido de tu amigo?"
+
+msgid "Calculate"
+msgstr "Calcular"
+
+msgid "We will resolve your curiosities"
+msgstr "Resolveremos tus curiosidades"
+
+msgid "Who tested with"
+msgstr "Quién probó con"
+
+msgid "Open to see"
+msgstr "Abrir para ver"
+
+msgid "Payment"
+msgstr "Pago"
+
+msgid "Pay now"
+msgstr "Pagar ahora"
+
+msgid "Payment successful!"
+msgstr "¡Pago exitoso!"
+
+msgid "Payment failed"
+msgstr "Pago fallido"
+
+msgid "Geolocation is not supported by this browser."
+msgstr "La geolocalización no es compatible con este navegador."
+
+msgid "how stroke we set"
+msgstr "cómo configuramos el trazo"
+
+msgid "Result"
+msgstr "Resultado"
+
+msgid "%(name1)s likes %(name2)s with a <br>\n<b>%(compatibility_score)s%%</b> probability."
+msgstr "A %(name1)s le gusta %(name2)s con una probabilidad de <br>\n<b>%(compatibility_score)s%%</b>."
+
+msgid "How many people mentioned me?"
+msgstr "¿Cuántas personas me mencionaron?"
+
+msgid "Error retrieving your location. Please enable location services."
+msgstr "Error al recuperar tu ubicación. Por favor, habilita los servicios de ubicación."
+
+msgid "The most popular in my area"
+msgstr "Lo más popular en mi área"
