@@ -1,0 +1,157 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2025-06-04 13:01+0600\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+#: app/templates/calculate.html:72
+msgid "Latitude"
+msgstr "Latitude"
+
+msgid "Longitude"
+msgstr "Longitude"
+
+msgid "English"
+msgstr "Angol"
+
+msgid "Bengali"
+msgstr "Bengáli"
+
+msgid "Spanish"
+msgstr "Spanyol"
+
+msgid "French"
+msgstr "Francia"
+
+msgid "Name"
+msgstr "Name"
+
+msgid "Search"
+msgstr "Keresés"
+
+msgid "1km"
+msgstr "1km"
+
+msgid "50km"
+msgstr "50km"
+
+msgid "200km"
+msgstr "200km"
+
+msgid "world"
+msgstr "világ"
+
+msgid "Rank"
+msgstr "Rang"
+
+msgid "Mentioned (times)"
+msgstr "Említve (alkalommal)"
+
+msgid "With who?"
+msgstr "Kivel?"
+
+msgid "Search Names & Location"
+msgstr "Nevek és helyszínek keresése"
+
+msgid "Enter Name"
+msgstr "Név megadása"
+
+msgid "Radius"
+msgstr "Sugár"
+
+msgid "Search Results for"
+msgstr "Keresési eredmények"
+
+msgid "Total Mentions"
+msgstr "Összes említés"
+
+msgid "Names Mentioned Along with"
+msgstr "Együtt említett nevek"
+
+msgid "Number of Mentions"
+msgstr "Említések száma"
+
+msgid "No other names mentioned with"
+msgstr "Nincs más név említve vele"
+
+msgid "Filtered Results"
+msgstr "Szűrt eredmények"
+
+msgid "Name 1"
+msgstr "Név 1"
+
+msgid "Name 2"
+msgstr "Név 2"
+
+msgid "Name A (First name & Last name)"
+msgstr "Name A (First name & Last name)"
+
+msgid "e.g. Jennifer Lawrence"
+msgstr "pl. Jennifer Lawrence"
+
+msgid "Name B (First name & Last name)"
+msgstr "Name B (First name & Last name)"
+
+msgid "e.g. Leonardo Dicaprio"
+msgstr "pl. Leonardo Dicaprio"
+
+msgid "You don’t know friend’s last name?"
+msgstr "Nem tudod a barátod vezetéknevét?"
+
+msgid "Calculate"
+msgstr "Számol"
+
+msgid "We will resolve your curiosities"
+msgstr "Megoldjuk a kíváncsiságodat"
+
+msgid "Who tested with"
+msgstr "Ki tesztelte"
+
+msgid "Open to see"
+msgstr "Nyisd meg a megtekintéshez"
+
+msgid "Payment"
+msgstr "Fizetés"
+
+msgid "Pay now"
+msgstr "Fizessen most"
+
+msgid "Payment successful!"
+msgstr "Fizetés sikeres!"
+
+msgid "Payment failed"
+msgstr "Fizetés sikertelen"
+
+msgid "Geolocation is not supported by this browser."
+msgstr "A böngésző nem támogatja a földrajzi helymeghatározást."
+
+msgid "how stroke we set"
+msgstr "hogyan állítsuk be a vonást"
+
+msgid "Result"
+msgstr "Eredmény"
+
+msgid "%(name1)s likes %(name2)s with a <br>\n<b>%(compatibility_score)s%%</b> probability."
+msgstr "%(name1)s kedveli %(name2)s-t <br>\n<b>%(compatibility_score)s%%</b> valószínűséggel."
+
+msgid "How many people mentioned me?"
+msgstr "Hány ember említett engem?"
+
+msgid "Error retrieving your location. Please enable location services."
+msgstr "Hiba történt a helymeghatározás során. Kérjük, engedélyezze a helymeghatározási szolgáltatásokat."
+
+msgid "The most popular in my area"
+msgstr "A legnépszerűbb a környékemen"

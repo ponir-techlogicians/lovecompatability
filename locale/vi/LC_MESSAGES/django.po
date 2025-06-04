@@ -1,0 +1,158 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2025-06-04 17:04+0600\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+#: app/templates/calculate.html:81
+
+msgid "Latitude"
+msgstr "Latitude"
+
+msgid "Longitude"
+msgstr "Longitude"
+
+msgid "English"
+msgstr "Tiếng Anh"
+
+msgid "Bengali"
+msgstr "Tiếng Bengal"
+
+msgid "Spanish"
+msgstr "Tiếng Tây Ban Nha"
+
+msgid "French"
+msgstr "Tiếng Pháp"
+
+msgid "Enter Name"
+msgstr "Nhập Tên"
+
+msgid "Radius"
+msgstr "Bán kính"
+
+msgid "Search Results for"
+msgstr "Kết quả tìm kiếm cho"
+
+msgid "Total Mentions"
+msgstr "Tổng số lần đề cập"
+
+msgid "Names Mentioned Along with"
+msgstr "Tên được đề cập cùng với"
+
+msgid "Number of Mentions"
+msgstr "Số lần đề cập"
+
+msgid "No other names mentioned with"
+msgstr "Không có tên nào khác được đề cập cùng với"
+
+msgid "Filtered Results"
+msgstr "Kết quả đã lọc"
+
+msgid "Name 1"
+msgstr "Tên 1"
+
+msgid "Name 2"
+msgstr "Tên 2"
+
+msgid "Name"
+msgstr "Name"
+
+msgid "Search"
+msgstr "Tìm kiếm"
+
+msgid "1km"
+msgstr "1km"
+
+msgid "50km"
+msgstr "50km"
+
+msgid "200km"
+msgstr "200km"
+
+msgid "world"
+msgstr "thế giới"
+
+msgid "Rank"
+msgstr "Xếp hạng"
+
+msgid "Mentioned (times)"
+msgstr "Được đề cập (lần)"
+
+msgid "With who?"
+msgstr "Với ai?"
+
+msgid "Search Names & Location"
+msgstr "Tìm kiếm Tên & Địa điểm"
+
+msgid "Name A (First name & Last name)"
+msgstr "Name A (First name & Last name)"
+
+msgid "e.g. Jennifer Lawrence"
+msgstr "ví dụ: Jennifer Lawrence"
+
+msgid "Name B (First name & Last name)"
+msgstr "Name B (First name & Last name)"
+
+msgid "e.g. Leonardo Dicaprio"
+msgstr "ví dụ: Leonardo Dicaprio"
+
+msgid "You don’t know friend’s last name?"
+msgstr "Bạn không biết họ của bạn mình?"
+
+msgid "Calculate"
+msgstr "Tính toán"
+
+msgid "We will resolve your curiosities"
+msgstr "Chúng tôi sẽ giải đáp thắc mắc của bạn"
+
+msgid "Who tested with"
+msgstr "Ai đã thử nghiệm với"
+
+msgid "Open to see"
+msgstr "Mở để xem"
+
+msgid "Payment"
+msgstr "Thanh toán"
+
+msgid "Pay now"
+msgstr "Thanh toán ngay"
+
+msgid "Payment successful!"
+msgstr "Thanh toán thành công!"
+
+msgid "Payment failed"
+msgstr "Thanh toán thất bại"
+
+msgid "Geolocation is not supported by this browser."
+msgstr "Trình duyệt này không hỗ trợ định vị địa lý."
+
+msgid "how stroke we set"
+msgstr "cách chúng ta thiết lập nét vẽ"
+
+msgid "Result"
+msgstr "Kết quả"
+
+msgid "%(name1)s likes %(name2)s with a <br>\n<b>%(compatibility_score)s%%</b> probability."
+msgstr "%(name1)s thích %(name2)s với xác suất <br>\n<b>%(compatibility_score)s%%</b>."
+
+msgid "How many people mentioned me?"
+msgstr "Có bao nhiêu người đã nhắc đến tôi?"
+
+msgid "Error retrieving your location. Please enable location services."
+msgstr "Lỗi khi truy xuất vị trí của bạn. Vui lòng bật dịch vụ định vị."
+
+msgid "The most popular in my area"
+msgstr "Phổ biến nhất trong khu vực của tôi"

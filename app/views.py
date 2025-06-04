@@ -20,6 +20,7 @@ stripe.api_key = settings.STRIPE_SECRET_KEY
 def set_language_view(request):
     if request.method == "POST":
         language = request.POST.get("language")
+        print(language)
         if language in dict(settings.LANGUAGES):  # Ensure valid language
             activate(language)  # Apply the language
             request.session['django_language'] = language  # Store in session

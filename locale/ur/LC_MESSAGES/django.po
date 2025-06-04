@@ -1,0 +1,158 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2025-06-04 17:04+0600\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+#: app/templates/calculate.html:81
+
+msgid "Latitude"
+msgstr "Latitude"
+
+msgid "Longitude"
+msgstr "Longitude"
+
+msgid "English"
+msgstr "انگریزی"
+
+msgid "Bengali"
+msgstr "بنگالی"
+
+msgid "Spanish"
+msgstr "ہسپانوی"
+
+msgid "French"
+msgstr "فرانسیسی"
+
+msgid "Name"
+msgstr "Name"
+
+msgid "Search"
+msgstr "تلاش کریں"
+
+msgid "1km"
+msgstr "1km"
+
+msgid "50km"
+msgstr "50km"
+
+msgid "200km"
+msgstr "200km"
+
+msgid "world"
+msgstr "دنیا"
+
+msgid "Rank"
+msgstr "درجہ بندی"
+
+msgid "Mentioned (times)"
+msgstr "ذکر کیا گیا (مرتبہ)"
+
+msgid "With who?"
+msgstr "کس کے ساتھ؟"
+
+msgid "Search Names & Location"
+msgstr "نام اور مقام تلاش کریں"
+
+msgid "Enter Name"
+msgstr "نام درج کریں"
+
+msgid "Radius"
+msgstr "رداس"
+
+msgid "Search Results for"
+msgstr "کے لیے تلاش کے نتائج"
+
+msgid "Total Mentions"
+msgstr "کل ذکر"
+
+msgid "Names Mentioned Along with"
+msgstr "کے ساتھ ذکر کیے گئے نام"
+
+msgid "Number of Mentions"
+msgstr "ذکر کی تعداد"
+
+msgid "No other names mentioned with"
+msgstr "کے ساتھ کوئی اور نام ذکر نہیں کیا گیا"
+
+msgid "Filtered Results"
+msgstr "فلٹر شدہ نتائج"
+
+msgid "Name 1"
+msgstr "نام 1"
+
+msgid "Name 2"
+msgstr "نام 2"
+
+msgid "Name A (First name & Last name)"
+msgstr "Name A (First name & Last name)"
+
+msgid "e.g. Jennifer Lawrence"
+msgstr "مثال کے طور پر جینیفر لارنس"
+
+msgid "Name B (First name & Last name)"
+msgstr "Name B (First name & Last name)"
+
+msgid "e.g. Leonardo Dicaprio"
+msgstr "مثال کے طور پر لیونارڈو ڈی کیپریو"
+
+msgid "You don’t know friend’s last name?"
+msgstr "آپ کو دوست کا آخری نام نہیں معلوم؟"
+
+msgid "Calculate"
+msgstr "حساب لگائیں"
+
+msgid "We will resolve your curiosities"
+msgstr "ہم آپ کی تجسس کو حل کریں گے"
+
+msgid "Who tested with"
+msgstr "کس نے تجربہ کیا"
+
+msgid "Open to see"
+msgstr "دیکھنے کے لئے کھولیں"
+
+msgid "Payment"
+msgstr "ادائیگی"
+
+msgid "Pay now"
+msgstr "ابھی ادائیگی کریں"
+
+msgid "Payment successful!"
+msgstr "ادائیگی کامیاب!"
+
+msgid "Payment failed"
+msgstr "ادائیگی ناکام"
+
+msgid "Geolocation is not supported by this browser."
+msgstr "یہ براؤزر جغرافیائی مقام کی حمایت نہیں کرتا۔"
+
+msgid "how stroke we set"
+msgstr "ہم اسٹروک کیسے سیٹ کریں"
+
+msgid "Result"
+msgstr "نتیجہ"
+
+msgid "%(name1)s likes %(name2)s with a <br>\n<b>%(compatibility_score)s%%</b> probability."
+msgstr "%(name1)s کو %(name2)s پسند ہے <br>\n<b>%(compatibility_score)s%%</b> امکان کے ساتھ۔"
+
+msgid "How many people mentioned me?"
+msgstr "کتنے لوگوں نے میرا ذکر کیا؟"
+
+msgid "Error retrieving your location. Please enable location services."
+msgstr "آپ کے مقام کو حاصل کرنے میں خرابی۔ براہ کرم مقام کی خدمات کو فعال کریں۔"
+
+msgid "The most popular in my area"
+msgstr "میرے علاقے میں سب سے زیادہ مقبول"

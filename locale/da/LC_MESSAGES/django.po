@@ -1,0 +1,158 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2025-06-04 13:00+0600\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+#: app/templates/calculate.html:72
+
+msgid "Latitude"
+msgstr "Latitude"
+
+msgid "Longitude"
+msgstr "Longitude"
+
+msgid "English"
+msgstr "Engelsk"
+
+msgid "Bengali"
+msgstr "Bengalsk"
+
+msgid "Spanish"
+msgstr "Spansk"
+
+msgid "French"
+msgstr "Fransk"
+
+msgid "Name"
+msgstr "Name"
+
+msgid "Search"
+msgstr "Søg"
+
+msgid "1km"
+msgstr "1km"
+
+msgid "50km"
+msgstr "50km"
+
+msgid "200km"
+msgstr "200km"
+
+msgid "world"
+msgstr "verden"
+
+msgid "Rank"
+msgstr "Rang"
+
+msgid "Mentioned (times)"
+msgstr "Nævnt (gange)"
+
+msgid "With who?"
+msgstr "Med hvem?"
+
+msgid "Search Names & Location"
+msgstr "Søg Navne & Placering"
+
+msgid "Enter Name"
+msgstr "Indtast navn"
+
+msgid "Radius"
+msgstr "Radius"
+
+msgid "Search Results for"
+msgstr "Søgeresultater for"
+
+msgid "Total Mentions"
+msgstr "Samlede omtaler"
+
+msgid "Names Mentioned Along with"
+msgstr "Navne nævnt sammen med"
+
+msgid "Number of Mentions"
+msgstr "Antal omtaler"
+
+msgid "No other names mentioned with"
+msgstr "Ingen andre navne nævnt med"
+
+msgid "Filtered Results"
+msgstr "Filtrerede resultater"
+
+msgid "Name 1"
+msgstr "Navn 1"
+
+msgid "Name 2"
+msgstr "Navn 2"
+
+msgid "Name A (First name & Last name)"
+msgstr "Name A (First name & Last name)"
+
+msgid "e.g. Jennifer Lawrence"
+msgstr "f.eks. Jennifer Lawrence"
+
+msgid "Name B (First name & Last name)"
+msgstr "Name B (First name & Last name)"
+
+msgid "e.g. Leonardo Dicaprio"
+msgstr "f.eks. Leonardo Dicaprio"
+
+msgid "You don’t know friend’s last name?"
+msgstr "Du kender ikke din vens efternavn?"
+
+msgid "Calculate"
+msgstr "Beregn"
+
+msgid "We will resolve your curiosities"
+msgstr "Vi vil løse dine nysgerrigheder"
+
+msgid "Who tested with"
+msgstr "Hvem testede med"
+
+msgid "Open to see"
+msgstr "Åbn for at se"
+
+msgid "Payment"
+msgstr "Betaling"
+
+msgid "Pay now"
+msgstr "Betal nu"
+
+msgid "Payment successful!"
+msgstr "Betaling gennemført!"
+
+msgid "Payment failed"
+msgstr "Betaling mislykkedes"
+
+msgid "Geolocation is not supported by this browser."
+msgstr "Geolokation understøttes ikke af denne browser."
+
+msgid "how stroke we set"
+msgstr "hvordan slag vi sætter"
+
+msgid "Result"
+msgstr "Resultat"
+
+msgid "%(name1)s likes %(name2)s with a <br>\n<b>%(compatibility_score)s%%</b> probability."
+msgstr "%(name1)s kan lide %(name2)s med en <br>\n<b>%(compatibility_score)s%%</b> sandsynlighed."
+
+msgid "How many people mentioned me?"
+msgstr "Hvor mange mennesker nævnte mig?"
+
+msgid "Error retrieving your location. Please enable location services."
+msgstr "Fejl ved hentning af din placering. Aktiver venligst lokationstjenester."
+
+msgid "The most popular in my area"
+msgstr "Det mest populære i mit område"

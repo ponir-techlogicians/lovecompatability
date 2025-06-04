@@ -1,0 +1,158 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2025-06-04 13:01+0600\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=4; plural=(n == 1 && n % 1 == 0) ? 0 : (n >= 2 && n "
+"<= 4 && n % 1 == 0) ? 1: (n % 1 != 0 ) ? 2 : 3;\n"
+#: app/templates/calculate.html:72
+msgid "Latitude"
+msgstr "Latitude"
+
+msgid "Longitude"
+msgstr "Longitude"
+
+msgid "English"
+msgstr "Angličtina"
+
+msgid "Bengali"
+msgstr "Bengálština"
+
+msgid "Spanish"
+msgstr "Španělština"
+
+msgid "French"
+msgstr "Francouzština"
+
+msgid "Name"
+msgstr "Name"
+
+msgid "Search"
+msgstr "Hledat"
+
+msgid "1km"
+msgstr "1km"
+
+msgid "50km"
+msgstr "50km"
+
+msgid "200km"
+msgstr "200km"
+
+msgid "world"
+msgstr "svět"
+
+msgid "Rank"
+msgstr "Pořadí"
+
+msgid "Mentioned (times)"
+msgstr "Zmíněno (krát)"
+
+msgid "With who?"
+msgstr "S kým?"
+
+msgid "Search Names & Location"
+msgstr "Hledat jména a místa"
+
+msgid "Enter Name"
+msgstr "Zadejte jméno"
+
+msgid "Radius"
+msgstr "Poloměr"
+
+msgid "Search Results for"
+msgstr "Výsledky hledání pro"
+
+msgid "Total Mentions"
+msgstr "Celkový počet zmínek"
+
+msgid "Names Mentioned Along with"
+msgstr "Jména zmíněná spolu s"
+
+msgid "Number of Mentions"
+msgstr "Počet zmínek"
+
+msgid "No other names mentioned with"
+msgstr "Žádná jiná jména zmíněna s"
+
+msgid "Filtered Results"
+msgstr "Filtrované výsledky"
+
+msgid "Name 1"
+msgstr "Jméno 1"
+
+msgid "Name 2"
+msgstr "Jméno 2"
+
+msgid "Name A (First name & Last name)"
+msgstr "Name A (First name & Last name)"
+
+msgid "e.g. Jennifer Lawrence"
+msgstr "e.g. Jennifer Lawrence"
+
+msgid "Name B (First name & Last name)"
+msgstr "Name B (First name & Last name)"
+
+msgid "e.g. Leonardo Dicaprio"
+msgstr "e.g. Leonardo Dicaprio"
+
+msgid "You don’t know friend’s last name?"
+msgstr "Neznáte příjmení přítele?"
+
+msgid "Calculate"
+msgstr "Vypočítat"
+
+msgid "We will resolve your curiosities"
+msgstr "Vyřešíme vaše zvědavosti"
+
+msgid "Who tested with"
+msgstr "Kdo testoval s"
+
+msgid "Open to see"
+msgstr "Otevřít k zobrazení"
+
+msgid "Payment"
+msgstr "Platba"
+
+msgid "Pay now"
+msgstr "Zaplatit nyní"
+
+msgid "Payment successful!"
+msgstr "Platba úspěšná!"
+
+msgid "Payment failed"
+msgstr "Platba selhala"
+
+msgid "Geolocation is not supported by this browser."
+msgstr "Geolokace není tímto prohlížečem podporována."
+
+msgid "how stroke we set"
+msgstr "jak nastavíme tah"
+
+msgid "Result"
+msgstr "Výsledek"
+
+msgid "%(name1)s likes %(name2)s with a <br>\n<b>%(compatibility_score)s%%</b> probability."
+msgstr "%(name1)s má rád %(name2)s s <br>\n<b>%(compatibility_score)s%%</b> pravděpodobností."
+
+msgid "How many people mentioned me?"
+msgstr "Kolik lidí mě zmínilo?"
+
+msgid "Error retrieving your location. Please enable location services."
+msgstr "Chyba při získávání vaší polohy. Prosím, povolte služby určování polohy."
+
+msgid "The most popular in my area"
+msgstr "Nejoblíbenější v mé oblasti"

@@ -1,0 +1,158 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2025-06-04 13:01+0600\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=3; plural=(n==1?0:(((n%100>19)||((n%100==0)&&(n!=0)))?"
+"2:1));\n"
+#: app/templates/calculate.html:72
+msgid "Latitude"
+msgstr "Latitude"
+
+msgid "Longitude"
+msgstr "Longitude"
+
+msgid "English"
+msgstr "Engleză"
+
+msgid "Bengali"
+msgstr "Bengali"
+
+msgid "Spanish"
+msgstr "Spaniolă"
+
+msgid "French"
+msgstr "Franceză"
+
+msgid "Name"
+msgstr "Name"
+
+msgid "Search"
+msgstr "Căutare"
+
+msgid "1km"
+msgstr "1km"
+
+msgid "50km"
+msgstr "50km"
+
+msgid "200km"
+msgstr "200km"
+
+msgid "world"
+msgstr "lume"
+
+msgid "Rank"
+msgstr "Rang"
+
+msgid "Mentioned (times)"
+msgstr "Menționat (ori)"
+
+msgid "With who?"
+msgstr "Cu cine?"
+
+msgid "Search Names & Location"
+msgstr "Căutare Nume & Locație"
+
+msgid "Name A (First name & Last name)"
+msgstr "Name A (First name & Last name)"
+
+msgid "e.g. Jennifer Lawrence"
+msgstr "e.g. Jennifer Lawrence"
+
+msgid "Name B (First name & Last name)"
+msgstr "Name B (First name & Last name)"
+
+msgid "e.g. Leonardo Dicaprio"
+msgstr "e.g. Leonardo Dicaprio"
+
+msgid "You don’t know friend’s last name?"
+msgstr "Nu știi numele de familie al prietenului?"
+
+msgid "Calculate"
+msgstr "Calculează"
+
+msgid "We will resolve your curiosities"
+msgstr "Vom rezolva curiozitățile tale"
+
+msgid "Who tested with"
+msgstr "Cine a testat cu"
+
+msgid "Open to see"
+msgstr "Deschide pentru a vedea"
+
+msgid "Payment"
+msgstr "Plată"
+
+msgid "Enter Name"
+msgstr "Introduceți Numele"
+
+msgid "Radius"
+msgstr "Raza"
+
+msgid "Search Results for"
+msgstr "Rezultatele Căutării pentru"
+
+msgid "Total Mentions"
+msgstr "Mențiuni Totale"
+
+msgid "Names Mentioned Along with"
+msgstr "Nume Menționate Împreună cu"
+
+msgid "Number of Mentions"
+msgstr "Numărul de Mențiuni"
+
+msgid "No other names mentioned with"
+msgstr "Niciun alt nume menționat cu"
+
+msgid "Filtered Results"
+msgstr "Rezultate Filtrate"
+
+msgid "Name 1"
+msgstr "Nume 1"
+
+msgid "Name 2"
+msgstr "Nume 2"
+
+msgid "Pay now"
+msgstr "Plătește acum"
+
+msgid "Payment successful!"
+msgstr "Plata a fost efectuată cu succes!"
+
+msgid "Payment failed"
+msgstr "Plata a eșuat"
+
+msgid "Geolocation is not supported by this browser."
+msgstr "Geolocația nu este suportată de acest browser."
+
+msgid "how stroke we set"
+msgstr "cum setăm lovitura"
+
+msgid "Result"
+msgstr "Rezultat"
+
+msgid "%(name1)s likes %(name2)s with a <br>\n<b>%(compatibility_score)s%%</b> probability."
+msgstr "%(name1)s îl place pe %(name2)s cu o probabilitate de <br>\n<b>%(compatibility_score)s%%</b>."
+
+msgid "How many people mentioned me?"
+msgstr "Câți oameni m-au menționat?"
+
+msgid "Error retrieving your location. Please enable location services."
+msgstr "Eroare la obținerea locației tale. Te rog activează serviciile de localizare."
+
+msgid "The most popular in my area"
+msgstr "Cel mai popular în zona mea"
