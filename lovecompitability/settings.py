@@ -10,7 +10,7 @@ For the full list of settings and their values, see
 https://docs.djangoproject.com/en/5.1/ref/settings/
 """
 import os
-from django.utils.translation import gettext_lazy as _
+from django.utils.translation import gettext_lazy as _, get_language
 from pathlib import Path
 
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
@@ -60,9 +60,36 @@ LANGUAGE_SESSION_KEY = 'django_language'  # Ensure session-based language switch
 
 LANGUAGES = [
     ('en', _('English')),
-    ('bn', _('Bengali')),
-    ('es', _('Spanish')),
-    ('fr', _('French')),
+    ('es', 'Spanish'),
+    ('fr', 'French'),
+    ('de', 'German'),
+    ('ja', 'Japanese'),
+    ('zh-hans', 'Simplified Chinese'),
+    ('zh-hant', 'Traditional Chinese'),
+    ('ko', 'Korean'),
+    ('ru', 'Russian'),
+    ('ar', 'Arabic'),
+    ('pt', 'Portuguese'),
+    ('it', 'Italian'),
+    ('hi', 'Hindi'),
+    ('id', 'Indonesian'),
+    ('tr', 'Turkish'),
+    ('th', 'Thai'),
+    ('vi', 'Vietnamese'),
+    ('ur', 'Urdu'),
+    ('ms', 'Malay'),
+    ('nl', 'Dutch'),
+    ('pl', 'Polish'),
+    ('sv', 'Swedish'),
+    ('no', 'Norwegian'),
+    ('da', 'Danish'),
+    ('cs', 'Czech'),
+    ('hu', 'Hungarian'),
+    ('fi', 'Finnish'),
+    ('he', 'Hebrew'),
+    ('ro', 'Romanian'),
+    ('el', 'Greek'),
+
 ]
 
 LOCALE_PATHS = [
@@ -161,3 +188,4 @@ STRIPE_PUBLISHABLE_KEY = 'pk_test_51IiO7DBH8Pgfzx7JR3sLT5lz3TwoZU9BVonntulHQWbzV
 STRIPE_SECRET_KEY = 'sk_test_51IiO7DBH8Pgfzx7J1Y9m3u2p5097JDmKoSqckPpmOwfdzYGECFcI3PtyUuCaNoh3yroPXxAcsmlMYvsPgPC9VHCD00qm0HMC5P'
 
 # settings.py
+
