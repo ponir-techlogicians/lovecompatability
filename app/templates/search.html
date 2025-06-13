@@ -59,11 +59,17 @@
       </div>
       <ul class="search__listBody">
         {% for name, count in top_names %}
-        <li class="row">
-            <div class="search__listBody__item {% if forloop.counter ==  search_rank %} search__listFooter__item {% endif %}">{{ forloop.counter }}</div>
-            <div class="search__listBody__item {% if forloop.counter ==  search_rank %} search__listFooter__item {% endif %}">{{ name }}</div>
-            <div class="search__listBody__item {% if forloop.counter ==  search_rank %} search__listFooter__item {% endif %}">{{ count }}</div>
-        </li>
+            <li class="row">
+                <div class="search__listBody__item {% if forloop.counter ==  search_rank %} search__listFooter__item {% endif %}">{{ forloop.counter }}</div>
+                <div class="search__listBody__item {% if forloop.counter ==  search_rank %} search__listFooter__item {% endif %}">{{ name }}</div>
+                <div class="search__listBody__item {% if forloop.counter ==  search_rank %} search__listFooter__item {% endif %}">{{ count }}</div>
+
+            </li>
+            {% if forloop.counter ==  search_rank %}
+                <button type="button" class="search__with" onclick="goto();">
+                    {% trans "With who?" %}
+                </button>
+            {% endif %}
         {% endfor %}
       </ul>
 
@@ -81,15 +87,15 @@
       {% endif %}
       {% endif %}
     </div>
-    {% if mention_count > 0 %}
-    <button type="button" class="search__with" onclick="goto();">
-        {% trans "With who?" %}
-    </button>
-
+    {% if mention_count > 0 and search_rank > 10 %}
+        <button type="button" class="search__with" onclick="goto();">
+            {% trans "With who?" %}
+        </button>
+    {% endif %}
     {% comment %}<a href="{% url 'list' %}?key={{ search_key }}&radius={{ radius_input }}&lat={{ lat }}&lon={{ lon }}" class="search__with">
       With who?
     </a>{% endcomment %}
-    {% endif %}
+
   </div>
   <div class="loveWrap__ad">
       <img src="{% static 'app/img/banner01.png' %}" alt="">
