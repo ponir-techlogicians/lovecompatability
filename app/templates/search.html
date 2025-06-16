@@ -60,16 +60,18 @@
       <ul class="search__listBody">
         {% for name, count in top_names %}
             <li class="row">
-                <div class="search__listBody__item {% if forloop.counter ==  search_rank %} search__listFooter__item {% endif %}">{{ forloop.counter }}</div>
-                <div class="search__listBody__item {% if forloop.counter ==  search_rank %} search__listFooter__item {% endif %}">{{ name }}</div>
-                <div class="search__listBody__item {% if forloop.counter ==  search_rank %} search__listFooter__item {% endif %}">{{ count }}</div>
+                <div class="search__listBody__itemWrap">
+                    <div class="search__listBody__item {% if forloop.counter ==  search_rank %} search__listFooter__item {% endif %}">{{ forloop.counter }}</div>
+                    <div class="search__listBody__item {% if forloop.counter ==  search_rank %} search__listFooter__item {% endif %}">{{ name }}</div>
+                    <div class="search__listBody__item {% if forloop.counter ==  search_rank %} search__listFooter__item {% endif %}">{{ count }}</div>
 
+                </div>
+                {% if forloop.counter ==  search_rank %}
+                    <button type="button" class="search__with" onclick="goto();">
+                        {% trans "With who?" %}
+                    </button>
+                {% endif %}
             </li>
-            {% if forloop.counter ==  search_rank %}
-                <button type="button" class="search__with" onclick="goto();">
-                    {% trans "With who?" %}
-                </button>
-            {% endif %}
         {% endfor %}
       </ul>
 
@@ -79,19 +81,22 @@
       {% if mention_count > 0 and search_rank > 10 %}
           <div class="search__listFooter">
             <div class="row">
-              <div class="search__listFooter__item">{{search_rank}}</div>
-              <div class="search__listFooter__item">{{ search_key }}</div>
-              <div class="search__listFooter__item">{{ mention_count }}</div>
+              <div class="search__listBody__itemWrap">
+                  <div class="search__listFooter__item">{{search_rank}}</div>
+                  <div class="search__listFooter__item">{{ search_key }}</div>
+                  <div class="search__listFooter__item">{{ mention_count }}</div>
+              </div>
+              {% if mention_count > 0 and search_rank > 10 %}
+                    <button type="button" class="search__with" onclick="goto();">
+                        {% trans "With who?" %}
+                    </button>
+              {% endif %}
             </div>
           </div>
       {% endif %}
       {% endif %}
     </div>
-    {% if mention_count > 0 and search_rank > 10 %}
-        <button type="button" class="search__with" onclick="goto();">
-            {% trans "With who?" %}
-        </button>
-    {% endif %}
+
     {% comment %}<a href="{% url 'list' %}?key={{ search_key }}&radius={{ radius_input }}&lat={{ lat }}&lon={{ lon }}" class="search__with">
       With who?
     </a>{% endcomment %}

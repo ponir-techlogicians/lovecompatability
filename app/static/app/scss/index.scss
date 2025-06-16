@@ -644,10 +644,11 @@ body {
     }
   }
   &__listBody {
-    .row {
+    border-bottom: 1px solid #C8C8C8;
+    &__itemWrap {
       display: flex;
       justify-content: space-between;
-      border-bottom: 1px solid #C8C8C8;
+      border-top: 1px solid #C8C8C8;
       padding-bottom: vw(10px);
       @include min-width {
         padding-bottom: 10px;
@@ -682,7 +683,7 @@ body {
   &__listFooter {
     display: flex;
     flex-direction: column;
-    .row {
+    &__itemWrap{
       display: flex;
       justify-content: space-between;
     }
@@ -712,7 +713,6 @@ body {
       height: vw(74px);
       content: '';
       background: url("../img/ico_dot.svg") no-repeat center center / vw(6px) vw(50px);
-      border-bottom: 1px solid #C8C8C8;
       @include min-width {
         height: 74px;
         background: url("../img/ico_dot.svg") no-repeat center center / 6px 50px;
@@ -722,7 +722,7 @@ body {
   &__with {
     display: block;
     width: calc(100% - #{vw(40px)});
-    margin:vw(10px) auto 0;
+    margin:vw(10px) auto;
     height: vw(59px);
     background-color: #7E49FF;
     color: #fff;
