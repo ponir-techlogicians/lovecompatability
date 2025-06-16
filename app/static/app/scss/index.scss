@@ -136,7 +136,7 @@ body {
     margin:0 auto;
     width: 88%;
     @include min-width {
-      max-width: 440px;
+      max-width: 438px;
     }
     position: relative;
     + .loveWrap__inputBox {
@@ -159,7 +159,7 @@ body {
     }
   }
   &__input {
-    border: 1px solid #fff;
+    box-shadow: inset 0 0 0 1px #fff;
     width: 100%;
     height: vw(56px);
     border-radius: vw(8px);
@@ -168,6 +168,7 @@ body {
     color:#fff;
     padding-top: vw(15px);
     background-color: rgba(255,255,255,.1);
+    outline: none;
     @include min-width {
       height: 56px;
       border-radius: 8px;
@@ -187,7 +188,7 @@ body {
     position: relative;
   }
   &__select {
-    border: 1px solid #fff;
+    box-shadow: inset 0 0 0 1px #fff;
     width: 100%;
     height: vw(56px);
     border-radius: vw(8px);
@@ -200,6 +201,7 @@ body {
     background-position: calc(100% - 20px) 25px;
     background-repeat: no-repeat;
     background-size: vw(5px);
+    outline: none;
     @include min-width {
       background-size:24px;
     }
@@ -213,6 +215,13 @@ body {
       font-size: 16px;
       padding-top: 15px;
       padding-left: 14px;
+    }
+    option {
+      background:#23183C;
+      width: 100%;
+      min-width: 100%;
+      box-sizing: border-box;
+      border: 1px solid #fff;
     }
   }
   &__info {
@@ -644,10 +653,11 @@ body {
     }
   }
   &__listBody {
-    .row {
+    border-bottom: 1px solid #C8C8C8;
+    &__itemWrap {
       display: flex;
       justify-content: space-between;
-      border-bottom: 1px solid #C8C8C8;
+      border-top: 1px solid #C8C8C8;
       padding-bottom: vw(10px);
       @include min-width {
         padding-bottom: 10px;
@@ -682,7 +692,7 @@ body {
   &__listFooter {
     display: flex;
     flex-direction: column;
-    .row {
+    &__itemWrap{
       display: flex;
       justify-content: space-between;
     }
@@ -712,7 +722,6 @@ body {
       height: vw(74px);
       content: '';
       background: url("../img/ico_dot.svg") no-repeat center center / vw(6px) vw(50px);
-      border-bottom: 1px solid #C8C8C8;
       @include min-width {
         height: 74px;
         background: url("../img/ico_dot.svg") no-repeat center center / 6px 50px;
@@ -722,7 +731,7 @@ body {
   &__with {
     display: block;
     width: calc(100% - #{vw(40px)});
-    margin:vw(10px) auto 0;
+    margin:vw(10px) auto;
     height: vw(59px);
     background-color: #7E49FF;
     color: #fff;

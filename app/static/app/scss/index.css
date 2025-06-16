@@ -138,7 +138,7 @@ body {
 }
 @media screen and (min-width: 390px) {
   .loveWrap__inputBox {
-    max-width: 440px;
+    max-width: 438px;
   }
 }
 .loveWrap__inputBox + .loveWrap__inputBox {
@@ -164,7 +164,7 @@ body {
   }
 }
 .loveWrap__input {
-  border: 1px solid #fff;
+  box-shadow: inset 0 0 0 1px #fff;
   width: 100%;
   height: 14.358974359vw;
   border-radius: 2.0512820513vw;
@@ -173,6 +173,7 @@ body {
   color: #fff;
   padding-top: 3.8461538462vw;
   background-color: rgba(255, 255, 255, 0.1);
+  outline: none;
 }
 @media screen and (min-width: 390px) {
   .loveWrap__input {
@@ -196,7 +197,7 @@ body {
   }
 }
 .loveWrap__select {
-  border: 1px solid #fff;
+  box-shadow: inset 0 0 0 1px #fff;
   width: 100%;
   height: 14.358974359vw;
   border-radius: 2.0512820513vw;
@@ -209,6 +210,7 @@ body {
   background-position: calc(100% - 20px) 25px;
   background-repeat: no-repeat;
   background-size: 1.2820512821vw;
+  outline: none;
 }
 @media screen and (min-width: 390px) {
   .loveWrap__select {
@@ -226,6 +228,13 @@ body {
     padding-top: 15px;
     padding-left: 14px;
   }
+}
+.loveWrap__select option {
+  background: #23183C;
+  width: 100%;
+  min-width: 100%;
+  box-sizing: border-box;
+  border: 1px solid #fff;
 }
 .loveWrap__info {
   text-align: center;
