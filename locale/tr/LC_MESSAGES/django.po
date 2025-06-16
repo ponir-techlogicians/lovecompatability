@@ -70,11 +70,11 @@ msgstr "İsim ve Konum Ara"
 msgid "Name A (First name & Last name)"
 msgstr "Name A (First name & Last name)"
 
-msgid "e.g. Jennifer Lawrence"
-msgstr "örn. Jennifer Lawrence"
-
 msgid "Name B (First name & Last name)"
 msgstr "Name B (First name & Last name)"
+
+msgid "e.g. Jennifer Lawrence"
+msgstr "örn. Jennifer Lawrence"
 
 msgid "e.g. Leonardo Dicaprio"
 msgstr "örn. Leonardo Dicaprio"

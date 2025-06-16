@@ -79,13 +79,13 @@ msgid "Search Names & Location"
 msgstr "Søk Navn & Sted"
 
 msgid "Name A (First name & Last name)"
-msgstr "Name A (First name & Last name)"
+msgstr "Navn A (Fornavn & Etternavn)"
+
+msgid "Name B (First name & Last name)"
+msgstr "Navn B (Fornavn & Etternavn)"
 
 msgid "e.g. Jennifer Lawrence"
 msgstr "f.eks. Jennifer Lawrence"
-
-msgid "Name B (First name & Last name)"
-msgstr "Name B (First name & Last name)"
 
 msgid "e.g. Leonardo Dicaprio"
 msgstr "f.eks. Leonardo Dicaprio"

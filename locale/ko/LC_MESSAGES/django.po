@@ -97,13 +97,14 @@ msgid "Name 2"
 msgstr "이름 2"
 
 msgid "Name A (First name & Last name)"
-msgstr "Name A (First name & Last name)"
+msgstr "이름 A (이름 & 성)"
+
+msgid "Name B (First name & Last name)"
+msgstr "이름 B (이름 & 성)"
 
 msgid "e.g. Jennifer Lawrence"
 msgstr "예: Jennifer Lawrence"
 
-msgid "Name B (First name & Last name)"
-msgstr "Name B (First name & Last name)"
 
 msgid "e.g. Leonardo Dicaprio"
 msgstr "예: Leonardo Dicaprio"

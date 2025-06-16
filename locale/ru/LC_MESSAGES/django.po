@@ -100,13 +100,13 @@ msgid "Name 2"
 msgstr "Имя 2"
 
 msgid "Name A (First name & Last name)"
-msgstr "Name A (First name & Last name)"
+msgstr "Имя A (Имя и Фамилия)"
+
+msgid "Name B (First name & Last name)"
+msgstr "Имя B (Имя и Фамилия)"
 
 msgid "e.g. Jennifer Lawrence"
 msgstr "например, Дженнифер Лоуренс"
-
-msgid "Name B (First name & Last name)"
-msgstr "Name B (First name & Last name)"
 
 msgid "e.g. Leonardo Dicaprio"
 msgstr "например, Леонардо ДиКаприо"

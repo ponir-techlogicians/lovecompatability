@@ -98,13 +98,13 @@ msgid "Search Names & Location"
 msgstr "Cari Nama & Lokasi"
 
 msgid "Name A (First name & Last name)"
-msgstr "Name A (First name & Last name)"
+msgstr "Nama A (Nama Depan & Nama Belakang)"
+
+msgid "Name B (First name & Last name)"
+msgstr "Nama B (Nama Depan & Nama Belakang)"
 
 msgid "e.g. Jennifer Lawrence"
 msgstr "misalnya Jennifer Lawrence"
-
-msgid "Name B (First name & Last name)"
-msgstr "Name B (First name & Last name)"
 
 msgid "e.g. Leonardo Dicaprio"
 msgstr "misalnya Leonardo Dicaprio"

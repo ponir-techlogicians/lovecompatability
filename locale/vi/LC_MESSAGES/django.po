@@ -98,13 +98,14 @@ msgid "Search Names & Location"
 msgstr "Tìm kiếm Tên & Địa điểm"
 
 msgid "Name A (First name & Last name)"
-msgstr "Name A (First name & Last name)"
+msgstr "Tên A (Tên & Họ)"
+
+msgid "Name B (First name & Last name)"
+msgstr "Tên B (Tên & Họ)"
+
 
 msgid "e.g. Jennifer Lawrence"
 msgstr "ví dụ: Jennifer Lawrence"
-
-msgid "Name B (First name & Last name)"
-msgstr "Name B (First name & Last name)"
 
 msgid "e.g. Leonardo Dicaprio"
 msgstr "ví dụ: Leonardo Dicaprio"

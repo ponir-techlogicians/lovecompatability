@@ -99,11 +99,12 @@ msgstr "Név 2"
 msgid "Name A (First name & Last name)"
 msgstr "Name A (First name & Last name)"
 
+msgid "Name B (First name & Last name)"
+msgstr "Name B (First name & Last name)"
+
 msgid "e.g. Jennifer Lawrence"
 msgstr "pl. Jennifer Lawrence"
 
-msgid "Name B (First name & Last name)"
-msgstr "Name B (First name & Last name)"
 
 msgid "e.g. Leonardo Dicaprio"
 msgstr "pl. Leonardo Dicaprio"

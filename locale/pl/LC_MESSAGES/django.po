@@ -69,13 +69,13 @@ msgid "Search Names & Location"
 msgstr "Szukaj imion i lokalizacji"
 
 msgid "Name A (First name & Last name)"
-msgstr "Name A (First name & Last name)"
+msgstr "Imię A (Imię i Nazwisko)"
+
+msgid "Name B (First name & Last name)"
+msgstr "Imię B (Imię i Nazwisko)"
 
 msgid "e.g. Jennifer Lawrence"
 msgstr "np. Jennifer Lawrence"
-
-msgid "Name B (First name & Last name)"
-msgstr "Name B (First name & Last name)"
 
 msgid "e.g. Leonardo Dicaprio"
 msgstr "np. Leonardo Dicaprio"

@@ -68,13 +68,14 @@ msgid "Search Names & Location"
 msgstr "Căutare Nume & Locație"
 
 msgid "Name A (First name & Last name)"
-msgstr "Name A (First name & Last name)"
+msgstr "Nume A (Prenume & Nume de familie)"
+
+msgid "Name B (First name & Last name)"
+msgstr "Nume B (Prenume & Nume de familie)"
 
 msgid "e.g. Jennifer Lawrence"
 msgstr "e.g. Jennifer Lawrence"
 
-msgid "Name B (First name & Last name)"
-msgstr "Name B (First name & Last name)"
 
 msgid "e.g. Leonardo Dicaprio"
 msgstr "e.g. Leonardo Dicaprio"
