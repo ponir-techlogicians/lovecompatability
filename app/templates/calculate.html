@@ -23,6 +23,46 @@
 </script>
 <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-2655483668363741"
      crossorigin="anonymous"></script>
+<style>
+    .popup-overlay {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background: rgba(0, 0, 0, 0.5);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        z-index: 1000;
+    }
+
+    .popup-content {
+        background: white;
+        padding: 20px;
+        border-radius: 5px;
+        width: 80%;
+        max-width: 500px;
+    }
+
+    .popup-header {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin-bottom: 15px;
+    }
+
+    .close-popup {
+        border: none;
+        background: none;
+        font-size: 24px;
+        cursor: pointer;
+    }
+
+    .hidden {
+        display: none;
+    }
+</style>
 <!-- calculate page -->
 <ins class="adsbygoogle"
      style="display:inline-block;width:390px;height:78px"
@@ -97,4 +137,31 @@
   <img src="{% static 'app/img/banner01.png' %}" alt="">
     <p>{% trans "We will resolve your curiosities" %}</p>
 </div>
+<div class="popup-overlay hidden" id="popup">
+        <div class="popup-content">
+            <div class="popup-header">
+                <h3>{% trans "You don’t know friend’s last name?"%}</h3>
+                <button class="close-popup">&times;</button>
+            </div>
+            <div class="popup-body">
+                <p>{% trans "You can check friend's instragram. sometimes they put it with last name." %}</p>
+            </div>
+        </div>
+    </div>
+  <script>
+     document.querySelector(".loveWrap__infoLink").addEventListener("click", function () {
+        document.getElementById("popup").classList.remove("hidden");
+    });
+
+    document.querySelector(".close-popup").addEventListener("click", function () {
+        document.getElementById("popup").classList.add("hidden");
+    });
+
+    // Close popup when clicking outside 
+    document.getElementById("popup").addEventListener("click", function (e) {
+        if (e.target === this) {
+            this.classList.add("hidden");
+        }
+    });
+  </script>
 {% endblock %}

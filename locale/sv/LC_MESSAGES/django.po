@@ -156,3 +156,6 @@ msgstr "Fel vid hämtning av din plats. Vänligen aktivera platstjänster."
 
 msgid "The most popular in my area"
 msgstr "Den mest populära i mitt område"
+
+msgid "You can check friend's instragram. sometimes they put it with last name."
+msgstr "Du kan kolla vänners Instagram. ibland lägger de till det med efternamnet."

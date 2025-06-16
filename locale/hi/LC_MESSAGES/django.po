@@ -156,3 +156,6 @@ msgstr "आपकी स्थान जानकारी प्राप्त
 
 msgid "The most popular in my area"
 msgstr "मेरे क्षेत्र में सबसे लोकप्रिय"
+
+msgid "You can check friend's instragram. sometimes they put it with last name."
+msgstr "आप दोस्त के इंस्टाग्राम की जांच कर सकते हैं। कभी-कभी वे इसे अंतिम नाम के साथ डालते हैं।"

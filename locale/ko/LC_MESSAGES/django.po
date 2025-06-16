@@ -155,3 +155,6 @@ msgstr "위치를 가져오는 중 오류가 발생했습니다. 위치 서비�
 
 msgid "The most popular in my area"
 msgstr "내 지역에서 가장 인기 있는 것"
+
+msgid "You can check friend's instragram. sometimes they put it with last name."
+msgstr "친구의 인스타그램을 확인할 수 있습니다. 때때로 그들은 성과 함께 그것을 넣습니다."

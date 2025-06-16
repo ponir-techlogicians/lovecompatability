@@ -157,3 +157,6 @@ msgstr "שגיאה באחזור המיקום שלך. אנא הפעל את שיר
 
 msgid "The most popular in my area"
 msgstr "הפופולרי ביותר באזור שלי"
+
+msgid "You can check friend's instragram. sometimes they put it with last name."
+msgstr "אתה יכול לבדוק את האינסטגרם של החבר. לפעמים הם שמים את זה עם שם המשפחה."

@@ -157,3 +157,6 @@ msgstr "افتح لترى"
 
 msgid "Payment"
 msgstr "الدفع"
+
+msgid "You can check friend's instragram. sometimes they put it with last name."
+msgstr "يمكنك التحقق من إنستغرام الأصدقاء. أحيانًا يضعونه مع اسم العائلة."

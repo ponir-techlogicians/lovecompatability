@@ -156,3 +156,6 @@ msgstr "Errore nel recupero della tua posizione. Abilita i servizi di localizzaz
 
 msgid "The most popular in my area"
 msgstr "Il più popolare nella mia zona"
+
+msgid "You can check friend's instragram. sometimes they put it with last name."
+msgstr "Puoi controllare l'Instagram dell'amico. a volte lo mettono con il cognome."

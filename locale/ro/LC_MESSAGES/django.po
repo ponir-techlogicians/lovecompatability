@@ -156,3 +156,6 @@ msgstr "Eroare la obținerea locației tale. Te rog activează serviciile de loc
 
 msgid "The most popular in my area"
 msgstr "Cel mai popular în zona mea"
+
+msgid "You can check friend's instragram. sometimes they put it with last name."
+msgstr "Poți verifica Instagramul prietenului. uneori îl pun cu numele de familie."

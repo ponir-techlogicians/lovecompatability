@@ -156,3 +156,6 @@ msgstr "Fejl ved hentning af din placering. Aktiver venligst lokationstjenester.
 
 msgid "The most popular in my area"
 msgstr "Det mest populære i mit område"
+
+msgid "You can check friend's instragram. sometimes they put it with last name."
+msgstr "Du kan tjekke vennens Instagram. nogle gange sætter de det med efternavnet."

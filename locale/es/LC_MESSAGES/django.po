@@ -156,3 +156,6 @@ msgstr "Error al recuperar tu ubicación. Por favor, habilita los servicios de u
 
 msgid "The most popular in my area"
 msgstr "Lo más popular en mi área"
+
+msgid "You can check friend's instragram. sometimes they put it with last name."
+msgstr "Puedes revisar el Instagram de tu amigo. a veces lo ponen con el apellido."

@@ -156,3 +156,6 @@ msgstr "เกิดข้อผิดพลาดในการดึงตำ
 
 msgid "The most popular in my area"
 msgstr "ที่นิยมที่สุดในพื้นที่ของฉัน"
+
+msgid "You can check friend's instragram. sometimes they put it with last name."
+msgstr "คุณสามารถตรวจสอบอินสตาแกรมของเพื่อนได้ บางครั้งพวกเขาใส่มันกับนามสกุล"

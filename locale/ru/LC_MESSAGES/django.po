@@ -158,3 +158,6 @@ msgstr "Ошибка при получении вашего местополож
 
 msgid "The most popular in my area"
 msgstr "Самое популярное в моем районе"
+
+msgid "You can check friend's instragram. sometimes they put it with last name."
+msgstr "Вы можете проверить инстаграм друга. иногда они ставят его с фамилией."

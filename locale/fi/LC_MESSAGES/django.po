@@ -155,3 +155,6 @@ msgstr "Virhe sijainnin hakemisessa. Ota sijaintipalvelut käyttöön."
 
 msgid "The most popular in my area"
 msgstr "Alueeni suosituin"
+
+msgid "You can check friend's instragram. sometimes they put it with last name."
+msgstr "Voit tarkistaa ystävän Instagramin. joskus he laittavat sen sukunimen kanssa."

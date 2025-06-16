@@ -156,3 +156,6 @@ msgstr "Error retrieving your location. Please enable location services."
 
 msgid "The most popular in my area"
 msgstr "Le plus populaire dans ma région"
+
+msgid "You can check friend's instragram. sometimes they put it with last name."
+msgstr "Vous pouvez vérifier l'Instagram d'un ami. parfois, ils le mettent avec le nom de famille."

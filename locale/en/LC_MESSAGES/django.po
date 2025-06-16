@@ -35,7 +35,7 @@ msgstr "e.g. Leonardo Dicaprio"
 
 #: app/templates/calculate.html:58
 msgid "You don’t know friend’s last name?"
-msgstr ""
+msgstr "You don’t know friend’s last name?"
 
 #: app/templates/calculate.html:63
 msgid "Calculate"
@@ -203,3 +203,6 @@ msgstr "Spanish"
 #: lovecompitability/settings.py:65
 msgid "French"
 msgstr "French"
+
+msgid "You can check friend's instragram. sometimes they put it with last name."
+msgstr "You can check friend's instragram. sometimes they put it with last name."

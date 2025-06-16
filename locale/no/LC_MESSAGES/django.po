@@ -155,3 +155,6 @@ msgstr "Feil ved henting av posisjonen din. Vennligst aktiver posisjonstjenester
 
 msgid "The most popular in my area"
 msgstr "Den mest populære i mitt område"
+
+msgid "You can check friend's instragram. sometimes they put it with last name."
+msgstr "Du kan sjekke vennens Instagram. noen ganger legger de det med etternavn."

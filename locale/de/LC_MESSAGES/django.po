@@ -156,3 +156,6 @@ msgstr "Fehler beim Abrufen Ihres Standorts. Bitte aktivieren Sie die Standortdi
 
 msgid "The most popular in my area"
 msgstr "Das Beliebteste in meiner Gegend"
+
+msgid "You can check friend's instragram. sometimes they put it with last name."
+msgstr "Sie können den Instagram-Account eines Freundes überprüfen. Manchmal fügen sie es mit dem Nachnamen hinzu."

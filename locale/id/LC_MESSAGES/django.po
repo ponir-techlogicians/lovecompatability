@@ -156,3 +156,6 @@ msgstr "Kesalahan mengambil lokasi Anda. Silakan aktifkan layanan lokasi."
 
 msgid "The most popular in my area"
 msgstr "Yang paling populer di daerah saya"
+
+msgid "You can check friend's instragram. sometimes they put it with last name."
+msgstr "Anda dapat memeriksa Instagram teman. kadang-kadang mereka menaruhnya dengan nama belakang."

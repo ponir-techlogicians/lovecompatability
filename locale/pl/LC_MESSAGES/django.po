@@ -157,3 +157,6 @@ msgstr "Błąd podczas pobierania lokalizacji. Proszę włączyć usługi lokali
 
 msgid "The most popular in my area"
 msgstr "Najpopularniejsze w mojej okolicy"
+
+msgid "You can check friend's instragram. sometimes they put it with last name."
+msgstr "Możesz sprawdzić Instagram znajomego. czasami umieszczają to z nazwiskiem."

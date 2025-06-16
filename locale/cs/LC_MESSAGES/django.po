@@ -156,3 +156,6 @@ msgstr "Chyba při získávání vaší polohy. Prosím, povolte služby určov�
 
 msgid "The most popular in my area"
 msgstr "Nejoblíbenější v mé oblasti"
+
+msgid "You can check friend's instragram. sometimes they put it with last name."
+msgstr "Můžete zkontrolovat Instagram přítele. Někdy to dávají s příjmením."

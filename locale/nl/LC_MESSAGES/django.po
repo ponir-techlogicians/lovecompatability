@@ -156,3 +156,6 @@ msgstr "Fout bij het ophalen van uw locatie. Schakel locatievoorzieningen in."
 
 msgid "The most popular in my area"
 msgstr "Het populairst in mijn omgeving"
+
+msgid "You can check friend's instragram. sometimes they put it with last name."
+msgstr "Je kunt de Instagram van een vriend controleren. soms zetten ze het met achternaam."

@@ -156,3 +156,6 @@ msgstr "Konumunuzu alırken hata oluştu. Lütfen konum hizmetlerini etkinleşti
 
 msgid "The most popular in my area"
 msgstr "Benim bölgemde en popüler olan"
+
+msgid "You can check friend's instragram. sometimes they put it with last name."
+msgstr "Arkadaşının Instagram'ını kontrol edebilirsin. Bazen soyadıyla koyarlar."

@@ -155,3 +155,6 @@ msgstr "Hiba történt a helymeghatározás során. Kérjük, engedélyezze a he
 
 msgid "The most popular in my area"
 msgstr "A legnépszerűbb a környékemen"
+
+msgid "You can check friend's instragram. sometimes they put it with last name."
+msgstr "Megnézheted a barátod Instagramját. néha a vezetéknevükkel együtt teszik fel."

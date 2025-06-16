@@ -156,3 +156,6 @@ msgstr "Lỗi khi truy xuất vị trí của bạn. Vui lòng bật dịch vụ
 
 msgid "The most popular in my area"
 msgstr "Phổ biến nhất trong khu vực của tôi"
+
+msgid "You can check friend's instragram. sometimes they put it with last name."
+msgstr "Bạn có thể kiểm tra Instagram của bạn bè. Đôi khi họ đặt nó với họ."
