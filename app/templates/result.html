@@ -41,6 +41,46 @@
         }
     }
 </script>
+<style>
+    .popup-overlay {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background: rgba(0, 0, 0, 0.5);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        z-index: 1000;
+    }
+
+    .popup-content {
+        background: white;
+        padding: 20px;
+        border-radius: 5px;
+        width: 80%;
+        max-width: 500px;
+    }
+
+    .popup-header {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin-bottom: 15px;
+    }
+
+    .close-popup {
+        border: none;
+        background: none;
+        font-size: 24px;
+        cursor: pointer;
+    }
+
+    .hidden {
+        display: none;
+    }
+</style>
 <div class="topBanner pc">
   <img src="{% static 'app/img/pc_top.png' %}" alt="">
 </div>
@@ -126,12 +166,44 @@
   <img src="{% static 'app/img/banner01.png' %}" alt="">
     <p>{% trans "We will resolve your curiosities" %}</p>
 </div>
-
+<div class="popup-overlay hidden" id="popup">
+    <div class="popup-content">
+        <div class="popup-header">
+            <h3>{% trans "How does it work?"%}</h3>
+            <button class="close-popup">&times;</button>
+        </div>
+        <div class="popup-body">
+            <p>{% trans "We calculate your love score using the number of strokes in each letter of your name." %}</p>
+            <p>{% trans "Here’s how many strokes each letter has:" %}</p>
+            <code>
+                A: 3   B: 3   C: 1   D: 2   E: 3   F: 2   G: 2   H: 3
+                I: 1   J: 2   K: 3   L: 2   M: 4   N: 3   O: 1   P: 2
+                Q: 2   R: 3   S: 4   T: 2   U: 3   V: 2   W: 4   X: 2
+                Y: 3   Z: 3
+            </code>
+        </div>
+    </div>
+</div>
 {#<script>#}
 {#     function goto(){#}
 {#         window.location.href = '{% url 'search' %}';#}
 {#     }#}
 {#</script>#}
+<script>
+ document.querySelector(".result__set").addEventListener("click", function () {
+    document.getElementById("popup").classList.remove("hidden");
+});
 
+document.querySelector(".close-popup").addEventListener("click", function () {
+    document.getElementById("popup").classList.add("hidden");
+});
+
+// Close popup when clicking outside
+document.getElementById("popup").addEventListener("click", function (e) {
+    if (e.target === this) {
+        this.classList.add("hidden");
+    }
+});
+</script>
 <script defer src="https://static.addtoany.com/menu/page.js"></script>
 {% endblock %}
