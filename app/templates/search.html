@@ -58,10 +58,10 @@
           <div class="search__listHeader__item">{% trans "Mentioned (times)" %}</div>
       </div>
       <ul class="search__listBody">
-        {% for name, count in top_names %}
+        {% for name, count , rank in top_names_with_ranks %}
             <li class="row">
                 <div class="search__listBody__itemWrap">
-                    <div class="search__listBody__item {% if forloop.counter ==  search_rank %} search__listFooter__item {% endif %}">{{ forloop.counter }}</div>
+                    <div class="search__listBody__item {% if forloop.counter ==  search_rank %} search__listFooter__item {% endif %}">{{ rank }}</div>
                     <div class="search__listBody__item {% if forloop.counter ==  search_rank %} search__listFooter__item {% endif %}">{{ name }}</div>
                     <div class="search__listBody__item {% if forloop.counter ==  search_rank %} search__listFooter__item {% endif %}">{{ count }}</div>
 
