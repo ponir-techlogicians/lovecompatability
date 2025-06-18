@@ -337,24 +337,40 @@ class SearchView(TemplateView):
             name_counter[result.name1] += 1
             name_counter[result.name2] += 1
 
-        # Get sorted names and top 10
+        # Get sorted names 
         sorted_names = name_counter.most_common()
-        top_names = sorted_names[:10]
+
+        # Calculate ranks with same rank for equal mentions
+        ranked_names = []
+        current_rank = 1
+        current_count = None
+        skip_ranks = 0
+
+        for idx, (name, count) in enumerate(sorted_names):
+            if count != current_count:
+                current_rank = idx + 1
+                current_count = count
+
+            ranked_names.append((name, count, current_rank))
+
+        # Get top 10 with ranks
+        top_names = ranked_names[:10]
 
         # Get rank of the query
         search_rank = None
         query_lower = query.lower()
-        for idx, (name, _) in enumerate(sorted_names, start=1):
+        for idx, (name, count, rank) in enumerate(ranked_names):
             if name.lower() == query_lower:
-                search_rank = idx
+                search_rank = idx+1
                 break
         print(results)
         context = {
             "results": results,
             "search_key": query,
             "mention_count": mention_count,
-            "top_names" : top_names,
-            "radius_input" : radius_input,
+            "top_names" : [(name, count) for name, count, rank in top_names],
+            "top_names_with_ranks": top_names,
+            "radius_input": radius_input,
             "search_rank":search_rank,
             "lat" : latitude if latitude else None,
             "lon" : longitude if longitude else None,
