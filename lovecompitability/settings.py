@@ -189,3 +189,8 @@ STRIPE_SECRET_KEY = 'sk_test_51IiO7DBH8Pgfzx7J1Y9m3u2p5097JDmKoSqckPpmOwfdzYGECF
 
 # settings.py
 
+try:
+    # imp.find_module('local_settings')
+    from .local_settings import *
+except ImportError:
+    print('hayhay')
