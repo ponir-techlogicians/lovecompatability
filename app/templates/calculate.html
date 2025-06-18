@@ -3,8 +3,16 @@
 {% load i18n %}
 {% block content %}
  <script>
+ // Function to get user's current location and submit the form
     function getLocationAndSubmit(event) {
         event.preventDefault();  // Prevent immediate form submission
+        const name1 = document.querySelector('input[name="name1"]').value.trim();
+        const name2 = document.querySelector('input[name="name2"]').value.trim();
+
+        if (!name1 || !name2) {
+            alert("Please add names.");
+            return;
+        }
         document.getElementById("nameForm").submit();
         /*if (navigator.geolocation) {
             navigator.geolocation.getCurrentPosition(function (position) {
@@ -119,14 +127,15 @@
         {% csrf_token %}
         <div class="loveWrap__inputBox">
             <div class="loveWrap__label">{% trans "Name A (First name & Last name)" %}</div>
-            <input class="loveWrap__input" type="text" name="name1" placeholder="{% trans 'e.g. Jennifer Lawrence' %}">
+            <input class="loveWrap__input" type="text" name="name1" placeholder="{% trans 'e.g. Jennifer Lawrence' %}" required>
         </div>
         <div class="loveWrap__inputBox">
             <div class="loveWrap__label">{% trans "Name B (First name & Last name)" %}</div>
-            <input class="loveWrap__input" type="text" name="name2" placeholder="{% trans 'e.g. Leonardo Dicaprio' %}">
+            <input class="loveWrap__input" type="text" name="name2" placeholder="{% trans 'e.g. Leonardo Dicaprio' %}" required>
         </div>
         <div class="loveWrap__info">
-          <a href="#a" class="loveWrap__infoLink">{% trans "You don’t know friend’s last name?"%}</a>
+{#          <a href="#a" class="loveWrap__infoLink">{% trans "You don’t know friend’s last name?"%}</a>#}
+          <a href="#a" class="loveWrap__infoLink">{% trans "How to use / What is it?"%}</a>
         </div>
         {% comment %}<input type="hidden" id="latitude" name="latitude">
         <input type="hidden" id="longitude" name="longitude">{% endcomment %}
@@ -137,14 +146,25 @@
   <img src="{% static 'app/img/banner01.png' %}" alt="">
     <p>{% trans "We will resolve your curiosities" %}</p>
 </div>
-<div class="popup-overlay hidden" id="popup">
+{#<div class="popup-overlay hidden" id="popup">#}
+{#        <div class="popup-content">#}
+{#            <div class="popup-header">#}
+{#                <h3>{% trans "You don’t know friend’s last name?"%}</h3>#}
+{#                <button class="close-popup">&times;</button>#}
+{#            </div>#}
+{#            <div class="popup-body">#}
+{#                <p>{% trans "You can check friend's instragram. sometimes they put it with last name." %}</p>#}
+{#            </div>#}
+{#        </div>#}
+{#    </div>#}
+ <div class="popup-overlay hidden" id="popup">
         <div class="popup-content">
             <div class="popup-header">
-                <h3>{% trans "You don’t know friend’s last name?"%}</h3>
+                <h3>{% trans "About this"%}</h3>
                 <button class="close-popup">&times;</button>
             </div>
             <div class="popup-body">
-                <p>{% trans "You can check friend's instragram. sometimes they put it with last name." %}</p>
+                <p>{% trans "This is a fun game that's popular among Korean teenagers! It calculates how much someone might like another person based on the number of strokes in their names.Try it just for fun — and share it with your friends! You can even see who’s the most popular in your school or neighborhood!" %}</p>
             </div>
         </div>
     </div>
