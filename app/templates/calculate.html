@@ -126,7 +126,8 @@
             <input class="loveWrap__input" type="text" name="name2" placeholder="{% trans 'e.g. Leonardo Dicaprio' %}">
         </div>
         <div class="loveWrap__info">
-          <a href="#a" class="loveWrap__infoLink">{% trans "You don’t know friend’s last name?"%}</a>
+{#          <a href="#a" class="loveWrap__infoLink">{% trans "You don’t know friend’s last name?"%}</a>#}
+          <a href="#a" class="loveWrap__infoLink">{% trans "How to use / What is it?"%}</a>
         </div>
         {% comment %}<input type="hidden" id="latitude" name="latitude">
         <input type="hidden" id="longitude" name="longitude">{% endcomment %}
@@ -137,14 +138,25 @@
   <img src="{% static 'app/img/banner01.png' %}" alt="">
     <p>{% trans "We will resolve your curiosities" %}</p>
 </div>
-<div class="popup-overlay hidden" id="popup">
+{#<div class="popup-overlay hidden" id="popup">#}
+{#        <div class="popup-content">#}
+{#            <div class="popup-header">#}
+{#                <h3>{% trans "You don’t know friend’s last name?"%}</h3>#}
+{#                <button class="close-popup">&times;</button>#}
+{#            </div>#}
+{#            <div class="popup-body">#}
+{#                <p>{% trans "You can check friend's instragram. sometimes they put it with last name." %}</p>#}
+{#            </div>#}
+{#        </div>#}
+{#    </div>#}
+ <div class="popup-overlay hidden" id="popup">
         <div class="popup-content">
             <div class="popup-header">
-                <h3>{% trans "You don’t know friend’s last name?"%}</h3>
+                <h3>{% trans "About this"%}</h3>
                 <button class="close-popup">&times;</button>
             </div>
             <div class="popup-body">
-                <p>{% trans "You can check friend's instragram. sometimes they put it with last name." %}</p>
+                <p>{% trans "This is a fun game that's popular among Korean teenagers! It calculates how much someone might like another person based on the number of strokes in their names.Try it just for fun — and share it with your friends! You can even see who’s the most popular in your school or neighborhood!" %}</p>
             </div>
         </div>
     </div>
