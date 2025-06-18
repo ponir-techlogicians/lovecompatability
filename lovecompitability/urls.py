@@ -17,9 +17,10 @@ Including another URLconf
 from django.contrib import admin
 from django.shortcuts import redirect
 from django.urls import path,include
-
+from app.views  import CalculateView
 urlpatterns = [
     path('admin/', admin.site.urls),
     path('app/', include('app.urls')),
-    path('', lambda request: redirect('/app/calculate/', permanent=True)),
+    # path('', lambda request: redirect('/app/calculate/', permanent=True)),
+    path('', CalculateView.as_view(), name='calculate'),
 ]
