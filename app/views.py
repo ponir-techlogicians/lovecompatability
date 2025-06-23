@@ -199,9 +199,29 @@ class CalculateView(TemplateView):
 
     def post(self, request, *args, **kwargs):
 
+        if get_language() == 'ko':
+            # Korean name format
+            name1_first = request.POST.get("name1_first", "").strip()
+            name1_last = request.POST.get("name1_last", "").strip()
+            name2_first = request.POST.get("name2_first", "").strip()
+            name2_last = request.POST.get("name2_last", "").strip()
 
-        name1 = request.POST.get("name1", "").strip()
-        name2 = request.POST.get("name2", "").strip()
+            name1 = f"{name1_last} {name1_first}"
+            name2 = f"{name2_last} {name2_first}"
+        else:
+            # Other languages format
+            name1_first = request.POST.get("name1_first", "").strip()
+            name1_middle = request.POST.get("name1_middle", "").strip()
+            name1_last = request.POST.get("name1_last", "").strip()
+            name2_first = request.POST.get("name2_first", "").strip()
+            name2_middle = request.POST.get("name2_middle", "").strip()
+            name2_last = request.POST.get("name2_last", "").strip()
+
+            name1 = f"{name1_first} {name1_middle} {name1_last}".strip()
+            name2 = f"{name2_first} {name2_middle} {name2_last}".strip()
+
+        # name1 = request.POST.get("name1", "").strip()
+        # name2 = request.POST.get("name2", "").strip()
         latitude = request.POST.get("latitude")  # Get latitude from form
         longitude = request.POST.get("longitude")  # Get longitude from form
 

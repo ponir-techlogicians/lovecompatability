@@ -1,0 +1,212 @@
+{% extends "layout/main.html" %}
+{% load static %}
+{% load i18n %}
+{% block content %}
+ <script>
+ // Function to get user's current location and submit the form
+    function getLocationAndSubmit(event) {
+        event.preventDefault();  // Prevent immediate form submission
+        const name1 = document.querySelector('input[name="name1"]').value.trim();
+        const name2 = document.querySelector('input[name="name2"]').value.trim();
+
+        if (!name1 || !name2) {
+            alert("Please add names.");
+            return;
+        }
+        document.getElementById("nameForm").submit();
+        /*if (navigator.geolocation) {
+            navigator.geolocation.getCurrentPosition(function (position) {
+                document.getElementById("latitude").value = position.coords.latitude;
+                document.getElementById("longitude").value = position.coords.longitude;
+                document.getElementById("nameForm").submit(); // Now submit the form
+            }, function (error) {
+                alert("Location access denied! Submitting without location.");
+                document.getElementById("nameForm").submit(); // Submit without location
+            });
+        } else {
+            alert("Geolocation is not supported by this browser.");
+            document.getElementById("nameForm").submit(); // Submit without location
+        }*/
+    }
+</script>
+<style>
+    .popup-overlay {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background: rgba(0, 0, 0, 0.5);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        z-index: 1000;
+    }
+
+    .popup-content {
+        background: white;
+        padding: 20px;
+        border-radius: 5px;
+        width: 80%;
+        max-width: 500px;
+    }
+
+    .popup-header {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin-bottom: 15px;
+    }
+
+    .close-popup {
+        border: none;
+        background: none;
+        font-size: 24px;
+        cursor: pointer;
+    }
+
+    .hidden {
+        display: none;
+    }
+</style>
+<!-- calculate page -->
+
+    <div class="loveWrap">
+        <div class="loveWrap__titImg">
+            <img src="{% static 'app/img/img_calc.png' %}" alt="" class="mobile">
+            <img src="{% static 'app/img/img_calc.png' %}" alt="" class="pc">
+        </div>
+
+    </div>
+    <div class="loveWrap" style="display: none">
+        <form action="{% url 'set_language' %}" method="post" >
+            {% csrf_token %}
+            <div class="loveWrap__inputBox" style="margin-bottom: 10px;">
+                <select name="language" onchange="this.form.submit()" class="loveWrap__select">
+                    <option value="en" {% if request.LANGUAGE_CODE == "en" %}selected{% endif %}>English</option>
+                    <option value="es" {% if request.LANGUAGE_CODE == "es" %}selected{% endif %}>Spanish</option>
+                    <option value="fr" {% if request.LANGUAGE_CODE == "fr" %}selected{% endif %}>French</option>
+                    <option value="de" {% if request.LANGUAGE_CODE == "de" %}selected{% endif %}>German</option>
+                    <option value="ru" {% if request.LANGUAGE_CODE == "ru" %}selected{% endif %}>Russian</option>
+                    <option value="it" {% if request.LANGUAGE_CODE == "it" %}selected{% endif %}>Italian</option>
+                    <option value="sv" {% if request.LANGUAGE_CODE == "sv" %}selected{% endif %}>Swedish</option>
+                    <option value="pt" {% if request.LANGUAGE_CODE == "pt" %}selected{% endif %}>Portuguese</option>
+                    <option value="nl" {% if request.LANGUAGE_CODE == "nl" %}selected{% endif %}>Dutch</option>
+                    <option value="no" {% if request.LANGUAGE_CODE == "no" %}selected{% endif %}>Norwegian</option>
+                    <option value="da" {% if request.LANGUAGE_CODE == "da" %}selected{% endif %}>Danish</option>
+                    <option value="cs" {% if request.LANGUAGE_CODE == "cs" %}selected{% endif %}>Czech</option>
+                    <option value="hu" {% if request.LANGUAGE_CODE == "hu" %}selected{% endif %}>Hungarian</option>
+                    <option value="fi" {% if request.LANGUAGE_CODE == "fi" %}selected{% endif %}>Finnish</option>
+                    <option value="ro" {% if request.LANGUAGE_CODE == "ro" %}selected{% endif %}>Romanian</option>
+                    <option value="el" {% if request.LANGUAGE_CODE == "el" %}selected{% endif %}>Greek</option>
+                    <option value="pl" {% if request.LANGUAGE_CODE == "pl" %}selected{% endif %}>Polish</option>
+                    <option value="ms" {% if request.LANGUAGE_CODE == "ms" %}selected{% endif %}>Malay</option>
+                    <option value="ko" {% if request.LANGUAGE_CODE == "ko" %}selected{% endif %}>Korean</option>
+                    <option value="hi" {% if request.LANGUAGE_CODE == "hi" %}selected{% endif %}>Hindi</option>
+                    <option value="id" {% if request.LANGUAGE_CODE == "id" %}selected{% endif %}>Indonesian</option>
+                    <option value="tr" {% if request.LANGUAGE_CODE == "tr" %}selected{% endif %}>Turkish</option>
+                    <option value="th" {% if request.LANGUAGE_CODE == "th" %}selected{% endif %}>Thai</option>
+                    <option value="vi" {% if request.LANGUAGE_CODE == "vi" %}selected{% endif %}>Vietnamese</option>
+                    <option value="he" {% if request.LANGUAGE_CODE == "he" %}selected{% endif %}>Hebrew</option>
+                    <option value="ar" {% if request.LANGUAGE_CODE == "ar" %}selected{% endif %}>Arabic</option>
+                    <option value="ur" {% if request.LANGUAGE_CODE == "ur" %}selected{% endif %}>Urdu</option>
+                </select>
+            </div>
+        </form>
+    </div>
+    <form class="loveWrap" method="post" id="nameForm" onsubmit="getLocationAndSubmit(event)">
+        {% csrf_token %}
+        <div class="loveWrap__inputBox">
+            <div class="loveWrap__label">{% trans "Name A (First name & Last name)" %}</div>
+            <input class="loveWrap__input" type="text" name="name1" placeholder="{% trans 'e.g. Jennifer Lawrence' %}" required>
+        </div>
+        <div class="loveWrap__inputBox">
+            <div class="loveWrap__label">{% trans "Name B (First name & Last name)" %}</div>
+            <input class="loveWrap__input" type="text" name="name2" placeholder="{% trans 'e.g. Leonardo Dicaprio' %}" required>
+        </div>
+        <div class="loveWrap__info">
+{#          <a href="#a" class="loveWrap__infoLink">{% trans "You don’t know friend’s last name?"%}</a>#}
+          <a href="#a" class="loveWrap__infoLink">{% trans "How to use / What is it?"%}</a>
+        </div>
+        {% comment %}<input type="hidden" id="latitude" name="latitude">
+        <input type="hidden" id="longitude" name="longitude">{% endcomment %}
+        <button type="submit" class="loveWrap__btn">{% trans "Calculate" %}</button>
+
+    </form>
+<div class="loveWrap__ad" style="width: 100%;min-height: 100px" id="adsense-wrapper">
+{#  <img src="{% static 'app/img/banner01.png' %}" alt="">#}
+{#    <p>{% trans "We will resolve your curiosities" %}</p>#}
+
+<!-- Ads Banner-1 -->
+{#<ins class="adsbygoogle"#}
+{#     style="display:inline-block;width:300px;height:250px"#}
+{#     data-ad-client="ca-pub-2655483668363741"#}
+{#     data-ad-slot="7053690987"#}
+{#     data-ad-format="auto"#}
+{#     data-full-width-responsive="true"></ins>#}
+<ins class="adsbygoogle"
+     style="display:inline-block;width:728px;height:90px"
+     data-ad-client="ca-pub-2655483668363741"
+     data-ad-slot="7053690987"></ins>
+
+</div>
+
+{#<div class="popup-overlay hidden" id="popup">#}
+{#        <div class="popup-content">#}
+{#            <div class="popup-header">#}
+{#                <h3>{% trans "You don’t know friend’s last name?"%}</h3>#}
+{#                <button class="close-popup">&times;</button>#}
+{#            </div>#}
+{#            <div class="popup-body">#}
+{#                <p>{% trans "You can check friend's instragram. sometimes they put it with last name." %}</p>#}
+{#            </div>#}
+{#        </div>#}
+{#    </div>#}
+ <div class="popup-overlay hidden" id="popup">
+        <div class="popup-content">
+            <div class="popup-header">
+                <h3>{% trans "About this"%}</h3>
+                <button class="close-popup">&times;</button>
+            </div>
+            <div class="popup-body">
+                <p>{% trans "This is a fun game that's popular among Korean teenagers! It calculates how much someone might like another person based on the number of strokes in their names.Try it just for fun — and share it with your friends! You can even see who’s the most popular in your school or neighborhood!" %}</p>
+            </div>
+        </div>
+    </div>
+  <script>
+     document.querySelector(".loveWrap__infoLink").addEventListener("click", function () {
+        document.getElementById("popup").classList.remove("hidden");
+    });
+
+    document.querySelector(".close-popup").addEventListener("click", function () {
+        document.getElementById("popup").classList.add("hidden");
+    });
+
+    // Close popup when clicking outside 
+    document.getElementById("popup").addEventListener("click", function (e) {
+        if (e.target === this) {
+            this.classList.add("hidden");
+        }
+    });
+  </script>
+  <script>
+  window.addEventListener('load', function () {
+    // Delay the ad render until the DOM + layout is definitely ready
+    setTimeout(function () {
+      const adWrapper = document.getElementById('adsense-wrapper');
+      console.log('Ad wrapper width:', adWrapper.offsetWidth);
+      const width = adWrapper.offsetWidth;
+
+      if (width > 0) {
+        try {
+          (adsbygoogle = window.adsbygoogle || []).push({});
+        } catch (e) {
+          console.error("AdSense push failed:", e);
+        }
+      } else {
+        console.warn("Ad wrapper width still 0; ad not rendered.");
+      }
+    }, 1000); // delay for layout
+  });
+</script>
+{% endblock %}
