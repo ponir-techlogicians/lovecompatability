@@ -146,26 +146,7 @@
      data-full-width-responsive="true"></ins>
 
 </div>
-<script>
-  window.addEventListener('load', function () {
-    // Delay the ad render until the DOM + layout is definitely ready
-    setTimeout(function () {
-      const adWrapper = document.getElementById('adsense-wrapper');
-      console.log('Ad wrapper width:', adWrapper.offsetWidth);
-      const width = adWrapper.offsetWidth;
 
-      if (width > 0) {
-        try {
-          (adsbygoogle = window.adsbygoogle || []).push({});
-        } catch (e) {
-          console.error("AdSense push failed:", e);
-        }
-      } else {
-        console.warn("Ad wrapper width still 0; ad not rendered.");
-      }
-    }, 1000); // delay for layout
-  });
-</script>
 {#<div class="popup-overlay hidden" id="popup">#}
 {#        <div class="popup-content">#}
 {#            <div class="popup-header">#}
@@ -204,4 +185,24 @@
         }
     });
   </script>
+  <script>
+  window.addEventListener('load', function () {
+    // Delay the ad render until the DOM + layout is definitely ready
+    setTimeout(function () {
+      const adWrapper = document.getElementById('adsense-wrapper');
+      console.log('Ad wrapper width:', adWrapper.offsetWidth);
+      const width = adWrapper.offsetWidth;
+
+      if (width > 0) {
+        try {
+          (adsbygoogle = window.adsbygoogle || []).push({});
+        } catch (e) {
+          console.error("AdSense push failed:", e);
+        }
+      } else {
+        console.warn("Ad wrapper width still 0; ad not rendered.");
+      }
+    }, 1000); // delay for layout
+  });
+</script>
 {% endblock %}
