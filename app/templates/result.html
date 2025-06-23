@@ -162,21 +162,21 @@
         </div>
     </div>
 </div>
-<div class="loveWrap__ad" style="width: 100%;min-height: 100px">
-{#  <img src="{% static 'app/img/banner01.png' %}" alt="">#}
-{#    <p>{% trans "We will resolve your curiosities" %}</p>#}
-<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-2655483668363741"
-     crossorigin="anonymous"></script>
-<!-- Ads Banner-1 -->
-<ins class="adsbygoogle"
-     style="display:block"
+<div class="loveWrap__ad" style="width: 100%;min-height: 100px" id="adsense-wrapper">
+{#      <img src="{% static 'app/img/banner01.png' %}" alt="">#}
+{#      <p>{% trans "We will resolve your curiosities" %}</p>#}
+    <!-- Ads Banner-1 -->
+{#    <ins class="adsbygoogle"#}
+{#         style="display:block"#}
+{#         data-ad-client="ca-pub-2655483668363741"#}
+{#         data-ad-slot="7053690987"#}
+{#         data-ad-format="auto"#}
+{#         data-full-width-responsive="true"></ins>#}
+  <ins class="adsbygoogle"
+     style="display:inline-block;width:728px;height:90px"
      data-ad-client="ca-pub-2655483668363741"
-     data-ad-slot="7053690987"
-     data-ad-format="auto"
-     data-full-width-responsive="true"></ins>
-<script>
-     (adsbygoogle = window.adsbygoogle || []).push({});
-</script>
+     data-ad-slot="7053690987"></ins>
+
 </div>
 <div class="popup-overlay hidden" id="popup">
     <div class="popup-content">
@@ -216,6 +216,26 @@ document.getElementById("popup").addEventListener("click", function (e) {
         this.classList.add("hidden");
     }
 });
+</script>
+<script>
+  window.addEventListener('load', function () {
+    // Delay the ad render until the DOM + layout is definitely ready
+    setTimeout(function () {
+      const adWrapper = document.getElementById('adsense-wrapper');
+      console.log('Ad wrapper width:', adWrapper.offsetWidth);
+      const width = adWrapper.offsetWidth;
+
+      if (width > 0) {
+        try {
+          (adsbygoogle = window.adsbygoogle || []).push({});
+        } catch (e) {
+          console.error("AdSense push failed:", e);
+        }
+      } else {
+        console.warn("Ad wrapper width still 0; ad not rendered.");
+      }
+    }, 1000); // delay for layout
+  });
 </script>
 <script defer src="https://static.addtoany.com/menu/page.js"></script>
 {% endblock %}
