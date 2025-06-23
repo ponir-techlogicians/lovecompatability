@@ -161,6 +161,7 @@
     // Delay the ad render until the DOM + layout is definitely ready
     setTimeout(function () {
       const adWrapper = document.getElementById('adsense-wrapper');
+      console.log('Ad wrapper width:', adWrapper.offsetWidth);
       const width = adWrapper.offsetWidth;
 
       if (width > 0) {
