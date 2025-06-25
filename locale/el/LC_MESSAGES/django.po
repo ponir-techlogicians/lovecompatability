@@ -1,14 +1,8 @@
-# SOME DESCRIPTIVE TITLE.
-# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
-# This file is distributed under the same license as the PACKAGE package.
-# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
-#
-#, fuzzy
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2025-06-04 13:01+0600\n"
+"POT-Creation-Date: 2025-06-25 09:49\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -16,113 +10,77 @@ msgstr ""
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Plural-Forms: nplurals=2; plural=(n != 1);\n"
-#: app/templates/calculate.html:72
-msgid "Latitude"
-msgstr "Latitude"
+"Plural-Forms: nplurals=6; plural=n==0 ? 0 : n==1 ? 1 : n==2 ? 2 : n%100>=3 "
+"&& n%100<=10 ? 3 : n%100>=11 && n%100<=99 ? 4 : 5;\n"
 
-msgid "Longitude"
-msgstr "Longitude"
+msgid "Please add first and last names."
+msgstr "Παρακαλώ προσθέστε το όνομα και το επώνυμο."
 
-msgid "English"
-msgstr "Αγγλικά"
+msgid "Language"
+msgstr "Γλώσσα"
 
-msgid "Bengali"
-msgstr "Μπενγκάλι"
+msgid "How much this person"
+msgstr "Πόσο αυτό το άτομο"
 
-msgid "Spanish"
-msgstr "Ισπανικά"
+msgid "First name"
+msgstr "Όνομα"
 
-msgid "French"
-msgstr "Γαλλικά"
+msgid "Jennifer"
+msgstr "Τζένιφερ"
 
-msgid "Name"
-msgstr "Name"
+msgid "Middle name"
+msgstr "Μεσαίο όνομα"
 
-msgid "Search"
-msgstr "Αναζήτηση"
+msgid "(optional)"
+msgstr "(προαιρετικό)"
 
-msgid "1km"
-msgstr "1km"
+msgid "Shrader"
+msgstr "Σρέιντερ"
 
-msgid "50km"
-msgstr "50km"
+msgid "Last name"
+msgstr "Επώνυμο"
 
-msgid "200km"
-msgstr "200km"
+msgid "Lawrence"
+msgstr "Λόρενς"
 
-msgid "world"
-msgstr "κόσμος"
+msgid "like this person"
+msgstr "όπως αυτό το άτομο"
 
-msgid "Rank"
-msgstr "Κατάταξη"
+msgid "Leonardo"
+msgstr "Leonardo"
 
-msgid "Mentioned (times)"
-msgstr "Αναφέρθηκε (φορές)"
+msgid "DiCaprio"
+msgstr "DiCaprio"
 
-msgid "With who?"
-msgstr "Με ποιον;"
-
-msgid "Search Names & Location"
-msgstr "Αναζήτηση Ονομάτων & Τοποθεσίας"
-
-msgid "Enter Name"
-msgstr "이름 입력"
-
-msgid "Radius"
-msgstr "반경"
-
-msgid "Search Results for"
-msgstr "검색 결과"
-
-msgid "Total Mentions"
-msgstr "총 언급 수"
-
-msgid "Names Mentioned Along with"
-msgstr "함께 언급된 이름들"
-
-msgid "Number of Mentions"
-msgstr "언급 횟수"
-
-msgid "No other names mentioned with"
-msgstr "함께 언급된 다른 이름 없음"
-
-msgid "Filtered Results"
-msgstr "필터링된 결과"
-
-msgid "Name 1"
-msgstr "이름 1"
-
-msgid "Name 2"
-msgstr "이름 2"
-
-msgid "Name A (First name & Last name)"
-msgstr "Όνομα Α (Όνομα & Επώνυμο)"
-
-msgid "Name B (First name & Last name)"
-msgstr "Όνομα Β (Όνομα & Επώνυμο)"
-
-msgid "e.g. Jennifer Lawrence"
-msgstr "π.χ. Jennifer Lawrence"
-
-
-msgid "e.g. Leonardo Dicaprio"
-msgstr "π.χ. Leonardo Dicaprio"
-
-msgid "You don’t know friend’s last name?"
-msgstr "Δεν ξέρετε το επώνυμο του φίλου σας;"
+msgid "How to use / What is it?"
+msgstr "Πώς να το χρησιμοποιήσετε / Τι είναι αυτό;"
 
 msgid "Calculate"
 msgstr "Υπολογίστε"
 
-msgid "We will resolve your curiosities"
-msgstr "Θα λύσουμε τις απορίες σας"
+msgid "About this"
+msgstr "Σχετικά με αυτό"
+
+msgid "This is a fun game that's popular among Korean teenagers! It calculates how much someone might like another person based on the number of strokes in their names.Try it just for fun — and share it with your friends! You can even see who’s the most popular in your school or neighborhood!"
+msgstr "Αυτό είναι ένα διασκεδαστικό παιχνίδι που είναι δημοφιλές μεταξύ των Κορεατών εφήβων! Υπολογίζει πόσο μπορεί να αρέσει κάποιος σε κάποιον άλλο με βάση τον αριθμό των γραμμών στα ονόματά τους. Δοκιμάστε το απλώς για διασκέδαση — και μοιραστείτε το με τους φίλους σας! Μπορείτε ακόμη και να δείτε ποιος είναι ο πιο δημοφιλής στο σχολείο ή στη γειτονιά σας!"
+
+msgid "Name A (First name & Last name)"
+msgstr "Όνομα Α (Όνομα & Επώνυμο)"
+
+msgid "e.g. Jennifer Lawrence"
+msgstr "π.χ. Jennifer Lawrence"
+
+msgid "Name B (First name & Last name)"
+msgstr "Όνομα Β (Όνομα & Επώνυμο)"
+
+msgid "e.g. Leonardo Dicaprio"
+msgstr "π.χ. Leonardo Dicaprio"
 
 msgid "Who tested with"
 msgstr "Ποιος δοκίμασε με"
 
 msgid "Open to see"
-msgstr "Ανοίξτε για να δείτε"
+msgstr "Άνοιξε για να δεις"
 
 msgid "Payment"
 msgstr "Πληρωμή"
@@ -137,25 +95,61 @@ msgid "Payment failed"
 msgstr "Η πληρωμή απέτυχε"
 
 msgid "Geolocation is not supported by this browser."
-msgstr "Η γεωτοποθέτηση δεν υποστηρίζεται από αυτό το πρόγραμμα περιήγησης."
+msgstr "Η γεωτοποθεσία δεν υποστηρίζεται από αυτό το πρόγραμμα περιήγησης."
 
 msgid "how stroke we set"
-msgstr "how stroke we set"
+msgstr "πώς ρυθμίζουμε το stroke"
 
 msgid "Result"
 msgstr "Αποτέλεσμα"
 
-msgid "%(name1)s likes %(name2)s with a <br>\n<b>%(compatibility_score)s%%</b> probability."
-msgstr "%(name1)s likes %(name2)s with a <br>\n<b>%(compatibility_score)s%%</b> probability."
+msgid "%(name1)s likes %(name2)s with a <br>\n <b>%(compatibility_score)s%%</b> probability."
+msgstr "%(name1)s συμπαθεί %(name2)s με πιθανότητα <br>\n <b>%(compatibility_score)s%%</b>."
 
 msgid "How many people mentioned me?"
 msgstr "Πόσοι άνθρωποι με ανέφεραν;"
 
+msgid "How does it work?"
+msgstr "Πώς λειτουργεί;"
+
+msgid "We calculate your love score using the number of strokes in each letter of your name."
+msgstr "Υπολογίζουμε το σκορ αγάπης σας χρησιμοποιώντας τον αριθμό των γραμμών σε κάθε γράμμα του ονόματός σας."
+
+msgid "Here’s how many strokes each letter has:"
+msgstr "Εδώ είναι πόσες γραμμές έχει κάθε γράμμα:"
+
 msgid "Error retrieving your location. Please enable location services."
-msgstr "Σφάλμα κατά την ανάκτηση της τοποθεσίας σας. Ενεργοποιήστε τις υπηρεσίες τοποθεσίας."
+msgstr "Σφάλμα κατά την ανάκτηση της τοποθεσίας σας. Παρακαλώ ενεργοποιήστε τις υπηρεσίες τοποθεσίας."
 
 msgid "The most popular in my area"
-msgstr "Τα πιο δημοφιλή στην περιοχή μου"
+msgstr "Το πιο δημοφιλές στην περιοχή μου"
 
-msgid "You can check friend's instragram. sometimes they put it with last name."
-msgstr "Μπορείτε να ελέγξετε το Instagram του φίλου σας. μερικές φορές το βάζουν με το επώνυμο."
+msgid "Name"
+msgstr "Όνομα"
+
+msgid "Search"
+msgstr "Αναζήτηση"
+
+msgid "1km"
+msgstr "1km"
+
+msgid "50km"
+msgstr "50χλμ"
+
+msgid "200km"
+msgstr "200χλμ"
+
+msgid "world"
+msgstr "κόσμος"
+
+msgid "Rank"
+msgstr "Κατάταξη"
+
+msgid "Mentioned (times)"
+msgstr "Αναφέρθηκε (φορές)"
+
+msgid "With who?"
+msgstr "Με ποιον;"
+
+msgid "English"
+msgstr "Αγγλικά"

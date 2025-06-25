@@ -24,7 +24,7 @@
         );
 
         if (!allFirstLastFilled) {
-            alert("Please add first and last names.");
+            alert("{% trans "Please add first and last names." %}");
             return;
         }
 
@@ -95,36 +95,45 @@
     <div class="loveWrap desktop23" id="nameForm">
         {% csrf_token %}
         <div class="loveWrap__selectBox">
-        <div class="loveWrap__label">Language</div>
+        <div class="loveWrap__label">{% trans "Language" %}</div>
           <select id="languageSelect" class="loveWrap__select" onchange="changeLanguage(this.value)">
-              <option value="en" {% if request.LANGUAGE_CODE == "en" %}selected{% endif %}>English</option>
-              <option value="es" {% if request.LANGUAGE_CODE == "es" %}selected{% endif %}>Spanish</option>
-              <option value="fr" {% if request.LANGUAGE_CODE == "fr" %}selected{% endif %}>French</option>
-              <option value="de" {% if request.LANGUAGE_CODE == "de" %}selected{% endif %}>German</option>
-              <option value="ru" {% if request.LANGUAGE_CODE == "ru" %}selected{% endif %}>Russian</option>
-              <option value="it" {% if request.LANGUAGE_CODE == "it" %}selected{% endif %}>Italian</option>
-              <option value="sv" {% if request.LANGUAGE_CODE == "sv" %}selected{% endif %}>Swedish</option>
-              <option value="pt" {% if request.LANGUAGE_CODE == "pt" %}selected{% endif %}>Portuguese</option>
-              <option value="nl" {% if request.LANGUAGE_CODE == "nl" %}selected{% endif %}>Dutch</option>
-              <option value="no" {% if request.LANGUAGE_CODE == "no" %}selected{% endif %}>Norwegian</option>
-              <option value="da" {% if request.LANGUAGE_CODE == "da" %}selected{% endif %}>Danish</option>
-              <option value="cs" {% if request.LANGUAGE_CODE == "cs" %}selected{% endif %}>Czech</option>
-              <option value="hu" {% if request.LANGUAGE_CODE == "hu" %}selected{% endif %}>Hungarian</option>
-              <option value="fi" {% if request.LANGUAGE_CODE == "fi" %}selected{% endif %}>Finnish</option>
-              <option value="ro" {% if request.LANGUAGE_CODE == "ro" %}selected{% endif %}>Romanian</option>
-              <option value="el" {% if request.LANGUAGE_CODE == "el" %}selected{% endif %}>Greek</option>
-              <option value="pl" {% if request.LANGUAGE_CODE == "pl" %}selected{% endif %}>Polish</option>
-              <option value="ms" {% if request.LANGUAGE_CODE == "ms" %}selected{% endif %}>Malay</option>
-              <option value="ko" {% if request.LANGUAGE_CODE == "ko" %}selected{% endif %}>Korean</option>
-              <option value="hi" {% if request.LANGUAGE_CODE == "hi" %}selected{% endif %}>Hindi</option>
-              <option value="id" {% if request.LANGUAGE_CODE == "id" %}selected{% endif %}>Indonesian</option>
-              <option value="tr" {% if request.LANGUAGE_CODE == "tr" %}selected{% endif %}>Turkish</option>
-              <option value="th" {% if request.LANGUAGE_CODE == "th" %}selected{% endif %}>Thai</option>
-              <option value="vi" {% if request.LANGUAGE_CODE == "vi" %}selected{% endif %}>Vietnamese</option>
-              <option value="he" {% if request.LANGUAGE_CODE == "he" %}selected{% endif %}>Hebrew</option>
-              <option value="ar" {% if request.LANGUAGE_CODE == "ar" %}selected{% endif %}>Arabic</option>
-              <option value="ur" {% if request.LANGUAGE_CODE == "ur" %}selected{% endif %}>Urdu</option>
+               {% get_current_language as LANGUAGE_CODE %}
+               {% get_available_languages as LANGUAGES %}
+               {% for lang in LANGUAGES %}
+                 <option value="{{ lang.0 }}" {% if lang.0 == LANGUAGE_CODE %}selected{% endif %}>
+                   {{ lang.1 }}
+                 </option>
+               {% endfor %}
           </select>
+{#          <select id="languageSelect" class="loveWrap__select" onchange="changeLanguage(this.value)">#}
+{#              <option value="en" {% if request.LANGUAGE_CODE == "en" %}selected{% endif %}>English</option>#}
+{#              <option value="es" {% if request.LANGUAGE_CODE == "es" %}selected{% endif %}>Spanish</option>#}
+{#              <option value="fr" {% if request.LANGUAGE_CODE == "fr" %}selected{% endif %}>French</option>#}
+{#              <option value="de" {% if request.LANGUAGE_CODE == "de" %}selected{% endif %}>German</option>#}
+{#              <option value="ru" {% if request.LANGUAGE_CODE == "ru" %}selected{% endif %}>Russian</option>#}
+{#              <option value="it" {% if request.LANGUAGE_CODE == "it" %}selected{% endif %}>Italian</option>#}
+{#              <option value="sv" {% if request.LANGUAGE_CODE == "sv" %}selected{% endif %}>Swedish</option>#}
+{#              <option value="pt" {% if request.LANGUAGE_CODE == "pt" %}selected{% endif %}>Portuguese</option>#}
+{#              <option value="nl" {% if request.LANGUAGE_CODE == "nl" %}selected{% endif %}>Dutch</option>#}
+{#              <option value="no" {% if request.LANGUAGE_CODE == "no" %}selected{% endif %}>Norwegian</option>#}
+{#              <option value="da" {% if request.LANGUAGE_CODE == "da" %}selected{% endif %}>Danish</option>#}
+{#              <option value="cs" {% if request.LANGUAGE_CODE == "cs" %}selected{% endif %}>Czech</option>#}
+{#              <option value="hu" {% if request.LANGUAGE_CODE == "hu" %}selected{% endif %}>Hungarian</option>#}
+{#              <option value="fi" {% if request.LANGUAGE_CODE == "fi" %}selected{% endif %}>Finnish</option>#}
+{#              <option value="ro" {% if request.LANGUAGE_CODE == "ro" %}selected{% endif %}>Romanian</option>#}
+{#              <option value="el" {% if request.LANGUAGE_CODE == "el" %}selected{% endif %}>Greek</option>#}
+{#              <option value="pl" {% if request.LANGUAGE_CODE == "pl" %}selected{% endif %}>Polish</option>#}
+{#              <option value="ms" {% if request.LANGUAGE_CODE == "ms" %}selected{% endif %}>Malay</option>#}
+{#              <option value="ko" {% if request.LANGUAGE_CODE == "ko" %}selected{% endif %}>Korean</option>#}
+{#              <option value="hi" {% if request.LANGUAGE_CODE == "hi" %}selected{% endif %}>Hindi</option>#}
+{#              <option value="id" {% if request.LANGUAGE_CODE == "id" %}selected{% endif %}>Indonesian</option>#}
+{#              <option value="tr" {% if request.LANGUAGE_CODE == "tr" %}selected{% endif %}>Turkish</option>#}
+{#              <option value="th" {% if request.LANGUAGE_CODE == "th" %}selected{% endif %}>Thai</option>#}
+{#              <option value="vi" {% if request.LANGUAGE_CODE == "vi" %}selected{% endif %}>Vietnamese</option>#}
+{#              <option value="he" {% if request.LANGUAGE_CODE == "he" %}selected{% endif %}>Hebrew</option>#}
+{#              <option value="ar" {% if request.LANGUAGE_CODE == "ar" %}selected{% endif %}>Arabic</option>#}
+{#              <option value="ur" {% if request.LANGUAGE_CODE == "ur" %}selected{% endif %}>Urdu</option>#}
+{#          </select>#}
       </div>
 
         <div class="loveWrap__titImg">
@@ -133,43 +142,48 @@
       </div>
       <div class="inputWrap">
         <div class="inputGroup">
-          <h3>How much this person</h3>
+          <h3>{% trans "How much this person" %}</h3>
 
           {% if request.LANGUAGE_CODE != 'ko'%}
           <div class="row">
             <label class="loveWrap__inputBox">
               <h5 class="loveWrap__label">{% trans "First name" %}</h5>
-              <input class="loveWrap__input" type="text" name="name1_first" id="name1_first" placeholder="Jennifer">
+              <input class="loveWrap__input" type="text" name="name1_first" id="name1_first" placeholder="{% trans "Jennifer" %}">
             </label>
             <label class="loveWrap__inputBox">
               <h5 class="loveWrap__label">{% trans "Middle name" %} {% trans "(optional)" %}</h5>
-              <input class="loveWrap__input" type="text" name="name1_middle" id="name1_middle" placeholder="Shrader">
+              <input class="loveWrap__input" type="text" name="name1_middle" id="name1_middle" placeholder="{% trans "Shrader" %}">
             </label>
             <label class="loveWrap__inputBox">
               <h5 class="loveWrap__label">{% trans "Last name" %}</h5>
-              <input class="loveWrap__input" type="text" name="name1_last" id="name1_last" placeholder="Lawrence">
+              <input class="loveWrap__input" type="text" name="name1_last" id="name1_last" placeholder="{% trans "Lawrence" %}">
             </label>
           </div>
           {% else %}
            <div class="row">
                 <label class="loveWrap__inputBox">
-                  <h5 class="loveWrap__label">{% trans "Last name" %}</h5>
-                  <input class="loveWrap__input" type="text" name="name1_last" id="name1_last" placeholder="이">
+                  <h5 class="loveWrap__label">{% trans "First name" %}</h5>
+                  <input class="loveWrap__input" type="text" name="name1_first"  id="name1_first" placeholder="이">
+                </label>
+               <label class="loveWrap__inputBox">
+                  <h5 class="loveWrap__label">{% trans "Middle name" %} {% trans "(optional)" %}</h5>
+                  <input class="loveWrap__input" type="text" name="name1_middle" id="name1_middle" placeholder="성">
                 </label>
                 <label class="loveWrap__inputBox">
-                  <h5 class="loveWrap__label">{% trans "First name" %}</h5>
-                  <input class="loveWrap__input" type="text" name="name1_first"  id="name1_first" placeholder="성암">
+                  <h5 class="loveWrap__label">{% trans "Last name" %}</h5>
+                  <input class="loveWrap__input" type="text" name="name1_last" id="name1_last" placeholder="암">
                 </label>
+
            </div>
           {% endif %}
         </div>
         <div class="inputGroup">
-          <h3>like this person</h3>
+          <h3>{% trans "like this person" %}</h3>
           {% if request.LANGUAGE_CODE != 'ko'%}
           <div class="row">
             <label class="loveWrap__inputBox">
               <h5 class="loveWrap__label">{% trans "First name" %}</h5>
-              <input class="loveWrap__input" type="text" name="name2_first" id="name2_first" placeholder="Leonardo">
+              <input class="loveWrap__input" type="text" name="name2_first" id="name2_first" placeholder="{% trans "Leonardo" %}">
             </label>
             <label class="loveWrap__inputBox">
               <h5 class="loveWrap__label">{% trans "Middle name" %} {% trans "(optional)" %}</h5>
@@ -177,19 +191,24 @@
             </label>
             <label class="loveWrap__inputBox">
               <h5 class="loveWrap__label">{% trans "Last name" %}</h5>
-              <input class="loveWrap__input" type="text" name="name2_last" id="name2_last" placeholder="DiCaprio">
+              <input class="loveWrap__input" type="text" name="name2_last" id="name2_last" placeholder="{% trans "DiCaprio" %}">
             </label>
           </div>
           {% else %}
            <div class="row">
                 <label class="loveWrap__inputBox">
-                  <h5 class="loveWrap__label">{% trans "Last name" %}</h5>
-                  <input class="loveWrap__input" type="text" name="name2_last" id="name2_last" placeholder="이">
+                  <h5 class="loveWrap__label">{% trans "First name" %}</h5>
+                  <input class="loveWrap__input" type="text" name="name2_first" id="name2_first" placeholder="하">
+                </label>
+               <label class="loveWrap__inputBox">
+                  <h5 class="loveWrap__label">{% trans "Middle name" %} {% trans "(optional)" %}</h5>
+                  <input class="loveWrap__input" type="text" name="name2_middle" id="name2_middle" placeholder="지">
                 </label>
                 <label class="loveWrap__inputBox">
-                  <h5 class="loveWrap__label">{% trans "First name" %}</h5>
-                  <input class="loveWrap__input" type="text" name="name2_first" id="name2_first" placeholder="성암">
+                  <h5 class="loveWrap__label">{% trans "Last name" %}</h5>
+                  <input class="loveWrap__input" type="text" name="name2_last" id="name2_last" placeholder="원">
                 </label>
+
            </div>
           {% endif %}
         </div>

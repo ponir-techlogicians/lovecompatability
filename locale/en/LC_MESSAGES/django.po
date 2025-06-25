@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2025-06-03 15:50+0600\n"
+"POT-Creation-Date: 2025-06-25 15:46+0600\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -17,34 +17,96 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
-#: app/templates/calculate.html:50
-msgid "Name A (First name & Last name)"
-msgstr "Name A (First name & Last name)"
 
-#: app/templates/calculate.html:51
-msgid "e.g. Jennifer Lawrence"
-msgstr "e.g. Jennifer Lawrence"
+#: app/templates/calculate.html:27
+#, fuzzy
+#| msgid "Name A (First name & Last name)"
+msgid "Please add first and last names."
+msgstr "Please add first and last names."
 
-#: app/templates/calculate.html:54
-msgid "Name B (First name & Last name)"
-msgstr "Name B (First name & Last name)"
+#: app/templates/calculate.html:98
+msgid "Language"
+msgstr "Language"
 
-#: app/templates/calculate.html:55
-msgid "e.g. Leonardo Dicaprio"
-msgstr "e.g. Leonardo Dicaprio"
+#: app/templates/calculate.html:145
+msgid "How much this person"
+msgstr "How much this person"
 
-#: app/templates/calculate.html:58
-msgid "You don’t know friend’s last name?"
-msgstr "You don’t know friend’s last name?"
+#: app/templates/calculate.html:150 app/templates/calculate.html:165
+#: app/templates/calculate.html:185 app/templates/calculate.html:200
+msgid "First name"
+msgstr "First name"
 
-#: app/templates/calculate.html:63
+#: app/templates/calculate.html:151
+msgid "Jennifer"
+msgstr "Jennifer"
+
+#: app/templates/calculate.html:154 app/templates/calculate.html:169
+#: app/templates/calculate.html:189 app/templates/calculate.html:204
+msgid "Middle name"
+msgstr "Middle name"
+
+#: app/templates/calculate.html:154 app/templates/calculate.html:169
+#: app/templates/calculate.html:189 app/templates/calculate.html:204
+msgid "(optional)"
+msgstr "(optional)"
+
+#: app/templates/calculate.html:155
+msgid "Shrader"
+msgstr "Shrader"
+
+#: app/templates/calculate.html:158 app/templates/calculate.html:173
+#: app/templates/calculate.html:193 app/templates/calculate.html:208
+msgid "Last name"
+msgstr "Last name"
+
+#: app/templates/calculate.html:159
+msgid "Lawrence"
+msgstr "Lawrence"
+
+#: app/templates/calculate.html:181
+msgid "like this person"
+msgstr "like this person"
+
+#: app/templates/calculate.html:186
+msgid "Leonardo"
+msgstr "Leonardo"
+
+#: app/templates/calculate.html:194
+msgid "DiCaprio"
+msgstr "DiCaprio"
+
+#: app/templates/calculate.html:217 app/templates/calculate_old.html:129
+msgid "How to use / What is it?"
+msgstr "How to use / What is it?"
+
+#: app/templates/calculate.html:219 app/templates/calculate_old.html:134
 msgid "Calculate"
 msgstr "Calculate"
 
-#: app/templates/calculate.html:68 app/templates/list.html:107
-#: app/templates/result.html:127 app/templates/search.html:97
-msgid "We will resolve your curiosities"
-msgstr "We will resolve your curiosities"
+#: app/templates/calculate.html:243 app/templates/calculate_old.html:169
+msgid "About this"
+msgstr "About this"
+
+#: app/templates/calculate.html:247 app/templates/calculate_old.html:173
+msgid "This is a fun game that's popular among Korean teenagers! It calculates how much someone might like another person based on the number of strokes in their names.Try it just for fun — and share it with your friends! You can even see who’s the most popular in your school or neighborhood!"
+msgstr "This is a fun game that's popular among Korean teenagers! It calculates how much someone might like another person based on the number of strokes in their names.Try it just for fun — and share it with your friends! You can even see who’s the most popular in your school or neighborhood!"
+
+#: app/templates/calculate_old.html:120
+msgid "Name A (First name & Last name)"
+msgstr "Name A (First name & Last name)"
+
+#: app/templates/calculate_old.html:121
+msgid "e.g. Jennifer Lawrence"
+msgstr "e.g. Jennifer Lawrence"
+
+#: app/templates/calculate_old.html:124
+msgid "Name B (First name & Last name)"
+msgstr "Name B (First name & Last name)"
+
+#: app/templates/calculate_old.html:125
+msgid "e.g. Leonardo Dicaprio"
+msgstr "e.g. Leonardo Dicaprio"
 
 #: app/templates/list.html:51
 msgid "Who tested with"
@@ -54,19 +116,19 @@ msgstr "Who tested with"
 msgid "Open to see"
 msgstr "Open to see"
 
-#: app/templates/list.html:113
+#: app/templates/list.html:125
 msgid "Payment"
 msgstr "Payment"
 
-#: app/templates/list.html:121
+#: app/templates/list.html:133
 msgid "Pay now"
 msgstr "Pay now"
 
-#: app/templates/list.html:159
+#: app/templates/list.html:171
 msgid "Payment successful!"
 msgstr "Payment successful!"
 
-#: app/templates/list.html:172
+#: app/templates/list.html:184
 msgid "Payment failed"
 msgstr "Payment failed"
 
@@ -74,22 +136,37 @@ msgstr "Payment failed"
 msgid "Geolocation is not supported by this browser."
 msgstr "Geolocation is not supported by this browser."
 
-#: app/templates/result.html:51
+#: app/templates/result.html:91
 msgid "how stroke we set"
 msgstr "how stroke we set"
 
-#: app/templates/result.html:54
+#: app/templates/result.html:94
 msgid "Result"
 msgstr "Result"
 
-#: app/templates/result.html:98
-#, python-format
-msgid "%(name1)s likes %(name2)s with a <br>\n<b>%(compatibility_score)s%%</b> probability."
-msgstr "%(name1)s likes %(name2)s with a <br>\n<b>%(compatibility_score)s%%</b> probability."
+#: app/templates/result.html:138
+#, fuzzy, python-format
+#| msgid ""
+#| "%(name1)s likes %(name2)s with a <br>\n"
+#| "<b>%(compatibility_score)s%%</b> probability."
+msgid "%(name1)s likes %(name2)s with a <br>\n <b>%(compatibility_score)s%%</b> probability."
+msgstr "%(name1)s likes %(name2)s with a <br>\n <b>%(compatibility_score)s%%</b> probability."
 
-#: app/templates/result.html:102
+#: app/templates/result.html:142
 msgid "How many people mentioned me?"
 msgstr "How many people mentioned me?"
+
+#: app/templates/result.html:184
+msgid "How does it work?"
+msgstr ""
+
+#: app/templates/result.html:188
+msgid "We calculate your love score using the number of strokes in each letter of your name."
+msgstr "We calculate your love score using the number of strokes in each letter of your name."
+
+#: app/templates/result.html:189
+msgid "Here’s how many strokes each letter has:"
+msgstr "Here’s how many strokes each letter has:"
 
 #: app/templates/search.html:24
 msgid "Error retrieving your location. Please enable location services."
@@ -100,11 +177,10 @@ msgid "The most popular in my area"
 msgstr "The most popular in my area"
 
 #: app/templates/search.html:39 app/templates/search.html:57
-#: app/templates/search_basic.html:77
 msgid "Name"
 msgstr "Name"
 
-#: app/templates/search.html:40 app/templates/search_basic.html:62
+#: app/templates/search.html:40
 msgid "Search"
 msgstr "Search"
 
@@ -132,77 +208,69 @@ msgstr "Rank"
 msgid "Mentioned (times)"
 msgstr "Mentioned (times)"
 
-#: app/templates/search.html:86
+#: app/templates/search.html:71 app/templates/search.html:91
 msgid "With who?"
 msgstr "With who?"
-
-#: app/templates/search_basic.html:39
-msgid "Search Names & Location"
-msgstr "Search Names & Location"
-
-#: app/templates/search_basic.html:44
-msgid "Enter Name"
-msgstr "Enter Name"
-
-#: app/templates/search_basic.html:48
-msgid "Radius"
-msgstr "Radius"
-
-#: app/templates/search_basic.html:69
-msgid "Search Results for"
-msgstr "Search Results for"
-
-#: app/templates/search_basic.html:71
-msgid "Total Mentions"
-msgstr "Total Mentions"
-
-#: app/templates/search_basic.html:74
-msgid "Names Mentioned Along with"
-msgstr "Names Mentioned Along with"
-
-#: app/templates/search_basic.html:78
-msgid "Number of Mentions"
-msgstr "Number of Mentions"
-
-#: app/templates/search_basic.html:88
-msgid "No other names mentioned with"
-msgstr "No other names mentioned with"
-
-#: app/templates/search_basic.html:91
-msgid "Filtered Results"
-msgstr "Filtered Results"
-
-#: app/templates/search_basic.html:94
-msgid "Name 1"
-msgstr "Name 1"
-
-#: app/templates/search_basic.html:95
-msgid "Name 2"
-msgstr "Name 2"
-
-#: app/templates/search_basic.html:96
-msgid "Latitude"
-msgstr "Latitude"
-
-#: app/templates/search_basic.html:97
-msgid "Longitude"
-msgstr "Longitude"
 
 #: lovecompitability/settings.py:62
 msgid "English"
 msgstr "English"
 
-#: lovecompitability/settings.py:63
-msgid "Bengali"
-msgstr "Bengali"
+#~ msgid "You don’t know friend’s last name?"
+#~ msgstr "You don’t know friend’s last name?"
 
-#: lovecompitability/settings.py:64
-msgid "Spanish"
-msgstr "Spanish"
+#~ msgid "We will resolve your curiosities"
+#~ msgstr "We will resolve your curiosities"
 
-#: lovecompitability/settings.py:65
-msgid "French"
-msgstr "French"
+#~ msgid "Search Names & Location"
+#~ msgstr "Search Names & Location"
 
-msgid "You can check friend's instragram. sometimes they put it with last name."
-msgstr "You can check friend's instragram. sometimes they put it with last name."
+#~ msgid "Enter Name"
+#~ msgstr "Enter Name"
+
+#~ msgid "Radius"
+#~ msgstr "Radius"
+
+#~ msgid "Search Results for"
+#~ msgstr "Search Results for"
+
+#~ msgid "Total Mentions"
+#~ msgstr "Total Mentions"
+
+#~ msgid "Names Mentioned Along with"
+#~ msgstr "Names Mentioned Along with"
+
+#~ msgid "Number of Mentions"
+#~ msgstr "Number of Mentions"
+
+#~ msgid "No other names mentioned with"
+#~ msgstr "No other names mentioned with"
+
+#~ msgid "Filtered Results"
+#~ msgstr "Filtered Results"
+
+#~ msgid "Name 1"
+#~ msgstr "Name 1"
+
+#~ msgid "Name 2"
+#~ msgstr "Name 2"
+
+#~ msgid "Latitude"
+#~ msgstr "Latitude"
+
+#~ msgid "Longitude"
+#~ msgstr "Longitude"
+
+#~ msgid "Bengali"
+#~ msgstr "Bengali"
+
+#~ msgid "Spanish"
+#~ msgstr "Spanish"
+
+#~ msgid "French"
+#~ msgstr "French"
+
+#~ msgid ""
+#~ "You can check friend's instragram. sometimes they put it with last name."
+#~ msgstr ""
+#~ "You can check friend's instragram. sometimes they put it with last name."

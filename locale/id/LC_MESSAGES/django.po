@@ -1,14 +1,8 @@
-# SOME DESCRIPTIVE TITLE.
-# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
-# This file is distributed under the same license as the PACKAGE package.
-# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
-#
-#, fuzzy
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2025-06-04 17:04+0600\n"
+"POT-Creation-Date: 2025-06-25 09:49\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -16,107 +10,71 @@ msgstr ""
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Plural-Forms: nplurals=1; plural=0;\n"
-#: app/templates/calculate.html:81
+"Plural-Forms: nplurals=6; plural=n==0 ? 0 : n==1 ? 1 : n==2 ? 2 : n%100>=3 "
+"&& n%100<=10 ? 3 : n%100>=11 && n%100<=99 ? 4 : 5;\n"
 
-msgid "Latitude"
-msgstr "Latitude"
+msgid "Please add first and last names."
+msgstr "Silakan tambahkan nama depan dan nama belakang."
 
-msgid "Longitude"
-msgstr "Longitude"
+msgid "Language"
+msgstr "Bahasa"
 
-msgid "English"
-msgstr "Inggris"
+msgid "How much this person"
+msgstr "Berapa banyak orang ini"
 
-msgid "Bengali"
-msgstr "Bengali"
+msgid "First name"
+msgstr "Nama depan"
 
-msgid "Spanish"
-msgstr "Spanyol"
+msgid "Jennifer"
+msgstr "Jennifer"
 
-msgid "French"
-msgstr "Perancis"
+msgid "Middle name"
+msgstr "Nama tengah"
 
-msgid "Enter Name"
-msgstr "Masukkan Nama"
+msgid "(optional)"
+msgstr "(opsional)"
 
-msgid "Radius"
-msgstr "Radius"
+msgid "Shrader"
+msgstr "Shrader"
 
-msgid "Search Results for"
-msgstr "Hasil Pencarian untuk"
+msgid "Last name"
+msgstr "Nama belakang"
 
-msgid "Total Mentions"
-msgstr "Total Penyebutan"
+msgid "Lawrence"
+msgstr "Lawrence"
 
-msgid "Names Mentioned Along with"
-msgstr "Nama yang Disebutkan Bersama dengan"
+msgid "like this person"
+msgstr "suka orang ini"
 
-msgid "Number of Mentions"
-msgstr "Jumlah Penyebutan"
+msgid "Leonardo"
+msgstr "Leonardo"
 
-msgid "No other names mentioned with"
-msgstr "Tidak ada nama lain yang disebutkan dengan"
+msgid "DiCaprio"
+msgstr "DiCaprio"
 
-msgid "Filtered Results"
-msgstr "Hasil yang Difilter"
-
-msgid "Name 1"
-msgstr "Nama 1"
-
-msgid "Name 2"
-msgstr "Nama 2"
-
-msgid "Name"
-msgstr "Name"
-
-msgid "Search"
-msgstr "Cari"
-
-msgid "1km"
-msgstr "1km"
-
-msgid "50km"
-msgstr "50km"
-
-msgid "200km"
-msgstr "200km"
-
-msgid "world"
-msgstr "dunia"
-
-msgid "Rank"
-msgstr "Peringkat"
-
-msgid "Mentioned (times)"
-msgstr "Disebutkan (kali)"
-
-msgid "With who?"
-msgstr "Dengan siapa?"
-
-msgid "Search Names & Location"
-msgstr "Cari Nama & Lokasi"
-
-msgid "Name A (First name & Last name)"
-msgstr "Nama A (Nama Depan & Nama Belakang)"
-
-msgid "Name B (First name & Last name)"
-msgstr "Nama B (Nama Depan & Nama Belakang)"
-
-msgid "e.g. Jennifer Lawrence"
-msgstr "misalnya Jennifer Lawrence"
-
-msgid "e.g. Leonardo Dicaprio"
-msgstr "misalnya Leonardo Dicaprio"
-
-msgid "You don’t know friend’s last name?"
-msgstr "Anda tidak tahu nama belakang teman?"
+msgid "How to use / What is it?"
+msgstr "Cara menggunakan / Apa ini?"
 
 msgid "Calculate"
 msgstr "Hitung"
 
-msgid "We will resolve your curiosities"
-msgstr "Kami akan menjawab rasa ingin tahu Anda"
+msgid "About this"
+msgstr "Tentang ini"
+
+msgid "This is a fun game that's popular among Korean teenagers! It calculates how much someone might like another person based on the number of strokes in their names.Try it just for fun — and share it with your friends! You can even see who’s the most popular in your school or neighborhood!"
+msgstr "Ini adalah permainan yang menyenangkan yang populer di kalangan remaja Korea! Ini menghitung seberapa besar seseorang mungkin menyukai orang lain berdasarkan jumlah goresan dalam nama mereka. Cobalah hanya untuk bersenang-senang — dan bagikan dengan teman-teman Anda! Anda bahkan dapat melihat siapa yang paling populer di sekolah atau lingkungan Anda!"
+
+msgid "Name A (First name & Last name)"
+msgstr "Nama A (Nama depan & Nama belakang)"
+
+msgid "e.g. Jennifer Lawrence"
+msgstr "misalnya Jennifer Lawrence"
+
+msgid "Name B (First name & Last name)"
+msgstr "Nama B (Nama depan & Nama belakang)"
+
+msgid "e.g. Leonardo Dicaprio"
+msgstr "e.g. Leonardo Dicaprio"
 
 msgid "Who tested with"
 msgstr "Siapa yang diuji dengan"
@@ -145,11 +103,20 @@ msgstr "bagaimana stroke kita atur"
 msgid "Result"
 msgstr "Hasil"
 
-msgid "%(name1)s likes %(name2)s with a <br>\n<b>%(compatibility_score)s%%</b> probability."
-msgstr "%(name1)s menyukai %(name2)s dengan kemungkinan <br>\n<b>%(compatibility_score)s%%</b>."
+msgid "%(name1)s likes %(name2)s with a <br>\n <b>%(compatibility_score)s%%</b> probability."
+msgstr "%(name1)s menyukai %(name2)s dengan <br>\n <b>%(compatibility_score)s%%</b> kemungkinan."
 
 msgid "How many people mentioned me?"
 msgstr "Berapa banyak orang yang menyebut saya?"
+
+msgid "How does it work?"
+msgstr "Bagaimana cara kerjanya?"
+
+msgid "We calculate your love score using the number of strokes in each letter of your name."
+msgstr "Kami menghitung skor cinta Anda menggunakan jumlah goresan di setiap huruf nama Anda."
+
+msgid "Here’s how many strokes each letter has:"
+msgstr "Berikut adalah jumlah goresan yang dimiliki setiap huruf:"
 
 msgid "Error retrieving your location. Please enable location services."
 msgstr "Kesalahan mengambil lokasi Anda. Silakan aktifkan layanan lokasi."
@@ -157,5 +124,32 @@ msgstr "Kesalahan mengambil lokasi Anda. Silakan aktifkan layanan lokasi."
 msgid "The most popular in my area"
 msgstr "Yang paling populer di daerah saya"
 
-msgid "You can check friend's instragram. sometimes they put it with last name."
-msgstr "Anda dapat memeriksa Instagram teman. kadang-kadang mereka menaruhnya dengan nama belakang."
+msgid "Name"
+msgstr "Nama"
+
+msgid "Search"
+msgstr "Cari"
+
+msgid "1km"
+msgstr "1km"
+
+msgid "50km"
+msgstr "50km"
+
+msgid "200km"
+msgstr "200km"
+
+msgid "world"
+msgstr "dunia"
+
+msgid "Rank"
+msgstr "Peringkat"
+
+msgid "Mentioned (times)"
+msgstr "Disebutkan (kali)"
+
+msgid "With who?"
+msgstr "Dengan siapa?"
+
+msgid "English"
+msgstr "Bahasa Inggris"

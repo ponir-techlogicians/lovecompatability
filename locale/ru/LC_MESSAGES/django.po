@@ -1,14 +1,8 @@
-# SOME DESCRIPTIVE TITLE.
-# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
-# This file is distributed under the same license as the PACKAGE package.
-# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
-#
-#, fuzzy
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2025-06-04 13:00+0600\n"
+"POT-Creation-Date: 2025-06-25 09:49\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -16,31 +10,122 @@ msgstr ""
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Plural-Forms: nplurals=4; plural=(n%10==1 && n%100!=11 ? 0 : n%10>=2 && "
-"n%10<=4 && (n%100<12 || n%100>14) ? 1 : n%10==0 || (n%10>=5 && n%10<=9) || "
-"(n%100>=11 && n%100<=14)? 2 : 3);\n"
-#: app/templates/calculate.html:72
+"Plural-Forms: nplurals=6; plural=n==0 ? 0 : n==1 ? 1 : n==2 ? 2 : n%100>=3 "
+"&& n%100<=10 ? 3 : n%100>=11 && n%100<=99 ? 4 : 5;\n"
 
-msgid "Latitude"
-msgstr "Latitude"
+msgid "Please add first and last names."
+msgstr "Пожалуйста, добавьте имя и фамилию."
 
-msgid "Longitude"
-msgstr "Longitude"
+msgid "Language"
+msgstr "Язык"
 
-msgid "English"
-msgstr "английский"
+msgid "How much this person"
+msgstr "Сколько этот человек"
 
-msgid "Bengali"
-msgstr "бенгальский"
+msgid "First name"
+msgstr "Имя"
 
-msgid "Spanish"
-msgstr "испанский"
+msgid "Jennifer"
+msgstr "Дженнифер"
 
-msgid "French"
-msgstr "французский"
+msgid "Middle name"
+msgstr "Второе имя"
+
+msgid "(optional)"
+msgstr "(необязательно)"
+
+msgid "Shrader"
+msgstr "Шрейдер"
+
+msgid "Last name"
+msgstr "Фамилия"
+
+msgid "Lawrence"
+msgstr "Лоуренс"
+
+msgid "like this person"
+msgstr "нравится этот человек"
+
+msgid "Leonardo"
+msgstr "Leonardo"
+
+msgid "DiCaprio"
+msgstr "DiCaprio"
+
+msgid "How to use / What is it?"
+msgstr "Как использовать / Что это?"
+
+msgid "Calculate"
+msgstr "Рассчитать"
+
+msgid "About this"
+msgstr "Об этом"
+
+msgid "This is a fun game that's popular among Korean teenagers! It calculates how much someone might like another person based on the number of strokes in their names.Try it just for fun — and share it with your friends! You can even see who’s the most popular in your school or neighborhood!"
+msgstr "Это веселая игра, популярная среди корейских подростков! Она вычисляет, насколько кто-то может нравиться другому человеку, основываясь на количестве черт в их именах. Попробуйте просто ради удовольствия — и поделитесь с друзьями! Вы даже можете увидеть, кто самый популярный в вашей школе или районе!"
+
+msgid "Name A (First name & Last name)"
+msgstr "Имя A (Имя и Фамилия)"
+
+msgid "e.g. Jennifer Lawrence"
+msgstr "например, Jennifer Lawrence"
+
+msgid "Name B (First name & Last name)"
+msgstr "Имя B (Имя и Фамилия)"
+
+msgid "e.g. Leonardo Dicaprio"
+msgstr "e.g. Leonardo Dicaprio"
+
+msgid "Who tested with"
+msgstr "Кто тестировал с"
+
+msgid "Open to see"
+msgstr "Открыть, чтобы увидеть"
+
+msgid "Payment"
+msgstr "Оплата"
+
+msgid "Pay now"
+msgstr "Оплатить сейчас"
+
+msgid "Payment successful!"
+msgstr "Оплата успешна!"
+
+msgid "Payment failed"
+msgstr "Оплата не удалась"
+
+msgid "Geolocation is not supported by this browser."
+msgstr "Геолокация не поддерживается этим браузером."
+
+msgid "how stroke we set"
+msgstr "как мы устанавливаем удар"
+
+msgid "Result"
+msgstr "Результат"
+
+msgid "%(name1)s likes %(name2)s with a <br>\n <b>%(compatibility_score)s%%</b> probability."
+msgstr "%(name1)s нравится %(name2)s с вероятностью <br>\n <b>%(compatibility_score)s%%</b>."
+
+msgid "How many people mentioned me?"
+msgstr "Сколько людей упомянули меня?"
+
+msgid "How does it work?"
+msgstr "Как это работает?"
+
+msgid "We calculate your love score using the number of strokes in each letter of your name."
+msgstr "Мы рассчитываем ваш любовный балл, используя количество штрихов в каждой букве вашего имени."
+
+msgid "Here’s how many strokes each letter has:"
+msgstr "Вот сколько штрихов в каждой букве:"
+
+msgid "Error retrieving your location. Please enable location services."
+msgstr "Ошибка при получении вашего местоположения. Пожалуйста, включите службы определения местоположения."
+
+msgid "The most popular in my area"
+msgstr "Самое популярное в моем районе"
 
 msgid "Name"
-msgstr "Name"
+msgstr "Имя"
 
 msgid "Search"
 msgstr "Поиск"
@@ -66,98 +151,5 @@ msgstr "Упомянуто (раз)"
 msgid "With who?"
 msgstr "С кем?"
 
-msgid "Search Names & Location"
-msgstr "Поиск имен и местоположения"
-
-msgid "Enter Name"
-msgstr "Введите имя"
-
-msgid "Radius"
-msgstr "Радиус"
-
-msgid "Search Results for"
-msgstr "Результаты поиска для"
-
-msgid "Total Mentions"
-msgstr "Всего упоминаний"
-
-msgid "Names Mentioned Along with"
-msgstr "Имена, упомянутые вместе с"
-
-msgid "Number of Mentions"
-msgstr "Количество упоминаний"
-
-msgid "No other names mentioned with"
-msgstr "Другие имена не упоминаются с"
-
-msgid "Filtered Results"
-msgstr "Отфильтрованные результаты"
-
-msgid "Name 1"
-msgstr "Имя 1"
-
-msgid "Name 2"
-msgstr "Имя 2"
-
-msgid "Name A (First name & Last name)"
-msgstr "Имя A (Имя и Фамилия)"
-
-msgid "Name B (First name & Last name)"
-msgstr "Имя B (Имя и Фамилия)"
-
-msgid "e.g. Jennifer Lawrence"
-msgstr "например, Дженнифер Лоуренс"
-
-msgid "e.g. Leonardo Dicaprio"
-msgstr "например, Леонардо ДиКаприо"
-
-msgid "You don’t know friend’s last name?"
-msgstr "Вы не знаете фамилию друга?"
-
-msgid "Calculate"
-msgstr "Рассчитать"
-
-msgid "We will resolve your curiosities"
-msgstr "Мы разрешим ваши любопытства"
-
-msgid "Who tested with"
-msgstr "Кто тестировал с"
-
-msgid "Open to see"
-msgstr "Открыть, чтобы увидеть"
-
-msgid "Payment"
-msgstr "Оплата"
-
-msgid "Pay now"
-msgstr "Оплатить сейчас"
-
-msgid "Payment successful!"
-msgstr "Платеж успешен!"
-
-msgid "Payment failed"
-msgstr "Платеж не выполнен"
-
-msgid "Geolocation is not supported by this browser."
-msgstr "Геолокация не поддерживается этим браузером."
-
-msgid "how stroke we set"
-msgstr "как мы устанавливаем штрих"
-
-msgid "Result"
-msgstr "Результат"
-
-msgid "%(name1)s likes %(name2)s with a <br>\n<b>%(compatibility_score)s%%</b> probability."
-msgstr "%(name1)s нравится %(name2)s с вероятностью <br>\n<b>%(compatibility_score)s%%</b>."
-
-msgid "How many people mentioned me?"
-msgstr "Сколько людей упомянули меня?"
-
-msgid "Error retrieving your location. Please enable location services."
-msgstr "Ошибка при получении вашего местоположения. Пожалуйста, включите службы геолокации."
-
-msgid "The most popular in my area"
-msgstr "Самое популярное в моем районе"
-
-msgid "You can check friend's instragram. sometimes they put it with last name."
-msgstr "Вы можете проверить инстаграм друга. иногда они ставят его с фамилией."
+msgid "English"
+msgstr "Английский"

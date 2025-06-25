@@ -1,14 +1,8 @@
-# SOME DESCRIPTIVE TITLE.
-# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
-# This file is distributed under the same license as the PACKAGE package.
-# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
-#
-#, fuzzy
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2025-06-04 13:01+0600\n"
+"POT-Creation-Date: 2025-06-25 09:49\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -16,28 +10,122 @@ msgstr ""
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Plural-Forms: nplurals=2; plural=(n != 1);\n"
-#: app/templates/calculate.html:72
-msgid "Latitude"
-msgstr "Latitude"
+"Plural-Forms: nplurals=6; plural=n==0 ? 0 : n==1 ? 1 : n==2 ? 2 : n%100>=3 "
+"&& n%100<=10 ? 3 : n%100>=11 && n%100<=99 ? 4 : 5;\n"
 
-msgid "Longitude"
-msgstr "Longitude"
+msgid "Please add first and last names."
+msgstr "Kérjük, adja meg a kereszt- és vezetéknevet."
 
-msgid "English"
-msgstr "Angol"
+msgid "Language"
+msgstr "Nyelv"
 
-msgid "Bengali"
-msgstr "Bengáli"
+msgid "How much this person"
+msgstr "Mennyire ez a személy"
 
-msgid "Spanish"
-msgstr "Spanyol"
+msgid "First name"
+msgstr "Keresztnév"
 
-msgid "French"
-msgstr "Francia"
+msgid "Jennifer"
+msgstr "Jennifer"
+
+msgid "Middle name"
+msgstr "Középső név"
+
+msgid "(optional)"
+msgstr "(opcionális)"
+
+msgid "Shrader"
+msgstr "Shrader"
+
+msgid "Last name"
+msgstr "Vezetéknév"
+
+msgid "Lawrence"
+msgstr "Lawrence"
+
+msgid "like this person"
+msgstr "kedveli ezt a személyt"
+
+msgid "Leonardo"
+msgstr "Leonardo"
+
+msgid "DiCaprio"
+msgstr "DiCaprio"
+
+msgid "How to use / What is it?"
+msgstr "Hogyan kell használni / Mi ez?"
+
+msgid "Calculate"
+msgstr "Számol"
+
+msgid "About this"
+msgstr "Erről"
+
+msgid "This is a fun game that's popular among Korean teenagers! It calculates how much someone might like another person based on the number of strokes in their names.Try it just for fun — and share it with your friends! You can even see who’s the most popular in your school or neighborhood!"
+msgstr "Ez egy szórakoztató játék, amely népszerű a koreai tinédzserek körében! Kiszámítja, hogy valaki mennyire kedvelhet egy másik személyt a nevükben lévő vonások száma alapján. Próbáld ki csak szórakozásból — és oszd meg a barátaiddal! Még azt is láthatod, ki a legnépszerűbb az iskoládban vagy a környékeden!"
+
+msgid "Name A (First name & Last name)"
+msgstr "Név A (Keresztnév és Vezetéknév)"
+
+msgid "e.g. Jennifer Lawrence"
+msgstr "pl. Jennifer Lawrence"
+
+msgid "Name B (First name & Last name)"
+msgstr "Név B (Keresztnév és Vezetéknév)"
+
+msgid "e.g. Leonardo Dicaprio"
+msgstr "e.g. Leonardo Dicaprio"
+
+msgid "Who tested with"
+msgstr "Ki tesztelte"
+
+msgid "Open to see"
+msgstr "Megnyitás"
+
+msgid "Payment"
+msgstr "Fizetés"
+
+msgid "Pay now"
+msgstr "Fizessen most"
+
+msgid "Payment successful!"
+msgstr "Fizetés sikeres!"
+
+msgid "Payment failed"
+msgstr "Fizetés sikertelen"
+
+msgid "Geolocation is not supported by this browser."
+msgstr "A geolokációt nem támogatja ez a böngésző."
+
+msgid "how stroke we set"
+msgstr "hogyan állítjuk be a vonást"
+
+msgid "Result"
+msgstr "Eredmény"
+
+msgid "%(name1)s likes %(name2)s with a <br>\n <b>%(compatibility_score)s%%</b> probability."
+msgstr "%(name1)s kedveli %(name2)s-t <br>\n <b>%(compatibility_score)s%%</b> valószínűséggel."
+
+msgid "How many people mentioned me?"
+msgstr "Hány ember említett engem?"
+
+msgid "How does it work?"
+msgstr "Hogyan működik?"
+
+msgid "We calculate your love score using the number of strokes in each letter of your name."
+msgstr "A szerelmi pontszámodat a neved minden betűjének vonásszámával számítjuk ki."
+
+msgid "Here’s how many strokes each letter has:"
+msgstr "Íme, hány vonása van minden betűnek:"
+
+msgid "Error retrieving your location. Please enable location services."
+msgstr "Hiba történt a helyzeted lekérésekor. Kérlek, engedélyezd a helymeghatározási szolgáltatásokat."
+
+msgid "The most popular in my area"
+msgstr "A legnépszerűbb a környékemen"
 
 msgid "Name"
-msgstr "Name"
+msgstr "Név"
 
 msgid "Search"
 msgstr "Keresés"
@@ -63,99 +151,5 @@ msgstr "Említve (alkalommal)"
 msgid "With who?"
 msgstr "Kivel?"
 
-msgid "Search Names & Location"
-msgstr "Nevek és helyszínek keresése"
-
-msgid "Enter Name"
-msgstr "Név megadása"
-
-msgid "Radius"
-msgstr "Sugár"
-
-msgid "Search Results for"
-msgstr "Keresési eredmények"
-
-msgid "Total Mentions"
-msgstr "Összes említés"
-
-msgid "Names Mentioned Along with"
-msgstr "Együtt említett nevek"
-
-msgid "Number of Mentions"
-msgstr "Említések száma"
-
-msgid "No other names mentioned with"
-msgstr "Nincs más név említve vele"
-
-msgid "Filtered Results"
-msgstr "Szűrt eredmények"
-
-msgid "Name 1"
-msgstr "Név 1"
-
-msgid "Name 2"
-msgstr "Név 2"
-
-msgid "Name A (First name & Last name)"
-msgstr "Name A (First name & Last name)"
-
-msgid "Name B (First name & Last name)"
-msgstr "Name B (First name & Last name)"
-
-msgid "e.g. Jennifer Lawrence"
-msgstr "pl. Jennifer Lawrence"
-
-
-msgid "e.g. Leonardo Dicaprio"
-msgstr "pl. Leonardo Dicaprio"
-
-msgid "You don’t know friend’s last name?"
-msgstr "Nem tudod a barátod vezetéknevét?"
-
-msgid "Calculate"
-msgstr "Számol"
-
-msgid "We will resolve your curiosities"
-msgstr "Megoldjuk a kíváncsiságodat"
-
-msgid "Who tested with"
-msgstr "Ki tesztelte"
-
-msgid "Open to see"
-msgstr "Nyisd meg a megtekintéshez"
-
-msgid "Payment"
-msgstr "Fizetés"
-
-msgid "Pay now"
-msgstr "Fizessen most"
-
-msgid "Payment successful!"
-msgstr "Fizetés sikeres!"
-
-msgid "Payment failed"
-msgstr "Fizetés sikertelen"
-
-msgid "Geolocation is not supported by this browser."
-msgstr "A böngésző nem támogatja a földrajzi helymeghatározást."
-
-msgid "how stroke we set"
-msgstr "hogyan állítsuk be a vonást"
-
-msgid "Result"
-msgstr "Eredmény"
-
-msgid "%(name1)s likes %(name2)s with a <br>\n<b>%(compatibility_score)s%%</b> probability."
-msgstr "%(name1)s kedveli %(name2)s-t <br>\n<b>%(compatibility_score)s%%</b> valószínűséggel."
-
-msgid "How many people mentioned me?"
-msgstr "Hány ember említett engem?"
-
-msgid "Error retrieving your location. Please enable location services."
-msgstr "Hiba történt a helymeghatározás során. Kérjük, engedélyezze a helymeghatározási szolgáltatásokat."
-
-msgid "The most popular in my area"
-msgstr "A legnépszerűbb a környékemen"
-
-msgid "You can check friend's instragram. sometimes they put it with last name."
-msgstr "Megnézheted a barátod Instagramját. néha a vezetéknevükkel együtt teszik fel."
+msgid "English"
+msgstr "Angol"

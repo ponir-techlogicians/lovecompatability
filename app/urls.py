@@ -7,11 +7,12 @@ from app.api_views import CalculateAPIView, ResultDetailAPIView, SaveLocationAPI
     ListAPIView, SearchAPIView, SubscriptionValidationView, RestorPurchaseView, GooglePlayBillingNotification, \
     IosBillingNotification, UsageLeftView
 from app.views import DashboardView, SearchBasicView, set_language_view, CalculateView, SearchView, ListView, \
-    save_location, ResultDetailView, create_checkout_session
-
+    save_location, ResultDetailView, create_checkout_session, auto_suggest_names
 
 urlpatterns = [
     path('set_language/', set_language_view, name='set_language'),
+    path('suggest-name/', auto_suggest_names, name='suggest-name'),
+
     # path('calculate/', CalculateView.as_view(), name='calculate'),
     path("result/<int:id>/", ResultDetailView.as_view(), name="compatibility_result_detail"),
     path("save-location/", save_location, name="save_location"),

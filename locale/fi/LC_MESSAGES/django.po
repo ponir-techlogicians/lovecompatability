@@ -1,14 +1,8 @@
-# SOME DESCRIPTIVE TITLE.
-# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
-# This file is distributed under the same license as the PACKAGE package.
-# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
-#
-#, fuzzy
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2025-06-04 13:01+0600\n"
+"POT-Creation-Date: 2025-06-25 09:49\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -16,28 +10,122 @@ msgstr ""
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Plural-Forms: nplurals=2; plural=(n != 1);\n"
-#: app/templates/calculate.html:72
-msgid "Latitude"
-msgstr "Latitude"
+"Plural-Forms: nplurals=6; plural=n==0 ? 0 : n==1 ? 1 : n==2 ? 2 : n%100>=3 "
+"&& n%100<=10 ? 3 : n%100>=11 && n%100<=99 ? 4 : 5;\n"
 
-msgid "Longitude"
-msgstr "Longitude"
+msgid "Please add first and last names."
+msgstr "Lisää etu- ja sukunimet."
 
-msgid "English"
-msgstr "Englanti"
+msgid "Language"
+msgstr "Kieli"
 
-msgid "Bengali"
-msgstr "Bengali"
+msgid "How much this person"
+msgstr "Kuinka paljon tämä henkilö"
 
-msgid "Spanish"
-msgstr "Espanja"
+msgid "First name"
+msgstr "Etunimi"
 
-msgid "French"
-msgstr "Ranska"
+msgid "Jennifer"
+msgstr "Jennifer"
+
+msgid "Middle name"
+msgstr "Toinen nimi"
+
+msgid "(optional)"
+msgstr "(valinnainen)"
+
+msgid "Shrader"
+msgstr "Shrader"
+
+msgid "Last name"
+msgstr "Sukunimi"
+
+msgid "Lawrence"
+msgstr "Lawrence"
+
+msgid "like this person"
+msgstr "pidä tästä henkilöstä"
+
+msgid "Leonardo"
+msgstr "Leonardo"
+
+msgid "DiCaprio"
+msgstr "DiCaprio"
+
+msgid "How to use / What is it?"
+msgstr "Kuinka käyttää / Mikä se on?"
+
+msgid "Calculate"
+msgstr "Laske"
+
+msgid "About this"
+msgstr "Tietoa tästä"
+
+msgid "This is a fun game that's popular among Korean teenagers! It calculates how much someone might like another person based on the number of strokes in their names.Try it just for fun — and share it with your friends! You can even see who’s the most popular in your school or neighborhood!"
+msgstr "Tämä on hauska peli, joka on suosittu korealaisten teini-ikäisten keskuudessa! Se laskee, kuinka paljon joku saattaa pitää toisesta henkilöstä heidän nimissään olevien viivojen määrän perusteella. Kokeile vain huvin vuoksi — ja jaa se ystäviesi kanssa! Voit jopa nähdä, kuka on suosituin koulussasi tai naapurustossasi!"
+
+msgid "Name A (First name & Last name)"
+msgstr "Nimi A (Etunimi & Sukunimi)"
+
+msgid "e.g. Jennifer Lawrence"
+msgstr "esim. Jennifer Lawrence"
+
+msgid "Name B (First name & Last name)"
+msgstr "Nimi B (Etunimi & Sukunimi)"
+
+msgid "e.g. Leonardo Dicaprio"
+msgstr "e.g. Leonardo Dicaprio"
+
+msgid "Who tested with"
+msgstr "Kuka testasi"
+
+msgid "Open to see"
+msgstr "Avaa nähdäksesi"
+
+msgid "Payment"
+msgstr "Maksu"
+
+msgid "Pay now"
+msgstr "Maksa nyt"
+
+msgid "Payment successful!"
+msgstr "Maksu onnistui!"
+
+msgid "Payment failed"
+msgstr "Maksu epäonnistui"
+
+msgid "Geolocation is not supported by this browser."
+msgstr "Sijaintitietoja ei tueta tässä selaimessa."
+
+msgid "how stroke we set"
+msgstr "miten aivohalvaus asetetaan"
+
+msgid "Result"
+msgstr "Tulos"
+
+msgid "%(name1)s likes %(name2)s with a <br>\n <b>%(compatibility_score)s%%</b> probability."
+msgstr "%(name1)s pitää %(name2)s:stä <br>\n <b>%(compatibility_score)s%%</b> todennäköisyydellä."
+
+msgid "How many people mentioned me?"
+msgstr "Kuinka moni mainitsi minut?"
+
+msgid "How does it work?"
+msgstr "Miten se toimii?"
+
+msgid "We calculate your love score using the number of strokes in each letter of your name."
+msgstr "Laskemme rakkauspisteesi käyttämällä nimesi jokaisen kirjaimen viivojen määrää."
+
+msgid "Here’s how many strokes each letter has:"
+msgstr "Tässä on, kuinka monta viivaa jokaisella kirjaimella on:"
+
+msgid "Error retrieving your location. Please enable location services."
+msgstr "Virhe sijaintisi hakemisessa. Ota sijaintipalvelut käyttöön."
+
+msgid "The most popular in my area"
+msgstr "Alueeni suosituin"
 
 msgid "Name"
-msgstr "Name"
+msgstr "Nimi"
 
 msgid "Search"
 msgstr "Haku"
@@ -63,98 +151,5 @@ msgstr "Mainittu (kertaa)"
 msgid "With who?"
 msgstr "Kenen kanssa?"
 
-msgid "Search Names & Location"
-msgstr "Hae nimiä ja sijaintia"
-
-msgid "Enter Name"
-msgstr "Syötä nimi"
-
-msgid "Radius"
-msgstr "Säde"
-
-msgid "Search Results for"
-msgstr "Hakutulokset"
-
-msgid "Total Mentions"
-msgstr "Mainintojen kokonaismäärä"
-
-msgid "Names Mentioned Along with"
-msgstr "Nimet mainittu yhdessä"
-
-msgid "Number of Mentions"
-msgstr "Mainintojen lukumäärä"
-
-msgid "No other names mentioned with"
-msgstr "Ei muita nimiä mainittu yhdessä"
-
-msgid "Filtered Results"
-msgstr "Suodatetut tulokset"
-
-msgid "Name 1"
-msgstr "Nimi 1"
-
-msgid "Name 2"
-msgstr "Nimi 2"
-
-msgid "Name A (First name & Last name)"
-msgstr "Nimi A (Etunimi & Sukunimi)"
-
-msgid "Name B (First name & Last name)"
-msgstr "Nimi B (Etunimi & Sukunimi)"
-
-msgid "e.g. Jennifer Lawrence"
-msgstr "esim. Jennifer Lawrence"
-
-msgid "e.g. Leonardo Dicaprio"
-msgstr "esim. Leonardo Dicaprio"
-
-msgid "You don’t know friend’s last name?"
-msgstr "Etkö tiedä ystäväsi sukunimeä?"
-
-msgid "Calculate"
-msgstr "Laske"
-
-msgid "We will resolve your curiosities"
-msgstr "Ratkaisemme uteliaisuutesi"
-
-msgid "Who tested with"
-msgstr "Kuka testasi kanssa"
-
-msgid "Open to see"
-msgstr "Avaa nähdäksesi"
-
-msgid "Payment"
-msgstr "Maksu"
-
-msgid "Pay now"
-msgstr "Maksa nyt"
-
-msgid "Payment successful!"
-msgstr "Maksu onnistui!"
-
-msgid "Payment failed"
-msgstr "Maksu epäonnistui"
-
-msgid "Geolocation is not supported by this browser."
-msgstr "Sijaintitietoja ei tueta tässä selaimessa."
-
-msgid "how stroke we set"
-msgstr "kuinka aivohalvaus asetetaan"
-
-msgid "Result"
-msgstr "Tulos"
-
-msgid "%(name1)s likes %(name2)s with a <br>\n<b>%(compatibility_score)s%%</b> probability."
-msgstr "%(name1)s pitää henkilöstä %(name2)s <br>\n<b>%(compatibility_score)s%%</b> todennäköisyydellä."
-
-msgid "How many people mentioned me?"
-msgstr "Kuinka moni mainitsi minut?"
-
-msgid "Error retrieving your location. Please enable location services."
-msgstr "Virhe sijainnin hakemisessa. Ota sijaintipalvelut käyttöön."
-
-msgid "The most popular in my area"
-msgstr "Alueeni suosituin"
-
-msgid "You can check friend's instragram. sometimes they put it with last name."
-msgstr "Voit tarkistaa ystävän Instagramin. joskus he laittavat sen sukunimen kanssa."
+msgid "English"
+msgstr "Englanti"

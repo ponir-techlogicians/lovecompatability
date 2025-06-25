@@ -1,14 +1,8 @@
-# SOME DESCRIPTIVE TITLE.
-# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
-# This file is distributed under the same license as the PACKAGE package.
-# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
-#
-#, fuzzy
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2025-06-04 13:01+0600\n"
+"POT-Creation-Date: 2025-06-25 09:49\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -16,28 +10,122 @@ msgstr ""
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Plural-Forms: nplurals=1; plural=0;\n"
-#: app/templates/calculate.html:72
-msgid "Latitude"
-msgstr "Latitude"
+"Plural-Forms: nplurals=6; plural=n==0 ? 0 : n==1 ? 1 : n==2 ? 2 : n%100>=3 "
+"&& n%100<=10 ? 3 : n%100>=11 && n%100<=99 ? 4 : 5;\n"
 
-msgid "Longitude"
-msgstr "Longitude"
+msgid "Please add first and last names."
+msgstr "Sila tambah nama pertama dan nama terakhir."
 
-msgid "English"
-msgstr "Inggeris"
+msgid "Language"
+msgstr "Bahasa"
 
-msgid "Bengali"
-msgstr "Bengali"
+msgid "How much this person"
+msgstr "Berapa banyak orang ini"
 
-msgid "Spanish"
-msgstr "Sepanyol"
+msgid "First name"
+msgstr "Nama pertama"
 
-msgid "French"
-msgstr "Perancis"
+msgid "Jennifer"
+msgstr "Jennifer"
+
+msgid "Middle name"
+msgstr "Nama tengah"
+
+msgid "(optional)"
+msgstr "(pilihan)"
+
+msgid "Shrader"
+msgstr "Shrader"
+
+msgid "Last name"
+msgstr "Nama terakhir"
+
+msgid "Lawrence"
+msgstr "Lawrence"
+
+msgid "like this person"
+msgstr "suka orang ini"
+
+msgid "Leonardo"
+msgstr "Leonardo"
+
+msgid "DiCaprio"
+msgstr "DiCaprio"
+
+msgid "How to use / What is it?"
+msgstr "How to use / What is it?"
+
+msgid "Calculate"
+msgstr "Kira"
+
+msgid "About this"
+msgstr "Mengenai ini"
+
+msgid "This is a fun game that's popular among Korean teenagers! It calculates how much someone might like another person based on the number of strokes in their names.Try it just for fun — and share it with your friends! You can even see who’s the most popular in your school or neighborhood!"
+msgstr "Ini adalah permainan yang menyeronokkan yang popular di kalangan remaja Korea! Ia mengira berapa banyak seseorang mungkin suka orang lain berdasarkan bilangan strok dalam nama mereka. Cuba hanya untuk berseronok — dan kongsikan dengan rakan-rakan anda! Anda juga boleh melihat siapa yang paling popular di sekolah atau kawasan kejiranan anda!"
+
+msgid "Name A (First name & Last name)"
+msgstr "Nama A (Nama pertama & Nama akhir)"
+
+msgid "e.g. Jennifer Lawrence"
+msgstr "cth. Jennifer Lawrence"
+
+msgid "Name B (First name & Last name)"
+msgstr "Nama B (Nama pertama & Nama akhir)"
+
+msgid "e.g. Leonardo Dicaprio"
+msgstr "e.g. Leonardo Dicaprio"
+
+msgid "Who tested with"
+msgstr "Siapa yang diuji dengan"
+
+msgid "Open to see"
+msgstr "Buka untuk melihat"
+
+msgid "Payment"
+msgstr "Pembayaran"
+
+msgid "Pay now"
+msgstr "Bayar sekarang"
+
+msgid "Payment successful!"
+msgstr "Pembayaran berjaya!"
+
+msgid "Payment failed"
+msgstr "Pembayaran gagal"
+
+msgid "Geolocation is not supported by this browser."
+msgstr "Geolokasi tidak disokong oleh pelayar ini."
+
+msgid "how stroke we set"
+msgstr "bagaimana strok kita tetapkan"
+
+msgid "Result"
+msgstr "Keputusan"
+
+msgid "%(name1)s likes %(name2)s with a <br>\n <b>%(compatibility_score)s%%</b> probability."
+msgstr "%(name1)s suka %(name2)s dengan kebarangkalian <br>\n <b>%(compatibility_score)s%%</b>."
+
+msgid "How many people mentioned me?"
+msgstr "Berapa ramai orang menyebut saya?"
+
+msgid "How does it work?"
+msgstr "Bagaimana ia berfungsi?"
+
+msgid "We calculate your love score using the number of strokes in each letter of your name."
+msgstr "Kami mengira skor cinta anda menggunakan bilangan strok dalam setiap huruf nama anda."
+
+msgid "Here’s how many strokes each letter has:"
+msgstr "Berikut adalah bilangan strok setiap huruf:"
+
+msgid "Error retrieving your location. Please enable location services."
+msgstr "Ralat mendapatkan lokasi anda. Sila aktifkan perkhidmatan lokasi."
+
+msgid "The most popular in my area"
+msgstr "Yang paling popular di kawasan saya"
 
 msgid "Name"
-msgstr "Name"
+msgstr "Nama"
 
 msgid "Search"
 msgstr "Cari"
@@ -63,98 +151,5 @@ msgstr "Disebut (kali)"
 msgid "With who?"
 msgstr "Dengan siapa?"
 
-msgid "Search Names & Location"
-msgstr "Cari Nama & Lokasi"
-
-msgid "Enter Name"
-msgstr "Masukkan Nama"
-
-msgid "Radius"
-msgstr "Jejari"
-
-msgid "Search Results for"
-msgstr "Hasil Carian untuk"
-
-msgid "Total Mentions"
-msgstr "Jumlah Sebutan"
-
-msgid "Names Mentioned Along with"
-msgstr "Nama yang Disebut Bersama"
-
-msgid "Number of Mentions"
-msgstr "Bilangan Sebutan"
-
-msgid "No other names mentioned with"
-msgstr "Tiada nama lain disebut bersama"
-
-msgid "Filtered Results"
-msgstr "Hasil Tapis"
-
-msgid "Name 1"
-msgstr "Nama 1"
-
-msgid "Name 2"
-msgstr "Nama 2"
-
-msgid "Name A (First name & Last name)"
-msgstr "Nama A (Nama Pertama & Nama Keluarga)"
-
-msgid "Name B (First name & Last name)"
-msgstr "Nama B (Nama Pertama & Nama Keluarga)"
-
-msgid "e.g. Jennifer Lawrence"
-msgstr "cth. Jennifer Lawrence"
-
-msgid "e.g. Leonardo Dicaprio"
-msgstr "cth. Leonardo Dicaprio"
-
-msgid "You don’t know friend’s last name?"
-msgstr "Anda tidak tahu nama akhir kawan?"
-
-msgid "Calculate"
-msgstr "Kira"
-
-msgid "We will resolve your curiosities"
-msgstr "Kami akan menyelesaikan rasa ingin tahu anda"
-
-msgid "Who tested with"
-msgstr "Siapa yang diuji dengan"
-
-msgid "Open to see"
-msgstr "Buka untuk melihat"
-
-msgid "Payment"
-msgstr "Pembayaran"
-
-msgid "Pay now"
-msgstr "Bayar sekarang"
-
-msgid "Payment successful!"
-msgstr "Pembayaran berjaya!"
-
-msgid "Payment failed"
-msgstr "Pembayaran gagal"
-
-msgid "Geolocation is not supported by this browser."
-msgstr "Geolokasi tidak disokong oleh pelayar ini."
-
-msgid "how stroke we set"
-msgstr "bagaimana kita menetapkan strok"
-
-msgid "Result"
-msgstr "Keputusan"
-
-msgid "%(name1)s likes %(name2)s with a <br>\n<b>%(compatibility_score)s%%</b> probability."
-msgstr "%(name1)s suka %(name2)s dengan kebarangkalian <br>\n<b>%(compatibility_score)s%%</b>."
-
-msgid "How many people mentioned me?"
-msgstr "Berapa ramai orang menyebut saya?"
-
-msgid "Error retrieving your location. Please enable location services."
-msgstr "Ralat mendapatkan lokasi anda. Sila aktifkan perkhidmatan lokasi."
-
-msgid "The most popular in my area"
-msgstr "Yang paling popular di kawasan saya"
-
-msgid "You can check friend's instragram. sometimes they put it with last name."
-msgstr "Anda boleh semak Instagram rakan. kadang-kadang mereka letak dengan nama akhir."
+msgid "English"
+msgstr "Bahasa Inggeris"

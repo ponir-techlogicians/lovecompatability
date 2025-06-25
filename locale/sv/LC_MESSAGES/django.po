@@ -1,14 +1,8 @@
-# SOME DESCRIPTIVE TITLE.
-# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
-# This file is distributed under the same license as the PACKAGE package.
-# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
-#
-#, fuzzy
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2025-06-04 13:00+0600\n"
+"POT-Creation-Date: 2025-06-25 09:49\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -16,107 +10,71 @@ msgstr ""
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Plural-Forms: nplurals=2; plural=(n != 1);\n"
-#: app/templates/calculate.html:72
+"Plural-Forms: nplurals=6; plural=n==0 ? 0 : n==1 ? 1 : n==2 ? 2 : n%100>=3 "
+"&& n%100<=10 ? 3 : n%100>=11 && n%100<=99 ? 4 : 5;\n"
 
-msgid "Latitude"
-msgstr "Latitude"
+msgid "Please add first and last names."
+msgstr "Vänligen lägg till för- och efternamn."
 
-msgid "Longitude"
-msgstr "Longitude"
+msgid "Language"
+msgstr "Språk"
 
-msgid "English"
-msgstr "Engelska"
+msgid "How much this person"
+msgstr "Hur mycket denna person"
 
-msgid "Bengali"
-msgstr "Bengali"
+msgid "First name"
+msgstr "Förnamn"
 
-msgid "Spanish"
-msgstr "Spanska"
+msgid "Jennifer"
+msgstr "Jennifer"
 
-msgid "French"
-msgstr "Franska"
+msgid "Middle name"
+msgstr "Mellannamn"
 
-msgid "Name"
-msgstr "Name"
+msgid "(optional)"
+msgstr "(valfritt)"
 
-msgid "Search"
-msgstr "Sök"
+msgid "Shrader"
+msgstr "Shrader"
 
-msgid "1km"
-msgstr "1km"
+msgid "Last name"
+msgstr "Efternamn"
 
-msgid "50km"
-msgstr "50km"
+msgid "Lawrence"
+msgstr "Lawrence"
 
-msgid "200km"
-msgstr "200km"
+msgid "like this person"
+msgstr "gilla den här personen"
 
-msgid "world"
-msgstr "värld"
+msgid "Leonardo"
+msgstr "Leonardo"
 
-msgid "Rank"
-msgstr "Rank"
+msgid "DiCaprio"
+msgstr "DiCaprio"
 
-msgid "Mentioned (times)"
-msgstr "Nämnd (gånger)"
-
-msgid "With who?"
-msgstr "Med vem?"
-
-msgid "Search Names & Location"
-msgstr "Sök Namn & Plats"
-
-msgid "Enter Name"
-msgstr "Ange namn"
-
-msgid "Radius"
-msgstr "Radie"
-
-msgid "Search Results for"
-msgstr "Sökresultat för"
-
-msgid "Total Mentions"
-msgstr "Totalt antal omnämnanden"
-
-msgid "Names Mentioned Along with"
-msgstr "Namn nämnda tillsammans med"
-
-msgid "Number of Mentions"
-msgstr "Antal omnämnanden"
-
-msgid "No other names mentioned with"
-msgstr "Inga andra namn nämnda med"
-
-msgid "Filtered Results"
-msgstr "Filtrerade resultat"
-
-msgid "Name 1"
-msgstr "Namn 1"
-
-msgid "Name 2"
-msgstr "Namn 2"
-
-msgid "Name A (First name & Last name)"
-msgstr "Namn A (Förnamn & Efternamn)"
-
-msgid "Name B (First name & Last name)"
-msgstr "Namn B (Förnamn & Efternamn)"
-
-msgid "e.g. Jennifer Lawrence"
-msgstr "t.ex. Jennifer Lawrence"
-
-msgid "e.g. Leonardo Dicaprio"
-msgstr "t.ex. Leonardo Dicaprio"
-
-msgid "You don’t know friend’s last name?"
-msgstr "Du vet inte väns efternamn?"
+msgid "How to use / What is it?"
+msgstr "Hur man använder / Vad är det?"
 
 msgid "Calculate"
 msgstr "Beräkna"
 
-msgid "We will resolve your curiosities"
-msgstr "Vi kommer att lösa dina nyfikenheter"
+msgid "About this"
+msgstr "Om detta"
+
+msgid "This is a fun game that's popular among Korean teenagers! It calculates how much someone might like another person based on the number of strokes in their names.Try it just for fun — and share it with your friends! You can even see who’s the most popular in your school or neighborhood!"
+msgstr "Detta är ett roligt spel som är populärt bland koreanska tonåringar! Det beräknar hur mycket någon kanske gillar en annan person baserat på antalet streck i deras namn. Prova det bara för skojs skull — och dela det med dina vänner! Du kan till och med se vem som är mest populär i din skola eller grannskap!"
+
+msgid "Name A (First name & Last name)"
+msgstr "Namn A (Förnamn & Efternamn)"
+
+msgid "e.g. Jennifer Lawrence"
+msgstr "t.ex. Jennifer Lawrence"
+
+msgid "Name B (First name & Last name)"
+msgstr "Namn B (Förnamn & Efternamn)"
+
+msgid "e.g. Leonardo Dicaprio"
+msgstr "t.ex. Leonardo Dicaprio"
 
 msgid "Who tested with"
 msgstr "Vem testade med"
@@ -145,17 +103,53 @@ msgstr "hur stroke vi ställer in"
 msgid "Result"
 msgstr "Resultat"
 
-msgid "%(name1)s likes %(name2)s with a <br>\n<b>%(compatibility_score)s%%</b> probability."
-msgstr "%(name1)s gillar %(name2)s med en <br>\n<b>%(compatibility_score)s%%</b> sannolikhet."
+msgid "%(name1)s likes %(name2)s with a <br>\n <b>%(compatibility_score)s%%</b> probability."
+msgstr "%(name1)s gillar %(name2)s med en <br>\n <b>%(compatibility_score)s%%</b> sannolikhet."
 
 msgid "How many people mentioned me?"
 msgstr "Hur många personer nämnde mig?"
+
+msgid "How does it work?"
+msgstr "Hur fungerar det?"
+
+msgid "We calculate your love score using the number of strokes in each letter of your name."
+msgstr "Vi beräknar din kärlekspoäng genom att använda antalet streck i varje bokstav i ditt namn."
+
+msgid "Here’s how many strokes each letter has:"
+msgstr "Här är hur många streck varje bokstav har:"
 
 msgid "Error retrieving your location. Please enable location services."
 msgstr "Fel vid hämtning av din plats. Vänligen aktivera platstjänster."
 
 msgid "The most popular in my area"
-msgstr "Den mest populära i mitt område"
+msgstr "Det mest populära i mitt område"
 
-msgid "You can check friend's instragram. sometimes they put it with last name."
-msgstr "Du kan kolla vänners Instagram. ibland lägger de till det med efternamnet."
+msgid "Name"
+msgstr "Namn"
+
+msgid "Search"
+msgstr "Sök"
+
+msgid "1km"
+msgstr "1km"
+
+msgid "50km"
+msgstr "50km"
+
+msgid "200km"
+msgstr "200km"
+
+msgid "world"
+msgstr "värld"
+
+msgid "Rank"
+msgstr "Rank"
+
+msgid "Mentioned (times)"
+msgstr "Nämnd (gånger)"
+
+msgid "With who?"
+msgstr "Med vem?"
+
+msgid "English"
+msgstr "Engelska"

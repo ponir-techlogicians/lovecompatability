@@ -1,14 +1,8 @@
-# SOME DESCRIPTIVE TITLE.
-# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
-# This file is distributed under the same license as the PACKAGE package.
-# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
-#
-#, fuzzy
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2025-06-04 17:04+0600\n"
+"POT-Creation-Date: 2025-06-25 09:49\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -18,55 +12,78 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=6; plural=n==0 ? 0 : n==1 ? 1 : n==2 ? 2 : n%100>=3 "
 "&& n%100<=10 ? 3 : n%100>=11 && n%100<=99 ? 4 : 5;\n"
-#: app/templates/calculate.html:81
 
-msgid "Latitude"
-msgstr "خط العرض"
+msgid "Please add first and last names."
+msgstr "الرجاء إضافة الاسم الأول واسم العائلة."
 
-msgid "Longitude"
-msgstr "خط الطول"
+msgid "Language"
+msgstr "اللغة"
 
-msgid "English"
-msgstr "الإنجليزية"
+msgid "How much this person"
+msgstr "كم هذا الشخص"
 
-msgid "Bengali"
-msgstr "البنغالية"
+msgid "First name"
+msgstr "الاسم الأول"
 
-msgid "Spanish"
-msgstr "الإسبانية"
+msgid "Jennifer"
+msgstr "جينيفر"
 
-msgid "French"
-msgstr "الفرنسية"
+msgid "Middle name"
+msgstr "الاسم الأوسط"
 
-msgid "Enter Name"
-msgstr "أدخل الاسم"
+msgid "(optional)"
+msgstr "(اختياري)"
 
-msgid "Radius"
-msgstr "نصف القطر"
+msgid "Shrader"
+msgstr "شرادر"
 
-msgid "Search Results for"
-msgstr "نتائج البحث عن"
+msgid "Last name"
+msgstr "اسم العائلة"
 
-msgid "Total Mentions"
-msgstr "إجمالي الإشارات"
+msgid "Lawrence"
+msgstr "لورانس"
 
-msgid "Names Mentioned Along with"
-msgstr "الأسماء المذكورة مع"
+msgid "like this person"
+msgstr "مثل هذا الشخص"
 
-msgid "Number of Mentions"
-msgstr "عدد الإشارات"
+msgid "Leonardo"
+msgstr "Leonardo"
 
-msgid "No other names mentioned with"
-msgstr "لا توجد أسماء أخرى مذكورة مع"
+msgid "DiCaprio"
+msgstr "DiCaprio"
 
-msgid "Filtered Results"
-msgstr "النتائج المصفاة"
+msgid "How to use / What is it?"
+msgstr "كيفية الاستخدام / ما هو؟"
 
-msgid "Name 1"
-msgstr "الاسم 1"
+msgid "Calculate"
+msgstr "احسب"
 
-msgid "Name 2"
-msgstr "الاسم 2"
+msgid "About this"
+msgstr "حول هذا"
+
+msgid "This is a fun game that's popular among Korean teenagers! It calculates how much someone might like another person based on the number of strokes in their names.Try it just for fun — and share it with your friends! You can even see who’s the most popular in your school or neighborhood!"
+msgstr "هذه لعبة ممتعة تحظى بشعبية بين المراهقين الكوريين! تحسب مدى إعجاب شخص بآخر بناءً على عدد الحركات في أسمائهم. جربها للمتعة فقط - وشاركها مع أصدقائك! يمكنك حتى معرفة من هو الأكثر شعبية في مدرستك أو حيّك!"
+
+msgid "Name A (First name & Last name)"
+msgstr "الاسم أ (الاسم الأول واسم العائلة)"
+
+msgid "e.g. Jennifer Lawrence"
+msgstr "على سبيل المثال، جينيفر لورانس"
+
+msgid "Name B (First name & Last name)"
+msgstr "الاسم ب (الاسم الأول واسم العائلة)"
+
+msgid "e.g. Leonardo Dicaprio"
+msgstr "على سبيل المثال ليوناردو ديكابريو"
+
+msgid "Who tested with"
+msgstr "من اختبر مع"
+
+msgid "Open to see"
+msgstr "افتح لترى"
+
+msgid "Payment"
+msgstr "الدفع"
 
 msgid "Pay now"
 msgstr "ادفع الآن"
@@ -78,7 +95,7 @@ msgid "Payment failed"
 msgstr "فشل الدفع"
 
 msgid "Geolocation is not supported by this browser."
-msgstr "تحديد الموقع الجغرافي غير مدعوم من هذا المتصفح."
+msgstr "تحديد الموقع الجغرافي غير مدعوم من قبل هذا المتصفح."
 
 msgid "how stroke we set"
 msgstr "كيف نحدد السكتة الدماغية"
@@ -86,11 +103,20 @@ msgstr "كيف نحدد السكتة الدماغية"
 msgid "Result"
 msgstr "النتيجة"
 
-msgid "%(name1)s likes %(name2)s with a <br>\n<b>%(compatibility_score)s%%</b> probability."
-msgstr "%(name1)s يحب %(name2)s باحتمال <br>\n<b>%(compatibility_score)s%%</b>."
+msgid "%(name1)s likes %(name2)s with a <br>\n <b>%(compatibility_score)s%%</b> probability."
+msgstr "%(name1)s يحب %(name2)s باحتمالية <br>\n <b>%(compatibility_score)s%%</b>."
 
 msgid "How many people mentioned me?"
 msgstr "كم عدد الأشخاص الذين ذكروني؟"
+
+msgid "How does it work?"
+msgstr "كيف يعمل؟"
+
+msgid "We calculate your love score using the number of strokes in each letter of your name."
+msgstr "نحسب درجة حبك باستخدام عدد الضربات في كل حرف من اسمك."
+
+msgid "Here’s how many strokes each letter has:"
+msgstr "إليك عدد الضربات التي يحتوي عليها كل حرف:"
 
 msgid "Error retrieving your location. Please enable location services."
 msgstr "خطأ في استرجاع موقعك. يرجى تمكين خدمات الموقع."
@@ -105,13 +131,13 @@ msgid "Search"
 msgstr "بحث"
 
 msgid "1km"
-msgstr "1km"
+msgstr "1كم"
 
 msgid "50km"
-msgstr "50km"
+msgstr "50كم"
 
 msgid "200km"
-msgstr "200km"
+msgstr "200كم"
 
 msgid "world"
 msgstr "العالم"
@@ -120,44 +146,10 @@ msgid "Rank"
 msgstr "الترتيب"
 
 msgid "Mentioned (times)"
-msgstr "مذكور (مرات)"
+msgstr "ذكر (مرات)"
 
 msgid "With who?"
 msgstr "مع من؟"
 
-msgid "Search Names & Location"
-msgstr "البحث عن الأسماء والموقع"
-
-msgid "e.g. Jennifer Lawrence"
-msgstr "على سبيل المثال جينيفر لورانس"
-
-
-msgid "e.g. Leonardo Dicaprio"
-msgstr "على سبيل المثال ليوناردو ديكابريو"
-
-msgid "You don’t know friend’s last name?"
-msgstr "لا تعرف اسم عائلة صديقك؟"
-
-msgid "Calculate"
-msgstr "احسب"
-
-msgid "We will resolve your curiosities"
-msgstr "سنحل فضولك"
-
-msgid "Who tested with"
-msgstr "من اختبر مع"
-
-msgid "Open to see"
-msgstr "افتح لترى"
-
-msgid "Payment"
-msgstr "الدفع"
-
-msgid "You can check friend's instragram. sometimes they put it with last name."
-msgstr "يمكنك التحقق من إنستغرام الأصدقاء. أحيانًا يضعونه مع اسم العائلة."
-
-msgid "Name A (First name & Last name)"
-msgstr "الاسم أ (الاسم الأول واسم العائلة)"
-
-msgid "Name B (First name & Last name)"
-msgstr "الاسم ب (الاسم الأول واسم العائلة)"
+msgid "English"
+msgstr "الإنجليزية"
