@@ -1,14 +1,8 @@
-# SOME DESCRIPTIVE TITLE.
-# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
-# This file is distributed under the same license as the PACKAGE package.
-# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
-#
-#, fuzzy
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2025-06-04 15:51+0600\n"
+"POT-Creation-Date: 2025-06-25 09:49\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -16,25 +10,119 @@ msgstr ""
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Plural-Forms: nplurals=1; plural=0;\n"
+"Plural-Forms: nplurals=6; plural=n==0 ? 0 : n==1 ? 1 : n==2 ? 2 : n%100>=3 "
+"&& n%100<=10 ? 3 : n%100>=11 && n%100<=99 ? 4 : 5;\n"
 
-msgid "Latitude"
-msgstr "위도"
+msgid "Please add first and last names."
+msgstr "이름과 성을 추가해 주세요."
 
-msgid "Longitude"
-msgstr "경도"
+msgid "Language"
+msgstr "언어"
 
-msgid "English"
-msgstr "영어"
+msgid "How much this person"
+msgstr "이 사람은 얼마나"
 
-msgid "Bengali"
-msgstr "벵골어"
+msgid "First name"
+msgstr "이름"
 
-msgid "Spanish"
-msgstr "스페인어"
+msgid "Jennifer"
+msgstr "제니퍼"
 
-msgid "French"
-msgstr "프랑스어"
+msgid "Middle name"
+msgstr "중간 이름"
+
+msgid "(optional)"
+msgstr "(선택 사항)"
+
+msgid "Shrader"
+msgstr "슈레이더"
+
+msgid "Last name"
+msgstr "성"
+
+msgid "Lawrence"
+msgstr "로렌스"
+
+msgid "like this person"
+msgstr "이 사람을 좋아하다"
+
+msgid "Leonardo"
+msgstr "Leonardo"
+
+msgid "DiCaprio"
+msgstr "DiCaprio"
+
+msgid "How to use / What is it?"
+msgstr "사용 방법 / 이것은 무엇인가요?"
+
+msgid "Calculate"
+msgstr "계산하다"
+
+msgid "About this"
+msgstr "이것에 대하여"
+
+msgid "This is a fun game that's popular among Korean teenagers! It calculates how much someone might like another person based on the number of strokes in their names.Try it just for fun — and share it with your friends! You can even see who’s the most popular in your school or neighborhood!"
+msgstr "이것은 한국 청소년들 사이에서 인기 있는 재미있는 게임입니다! 이름의 획수를 기반으로 누군가가 다른 사람을 얼마나 좋아할지 계산합니다. 그냥 재미로 시도해보고 친구들과 공유하세요! 학교나 동네에서 누가 가장 인기 있는지 볼 수도 있습니다!"
+
+msgid "Name A (First name & Last name)"
+msgstr "이름 A (이름 & 성)"
+
+msgid "e.g. Jennifer Lawrence"
+msgstr "예: Jennifer Lawrence"
+
+msgid "Name B (First name & Last name)"
+msgstr "이름 B (이름 & 성)"
+
+msgid "e.g. Leonardo Dicaprio"
+msgstr "e.g. Leonardo Dicaprio"
+
+msgid "Who tested with"
+msgstr "누구와 테스트했는지"
+
+msgid "Open to see"
+msgstr "열어서 보기"
+
+msgid "Payment"
+msgstr "결제"
+
+msgid "Pay now"
+msgstr "지금 결제"
+
+msgid "Payment successful!"
+msgstr "결제 성공!"
+
+msgid "Payment failed"
+msgstr "결제 실패"
+
+msgid "Geolocation is not supported by this browser."
+msgstr "이 브라우저는 지리적 위치를 지원하지 않습니다."
+
+msgid "how stroke we set"
+msgstr "스트로크를 어떻게 설정하는지"
+
+msgid "Result"
+msgstr "결과"
+
+msgid "%(name1)s likes %(name2)s with a <br>\n <b>%(compatibility_score)s%%</b> probability."
+msgstr "%(name1)s는 %(name2)s를 <br>\n <b>%(compatibility_score)s%%</b>의 확률로 좋아합니다."
+
+msgid "How many people mentioned me?"
+msgstr "몇 명이 나를 언급했나요?"
+
+msgid "How does it work?"
+msgstr "어떻게 작동하나요?"
+
+msgid "We calculate your love score using the number of strokes in each letter of your name."
+msgstr "우리는 당신의 이름 각 글자의 획 수를 사용하여 사랑 점수를 계산합니다."
+
+msgid "Here’s how many strokes each letter has:"
+msgstr "각 글자가 몇 획인지 여기에 있습니다:"
+
+msgid "Error retrieving your location. Please enable location services."
+msgstr "위치를 검색하는 데 오류가 발생했습니다. 위치 서비스를 활성화하세요."
+
+msgid "The most popular in my area"
+msgstr "내 지역에서 가장 인기 있는 것"
 
 msgid "Name"
 msgstr "이름"
@@ -58,104 +146,10 @@ msgid "Rank"
 msgstr "순위"
 
 msgid "Mentioned (times)"
-msgstr "언급된 횟수"
+msgstr "언급된 (횟수)"
 
 msgid "With who?"
 msgstr "누구와 함께?"
 
-msgid "Search Names & Location"
-msgstr "이름 및 위치 검색"
-
-msgid "Enter Name"
-msgstr "이름 입력"
-
-msgid "Radius"
-msgstr "반경"
-
-msgid "Search Results for"
-msgstr "검색 결과"
-
-msgid "Total Mentions"
-msgstr "총 언급 수"
-
-msgid "Names Mentioned Along with"
-msgstr "함께 언급된 이름들"
-
-msgid "Number of Mentions"
-msgstr "언급 횟수"
-
-msgid "No other names mentioned with"
-msgstr "함께 언급된 다른 이름 없음"
-
-msgid "Filtered Results"
-msgstr "필터링된 결과"
-
-msgid "Name 1"
-msgstr "이름 1"
-
-msgid "Name 2"
-msgstr "이름 2"
-
-msgid "Name A (First name & Last name)"
-msgstr "이름 A (이름 & 성)"
-
-msgid "Name B (First name & Last name)"
-msgstr "이름 B (이름 & 성)"
-
-msgid "e.g. Jennifer Lawrence"
-msgstr "예: Jennifer Lawrence"
-
-
-msgid "e.g. Leonardo Dicaprio"
-msgstr "예: Leonardo Dicaprio"
-
-msgid "You don’t know friend’s last name?"
-msgstr "친구의 성을 모르시나요?"
-
-msgid "Calculate"
-msgstr "계산하기"
-
-msgid "We will resolve your curiosities"
-msgstr "당신의 궁금증을 해결해 드리겠습니다"
-
-msgid "Who tested with"
-msgstr "함께 테스트한 사람"
-
-msgid "Open to see"
-msgstr "열어서 보기"
-
-msgid "Payment"
-msgstr "결제"
-
-msgid "Pay now"
-msgstr "지금 결제"
-
-msgid "Payment successful!"
-msgstr "결제 성공!"
-
-msgid "Payment failed"
-msgstr "결제 실패"
-
-msgid "Geolocation is not supported by this browser."
-msgstr "이 브라우저는 지리적 위치를 지원하지 않습니다."
-
-msgid "how stroke we set"
-msgstr "어떻게 설정하나요"
-
-msgid "Result"
-msgstr "결과"
-
-msgid "%(name1)s likes %(name2)s with a <br>\n<b>%(compatibility_score)s%%</b> probability."
-msgstr "%(name1)s는 %(name2)s를 <br>\n<b>%(compatibility_score)s%%</b> 확률로 좋아합니다."
-
-msgid "How many people mentioned me?"
-msgstr "몇 명이 나를 언급했나요?"
-
-msgid "Error retrieving your location. Please enable location services."
-msgstr "위치를 가져오는 중 오류가 발생했습니다. 위치 서비스를 활성화하세요."
-
-msgid "The most popular in my area"
-msgstr "내 지역에서 가장 인기 있는 것"
-
-msgid "You can check friend's instragram. sometimes they put it with last name."
-msgstr "친구의 인스타그램을 확인할 수 있습니다. 때때로 그들은 성과 함께 그것을 넣습니다."
+msgid "English"
+msgstr "영어"

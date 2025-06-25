@@ -1,14 +1,8 @@
-# SOME DESCRIPTIVE TITLE.
-# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
-# This file is distributed under the same license as the PACKAGE package.
-# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
-#
-#, fuzzy
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2025-06-04 12:59+0600\n"
+"POT-Creation-Date: 2025-06-25 09:49\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -16,26 +10,119 @@ msgstr ""
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Plural-Forms: nplurals=2; plural=(n != 1);\n"
-#: app/templates/calculate.html:72
+"Plural-Forms: nplurals=6; plural=n==0 ? 0 : n==1 ? 1 : n==2 ? 2 : n%100>=3 "
+"&& n%100<=10 ? 3 : n%100>=11 && n%100<=99 ? 4 : 5;\n"
 
-msgid "Latitude"
-msgstr "Latitude"
+msgid "Please add first and last names."
+msgstr "Bitte fügen Sie Vor- und Nachnamen hinzu."
 
-msgid "Longitude"
-msgstr "Longitude"
+msgid "Language"
+msgstr "Sprache"
 
-msgid "English"
-msgstr "Englisch"
+msgid "How much this person"
+msgstr "Wie viel diese Person"
 
-msgid "Bengali"
-msgstr "Bengalisch"
+msgid "First name"
+msgstr "Vorname"
 
-msgid "Spanish"
-msgstr "Spanisch"
+msgid "Jennifer"
+msgstr "Jennifer"
 
-msgid "French"
-msgstr "Französisch"
+msgid "Middle name"
+msgstr "Zweiter Vorname"
+
+msgid "(optional)"
+msgstr "(optional)"
+
+msgid "Shrader"
+msgstr "Shrader"
+
+msgid "Last name"
+msgstr "Nachname"
+
+msgid "Lawrence"
+msgstr "Lawrence"
+
+msgid "like this person"
+msgstr "mag diese Person"
+
+msgid "Leonardo"
+msgstr "Leonardo"
+
+msgid "DiCaprio"
+msgstr "DiCaprio"
+
+msgid "How to use / What is it?"
+msgstr "Wie benutzt man es / Was ist das?"
+
+msgid "Calculate"
+msgstr "Berechnen"
+
+msgid "About this"
+msgstr "Darüber"
+
+msgid "This is a fun game that's popular among Korean teenagers! It calculates how much someone might like another person based on the number of strokes in their names.Try it just for fun — and share it with your friends! You can even see who’s the most popular in your school or neighborhood!"
+msgstr "Dies ist ein lustiges Spiel, das bei koreanischen Teenagern beliebt ist! Es berechnet, wie sehr jemand eine andere Person mögen könnte, basierend auf der Anzahl der Striche in ihren Namen. Probieren Sie es einfach zum Spaß aus — und teilen Sie es mit Ihren Freunden! Sie können sogar sehen, wer in Ihrer Schule oder Nachbarschaft am beliebtesten ist!"
+
+msgid "Name A (First name & Last name)"
+msgstr "Name A (Vorname & Nachname)"
+
+msgid "e.g. Jennifer Lawrence"
+msgstr "z.B. Jennifer Lawrence"
+
+msgid "Name B (First name & Last name)"
+msgstr "Name B (Vorname & Nachname)"
+
+msgid "e.g. Leonardo Dicaprio"
+msgstr "e.g. Leonardo Dicaprio"
+
+msgid "Who tested with"
+msgstr "Wer hat getestet mit"
+
+msgid "Open to see"
+msgstr "Öffnen, um zu sehen"
+
+msgid "Payment"
+msgstr "Zahlung"
+
+msgid "Pay now"
+msgstr "Jetzt bezahlen"
+
+msgid "Payment successful!"
+msgstr "Zahlung erfolgreich!"
+
+msgid "Payment failed"
+msgstr "Zahlung fehlgeschlagen"
+
+msgid "Geolocation is not supported by this browser."
+msgstr "Geolocation wird von diesem Browser nicht unterstützt."
+
+msgid "how stroke we set"
+msgstr "wie Schlag wir setzen"
+
+msgid "Result"
+msgstr "Ergebnis"
+
+msgid "%(name1)s likes %(name2)s with a <br>\n <b>%(compatibility_score)s%%</b> probability."
+msgstr "%(name1)s mag %(name2)s mit einer <br>\n <b>%(compatibility_score)s%%</b> Wahrscheinlichkeit."
+
+msgid "How many people mentioned me?"
+msgstr "Wie viele Leute haben mich erwähnt?"
+
+msgid "How does it work?"
+msgstr "Wie funktioniert es?"
+
+msgid "We calculate your love score using the number of strokes in each letter of your name."
+msgstr "Wir berechnen Ihren Liebeswert anhand der Anzahl der Striche in jedem Buchstaben Ihres Namens."
+
+msgid "Here’s how many strokes each letter has:"
+msgstr "Hier ist, wie viele Striche jeder Buchstabe hat:"
+
+msgid "Error retrieving your location. Please enable location services."
+msgstr "Fehler beim Abrufen Ihres Standorts. Bitte aktivieren Sie die Standortdienste."
+
+msgid "The most popular in my area"
+msgstr "Das Beliebteste in meiner Gegend"
 
 msgid "Name"
 msgstr "Name"
@@ -64,98 +151,5 @@ msgstr "Erwähnt (Mal)"
 msgid "With who?"
 msgstr "Mit wem?"
 
-msgid "Search Names & Location"
-msgstr "Namen & Ort suchen"
-
-msgid "Enter Name"
-msgstr "Namen eingeben"
-
-msgid "Radius"
-msgstr "Radius"
-
-msgid "Search Results for"
-msgstr "Suchergebnisse für"
-
-msgid "Total Mentions"
-msgstr "Gesamtanzahl der Erwähnungen"
-
-msgid "Names Mentioned Along with"
-msgstr "Zusammen mit erwähnte Namen"
-
-msgid "Number of Mentions"
-msgstr "Anzahl der Erwähnungen"
-
-msgid "No other names mentioned with"
-msgstr "Keine anderen Namen erwähnt mit"
-
-msgid "Filtered Results"
-msgstr "Gefilterte Ergebnisse"
-
-msgid "Name 1"
-msgstr "Name 1"
-
-msgid "Name 2"
-msgstr "Name 2"
-
-msgid "Name A (First name & Last name)"
-msgstr "Name A (Vorname & Nachname)"
-
-msgid "Name B (First name & Last name)"
-msgstr "Name B (Vorname & Nachname)"
-
-msgid "e.g. Jennifer Lawrence"
-msgstr "z.B. Jennifer Lawrence"
-
-msgid "e.g. Leonardo Dicaprio"
-msgstr "z.B. Leonardo Dicaprio"
-
-msgid "You don’t know friend’s last name?"
-msgstr "Sie kennen den Nachnamen des Freundes nicht?"
-
-msgid "Calculate"
-msgstr "Berechnen"
-
-msgid "We will resolve your curiosities"
-msgstr "Wir werden Ihre Neugierde befriedigen"
-
-msgid "Who tested with"
-msgstr "Wer hat getestet mit"
-
-msgid "Open to see"
-msgstr "Öffnen, um zu sehen"
-
-msgid "Payment"
-msgstr "Zahlung"
-
-msgid "Pay now"
-msgstr "Jetzt bezahlen"
-
-msgid "Payment successful!"
-msgstr "Zahlung erfolgreich!"
-
-msgid "Payment failed"
-msgstr "Zahlung fehlgeschlagen"
-
-msgid "Geolocation is not supported by this browser."
-msgstr "Geolokalisierung wird von diesem Browser nicht unterstützt."
-
-msgid "how stroke we set"
-msgstr "wie Schlag wir einstellen"
-
-msgid "Result"
-msgstr "Ergebnis"
-
-msgid "%(name1)s likes %(name2)s with a <br>\n<b>%(compatibility_score)s%%</b> probability."
-msgstr "%(name1)s mag %(name2)s mit einer <br>\n<b>%(compatibility_score)s%%</b> Wahrscheinlichkeit."
-
-msgid "How many people mentioned me?"
-msgstr "Wie viele Leute haben mich erwähnt?"
-
-msgid "Error retrieving your location. Please enable location services."
-msgstr "Fehler beim Abrufen Ihres Standorts. Bitte aktivieren Sie die Standortdienste."
-
-msgid "The most popular in my area"
-msgstr "Das Beliebteste in meiner Gegend"
-
-msgid "You can check friend's instragram. sometimes they put it with last name."
-msgstr "Sie können den Instagram-Account eines Freundes überprüfen. Manchmal fügen sie es mit dem Nachnamen hinzu."
+msgid "English"
+msgstr "Englisch"

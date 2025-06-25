@@ -1,14 +1,8 @@
-# SOME DESCRIPTIVE TITLE.
-# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
-# This file is distributed under the same license as the PACKAGE package.
-# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
-#
-#, fuzzy
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2025-06-04 13:01+0600\n"
+"POT-Creation-Date: 2025-06-25 09:49\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -16,107 +10,71 @@ msgstr ""
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Plural-Forms: nplurals=4; plural=(n == 1 && n % 1 == 0) ? 0 : (n >= 2 && n "
-"<= 4 && n % 1 == 0) ? 1: (n % 1 != 0 ) ? 2 : 3;\n"
-#: app/templates/calculate.html:72
-msgid "Latitude"
-msgstr "Latitude"
+"Plural-Forms: nplurals=6; plural=n==0 ? 0 : n==1 ? 1 : n==2 ? 2 : n%100>=3 "
+"&& n%100<=10 ? 3 : n%100>=11 && n%100<=99 ? 4 : 5;\n"
 
-msgid "Longitude"
-msgstr "Longitude"
+msgid "Please add first and last names."
+msgstr "Prosím, přidejte křestní a příjmení."
 
-msgid "English"
-msgstr "Angličtina"
+msgid "Language"
+msgstr "Jazyk"
 
-msgid "Bengali"
-msgstr "Bengálština"
+msgid "How much this person"
+msgstr "Kolik tato osoba"
 
-msgid "Spanish"
-msgstr "Španělština"
+msgid "First name"
+msgstr "Křestní jméno"
 
-msgid "French"
-msgstr "Francouzština"
+msgid "Jennifer"
+msgstr "Jennifer"
 
-msgid "Name"
-msgstr "Name"
+msgid "Middle name"
+msgstr "Prostřední jméno"
 
-msgid "Search"
-msgstr "Hledat"
+msgid "(optional)"
+msgstr "(volitelné)"
 
-msgid "1km"
-msgstr "1km"
+msgid "Shrader"
+msgstr "Shrader"
 
-msgid "50km"
-msgstr "50km"
+msgid "Last name"
+msgstr "Příjmení"
 
-msgid "200km"
-msgstr "200km"
+msgid "Lawrence"
+msgstr "Lawrence"
 
-msgid "world"
-msgstr "svět"
+msgid "like this person"
+msgstr "jako tuto osobu"
 
-msgid "Rank"
-msgstr "Pořadí"
+msgid "Leonardo"
+msgstr "Leonardo"
 
-msgid "Mentioned (times)"
-msgstr "Zmíněno (krát)"
+msgid "DiCaprio"
+msgstr "DiCaprio"
 
-msgid "With who?"
-msgstr "S kým?"
-
-msgid "Search Names & Location"
-msgstr "Hledat jména a místa"
-
-msgid "Enter Name"
-msgstr "Zadejte jméno"
-
-msgid "Radius"
-msgstr "Poloměr"
-
-msgid "Search Results for"
-msgstr "Výsledky hledání pro"
-
-msgid "Total Mentions"
-msgstr "Celkový počet zmínek"
-
-msgid "Names Mentioned Along with"
-msgstr "Jména zmíněná spolu s"
-
-msgid "Number of Mentions"
-msgstr "Počet zmínek"
-
-msgid "No other names mentioned with"
-msgstr "Žádná jiná jména zmíněna s"
-
-msgid "Filtered Results"
-msgstr "Filtrované výsledky"
-
-msgid "Name 1"
-msgstr "Jméno 1"
-
-msgid "Name 2"
-msgstr "Jméno 2"
-
-msgid "Name A (First name & Last name)"
-msgstr "Jméno A (Křestní jméno a Příjmení)"
-
-msgid "Name B (First name & Last name)"
-msgstr "Jméno B (Křestní jméno a Příjmení)"
-
-msgid "e.g. Jennifer Lawrence"
-msgstr "e.g. Jennifer Lawrence"
-
-msgid "e.g. Leonardo Dicaprio"
-msgstr "e.g. Leonardo Dicaprio"
-
-msgid "You don’t know friend’s last name?"
-msgstr "Neznáte příjmení přítele?"
+msgid "How to use / What is it?"
+msgstr "Jak používat / Co to je?"
 
 msgid "Calculate"
 msgstr "Vypočítat"
 
-msgid "We will resolve your curiosities"
-msgstr "Vyřešíme vaše zvědavosti"
+msgid "About this"
+msgstr "O tomto"
+
+msgid "This is a fun game that's popular among Korean teenagers! It calculates how much someone might like another person based on the number of strokes in their names.Try it just for fun — and share it with your friends! You can even see who’s the most popular in your school or neighborhood!"
+msgstr "Toto je zábavná hra, která je populární mezi korejskými teenagery! Vypočítává, jak moc by se někomu mohla líbit jiná osoba na základě počtu tahů v jejich jménech. Vyzkoušejte to jen pro zábavu — a sdílejte to se svými přáteli! Můžete dokonce zjistit, kdo je nejoblíbenější ve vaší škole nebo sousedství!"
+
+msgid "Name A (First name & Last name)"
+msgstr "Jméno A (Křestní jméno a Příjmení)"
+
+msgid "e.g. Jennifer Lawrence"
+msgstr "např. Jennifer Lawrence"
+
+msgid "Name B (First name & Last name)"
+msgstr "Jméno B (Křestní jméno a Příjmení)"
+
+msgid "e.g. Leonardo Dicaprio"
+msgstr "e.g. Leonardo Dicaprio"
 
 msgid "Who tested with"
 msgstr "Kdo testoval s"
@@ -140,16 +98,25 @@ msgid "Geolocation is not supported by this browser."
 msgstr "Geolokace není tímto prohlížečem podporována."
 
 msgid "how stroke we set"
-msgstr "jak nastavíme tah"
+msgstr "jak nastavit tah"
 
 msgid "Result"
 msgstr "Výsledek"
 
-msgid "%(name1)s likes %(name2)s with a <br>\n<b>%(compatibility_score)s%%</b> probability."
-msgstr "%(name1)s má rád %(name2)s s <br>\n<b>%(compatibility_score)s%%</b> pravděpodobností."
+msgid "%(name1)s likes %(name2)s with a <br>\n <b>%(compatibility_score)s%%</b> probability."
+msgstr "%(name1)s má rád %(name2)s s <br>\n <b>%(compatibility_score)s%%</b> pravděpodobností."
 
 msgid "How many people mentioned me?"
 msgstr "Kolik lidí mě zmínilo?"
+
+msgid "How does it work?"
+msgstr "Jak to funguje?"
+
+msgid "We calculate your love score using the number of strokes in each letter of your name."
+msgstr "Vypočítáme vaše skóre lásky pomocí počtu tahů v každém písmenu vašeho jména."
+
+msgid "Here’s how many strokes each letter has:"
+msgstr "Zde je počet tahů, které má každé písmeno:"
 
 msgid "Error retrieving your location. Please enable location services."
 msgstr "Chyba při získávání vaší polohy. Prosím, povolte služby určování polohy."
@@ -157,5 +124,32 @@ msgstr "Chyba při získávání vaší polohy. Prosím, povolte služby určov�
 msgid "The most popular in my area"
 msgstr "Nejoblíbenější v mé oblasti"
 
-msgid "You can check friend's instragram. sometimes they put it with last name."
-msgstr "Můžete zkontrolovat Instagram přítele. Někdy to dávají s příjmením."
+msgid "Name"
+msgstr "Jméno"
+
+msgid "Search"
+msgstr "Hledat"
+
+msgid "1km"
+msgstr "1km"
+
+msgid "50km"
+msgstr "50km"
+
+msgid "200km"
+msgstr "200km"
+
+msgid "world"
+msgstr "svět"
+
+msgid "Rank"
+msgstr "Hodnocení"
+
+msgid "Mentioned (times)"
+msgstr "Zmíněno (krát)"
+
+msgid "With who?"
+msgstr "S kým?"
+
+msgid "English"
+msgstr "Angličtina"

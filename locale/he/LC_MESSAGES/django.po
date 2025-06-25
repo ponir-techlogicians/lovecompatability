@@ -1,14 +1,8 @@
-# SOME DESCRIPTIVE TITLE.
-# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
-# This file is distributed under the same license as the PACKAGE package.
-# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
-#
-#, fuzzy
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2025-06-04 17:04+0600\n"
+"POT-Creation-Date: 2025-06-25 09:49\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -16,108 +10,71 @@ msgstr ""
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Plural-Forms: nplurals=4; plural=(n == 1 && n % 1 == 0) ? 0 : (n == 2 && n % "
-"1 == 0) ? 1: (n % 10 == 0 && n % 1 == 0 && n > 10) ? 2 : 3;\n"
-#: app/templates/calculate.html:81
+"Plural-Forms: nplurals=6; plural=n==0 ? 0 : n==1 ? 1 : n==2 ? 2 : n%100>=3 "
+"&& n%100<=10 ? 3 : n%100>=11 && n%100<=99 ? 4 : 5;\n"
 
-msgid "Latitude"
-msgstr "Latitude"
+msgid "Please add first and last names."
+msgstr "אנא הוסף שם פרטי ושם משפחה."
 
-msgid "Longitude"
-msgstr "Longitude"
+msgid "Language"
+msgstr "שפה"
 
-msgid "English"
-msgstr "אנגלית"
+msgid "How much this person"
+msgstr "כמה עולה האדם הזה"
 
-msgid "Bengali"
-msgstr "בנגלית"
+msgid "First name"
+msgstr "שם פרטי"
 
-msgid "Spanish"
-msgstr "ספרדית"
+msgid "Jennifer"
+msgstr "ג'ניפר"
 
-msgid "French"
-msgstr "צרפתית"
+msgid "Middle name"
+msgstr "שם אמצעי"
 
-msgid "Name"
-msgstr "Name"
+msgid "(optional)"
+msgstr "(אופציונלי)"
 
-msgid "Search"
-msgstr "חיפוש"
+msgid "Shrader"
+msgstr "שרדר"
 
-msgid "1km"
-msgstr "1km"
+msgid "Last name"
+msgstr "שם משפחה"
 
-msgid "50km"
-msgstr "50km"
+msgid "Lawrence"
+msgstr "לורנס"
 
-msgid "200km"
-msgstr "200km"
+msgid "like this person"
+msgstr "אוהב את האדם הזה"
 
-msgid "world"
-msgstr "עולם"
+msgid "Leonardo"
+msgstr "Leonardo"
 
-msgid "Rank"
-msgstr "דירוג"
+msgid "DiCaprio"
+msgstr "DiCaprio"
 
-msgid "Mentioned (times)"
-msgstr "הוזכר (פעמים)"
-
-msgid "With who?"
-msgstr "עם מי?"
-
-msgid "Search Names & Location"
-msgstr "חפש שמות ומיקום"
-
-msgid "Enter Name"
-msgstr "הזן שם"
-
-msgid "Radius"
-msgstr "רדיוס"
-
-msgid "Search Results for"
-msgstr "תוצאות חיפוש עבור"
-
-msgid "Total Mentions"
-msgstr "סך כל האזכורים"
-
-msgid "Names Mentioned Along with"
-msgstr "שמות שהוזכרו יחד עם"
-
-msgid "Number of Mentions"
-msgstr "מספר האזכורים"
-
-msgid "No other names mentioned with"
-msgstr "אין שמות אחרים שהוזכרו עם"
-
-msgid "Filtered Results"
-msgstr "תוצאות מסוננות"
-
-msgid "Name 1"
-msgstr "שם 1"
-
-msgid "Name 2"
-msgstr "שם 2"
-
-msgid "Name A (First name & Last name)"
-msgstr "שם א (שם פרטי ושם משפחה)"
-
-msgid "Name B (First name & Last name)"
-msgstr "שם ב (שם פרטי ושם משפחה)"
-
-msgid "e.g. Jennifer Lawrence"
-msgstr "לדוגמה, ג'ניפר לורנס"
-
-msgid "e.g. Leonardo Dicaprio"
-msgstr "לדוגמה, לאונרדו דיקפריו"
-
-msgid "You don’t know friend’s last name?"
-msgstr "אתה לא יודע את שם המשפחה של החבר?"
+msgid "How to use / What is it?"
+msgstr "איך להשתמש / מה זה?"
 
 msgid "Calculate"
-msgstr "חשב"
+msgstr "לחשב"
 
-msgid "We will resolve your curiosities"
-msgstr "נפתור את הסקרנות שלך"
+msgid "About this"
+msgstr "על זה"
+
+msgid "This is a fun game that's popular among Korean teenagers! It calculates how much someone might like another person based on the number of strokes in their names.Try it just for fun — and share it with your friends! You can even see who’s the most popular in your school or neighborhood!"
+msgstr "זהו משחק מהנה שזוכה לפופולריות בקרב בני נוער קוריאנים! הוא מחשב כמה מישהו עשוי לאהוב אדם אחר על בסיס מספר הקווים בשמותיהם. נסו את זה רק בשביל הכיף — ושתפו את זה עם החברים שלכם! אתם אפילו יכולים לראות מי הכי פופולרי בבית הספר או בשכונה שלכם!"
+
+msgid "Name A (First name & Last name)"
+msgstr "שם א' (שם פרטי ושם משפחה)"
+
+msgid "e.g. Jennifer Lawrence"
+msgstr "לדוגמה, Jennifer Lawrence"
+
+msgid "Name B (First name & Last name)"
+msgstr "שם ב' (שם פרטי ושם משפחה)"
+
+msgid "e.g. Leonardo Dicaprio"
+msgstr "e.g. Leonardo Dicaprio"
 
 msgid "Who tested with"
 msgstr "מי נבדק עם"
@@ -138,19 +95,28 @@ msgid "Payment failed"
 msgstr "התשלום נכשל"
 
 msgid "Geolocation is not supported by this browser."
-msgstr "דפדפן זה אינו תומך במיקום גיאוגרפי."
+msgstr "מיקום גיאוגרפי אינו נתמך על ידי דפדפן זה."
 
 msgid "how stroke we set"
-msgstr "איך נקבע את המכה"
+msgstr "איך קבענו את המכה"
 
 msgid "Result"
 msgstr "תוצאה"
 
-msgid "%(name1)s likes %(name2)s with a <br>\n<b>%(compatibility_score)s%%</b> probability."
-msgstr "%(name1)s אוהב את %(name2)s עם <br>\n<b>%(compatibility_score)s%%</b> סיכוי."
+msgid "%(name1)s likes %(name2)s with a <br>\n <b>%(compatibility_score)s%%</b> probability."
+msgstr "%(name1)s מחבב את %(name2)s עם <br>\n <b>%(compatibility_score)s%%</b> סיכוי."
 
 msgid "How many people mentioned me?"
 msgstr "כמה אנשים הזכירו אותי?"
+
+msgid "How does it work?"
+msgstr "איך זה עובד?"
+
+msgid "We calculate your love score using the number of strokes in each letter of your name."
+msgstr "אנו מחשבים את ציון האהבה שלך באמצעות מספר הקווים בכל אות של שמך."
+
+msgid "Here’s how many strokes each letter has:"
+msgstr "הנה כמה קווים יש לכל אות:"
 
 msgid "Error retrieving your location. Please enable location services."
 msgstr "שגיאה באחזור המיקום שלך. אנא הפעל את שירותי המיקום."
@@ -158,5 +124,32 @@ msgstr "שגיאה באחזור המיקום שלך. אנא הפעל את שיר
 msgid "The most popular in my area"
 msgstr "הפופולרי ביותר באזור שלי"
 
-msgid "You can check friend's instragram. sometimes they put it with last name."
-msgstr "אתה יכול לבדוק את האינסטגרם של החבר. לפעמים הם שמים את זה עם שם המשפחה."
+msgid "Name"
+msgstr "שם"
+
+msgid "Search"
+msgstr "חיפוש"
+
+msgid "1km"
+msgstr "1קמ"
+
+msgid "50km"
+msgstr "50קמ"
+
+msgid "200km"
+msgstr "200קמ"
+
+msgid "world"
+msgstr "עולם"
+
+msgid "Rank"
+msgstr "דירוג"
+
+msgid "Mentioned (times)"
+msgstr "הוזכר (פעמים)"
+
+msgid "With who?"
+msgstr "עם מי?"
+
+msgid "English"
+msgstr "אנגלית"

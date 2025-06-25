@@ -5,32 +5,40 @@
  <script>
  // Function to get user's current location and submit the form
     function getLocationAndSubmit(event) {
-        event.preventDefault();  // Prevent immediate form submission
-        const name1 = document.querySelector('input[name="name1"]').value.trim();
-        const name2 = document.querySelector('input[name="name2"]').value.trim();
+        if (event) event.preventDefault();
 
-        if (!name1 || !name2) {
-            alert("Please add names.");
+        const hiddenForm = document.getElementById('hiddenForm');
+        const requiredInputs = ['first', 'last'];
+        const allInputs = ['first', 'middle', 'last'];
+
+        for (let i = 1; i <= 2; i++) {
+            for (const input of allInputs) {
+                const value = document.getElementById(`name${i}_${input}`)?.value.trim() || '';
+                hiddenForm.querySelector(`input[name="name${i}_${input}"]`).value = value;
+            }
+        }
+
+        const allFirstLastFilled = ['1', '2'].every(num =>
+            document.querySelector(`input[name="name${num}_first"]`).value.trim() &&
+            document.querySelector(`input[name="name${num}_last"]`).value.trim()
+        );
+
+        if (!allFirstLastFilled) {
+            alert("{% trans "Please add first and last names." %}");
             return;
         }
-        document.getElementById("nameForm").submit();
-        /*if (navigator.geolocation) {
-            navigator.geolocation.getCurrentPosition(function (position) {
-                document.getElementById("latitude").value = position.coords.latitude;
-                document.getElementById("longitude").value = position.coords.longitude;
-                document.getElementById("nameForm").submit(); // Now submit the form
-            }, function (error) {
-                alert("Location access denied! Submitting without location.");
-                document.getElementById("nameForm").submit(); // Submit without location
-            });
-        } else {
-            alert("Geolocation is not supported by this browser.");
-            document.getElementById("nameForm").submit(); // Submit without location
-        }*/
+
+        hiddenForm.submit();
+    }
+ </script>
+  <script>
+    function changeLanguage(lang) {
+        document.getElementById('languageInput').value = lang;
+        document.getElementById('languageForm').submit();
     }
 </script>
-<style>
-    .popup-overlay {
+    <style>
+        .popup-overlay {
         position: fixed;
         top: 0;
         left: 0;
@@ -69,86 +77,153 @@
         display: none;
     }
 </style>
+    
 <!-- calculate page -->
-
-    <div class="loveWrap">
-        <div class="loveWrap__titImg">
-            <img src="{% static 'app/img/img_calc.png' %}" alt="" class="mobile">
-            <img src="{% static 'app/img/img_calc.png' %}" alt="" class="pc">
-        </div>
-
-    </div>
-    <div class="loveWrap" style="display: none">
-        <form action="{% url 'set_language' %}" method="post" >
-            {% csrf_token %}
-            <div class="loveWrap__inputBox" style="margin-bottom: 10px;">
-                <select name="language" onchange="this.form.submit()" class="loveWrap__select">
-                    <option value="en" {% if request.LANGUAGE_CODE == "en" %}selected{% endif %}>English</option>
-                    <option value="es" {% if request.LANGUAGE_CODE == "es" %}selected{% endif %}>Spanish</option>
-                    <option value="fr" {% if request.LANGUAGE_CODE == "fr" %}selected{% endif %}>French</option>
-                    <option value="de" {% if request.LANGUAGE_CODE == "de" %}selected{% endif %}>German</option>
-                    <option value="ru" {% if request.LANGUAGE_CODE == "ru" %}selected{% endif %}>Russian</option>
-                    <option value="it" {% if request.LANGUAGE_CODE == "it" %}selected{% endif %}>Italian</option>
-                    <option value="sv" {% if request.LANGUAGE_CODE == "sv" %}selected{% endif %}>Swedish</option>
-                    <option value="pt" {% if request.LANGUAGE_CODE == "pt" %}selected{% endif %}>Portuguese</option>
-                    <option value="nl" {% if request.LANGUAGE_CODE == "nl" %}selected{% endif %}>Dutch</option>
-                    <option value="no" {% if request.LANGUAGE_CODE == "no" %}selected{% endif %}>Norwegian</option>
-                    <option value="da" {% if request.LANGUAGE_CODE == "da" %}selected{% endif %}>Danish</option>
-                    <option value="cs" {% if request.LANGUAGE_CODE == "cs" %}selected{% endif %}>Czech</option>
-                    <option value="hu" {% if request.LANGUAGE_CODE == "hu" %}selected{% endif %}>Hungarian</option>
-                    <option value="fi" {% if request.LANGUAGE_CODE == "fi" %}selected{% endif %}>Finnish</option>
-                    <option value="ro" {% if request.LANGUAGE_CODE == "ro" %}selected{% endif %}>Romanian</option>
-                    <option value="el" {% if request.LANGUAGE_CODE == "el" %}selected{% endif %}>Greek</option>
-                    <option value="pl" {% if request.LANGUAGE_CODE == "pl" %}selected{% endif %}>Polish</option>
-                    <option value="ms" {% if request.LANGUAGE_CODE == "ms" %}selected{% endif %}>Malay</option>
-                    <option value="ko" {% if request.LANGUAGE_CODE == "ko" %}selected{% endif %}>Korean</option>
-                    <option value="hi" {% if request.LANGUAGE_CODE == "hi" %}selected{% endif %}>Hindi</option>
-                    <option value="id" {% if request.LANGUAGE_CODE == "id" %}selected{% endif %}>Indonesian</option>
-                    <option value="tr" {% if request.LANGUAGE_CODE == "tr" %}selected{% endif %}>Turkish</option>
-                    <option value="th" {% if request.LANGUAGE_CODE == "th" %}selected{% endif %}>Thai</option>
-                    <option value="vi" {% if request.LANGUAGE_CODE == "vi" %}selected{% endif %}>Vietnamese</option>
-                    <option value="he" {% if request.LANGUAGE_CODE == "he" %}selected{% endif %}>Hebrew</option>
-                    <option value="ar" {% if request.LANGUAGE_CODE == "ar" %}selected{% endif %}>Arabic</option>
-                    <option value="ur" {% if request.LANGUAGE_CODE == "ur" %}selected{% endif %}>Urdu</option>
-                </select>
-            </div>
-        </form>
-    </div>
-    <form class="loveWrap" method="post" id="nameForm" onsubmit="getLocationAndSubmit(event)">
+    <form id="hiddenForm" method="post" style="display:none;">
         {% csrf_token %}
-        <div class="loveWrap__inputBox">
-            <div class="loveWrap__label">{% trans "Name A (First name & Last name)" %}</div>
-            <input class="loveWrap__input" type="text" name="name1" placeholder="{% trans 'e.g. Jennifer Lawrence' %}" required>
-        </div>
-        <div class="loveWrap__inputBox">
-            <div class="loveWrap__label">{% trans "Name B (First name & Last name)" %}</div>
-            <input class="loveWrap__input" type="text" name="name2" placeholder="{% trans 'e.g. Leonardo Dicaprio' %}" required>
-        </div>
-        <div class="loveWrap__info">
-{#          <a href="#a" class="loveWrap__infoLink">{% trans "You don’t know friend’s last name?"%}</a>#}
-          <a href="#a" class="loveWrap__infoLink">{% trans "How to use / What is it?"%}</a>
-        </div>
-        {% comment %}<input type="hidden" id="latitude" name="latitude">
-        <input type="hidden" id="longitude" name="longitude">{% endcomment %}
-        <button type="submit" class="loveWrap__btn">{% trans "Calculate" %}</button>
-
+        <input type="hidden" name="name1_first">
+        <input type="hidden" name="name1_middle">
+        <input type="hidden" name="name1_last">
+        <input type="hidden" name="name2_first">
+        <input type="hidden" name="name2_middle">
+        <input type="hidden" name="name2_last">
     </form>
+    <form id="languageForm" action="{% url 'set_language' %}" method="post" style="display:none;">
+          {% csrf_token %}
+          <input type="hidden" name="language" id="languageInput">
+    </form>
+    <div class="loveWrap desktop23" id="nameForm">
+        {% csrf_token %}
+{#        <div class="loveWrap__selectBox">#}
+{#        <div class="loveWrap__label">{% trans "Language" %}</div>#}
+{#          <select id="languageSelect" class="loveWrap__select" onchange="changeLanguage(this.value)">#}
+{#               {% get_current_language as LANGUAGE_CODE %}#}
+{#               {% get_available_languages as LANGUAGES %}#}
+{#               {% for lang in LANGUAGES %}#}
+{#                 <option value="{{ lang.0 }}" {% if lang.0 == LANGUAGE_CODE %}selected{% endif %}>#}
+{#                   {{ lang.1 }}#}
+{#                 </option>#}
+{#               {% endfor %}#}
+{#          </select>#}
+{#          <select id="languageSelect" class="loveWrap__select" onchange="changeLanguage(this.value)">#}
+{#              <option value="en" {% if request.LANGUAGE_CODE == "en" %}selected{% endif %}>English</option>#}
+{#              <option value="es" {% if request.LANGUAGE_CODE == "es" %}selected{% endif %}>Spanish</option>#}
+{#              <option value="fr" {% if request.LANGUAGE_CODE == "fr" %}selected{% endif %}>French</option>#}
+{#              <option value="de" {% if request.LANGUAGE_CODE == "de" %}selected{% endif %}>German</option>#}
+{#              <option value="ru" {% if request.LANGUAGE_CODE == "ru" %}selected{% endif %}>Russian</option>#}
+{#              <option value="it" {% if request.LANGUAGE_CODE == "it" %}selected{% endif %}>Italian</option>#}
+{#              <option value="sv" {% if request.LANGUAGE_CODE == "sv" %}selected{% endif %}>Swedish</option>#}
+{#              <option value="pt" {% if request.LANGUAGE_CODE == "pt" %}selected{% endif %}>Portuguese</option>#}
+{#              <option value="nl" {% if request.LANGUAGE_CODE == "nl" %}selected{% endif %}>Dutch</option>#}
+{#              <option value="no" {% if request.LANGUAGE_CODE == "no" %}selected{% endif %}>Norwegian</option>#}
+{#              <option value="da" {% if request.LANGUAGE_CODE == "da" %}selected{% endif %}>Danish</option>#}
+{#              <option value="cs" {% if request.LANGUAGE_CODE == "cs" %}selected{% endif %}>Czech</option>#}
+{#              <option value="hu" {% if request.LANGUAGE_CODE == "hu" %}selected{% endif %}>Hungarian</option>#}
+{#              <option value="fi" {% if request.LANGUAGE_CODE == "fi" %}selected{% endif %}>Finnish</option>#}
+{#              <option value="ro" {% if request.LANGUAGE_CODE == "ro" %}selected{% endif %}>Romanian</option>#}
+{#              <option value="el" {% if request.LANGUAGE_CODE == "el" %}selected{% endif %}>Greek</option>#}
+{#              <option value="pl" {% if request.LANGUAGE_CODE == "pl" %}selected{% endif %}>Polish</option>#}
+{#              <option value="ms" {% if request.LANGUAGE_CODE == "ms" %}selected{% endif %}>Malay</option>#}
+{#              <option value="ko" {% if request.LANGUAGE_CODE == "ko" %}selected{% endif %}>Korean</option>#}
+{#              <option value="hi" {% if request.LANGUAGE_CODE == "hi" %}selected{% endif %}>Hindi</option>#}
+{#              <option value="id" {% if request.LANGUAGE_CODE == "id" %}selected{% endif %}>Indonesian</option>#}
+{#              <option value="tr" {% if request.LANGUAGE_CODE == "tr" %}selected{% endif %}>Turkish</option>#}
+{#              <option value="th" {% if request.LANGUAGE_CODE == "th" %}selected{% endif %}>Thai</option>#}
+{#              <option value="vi" {% if request.LANGUAGE_CODE == "vi" %}selected{% endif %}>Vietnamese</option>#}
+{#              <option value="he" {% if request.LANGUAGE_CODE == "he" %}selected{% endif %}>Hebrew</option>#}
+{#              <option value="ar" {% if request.LANGUAGE_CODE == "ar" %}selected{% endif %}>Arabic</option>#}
+{#              <option value="ur" {% if request.LANGUAGE_CODE == "ur" %}selected{% endif %}>Urdu</option>#}
+{#          </select>#}
+{#      </div>#}
+
+        <div class="loveWrap__titImg">
+        <img src="{% static 'app/img/img_calc.png' %}" alt="" class="mobile">
+        <img src="{% static 'app/img/img_calc.png' %}" alt="" class="pc">
+      </div>
+      <div class="inputWrap">
+        <div class="inputGroup">
+          <h3>{% trans "How much this person" %}</h3>
+
+          {% if request.LANGUAGE_CODE != 'ko'%}
+          <div class="row">
+            <label class="loveWrap__inputBox">
+              <h5 class="loveWrap__label">{% trans "First name" %}</h5>
+              <input class="loveWrap__input" type="text" name="name1_first" id="name1_first" placeholder="{% trans "Jennifer" %}">
+            </label>
+            <label class="loveWrap__inputBox">
+              <h5 class="loveWrap__label">{% trans "Middle name" %} {% trans "(optional)" %}</h5>
+              <input class="loveWrap__input" type="text" name="name1_middle" id="name1_middle" placeholder="{% trans "Shrader" %}">
+            </label>
+            <label class="loveWrap__inputBox">
+              <h5 class="loveWrap__label">{% trans "Last name" %}</h5>
+              <input class="loveWrap__input" type="text" name="name1_last" id="name1_last" placeholder="{% trans "Lawrence" %}">
+            </label>
+          </div>
+          {% else %}
+           <div class="row">
+                <label class="loveWrap__inputBox">
+                  <h5 class="loveWrap__label">{% trans "First name" %}</h5>
+                  <input class="loveWrap__input" type="text" name="name1_first"  id="name1_first" placeholder="이">
+                </label>
+               <label class="loveWrap__inputBox">
+                  <h5 class="loveWrap__label">{% trans "Middle name" %} {% trans "(optional)" %}</h5>
+                  <input class="loveWrap__input" type="text" name="name1_middle" id="name1_middle" placeholder="성">
+                </label>
+                <label class="loveWrap__inputBox">
+                  <h5 class="loveWrap__label">{% trans "Last name" %}</h5>
+                  <input class="loveWrap__input" type="text" name="name1_last" id="name1_last" placeholder="암">
+                </label>
+
+           </div>
+          {% endif %}
+        </div>
+        <div class="inputGroup">
+          <h3>{% trans "like this person" %}</h3>
+          {% if request.LANGUAGE_CODE != 'ko'%}
+          <div class="row">
+            <label class="loveWrap__inputBox">
+              <h5 class="loveWrap__label">{% trans "First name" %}</h5>
+              <input class="loveWrap__input" type="text" name="name2_first" id="name2_first" placeholder="{% trans "Leonardo" %}">
+            </label>
+            <label class="loveWrap__inputBox">
+              <h5 class="loveWrap__label">{% trans "Middle name" %} {% trans "(optional)" %}</h5>
+              <input class="loveWrap__input" type="text" name="name2_middle" id="name2_middle" placeholder="">
+            </label>
+            <label class="loveWrap__inputBox">
+              <h5 class="loveWrap__label">{% trans "Last name" %}</h5>
+              <input class="loveWrap__input" type="text" name="name2_last" id="name2_last" placeholder="{% trans "DiCaprio" %}">
+            </label>
+          </div>
+          {% else %}
+           <div class="row">
+                <label class="loveWrap__inputBox">
+                  <h5 class="loveWrap__label">{% trans "First name" %}</h5>
+                  <input class="loveWrap__input" type="text" name="name2_first" id="name2_first" placeholder="하">
+                </label>
+               <label class="loveWrap__inputBox">
+                  <h5 class="loveWrap__label">{% trans "Middle name" %} {% trans "(optional)" %}</h5>
+                  <input class="loveWrap__input" type="text" name="name2_middle" id="name2_middle" placeholder="지">
+                </label>
+                <label class="loveWrap__inputBox">
+                  <h5 class="loveWrap__label">{% trans "Last name" %}</h5>
+                  <input class="loveWrap__input" type="text" name="name2_last" id="name2_last" placeholder="원">
+                </label>
+
+           </div>
+          {% endif %}
+        </div>
+      </div>
+      <div class="loveWrap__info">
+        <a href="#a" class="loveWrap__infoLink">{% trans "How to use / What is it?"%}</a>
+      </div>
+      <button type="button" class="loveWrap__btn" onclick="getLocationAndSubmit()">{% trans "Calculate" %}</button>
+    </div>
+    <!------------------------------------------------------------->
 <div class="loveWrap__ad" style="width: 100%;min-height: 100px" id="adsense-wrapper">
-{#  <img src="{% static 'app/img/banner01.png' %}" alt="">#}
-{#    <p>{% trans "We will resolve your curiosities" %}</p>#}
-
-<!-- Ads Banner-1 -->
-{#<ins class="adsbygoogle"#}
-{#     style="display:inline-block;width:300px;height:250px"#}
-{#     data-ad-client="ca-pub-2655483668363741"#}
-{#     data-ad-slot="7053690987"#}
-{#     data-ad-format="auto"#}
-{#     data-full-width-responsive="true"></ins>#}
-<ins class="adsbygoogle"
-     style="display:inline-block;width:728px;height:90px"
-     data-ad-client="ca-pub-2655483668363741"
-     data-ad-slot="7053690987"></ins>
-
+    <ins class="adsbygoogle"
+         style="display:inline-block;width:728px;height:90px"
+         data-ad-client="ca-pub-2655483668363741"
+         data-ad-slot="7053690987"></ins>
 </div>
 
 {#<div class="popup-overlay hidden" id="popup">#}

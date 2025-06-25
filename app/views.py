@@ -5,6 +5,8 @@ from django.http import JsonResponse
 from django.views.decorators.csrf import csrf_exempt
 from django.views.generic import TemplateView, DetailView
 from django.shortcuts import render, redirect
+from django.http import JsonResponse
+from django.db.models import Q
 from geopy.distance import geodesic
 
 from lovecompitability import settings
@@ -109,6 +111,38 @@ def save_location(request):
         CompatibilityResult.objects.filter(id=result_id).update(latitude=latitude, longitude=longitude)
         return JsonResponse({"message": "Location saved successfully"})
     return JsonResponse({"error": "Invalid request"}, status=400)
+
+
+
+def auto_suggest_names(request):
+    
+    query = request.GET.get('query', '').strip()
+    suggestions = []
+
+    if query:
+        # Split query into words
+        query_parts = query.lower().split()
+
+    # Get results with locations
+
+    results = CompatibilityResult.objects.filter(latitude__isnull=False, longitude__isnull=False).values_list('name1',
+                                                                                                              'name2')
+
+    # Process results to get unique names
+    unique_names = set()
+    for name1, name2 in results:
+        # Check each name
+        for name in [name1, name2]:
+            name_parts = name.lower().split()
+            # Check if any query part matches any name part
+            for query_part in query_parts:
+                if any(query_part in part for part in name_parts):
+                    unique_names.add(name)
+                    break
+
+        suggestions = list(unique_names)[:10]  # Limit to 10 suggestions
+
+    return JsonResponse({'suggestions': suggestions})
 @csrf_exempt
 def create_checkout_session(request):
     # success_url = request.GET.get("success_url", "https://yourwebsite.com/success")
@@ -199,9 +233,31 @@ class CalculateView(TemplateView):
 
     def post(self, request, *args, **kwargs):
 
+        if get_language() == 'ko':
+            # Korean name format
+            name1_first = request.POST.get("name1_first", "").strip()
+            name1_middle = request.POST.get("name1_middle", "").strip()
+            name1_last = request.POST.get("name1_last", "").strip()
+            name2_first = request.POST.get("name2_first", "").strip()
+            name2_middle = request.POST.get("name2_middle", "").strip()
+            name2_last = request.POST.get("name2_last", "").strip()
 
-        name1 = request.POST.get("name1", "").strip()
-        name2 = request.POST.get("name2", "").strip()
+            name1 = f"{name1_first} {name1_middle} {name1_last}".strip() if name1_middle else f"{name1_first} {name1_last}".strip()
+            name2 = f"{name2_first} {name2_middle} {name2_last}".strip() if name2_middle else f"{name2_first} {name2_last}".strip()
+        else:
+            # Other languages format
+            name1_first = request.POST.get("name1_first", "").strip()
+            name1_middle = request.POST.get("name1_middle", "").strip()
+            name1_last = request.POST.get("name1_last", "").strip()
+            name2_first = request.POST.get("name2_first", "").strip()
+            name2_middle = request.POST.get("name2_middle", "").strip()
+            name2_last = request.POST.get("name2_last", "").strip()
+
+            name1 = f"{name1_first} {name1_middle} {name1_last}".strip() if name1_middle else f"{name1_first} {name1_last}".strip()
+            name2 = f"{name2_first} {name2_middle} {name2_last}".strip() if name2_middle else f"{name2_first} {name2_last}".strip()
+
+        # name1 = request.POST.get("name1", "").strip()
+        # name2 = request.POST.get("name2", "").strip()
         latitude = request.POST.get("latitude")  # Get latitude from form
         longitude = request.POST.get("longitude")  # Get longitude from form
 
@@ -280,6 +336,7 @@ class ResultDetailView(DetailView):
         context['steps'] = steps
         return context
 
+
 class SearchView(TemplateView):
     template_name = "search.html"
 
@@ -339,6 +396,7 @@ class SearchView(TemplateView):
 
         # Get sorted names 
         sorted_names = name_counter.most_common()
+        print('sorted names',sorted_names)
 
         # Calculate ranks with same rank for equal mentions
         ranked_names = []
@@ -363,7 +421,7 @@ class SearchView(TemplateView):
             if name.lower() == query_lower:
                 search_rank = idx+1
                 break
-        print(results)
+        # print(results)
         context = {
             "results": results,
             "search_key": query,
@@ -527,4 +585,5 @@ class SearchBasicView(TemplateView):
         }
 
         return render(request, self.template_name, context)
+
 

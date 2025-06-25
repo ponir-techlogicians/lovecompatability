@@ -118,13 +118,48 @@
      data-ad-slot="7053690987"></ins>
 
 </div>
-  <script src="https://code.jquery.com/jquery-3.7.1.js"></script>
+    <link rel="stylesheet" href="https://code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+    <script src="https://code.jquery.com/jquery-3.7.1.js"></script>
   <script src="https://code.jquery.com/ui/1.14.1/jquery-ui.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/jqueryui-touch-punch/0.2.3/jquery.ui.touch-punch.min.js"></script>
 
   <script>
     $(function() {
-      $("#slider" ).slider({
+        $(".search__input")
+          .autocomplete({
+            source: function(request, response) {
+              $.ajax({
+                url: "/app/suggest-name",
+                dataType: "json",
+                data: { query: request.term },
+                success: function(data) {
+                  response(Array.isArray(data.suggestions)
+                    ? data.suggestions
+                    : []);
+                },
+                error: function() {
+                  response([]);
+                }
+              });
+            },
+            minLength: 1,
+            position: { my: "left top", at: "left bottom" },
+            appendTo: ".search__box",
+            open: function() {
+              $(this).autocomplete('widget').css('z-index', 99999)
+                .width($(this).width());
+            }
+          })
+          .autocomplete("instance")._renderItem = function(ul, item) {
+            console.log(item);
+            // item is now a string, or you could return an object { label, value }
+            return $("<li>")
+              .append($("<div>").text(item.label))
+              .appendTo(ul);
+          };
+
+
+        $("#slider" ).slider({
         value:1,
         min: 1,
         max: 4,
@@ -180,4 +215,32 @@
     }, 1000); // delay for layout
   });
 </script>
+<script>
+</script>
+    <style>
+        .ui-autocomplete {
+            max-height: 200px;
+            overflow-y: auto;
+            overflow-x: hidden;
+            z-index: 1000;
+            background: white;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+        }
+
+        .ui-menu-item {
+            padding: 8px 12px;
+            cursor: pointer;
+            border-bottom: 1px solid #eee;
+            list-style: none;
+        }
+
+        .ui-menu-item:last-child {
+            border-bottom: none;
+        }
+
+        .ui-menu-item:hover {
+            background-color: #f0f0f0;
+        }
+    </style>
 {% endblock %}
