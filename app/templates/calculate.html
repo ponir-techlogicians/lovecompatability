@@ -97,14 +97,12 @@
         <div class="loveWrap__selectBox" style="margin-bottom: 30px">
         <div class="loveWrap__label">{% trans "Language" %}</div>
             <select id="languageSelect" class="loveWrap__select" onchange="changeLanguage(this.value)">
-              {% get_current_language as LANGUAGE_CODE %}
-              {% with LANGUAGES=settings.LANGUAGES %}
+                {% get_current_language as LANGUAGE_CODE %}
                 {% for lang_code, lang_name in LANGUAGES %}
                   <option value="{{ lang_code }}" {% if lang_code == LANGUAGE_CODE %}selected{% endif %}>
                     {{ lang_name }}
                   </option>
                 {% endfor %}
-              {% endwith %}
             </select>
 {#          <select id="languageSelect" class="loveWrap__select" onchange="changeLanguage(this.value)">#}
 {#               {% get_current_language as LANGUAGE_CODE %}#}
