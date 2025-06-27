@@ -99,9 +99,9 @@
           <select id="languageSelect" class="loveWrap__select" onchange="changeLanguage(this.value)">
                {% get_current_language as LANGUAGE_CODE %}
                {% get_available_languages as LANGUAGES %}
-               {% for lang in LANGUAGES %}
-                 <option value="{{ lang.0 }}" {% if lang.0 == LANGUAGE_CODE %}selected{% endif %}>
-                   {{ lang.1 }}
+               {% for lang_code, lang_name in LANGUAGES %}
+                 <option value="{{ lang_code}}" {% if lang_code == LANGUAGE_CODE %}selected{% endif %}>
+                   {{ lang_name }}
                  </option>
                {% endfor %}
           </select>
