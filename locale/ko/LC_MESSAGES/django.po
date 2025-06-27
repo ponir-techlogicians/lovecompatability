@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2025-06-25 09:49\n"
+"POT-Creation-Date: 2025-06-27 12:35\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -19,7 +19,7 @@ msgstr "이름과 성을 추가해 주세요."
 msgid "Language"
 msgstr "언어"
 
-msgid "How much this person"
+msgid "How much does this person"
 msgstr "이 사람은 얼마나"
 
 msgid "First name"
@@ -27,15 +27,6 @@ msgstr "이름"
 
 msgid "Jennifer"
 msgstr "제니퍼"
-
-msgid "Middle name"
-msgstr "중간 이름"
-
-msgid "(optional)"
-msgstr "(선택 사항)"
-
-msgid "Shrader"
-msgstr "슈레이더"
 
 msgid "Last name"
 msgstr "성"
@@ -47,22 +38,22 @@ msgid "like this person"
 msgstr "이 사람을 좋아하다"
 
 msgid "Leonardo"
-msgstr "Leonardo"
+msgstr "레오나르도"
 
-msgid "DiCaprio"
-msgstr "DiCaprio"
+msgid "Dicaprio"
+msgstr "디카프리오"
 
-msgid "How to use / What is it?"
-msgstr "사용 방법 / 이것은 무엇인가요?"
+msgid "How to use / What is this?"
+msgstr "사용 방법 / 이것은 무엇입니까?"
 
 msgid "Calculate"
-msgstr "계산하다"
+msgstr "계산하기"
 
 msgid "About this"
 msgstr "이것에 대하여"
 
 msgid "This is a fun game that's popular among Korean teenagers! It calculates how much someone might like another person based on the number of strokes in their names.Try it just for fun — and share it with your friends! You can even see who’s the most popular in your school or neighborhood!"
-msgstr "이것은 한국 청소년들 사이에서 인기 있는 재미있는 게임입니다! 이름의 획수를 기반으로 누군가가 다른 사람을 얼마나 좋아할지 계산합니다. 그냥 재미로 시도해보고 친구들과 공유하세요! 학교나 동네에서 누가 가장 인기 있는지 볼 수도 있습니다!"
+msgstr "이것은 한국 청소년들 사이에서 인기 있는 재미있는 게임입니다! 이름의 획수를 기반으로 누군가가 다른 사람을 얼마나 좋아할지 계산합니다. 그냥 재미로 시도해보고 친구들과 공유하세요! 학교나 동네에서 누가 가장 인기 있는지까지 볼 수 있습니다!"
 
 msgid "Name A (First name & Last name)"
 msgstr "이름 A (이름 & 성)"
@@ -74,7 +65,10 @@ msgid "Name B (First name & Last name)"
 msgstr "이름 B (이름 & 성)"
 
 msgid "e.g. Leonardo Dicaprio"
-msgstr "e.g. Leonardo Dicaprio"
+msgstr "예: Leonardo Dicaprio"
+
+msgid "How to use / What is it?"
+msgstr "사용 방법 / 이것은 무엇입니까?"
 
 msgid "Who tested with"
 msgstr "누구와 테스트했는지"
@@ -86,7 +80,7 @@ msgid "Payment"
 msgstr "결제"
 
 msgid "Pay now"
-msgstr "지금 결제"
+msgstr "지금 결제하기"
 
 msgid "Payment successful!"
 msgstr "결제 성공!"
@@ -95,16 +89,22 @@ msgid "Payment failed"
 msgstr "결제 실패"
 
 msgid "Geolocation is not supported by this browser."
-msgstr "이 브라우저는 지리적 위치를 지원하지 않습니다."
+msgstr "이 브라우저에서는 지리적 위치가 지원되지 않습니다."
 
-msgid "how stroke we set"
-msgstr "스트로크를 어떻게 설정하는지"
+msgid "How is it calculated?"
+msgstr "어떻게 계산되나요?"
 
 msgid "Result"
 msgstr "결과"
 
-msgid "%(name1)s likes %(name2)s with a <br>\n <b>%(compatibility_score)s%%</b> probability."
-msgstr "%(name1)s는 %(name2)s를 <br>\n <b>%(compatibility_score)s%%</b>의 확률로 좋아합니다."
+msgid "likes"
+msgstr "좋아요"
+
+msgid "with a"
+msgstr "와 함께"
+
+msgid "probability."
+msgstr "확률."
 
 msgid "How many people mentioned me?"
 msgstr "몇 명이 나를 언급했나요?"
@@ -113,7 +113,7 @@ msgid "How does it work?"
 msgstr "어떻게 작동하나요?"
 
 msgid "We calculate your love score using the number of strokes in each letter of your name."
-msgstr "우리는 당신의 이름 각 글자의 획 수를 사용하여 사랑 점수를 계산합니다."
+msgstr "우리는 당신의 이름 각 글자의 획수를 사용하여 사랑 점수를 계산합니다."
 
 msgid "Here’s how many strokes each letter has:"
 msgstr "각 글자가 몇 획인지 여기에 있습니다:"
@@ -150,6 +150,3 @@ msgstr "언급된 (횟수)"
 
 msgid "With who?"
 msgstr "누구와 함께?"
-
-msgid "English"
-msgstr "영어"

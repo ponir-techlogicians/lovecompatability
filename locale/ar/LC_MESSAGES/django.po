@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2025-06-25 09:49\n"
+"POT-Creation-Date: 2025-06-27 12:35\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -19,23 +19,14 @@ msgstr "الرجاء إضافة الاسم الأول واسم العائلة."
 msgid "Language"
 msgstr "اللغة"
 
-msgid "How much this person"
-msgstr "كم هذا الشخص"
+msgid "How much does this person"
+msgstr "كم يكلف هذا الشخص"
 
 msgid "First name"
 msgstr "الاسم الأول"
 
 msgid "Jennifer"
 msgstr "جينيفر"
-
-msgid "Middle name"
-msgstr "الاسم الأوسط"
-
-msgid "(optional)"
-msgstr "(اختياري)"
-
-msgid "Shrader"
-msgstr "شرادر"
 
 msgid "Last name"
 msgstr "اسم العائلة"
@@ -47,13 +38,13 @@ msgid "like this person"
 msgstr "مثل هذا الشخص"
 
 msgid "Leonardo"
-msgstr "Leonardo"
+msgstr "ليوناردو"
 
-msgid "DiCaprio"
-msgstr "DiCaprio"
+msgid "Dicaprio"
+msgstr "ديكابريو"
 
-msgid "How to use / What is it?"
-msgstr "كيفية الاستخدام / ما هو؟"
+msgid "How to use / What is this?"
+msgstr "كيفية الاستخدام / ما هذا؟"
 
 msgid "Calculate"
 msgstr "احسب"
@@ -74,13 +65,16 @@ msgid "Name B (First name & Last name)"
 msgstr "الاسم ب (الاسم الأول واسم العائلة)"
 
 msgid "e.g. Leonardo Dicaprio"
-msgstr "على سبيل المثال ليوناردو ديكابريو"
+msgstr "على سبيل المثال، ليوناردو ديكابريو"
+
+msgid "How to use / What is it?"
+msgstr "كيفية الاستخدام / ما هو؟"
 
 msgid "Who tested with"
 msgstr "من اختبر مع"
 
 msgid "Open to see"
-msgstr "افتح لترى"
+msgstr "مفتوح للرؤية"
 
 msgid "Payment"
 msgstr "الدفع"
@@ -95,28 +89,34 @@ msgid "Payment failed"
 msgstr "فشل الدفع"
 
 msgid "Geolocation is not supported by this browser."
-msgstr "تحديد الموقع الجغرافي غير مدعوم من قبل هذا المتصفح."
+msgstr "تحديد الموقع الجغرافي غير مدعوم من هذا المتصفح."
 
-msgid "how stroke we set"
-msgstr "كيف نحدد السكتة الدماغية"
+msgid "How is it calculated?"
+msgstr "كيف يتم حسابه؟"
 
 msgid "Result"
 msgstr "النتيجة"
 
-msgid "%(name1)s likes %(name2)s with a <br>\n <b>%(compatibility_score)s%%</b> probability."
-msgstr "%(name1)s يحب %(name2)s باحتمالية <br>\n <b>%(compatibility_score)s%%</b>."
+msgid "likes"
+msgstr "إعجابات"
+
+msgid "with a"
+msgstr "مع"
+
+msgid "probability."
+msgstr "الاحتمالية"
 
 msgid "How many people mentioned me?"
 msgstr "كم عدد الأشخاص الذين ذكروني؟"
 
 msgid "How does it work?"
-msgstr "كيف يعمل؟"
+msgstr "كيف يعمل هذا؟"
 
 msgid "We calculate your love score using the number of strokes in each letter of your name."
-msgstr "نحسب درجة حبك باستخدام عدد الضربات في كل حرف من اسمك."
+msgstr "نحسب درجة حبك باستخدام عدد الحركات في كل حرف من اسمك."
 
 msgid "Here’s how many strokes each letter has:"
-msgstr "إليك عدد الضربات التي يحتوي عليها كل حرف:"
+msgstr "إليك عدد الحركات التي يحتوي عليها كل حرف:"
 
 msgid "Error retrieving your location. Please enable location services."
 msgstr "خطأ في استرجاع موقعك. يرجى تمكين خدمات الموقع."
@@ -146,10 +146,7 @@ msgid "Rank"
 msgstr "الترتيب"
 
 msgid "Mentioned (times)"
-msgstr "ذكر (مرات)"
+msgstr "مذكور (مرات)"
 
 msgid "With who?"
 msgstr "مع من؟"
-
-msgid "English"
-msgstr "الإنجليزية"

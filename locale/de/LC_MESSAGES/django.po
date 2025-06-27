@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2025-06-25 09:49\n"
+"POT-Creation-Date: 2025-06-27 12:35\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -19,23 +19,14 @@ msgstr "Bitte fügen Sie Vor- und Nachnamen hinzu."
 msgid "Language"
 msgstr "Sprache"
 
-msgid "How much this person"
-msgstr "Wie viel diese Person"
+msgid "How much does this person"
+msgstr "Wie viel kostet diese Person"
 
 msgid "First name"
 msgstr "Vorname"
 
 msgid "Jennifer"
 msgstr "Jennifer"
-
-msgid "Middle name"
-msgstr "Zweiter Vorname"
-
-msgid "(optional)"
-msgstr "(optional)"
-
-msgid "Shrader"
-msgstr "Shrader"
 
 msgid "Last name"
 msgstr "Nachname"
@@ -49,17 +40,17 @@ msgstr "mag diese Person"
 msgid "Leonardo"
 msgstr "Leonardo"
 
-msgid "DiCaprio"
-msgstr "DiCaprio"
+msgid "Dicaprio"
+msgstr "Dicaprio"
 
-msgid "How to use / What is it?"
-msgstr "Wie benutzt man es / Was ist das?"
+msgid "How to use / What is this?"
+msgstr "How to use / What is this?"
 
 msgid "Calculate"
 msgstr "Berechnen"
 
 msgid "About this"
-msgstr "Darüber"
+msgstr "Über dieses"
 
 msgid "This is a fun game that's popular among Korean teenagers! It calculates how much someone might like another person based on the number of strokes in their names.Try it just for fun — and share it with your friends! You can even see who’s the most popular in your school or neighborhood!"
 msgstr "Dies ist ein lustiges Spiel, das bei koreanischen Teenagern beliebt ist! Es berechnet, wie sehr jemand eine andere Person mögen könnte, basierend auf der Anzahl der Striche in ihren Namen. Probieren Sie es einfach zum Spaß aus — und teilen Sie es mit Ihren Freunden! Sie können sogar sehen, wer in Ihrer Schule oder Nachbarschaft am beliebtesten ist!"
@@ -74,7 +65,10 @@ msgid "Name B (First name & Last name)"
 msgstr "Name B (Vorname & Nachname)"
 
 msgid "e.g. Leonardo Dicaprio"
-msgstr "e.g. Leonardo Dicaprio"
+msgstr "z.B. Leonardo Dicaprio"
+
+msgid "How to use / What is it?"
+msgstr "Wie benutzt man es / Was ist es?"
 
 msgid "Who tested with"
 msgstr "Wer hat getestet mit"
@@ -95,16 +89,22 @@ msgid "Payment failed"
 msgstr "Zahlung fehlgeschlagen"
 
 msgid "Geolocation is not supported by this browser."
-msgstr "Geolocation wird von diesem Browser nicht unterstützt."
+msgstr "Geolokalisierung wird von diesem Browser nicht unterstützt."
 
-msgid "how stroke we set"
-msgstr "wie Schlag wir setzen"
+msgid "How is it calculated?"
+msgstr "Wie wird es berechnet?"
 
 msgid "Result"
 msgstr "Ergebnis"
 
-msgid "%(name1)s likes %(name2)s with a <br>\n <b>%(compatibility_score)s%%</b> probability."
-msgstr "%(name1)s mag %(name2)s mit einer <br>\n <b>%(compatibility_score)s%%</b> Wahrscheinlichkeit."
+msgid "likes"
+msgstr "Gefällt mir Angaben"
+
+msgid "with a"
+msgstr "mit einem"
+
+msgid "probability."
+msgstr "Wahrscheinlichkeit"
 
 msgid "How many people mentioned me?"
 msgstr "Wie viele Leute haben mich erwähnt?"
@@ -113,10 +113,10 @@ msgid "How does it work?"
 msgstr "Wie funktioniert es?"
 
 msgid "We calculate your love score using the number of strokes in each letter of your name."
-msgstr "Wir berechnen Ihren Liebeswert anhand der Anzahl der Striche in jedem Buchstaben Ihres Namens."
+msgstr "Wir berechnen Ihre Liebespunktzahl anhand der Anzahl der Striche in jedem Buchstaben Ihres Namens."
 
 msgid "Here’s how many strokes each letter has:"
-msgstr "Hier ist, wie viele Striche jeder Buchstabe hat:"
+msgstr "So viele Striche hat jeder Buchstabe:"
 
 msgid "Error retrieving your location. Please enable location services."
 msgstr "Fehler beim Abrufen Ihres Standorts. Bitte aktivieren Sie die Standortdienste."
@@ -150,6 +150,3 @@ msgstr "Erwähnt (Mal)"
 
 msgid "With who?"
 msgstr "Mit wem?"
-
-msgid "English"
-msgstr "Englisch"

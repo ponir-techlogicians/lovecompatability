@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2025-06-25 09:49\n"
+"POT-Creation-Date: 2025-06-27 12:35\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -19,7 +19,7 @@ msgstr "Veuillez ajouter le prénom et le nom de famille."
 msgid "Language"
 msgstr "Langue"
 
-msgid "How much this person"
+msgid "How much does this person"
 msgstr "Combien cette personne"
 
 msgid "First name"
@@ -28,15 +28,6 @@ msgstr "Prénom"
 msgid "Jennifer"
 msgstr "Jennifer"
 
-msgid "Middle name"
-msgstr "Deuxième prénom"
-
-msgid "(optional)"
-msgstr "(facultatif)"
-
-msgid "Shrader"
-msgstr "Shrader"
-
 msgid "Last name"
 msgstr "Nom de famille"
 
@@ -44,15 +35,15 @@ msgid "Lawrence"
 msgstr "Lawrence"
 
 msgid "like this person"
-msgstr "aimer cette personne"
+msgstr "aime cette personne"
 
 msgid "Leonardo"
 msgstr "Leonardo"
 
-msgid "DiCaprio"
-msgstr "DiCaprio"
+msgid "Dicaprio"
+msgstr "Dicaprio"
 
-msgid "How to use / What is it?"
+msgid "How to use / What is this?"
 msgstr "Comment utiliser / Qu'est-ce que c'est ?"
 
 msgid "Calculate"
@@ -74,7 +65,10 @@ msgid "Name B (First name & Last name)"
 msgstr "Nom B (Prénom & Nom de famille)"
 
 msgid "e.g. Leonardo Dicaprio"
-msgstr "e.g. Leonardo Dicaprio"
+msgstr "par exemple Leonardo Dicaprio"
+
+msgid "How to use / What is it?"
+msgstr "Comment utiliser / Qu'est-ce que c'est ?"
 
 msgid "Who tested with"
 msgstr "Qui a testé avec"
@@ -97,14 +91,20 @@ msgstr "Paiement échoué"
 msgid "Geolocation is not supported by this browser."
 msgstr "La géolocalisation n'est pas prise en charge par ce navigateur."
 
-msgid "how stroke we set"
-msgstr "comment nous avons défini le trait"
+msgid "How is it calculated?"
+msgstr "Comment est-ce calculé ?"
 
 msgid "Result"
 msgstr "Résultat"
 
-msgid "%(name1)s likes %(name2)s with a <br>\n <b>%(compatibility_score)s%%</b> probability."
-msgstr "%(name1)s aime %(name2)s avec une <br>\n <b>%(compatibility_score)s%%</b> probabilité."
+msgid "likes"
+msgstr "aime"
+
+msgid "with a"
+msgstr "avec un"
+
+msgid "probability."
+msgstr "probabilité"
 
 msgid "How many people mentioned me?"
 msgstr "Combien de personnes m'ont mentionné ?"
@@ -128,7 +128,7 @@ msgid "Name"
 msgstr "Nom"
 
 msgid "Search"
-msgstr "Recherche"
+msgstr "Rechercher"
 
 msgid "1km"
 msgstr "1km"
@@ -150,6 +150,3 @@ msgstr "Mentionné (fois)"
 
 msgid "With who?"
 msgstr "Avec qui ?"
-
-msgid "English"
-msgstr "Anglais"

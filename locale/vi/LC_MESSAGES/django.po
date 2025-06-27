@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2025-06-25 09:49\n"
+"POT-Creation-Date: 2025-06-27 12:35\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -19,7 +19,7 @@ msgstr "Vui lòng thêm tên và họ."
 msgid "Language"
 msgstr "Ngôn ngữ"
 
-msgid "How much this person"
+msgid "How much does this person"
 msgstr "Người này bao nhiêu"
 
 msgid "First name"
@@ -27,15 +27,6 @@ msgstr "Tên"
 
 msgid "Jennifer"
 msgstr "Jennifer"
-
-msgid "Middle name"
-msgstr "Tên đệm"
-
-msgid "(optional)"
-msgstr "(tùy chọn)"
-
-msgid "Shrader"
-msgstr "Shrader"
 
 msgid "Last name"
 msgstr "Họ"
@@ -49,11 +40,11 @@ msgstr "thích người này"
 msgid "Leonardo"
 msgstr "Leonardo"
 
-msgid "DiCaprio"
-msgstr "DiCaprio"
+msgid "Dicaprio"
+msgstr "Dicaprio"
 
-msgid "How to use / What is it?"
-msgstr "Cách sử dụng / Nó là gì?"
+msgid "How to use / What is this?"
+msgstr "Cách sử dụng / Đây là gì?"
 
 msgid "Calculate"
 msgstr "Tính toán"
@@ -62,22 +53,25 @@ msgid "About this"
 msgstr "Về điều này"
 
 msgid "This is a fun game that's popular among Korean teenagers! It calculates how much someone might like another person based on the number of strokes in their names.Try it just for fun — and share it with your friends! You can even see who’s the most popular in your school or neighborhood!"
-msgstr "Đây là một trò chơi vui nhộn phổ biến trong giới thanh thiếu niên Hàn Quốc! Nó tính toán mức độ ai đó có thể thích người khác dựa trên số nét trong tên của họ. Thử chỉ để vui — và chia sẻ với bạn bè của bạn! Bạn thậm chí có thể xem ai là người nổi tiếng nhất trong trường học hoặc khu phố của bạn!"
+msgstr "Đây là một trò chơi thú vị phổ biến trong giới thanh thiếu niên Hàn Quốc! Nó tính toán mức độ ai đó có thể thích người khác dựa trên số nét trong tên của họ. Thử chỉ để vui — và chia sẻ với bạn bè của bạn! Bạn thậm chí có thể xem ai là người nổi tiếng nhất trong trường học hoặc khu phố của bạn!"
 
 msgid "Name A (First name & Last name)"
-msgstr "Tên A (Tên & Họ)"
+msgstr "Tên A (Tên và Họ)"
 
 msgid "e.g. Jennifer Lawrence"
 msgstr "ví dụ: Jennifer Lawrence"
 
 msgid "Name B (First name & Last name)"
-msgstr "Tên B (Tên & Họ)"
+msgstr "Tên B (Tên và Họ)"
 
 msgid "e.g. Leonardo Dicaprio"
-msgstr "e.g. Leonardo Dicaprio"
+msgstr "ví dụ: Leonardo Dicaprio"
+
+msgid "How to use / What is it?"
+msgstr "Cách sử dụng / Nó là gì?"
 
 msgid "Who tested with"
-msgstr "Ai đã thử nghiệm với"
+msgstr "Ai đã thử với"
 
 msgid "Open to see"
 msgstr "Mở để xem"
@@ -95,16 +89,22 @@ msgid "Payment failed"
 msgstr "Thanh toán thất bại"
 
 msgid "Geolocation is not supported by this browser."
-msgstr "Định vị địa lý không được trình duyệt này hỗ trợ."
+msgstr "Trình duyệt này không hỗ trợ định vị địa lý."
 
-msgid "how stroke we set"
-msgstr "cách chúng ta thiết lập nét vẽ"
+msgid "How is it calculated?"
+msgstr "Nó được tính như thế nào?"
 
 msgid "Result"
 msgstr "Kết quả"
 
-msgid "%(name1)s likes %(name2)s with a <br>\n <b>%(compatibility_score)s%%</b> probability."
-msgstr "%(name1)s thích %(name2)s với xác suất <br>\n <b>%(compatibility_score)s%%</b>."
+msgid "likes"
+msgstr "lượt thích"
+
+msgid "with a"
+msgstr "với một"
+
+msgid "probability."
+msgstr "xác suất"
 
 msgid "How many people mentioned me?"
 msgstr "Có bao nhiêu người đã nhắc đến tôi?"
@@ -119,7 +119,7 @@ msgid "Here’s how many strokes each letter has:"
 msgstr "Đây là số nét mà mỗi chữ cái có:"
 
 msgid "Error retrieving your location. Please enable location services."
-msgstr "Lỗi khi truy xuất vị trí của bạn. Vui lòng bật dịch vụ định vị."
+msgstr "Lỗi khi truy xuất vị trí của bạn. Vui lòng bật dịch vụ vị trí."
 
 msgid "The most popular in my area"
 msgstr "Phổ biến nhất trong khu vực của tôi"
@@ -150,6 +150,3 @@ msgstr "Được đề cập (lần)"
 
 msgid "With who?"
 msgstr "Với ai?"
-
-msgid "English"
-msgstr "Tiếng Anh"

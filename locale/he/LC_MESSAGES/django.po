@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2025-06-25 09:49\n"
+"POT-Creation-Date: 2025-06-27 12:36\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -19,7 +19,7 @@ msgstr "אנא הוסף שם פרטי ושם משפחה."
 msgid "Language"
 msgstr "שפה"
 
-msgid "How much this person"
+msgid "How much does this person"
 msgstr "כמה עולה האדם הזה"
 
 msgid "First name"
@@ -28,15 +28,6 @@ msgstr "שם פרטי"
 msgid "Jennifer"
 msgstr "ג'ניפר"
 
-msgid "Middle name"
-msgstr "שם אמצעי"
-
-msgid "(optional)"
-msgstr "(אופציונלי)"
-
-msgid "Shrader"
-msgstr "שרדר"
-
 msgid "Last name"
 msgstr "שם משפחה"
 
@@ -44,15 +35,15 @@ msgid "Lawrence"
 msgstr "לורנס"
 
 msgid "like this person"
-msgstr "אוהב את האדם הזה"
+msgstr "כמו האדם הזה"
 
 msgid "Leonardo"
-msgstr "Leonardo"
+msgstr "לאונרדו"
 
-msgid "DiCaprio"
-msgstr "DiCaprio"
+msgid "Dicaprio"
+msgstr "דיקפריו"
 
-msgid "How to use / What is it?"
+msgid "How to use / What is this?"
 msgstr "איך להשתמש / מה זה?"
 
 msgid "Calculate"
@@ -62,25 +53,28 @@ msgid "About this"
 msgstr "על זה"
 
 msgid "This is a fun game that's popular among Korean teenagers! It calculates how much someone might like another person based on the number of strokes in their names.Try it just for fun — and share it with your friends! You can even see who’s the most popular in your school or neighborhood!"
-msgstr "זהו משחק מהנה שזוכה לפופולריות בקרב בני נוער קוריאנים! הוא מחשב כמה מישהו עשוי לאהוב אדם אחר על בסיס מספר הקווים בשמותיהם. נסו את זה רק בשביל הכיף — ושתפו את זה עם החברים שלכם! אתם אפילו יכולים לראות מי הכי פופולרי בבית הספר או בשכונה שלכם!"
+msgstr "זהו משחק מהנה שזוכה לפופולריות בקרב בני נוער קוריאנים! הוא מחשב כמה מישהו עשוי לחבב אדם אחר על סמך מספר הקווים בשמותיהם. נסו את זה רק בשביל הכיף — ושתפו את זה עם החברים שלכם! אתם אפילו יכולים לראות מי הכי פופולרי בבית הספר או בשכונה שלכם!"
 
 msgid "Name A (First name & Last name)"
 msgstr "שם א' (שם פרטי ושם משפחה)"
 
 msgid "e.g. Jennifer Lawrence"
-msgstr "לדוגמה, Jennifer Lawrence"
+msgstr "לדוגמה, ג'ניפר לורנס"
 
 msgid "Name B (First name & Last name)"
 msgstr "שם ב' (שם פרטי ושם משפחה)"
 
 msgid "e.g. Leonardo Dicaprio"
-msgstr "e.g. Leonardo Dicaprio"
+msgstr "לדוגמה, לאונרדו דיקפריו"
+
+msgid "How to use / What is it?"
+msgstr "איך להשתמש / מה זה?"
 
 msgid "Who tested with"
 msgstr "מי נבדק עם"
 
 msgid "Open to see"
-msgstr "פתח כדי לראות"
+msgstr "פתוח לצפייה"
 
 msgid "Payment"
 msgstr "תשלום"
@@ -97,14 +91,20 @@ msgstr "התשלום נכשל"
 msgid "Geolocation is not supported by this browser."
 msgstr "מיקום גיאוגרפי אינו נתמך על ידי דפדפן זה."
 
-msgid "how stroke we set"
-msgstr "איך קבענו את המכה"
+msgid "How is it calculated?"
+msgstr "איך זה מחושב?"
 
 msgid "Result"
 msgstr "תוצאה"
 
-msgid "%(name1)s likes %(name2)s with a <br>\n <b>%(compatibility_score)s%%</b> probability."
-msgstr "%(name1)s מחבב את %(name2)s עם <br>\n <b>%(compatibility_score)s%%</b> סיכוי."
+msgid "likes"
+msgstr "לייקים"
+
+msgid "with a"
+msgstr "עם"
+
+msgid "probability."
+msgstr "הסתברות"
 
 msgid "How many people mentioned me?"
 msgstr "כמה אנשים הזכירו אותי?"
@@ -119,7 +119,7 @@ msgid "Here’s how many strokes each letter has:"
 msgstr "הנה כמה קווים יש לכל אות:"
 
 msgid "Error retrieving your location. Please enable location services."
-msgstr "שגיאה באחזור המיקום שלך. אנא הפעל את שירותי המיקום."
+msgstr "שגיאה באחזור המיקום שלך. אנא הפעל שירותי מיקום."
 
 msgid "The most popular in my area"
 msgstr "הפופולרי ביותר באזור שלי"
@@ -134,10 +134,10 @@ msgid "1km"
 msgstr "1קמ"
 
 msgid "50km"
-msgstr "50קמ"
+msgstr "50km"
 
 msgid "200km"
-msgstr "200קמ"
+msgstr "200km"
 
 msgid "world"
 msgstr "עולם"
@@ -150,6 +150,3 @@ msgstr "הוזכר (פעמים)"
 
 msgid "With who?"
 msgstr "עם מי?"
-
-msgid "English"
-msgstr "אנגלית"

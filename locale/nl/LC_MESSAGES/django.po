@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2025-06-25 09:49\n"
+"POT-Creation-Date: 2025-06-27 12:35\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -19,23 +19,14 @@ msgstr "Voeg voor- en achternamen toe."
 msgid "Language"
 msgstr "Taal"
 
-msgid "How much this person"
-msgstr "Hoeveel deze persoon"
+msgid "How much does this person"
+msgstr "Hoeveel kost deze persoon"
 
 msgid "First name"
 msgstr "Voornaam"
 
 msgid "Jennifer"
 msgstr "Jennifer"
-
-msgid "Middle name"
-msgstr "Tussennaam"
-
-msgid "(optional)"
-msgstr "(optioneel)"
-
-msgid "Shrader"
-msgstr "Shrader"
 
 msgid "Last name"
 msgstr "Achternaam"
@@ -49,11 +40,11 @@ msgstr "vind deze persoon leuk"
 msgid "Leonardo"
 msgstr "Leonardo"
 
-msgid "DiCaprio"
-msgstr "DiCaprio"
+msgid "Dicaprio"
+msgstr "Dicaprio"
 
-msgid "How to use / What is it?"
-msgstr "Hoe te gebruiken / Wat is het?"
+msgid "How to use / What is this?"
+msgstr "Hoe te gebruiken / Wat is dit?"
 
 msgid "Calculate"
 msgstr "Bereken"
@@ -62,19 +53,22 @@ msgid "About this"
 msgstr "Over dit"
 
 msgid "This is a fun game that's popular among Korean teenagers! It calculates how much someone might like another person based on the number of strokes in their names.Try it just for fun — and share it with your friends! You can even see who’s the most popular in your school or neighborhood!"
-msgstr "Dit is een leuk spel dat populair is onder Koreaanse tieners! Het berekent hoeveel iemand een ander leuk zou kunnen vinden op basis van het aantal streken in hun namen. Probeer het gewoon voor de lol — en deel het met je vrienden! Je kunt zelfs zien wie de populairste is op je school of in je buurt!"
+msgstr "Dit is een leuk spel dat populair is onder Koreaanse tieners! Het berekent hoeveel iemand een ander leuk zou kunnen vinden op basis van het aantal streken in hun namen. Probeer het gewoon voor de lol — en deel het met je vrienden! Je kunt zelfs zien wie de populairste is op jouw school of in jouw buurt!"
 
 msgid "Name A (First name & Last name)"
 msgstr "Naam A (Voornaam & Achternaam)"
 
 msgid "e.g. Jennifer Lawrence"
-msgstr "bijv. Jennifer Lawrence"
+msgstr "b.v. Jennifer Lawrence"
 
 msgid "Name B (First name & Last name)"
 msgstr "Naam B (Voornaam & Achternaam)"
 
 msgid "e.g. Leonardo Dicaprio"
-msgstr "e.g. Leonardo Dicaprio"
+msgstr "b.v. Leonardo Dicaprio"
+
+msgid "How to use / What is it?"
+msgstr "Hoe te gebruiken / Wat is het?"
 
 msgid "Who tested with"
 msgstr "Wie getest met"
@@ -97,17 +91,23 @@ msgstr "Betaling mislukt"
 msgid "Geolocation is not supported by this browser."
 msgstr "Geolocatie wordt niet ondersteund door deze browser."
 
-msgid "how stroke we set"
-msgstr "hoe beroerte we instellen"
+msgid "How is it calculated?"
+msgstr "Hoe wordt het berekend?"
 
 msgid "Result"
 msgstr "Resultaat"
 
-msgid "%(name1)s likes %(name2)s with a <br>\n <b>%(compatibility_score)s%%</b> probability."
-msgstr "%(name1)s vindt %(name2)s leuk met een <br>\n <b>%(compatibility_score)s%%</b> waarschijnlijkheid."
+msgid "likes"
+msgstr "vind-ik-leuks"
+
+msgid "with a"
+msgstr "met een"
+
+msgid "probability."
+msgstr "waarschijnlijkheid"
 
 msgid "How many people mentioned me?"
-msgstr "Hoeveel mensen hebben me genoemd?"
+msgstr "Hoeveel mensen hebben mij genoemd?"
 
 msgid "How does it work?"
 msgstr "Hoe werkt het?"
@@ -150,6 +150,3 @@ msgstr "Genoemd (keer)"
 
 msgid "With who?"
 msgstr "Met wie?"
-
-msgid "English"
-msgstr "Engels"

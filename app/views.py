@@ -15,7 +15,7 @@ from .models import CompatibilityResult
 import stripe
 from django.utils.translation import activate, get_language
 
-from .utils import get_name_compatibility_with_5steps, get_name_compatibility, split_names_safe
+from .utils import get_name_compatibility_with_5steps, get_name_compatibility, split_names_safe, GLOBAL_STROKE_DICT
 
 stripe.api_key = settings.STRIPE_SECRET_KEY
 
@@ -334,6 +334,8 @@ class ResultDetailView(DetailView):
         context['result'] = result
         compatibility_score, steps = get_name_compatibility_with_5steps(result.name1, result.name2)
         print(steps)
+        stroke_dict = GLOBAL_STROKE_DICT.get(get_language())
+        context['stroke_dict'] = stroke_dict
         context['steps'] = steps
         return context
 

@@ -88,7 +88,7 @@
 {#    <div class="result__ad">ad</div>#}
     <input type="hidden" value="{{ result.id }}" id="result_id">
     <div class="result__info">
-        <a href="#a" class="result__set">{% trans "how stroke we set" %}</a>
+        <a href="#a" class="result__set">{% trans "How is it calculated?" %}</a>
     </div>
     <div class="result__tit">
         {% trans "Result" %}
@@ -135,8 +135,8 @@
 {#      </div>#}
     </div>
     <div class="result__text">
-        {% blocktrans %}{{ name1 }} likes {{ name2 }} with a <br>
-            <b>{{ compatibility_score }}%</b> probability.{% endblocktrans %}
+        {{ name1 }} {% trans 'likes' %} {{ name2 }} {% trans 'with a' %} <br>
+            <b>{{ compatibility_score }}%</b> {% trans 'probability.'%}
     </div>
     <button type="button" class="result__btn" onclick="sendLocationAndRedirect();">
         {% trans "How many people mentioned me?" %}
@@ -188,10 +188,9 @@
             <p>{% trans "We calculate your love score using the number of strokes in each letter of your name." %}</p>
             <p>{% trans "Here’s how many strokes each letter has:" %}</p>
             <code>
-                A: 3   B: 3   C: 1   D: 2   E: 3   F: 2   G: 2   H: 3
-                I: 1   J: 2   K: 3   L: 2   M: 4   N: 3   O: 1   P: 2
-                Q: 2   R: 3   S: 4   T: 2   U: 3   V: 2   W: 4   X: 2
-                Y: 3   Z: 3
+                {% for key, val in stroke_dict.items %}
+                    {{ key }}: {{ val }}{% if not forloop.last %}, {% endif %}
+                {% endfor %}
             </code>
         </div>
     </div>

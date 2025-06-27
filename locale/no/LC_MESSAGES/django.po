@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2025-06-25 09:49\n"
+"POT-Creation-Date: 2025-06-27 12:35\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -14,28 +14,19 @@ msgstr ""
 "&& n%100<=10 ? 3 : n%100>=11 && n%100<=99 ? 4 : 5;\n"
 
 msgid "Please add first and last names."
-msgstr "Vennligst legg til for- og etternavn."
+msgstr "Vennligst legg til fornavn og etternavn."
 
 msgid "Language"
 msgstr "Språk"
 
-msgid "How much this person"
-msgstr "Hvor mye denne personen"
+msgid "How much does this person"
+msgstr "Hvor mye koster denne personen"
 
 msgid "First name"
 msgstr "Fornavn"
 
 msgid "Jennifer"
 msgstr "Jennifer"
-
-msgid "Middle name"
-msgstr "Mellomnavn"
-
-msgid "(optional)"
-msgstr "(valgfritt)"
-
-msgid "Shrader"
-msgstr "Shrader"
 
 msgid "Last name"
 msgstr "Etternavn"
@@ -44,16 +35,16 @@ msgid "Lawrence"
 msgstr "Lawrence"
 
 msgid "like this person"
-msgstr "like denne personen"
+msgstr "liker denne personen"
 
 msgid "Leonardo"
 msgstr "Leonardo"
 
-msgid "DiCaprio"
-msgstr "DiCaprio"
+msgid "Dicaprio"
+msgstr "Dicaprio"
 
-msgid "How to use / What is it?"
-msgstr "Hvordan bruke / Hva er det?"
+msgid "How to use / What is this?"
+msgstr "Hvordan bruke / Hva er dette?"
 
 msgid "Calculate"
 msgstr "Beregn"
@@ -62,7 +53,7 @@ msgid "About this"
 msgstr "Om dette"
 
 msgid "This is a fun game that's popular among Korean teenagers! It calculates how much someone might like another person based on the number of strokes in their names.Try it just for fun — and share it with your friends! You can even see who’s the most popular in your school or neighborhood!"
-msgstr "Dette er et morsomt spill som er populært blant koreanske tenåringer! Det beregner hvor mye noen kanskje liker en annen person basert på antall strøk i navnene deres. Prøv det bare for moro skyld — og del det med vennene dine! Du kan til og med se hvem som er mest populær på skolen din eller i nabolaget ditt!"
+msgstr "Dette er et morsomt spill som er populært blant koreanske tenåringer! Det beregner hvor mye noen kanskje liker en annen person basert på antall streker i navnene deres. Prøv det bare for moro skyld — og del det med vennene dine! Du kan til og med se hvem som er mest populær på skolen din eller i nabolaget ditt!"
 
 msgid "Name A (First name & Last name)"
 msgstr "Navn A (Fornavn & Etternavn)"
@@ -74,7 +65,10 @@ msgid "Name B (First name & Last name)"
 msgstr "Navn B (Fornavn & Etternavn)"
 
 msgid "e.g. Leonardo Dicaprio"
-msgstr "e.g. Leonardo Dicaprio"
+msgstr "f.eks. Leonardo Dicaprio"
+
+msgid "How to use / What is it?"
+msgstr "Hvordan bruke / Hva er det?"
 
 msgid "Who tested with"
 msgstr "Hvem testet med"
@@ -97,14 +91,20 @@ msgstr "Betaling mislyktes"
 msgid "Geolocation is not supported by this browser."
 msgstr "Geolokalisering støttes ikke av denne nettleseren."
 
-msgid "how stroke we set"
-msgstr "hvordan slag vi setter"
+msgid "How is it calculated?"
+msgstr "Hvordan beregnes det?"
 
 msgid "Result"
 msgstr "Resultat"
 
-msgid "%(name1)s likes %(name2)s with a <br>\n <b>%(compatibility_score)s%%</b> probability."
-msgstr "%(name1)s liker %(name2)s med en <br>\n <b>%(compatibility_score)s%%</b> sannsynlighet."
+msgid "likes"
+msgstr "liker"
+
+msgid "with a"
+msgstr "med en"
+
+msgid "probability."
+msgstr "sannsynlighet."
 
 msgid "How many people mentioned me?"
 msgstr "Hvor mange mennesker nevnte meg?"
@@ -150,6 +150,3 @@ msgstr "Nevnt (ganger)"
 
 msgid "With who?"
 msgstr "Med hvem?"
-
-msgid "English"
-msgstr "Engelsk"

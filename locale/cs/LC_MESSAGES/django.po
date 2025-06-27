@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2025-06-25 09:49\n"
+"POT-Creation-Date: 2025-06-27 12:36\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -14,12 +14,12 @@ msgstr ""
 "&& n%100<=10 ? 3 : n%100>=11 && n%100<=99 ? 4 : 5;\n"
 
 msgid "Please add first and last names."
-msgstr "Prosím, přidejte křestní a příjmení."
+msgstr "Prosím, přidejte jména a příjmení."
 
 msgid "Language"
 msgstr "Jazyk"
 
-msgid "How much this person"
+msgid "How much does this person"
 msgstr "Kolik tato osoba"
 
 msgid "First name"
@@ -28,15 +28,6 @@ msgstr "Křestní jméno"
 msgid "Jennifer"
 msgstr "Jennifer"
 
-msgid "Middle name"
-msgstr "Prostřední jméno"
-
-msgid "(optional)"
-msgstr "(volitelné)"
-
-msgid "Shrader"
-msgstr "Shrader"
-
 msgid "Last name"
 msgstr "Příjmení"
 
@@ -44,16 +35,16 @@ msgid "Lawrence"
 msgstr "Lawrence"
 
 msgid "like this person"
-msgstr "jako tuto osobu"
+msgstr "jako tato osoba"
 
 msgid "Leonardo"
 msgstr "Leonardo"
 
-msgid "DiCaprio"
-msgstr "DiCaprio"
+msgid "Dicaprio"
+msgstr "Dicaprio"
 
-msgid "How to use / What is it?"
-msgstr "Jak používat / Co to je?"
+msgid "How to use / What is this?"
+msgstr "Jak používat / Co je to?"
 
 msgid "Calculate"
 msgstr "Vypočítat"
@@ -62,7 +53,7 @@ msgid "About this"
 msgstr "O tomto"
 
 msgid "This is a fun game that's popular among Korean teenagers! It calculates how much someone might like another person based on the number of strokes in their names.Try it just for fun — and share it with your friends! You can even see who’s the most popular in your school or neighborhood!"
-msgstr "Toto je zábavná hra, která je populární mezi korejskými teenagery! Vypočítává, jak moc by se někomu mohla líbit jiná osoba na základě počtu tahů v jejich jménech. Vyzkoušejte to jen pro zábavu — a sdílejte to se svými přáteli! Můžete dokonce zjistit, kdo je nejoblíbenější ve vaší škole nebo sousedství!"
+msgstr "Toto je zábavná hra, která je populární mezi korejskými teenagery! Vypočítává, jak moc by se někomu mohl líbit jiný člověk na základě počtu tahů v jejich jménech. Vyzkoušejte to jen pro zábavu — a sdílejte to se svými přáteli! Můžete dokonce zjistit, kdo je nejoblíbenější ve vaší škole nebo sousedství!"
 
 msgid "Name A (First name & Last name)"
 msgstr "Jméno A (Křestní jméno a Příjmení)"
@@ -74,7 +65,10 @@ msgid "Name B (First name & Last name)"
 msgstr "Jméno B (Křestní jméno a Příjmení)"
 
 msgid "e.g. Leonardo Dicaprio"
-msgstr "e.g. Leonardo Dicaprio"
+msgstr "např. Leonardo Dicaprio"
+
+msgid "How to use / What is it?"
+msgstr "Jak používat / Co je to?"
 
 msgid "Who tested with"
 msgstr "Kdo testoval s"
@@ -97,14 +91,20 @@ msgstr "Platba selhala"
 msgid "Geolocation is not supported by this browser."
 msgstr "Geolokace není tímto prohlížečem podporována."
 
-msgid "how stroke we set"
-msgstr "jak nastavit tah"
+msgid "How is it calculated?"
+msgstr "Jak se to počítá?"
 
 msgid "Result"
 msgstr "Výsledek"
 
-msgid "%(name1)s likes %(name2)s with a <br>\n <b>%(compatibility_score)s%%</b> probability."
-msgstr "%(name1)s má rád %(name2)s s <br>\n <b>%(compatibility_score)s%%</b> pravděpodobností."
+msgid "likes"
+msgstr "líbí se"
+
+msgid "with a"
+msgstr "s"
+
+msgid "probability."
+msgstr "pravděpodobnost."
 
 msgid "How many people mentioned me?"
 msgstr "Kolik lidí mě zmínilo?"
@@ -146,10 +146,7 @@ msgid "Rank"
 msgstr "Hodnocení"
 
 msgid "Mentioned (times)"
-msgstr "Zmíněno (krát)"
+msgstr "Zmíněno (kolikrát)"
 
 msgid "With who?"
 msgstr "S kým?"
-
-msgid "English"
-msgstr "Angličtina"

@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2025-06-25 09:49\n"
+"POT-Creation-Date: 2025-06-27 12:36\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -19,23 +19,14 @@ msgstr "Vă rugăm să adăugați prenumele și numele de familie."
 msgid "Language"
 msgstr "Limbă"
 
-msgid "How much this person"
-msgstr "Cât de mult această persoană"
+msgid "How much does this person"
+msgstr "Cât de mult face această persoană"
 
 msgid "First name"
 msgstr "Prenume"
 
 msgid "Jennifer"
 msgstr "Jennifer"
-
-msgid "Middle name"
-msgstr "Al doilea prenume"
-
-msgid "(optional)"
-msgstr "(opțional)"
-
-msgid "Shrader"
-msgstr "Shrader"
 
 msgid "Last name"
 msgstr "Nume de familie"
@@ -44,16 +35,16 @@ msgid "Lawrence"
 msgstr "Lawrence"
 
 msgid "like this person"
-msgstr "îmi place această persoană"
+msgstr "ca această persoană"
 
 msgid "Leonardo"
 msgstr "Leonardo"
 
-msgid "DiCaprio"
-msgstr "DiCaprio"
+msgid "Dicaprio"
+msgstr "Dicaprio"
 
-msgid "How to use / What is it?"
-msgstr "Cum se folosește / Ce este?"
+msgid "How to use / What is this?"
+msgstr "Cum să folosești / Ce este asta?"
 
 msgid "Calculate"
 msgstr "Calculează"
@@ -62,19 +53,22 @@ msgid "About this"
 msgstr "Despre asta"
 
 msgid "This is a fun game that's popular among Korean teenagers! It calculates how much someone might like another person based on the number of strokes in their names.Try it just for fun — and share it with your friends! You can even see who’s the most popular in your school or neighborhood!"
-msgstr "Acesta este un joc distractiv care este popular printre adolescenții coreeni! Calculează cât de mult ar putea plăcea cuiva o altă persoană pe baza numărului de trăsături din numele lor. Încercați-l doar pentru distracție — și împărtășiți-l cu prietenii voștri! Puteți chiar să vedeți cine este cel mai popular în școala sau cartierul vostru!"
+msgstr "Acesta este un joc distractiv care este popular printre adolescenții coreeni! Calculează cât de mult ar putea plăcea cineva altcuiva pe baza numărului de trăsături din numele lor. Încearcă-l doar pentru distracție — și împărtășește-l cu prietenii tăi! Poți chiar să vezi cine este cel mai popular în școala sau cartierul tău!"
 
 msgid "Name A (First name & Last name)"
 msgstr "Nume A (Prenume & Nume de familie)"
 
 msgid "e.g. Jennifer Lawrence"
-msgstr "de exemplu, Jennifer Lawrence"
+msgstr "ex. Jennifer Lawrence"
 
 msgid "Name B (First name & Last name)"
 msgstr "Nume B (Prenume & Nume de familie)"
 
 msgid "e.g. Leonardo Dicaprio"
-msgstr "e.g. Leonardo Dicaprio"
+msgstr "ex. Leonardo Dicaprio"
+
+msgid "How to use / What is it?"
+msgstr "Cum să folosești / Ce este?"
 
 msgid "Who tested with"
 msgstr "Cine a testat cu"
@@ -97,14 +91,20 @@ msgstr "Plată eșuată"
 msgid "Geolocation is not supported by this browser."
 msgstr "Geolocația nu este suportată de acest browser."
 
-msgid "how stroke we set"
-msgstr "cum setăm lovitura"
+msgid "How is it calculated?"
+msgstr "Cum este calculat?"
 
 msgid "Result"
 msgstr "Rezultat"
 
-msgid "%(name1)s likes %(name2)s with a <br>\n <b>%(compatibility_score)s%%</b> probability."
-msgstr "%(name1)s îl place pe %(name2)s cu o <br>\n <b>%(compatibility_score)s%%</b> probabilitate."
+msgid "likes"
+msgstr "aprecieri"
+
+msgid "with a"
+msgstr "cu un"
+
+msgid "probability."
+msgstr "probabilitate"
 
 msgid "How many people mentioned me?"
 msgstr "Câți oameni m-au menționat?"
@@ -119,7 +119,7 @@ msgid "Here’s how many strokes each letter has:"
 msgstr "Iată câte trăsături are fiecare literă:"
 
 msgid "Error retrieving your location. Please enable location services."
-msgstr "Eroare la obținerea locației tale. Te rog să activezi serviciile de localizare."
+msgstr "Eroare la recuperarea locației tale. Te rog să activezi serviciile de localizare."
 
 msgid "The most popular in my area"
 msgstr "Cel mai popular în zona mea"
@@ -150,6 +150,3 @@ msgstr "Menționat (ori)"
 
 msgid "With who?"
 msgstr "Cu cine?"
-
-msgid "English"
-msgstr "Engleză"

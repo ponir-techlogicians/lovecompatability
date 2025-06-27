@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2025-06-25 09:49\n"
+"POT-Creation-Date: 2025-06-27 12:35\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -19,7 +19,7 @@ msgstr "Proszę dodać imię i nazwisko."
 msgid "Language"
 msgstr "Język"
 
-msgid "How much this person"
+msgid "How much does this person"
 msgstr "Ile ta osoba"
 
 msgid "First name"
@@ -28,15 +28,6 @@ msgstr "Imię"
 msgid "Jennifer"
 msgstr "Jennifer"
 
-msgid "Middle name"
-msgstr "Drugie imię"
-
-msgid "(optional)"
-msgstr "(opcjonalnie)"
-
-msgid "Shrader"
-msgstr "Shrader"
-
 msgid "Last name"
 msgstr "Nazwisko"
 
@@ -44,15 +35,15 @@ msgid "Lawrence"
 msgstr "Lawrence"
 
 msgid "like this person"
-msgstr "lubić tę osobę"
+msgstr "lubi tę osobę"
 
 msgid "Leonardo"
 msgstr "Leonardo"
 
-msgid "DiCaprio"
-msgstr "DiCaprio"
+msgid "Dicaprio"
+msgstr "Dicaprio"
 
-msgid "How to use / What is it?"
+msgid "How to use / What is this?"
 msgstr "Jak używać / Co to jest?"
 
 msgid "Calculate"
@@ -74,7 +65,10 @@ msgid "Name B (First name & Last name)"
 msgstr "Imię B (Imię i nazwisko)"
 
 msgid "e.g. Leonardo Dicaprio"
-msgstr "e.g. Leonardo Dicaprio"
+msgstr "np. Leonardo Dicaprio"
+
+msgid "How to use / What is it?"
+msgstr "Jak używać / Co to jest?"
 
 msgid "Who tested with"
 msgstr "Kto testował z"
@@ -97,29 +91,35 @@ msgstr "Płatność nieudana"
 msgid "Geolocation is not supported by this browser."
 msgstr "Geolokalizacja nie jest obsługiwana przez tę przeglądarkę."
 
-msgid "how stroke we set"
-msgstr "jak ustawiamy kreskę"
+msgid "How is it calculated?"
+msgstr "Jak to jest obliczane?"
 
 msgid "Result"
 msgstr "Wynik"
 
-msgid "%(name1)s likes %(name2)s with a <br>\n <b>%(compatibility_score)s%%</b> probability."
-msgstr "%(name1)s lubi %(name2)s z <br>\n <b>%(compatibility_score)s%%</b> prawdopodobieństwem."
+msgid "likes"
+msgstr "polubienia"
+
+msgid "with a"
+msgstr "z"
+
+msgid "probability."
+msgstr "prawdopodobieństwo."
 
 msgid "How many people mentioned me?"
-msgstr "Ile osób mnie wspomniało?"
+msgstr "Ilu ludzi mnie wspomniało?"
 
 msgid "How does it work?"
 msgstr "Jak to działa?"
 
 msgid "We calculate your love score using the number of strokes in each letter of your name."
-msgstr "Obliczamy Twój wynik miłosny, używając liczby kresek w każdej literze Twojego imienia."
+msgstr "Obliczamy Twój wynik miłości, używając liczby kresek w każdej literze Twojego imienia."
 
 msgid "Here’s how many strokes each letter has:"
 msgstr "Oto ile kresek ma każda litera:"
 
 msgid "Error retrieving your location. Please enable location services."
-msgstr "Błąd podczas pobierania Twojej lokalizacji. Proszę włączyć usługi lokalizacyjne."
+msgstr "Błąd w pobieraniu Twojej lokalizacji. Proszę włączyć usługi lokalizacyjne."
 
 msgid "The most popular in my area"
 msgstr "Najpopularniejsze w mojej okolicy"
@@ -150,6 +150,3 @@ msgstr "Wspomniane (razy)"
 
 msgid "With who?"
 msgstr "Z kim?"
-
-msgid "English"
-msgstr "Angielski"

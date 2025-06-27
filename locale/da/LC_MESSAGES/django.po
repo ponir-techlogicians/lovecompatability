@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2025-06-25 09:49\n"
+"POT-Creation-Date: 2025-06-27 12:35\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -14,28 +14,19 @@ msgstr ""
 "&& n%100<=10 ? 3 : n%100>=11 && n%100<=99 ? 4 : 5;\n"
 
 msgid "Please add first and last names."
-msgstr "Tilføj venligst for- og efternavne."
+msgstr "Tilføj venligst fornavn og efternavn."
 
 msgid "Language"
 msgstr "Sprog"
 
-msgid "How much this person"
-msgstr "Hvor meget denne person"
+msgid "How much does this person"
+msgstr "Hvor meget koster denne person"
 
 msgid "First name"
 msgstr "Fornavn"
 
 msgid "Jennifer"
 msgstr "Jennifer"
-
-msgid "Middle name"
-msgstr "Mellemnavn"
-
-msgid "(optional)"
-msgstr "(valgfrit)"
-
-msgid "Shrader"
-msgstr "Shrader"
 
 msgid "Last name"
 msgstr "Efternavn"
@@ -49,11 +40,11 @@ msgstr "kan lide denne person"
 msgid "Leonardo"
 msgstr "Leonardo"
 
-msgid "DiCaprio"
-msgstr "DiCaprio"
+msgid "Dicaprio"
+msgstr "Dicaprio"
 
-msgid "How to use / What is it?"
-msgstr "Hvordan man bruger / Hvad er det?"
+msgid "How to use / What is this?"
+msgstr "How to use / What is this?"
 
 msgid "Calculate"
 msgstr "Beregn"
@@ -74,13 +65,16 @@ msgid "Name B (First name & Last name)"
 msgstr "Navn B (Fornavn & Efternavn)"
 
 msgid "e.g. Leonardo Dicaprio"
-msgstr "e.g. Leonardo Dicaprio"
+msgstr "f.eks. Leonardo Dicaprio"
+
+msgid "How to use / What is it?"
+msgstr "Hvordan man bruger / Hvad er det?"
 
 msgid "Who tested with"
 msgstr "Hvem testede med"
 
 msgid "Open to see"
-msgstr "Åbn for at se"
+msgstr "Åben for at se"
 
 msgid "Payment"
 msgstr "Betaling"
@@ -95,16 +89,22 @@ msgid "Payment failed"
 msgstr "Betaling mislykkedes"
 
 msgid "Geolocation is not supported by this browser."
-msgstr "Geolokation understøttes ikke af denne browser."
+msgstr "Geolokalisering understøttes ikke af denne browser."
 
-msgid "how stroke we set"
-msgstr "hvordan slag vi sætter"
+msgid "How is it calculated?"
+msgstr "Hvordan beregnes det?"
 
 msgid "Result"
 msgstr "Resultat"
 
-msgid "%(name1)s likes %(name2)s with a <br>\n <b>%(compatibility_score)s%%</b> probability."
-msgstr "%(name1)s kan lide %(name2)s med en <br>\n <b>%(compatibility_score)s%%</b> sandsynlighed."
+msgid "likes"
+msgstr "synes godt om"
+
+msgid "with a"
+msgstr "med en"
+
+msgid "probability."
+msgstr "sandsynlighed."
 
 msgid "How many people mentioned me?"
 msgstr "Hvor mange mennesker nævnte mig?"
@@ -150,6 +150,3 @@ msgstr "Nævnt (gange)"
 
 msgid "With who?"
 msgstr "Med hvem?"
-
-msgid "English"
-msgstr "Engelsk"

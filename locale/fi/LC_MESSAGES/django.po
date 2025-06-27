@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2025-06-25 09:49\n"
+"POT-Creation-Date: 2025-06-27 12:35\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -19,7 +19,7 @@ msgstr "Lisää etu- ja sukunimet."
 msgid "Language"
 msgstr "Kieli"
 
-msgid "How much this person"
+msgid "How much does this person"
 msgstr "Kuinka paljon tämä henkilö"
 
 msgid "First name"
@@ -27,15 +27,6 @@ msgstr "Etunimi"
 
 msgid "Jennifer"
 msgstr "Jennifer"
-
-msgid "Middle name"
-msgstr "Toinen nimi"
-
-msgid "(optional)"
-msgstr "(valinnainen)"
-
-msgid "Shrader"
-msgstr "Shrader"
 
 msgid "Last name"
 msgstr "Sukunimi"
@@ -49,11 +40,11 @@ msgstr "pidä tästä henkilöstä"
 msgid "Leonardo"
 msgstr "Leonardo"
 
-msgid "DiCaprio"
-msgstr "DiCaprio"
+msgid "Dicaprio"
+msgstr "Dicaprio"
 
-msgid "How to use / What is it?"
-msgstr "Kuinka käyttää / Mikä se on?"
+msgid "How to use / What is this?"
+msgstr "Kuinka käyttää / Mikä tämä on?"
 
 msgid "Calculate"
 msgstr "Laske"
@@ -74,10 +65,13 @@ msgid "Name B (First name & Last name)"
 msgstr "Nimi B (Etunimi & Sukunimi)"
 
 msgid "e.g. Leonardo Dicaprio"
-msgstr "e.g. Leonardo Dicaprio"
+msgstr "esim. Leonardo Dicaprio"
+
+msgid "How to use / What is it?"
+msgstr "Kuinka käyttää / Mikä se on?"
 
 msgid "Who tested with"
-msgstr "Kuka testasi"
+msgstr "Kuka testasi kenen kanssa"
 
 msgid "Open to see"
 msgstr "Avaa nähdäksesi"
@@ -97,23 +91,29 @@ msgstr "Maksu epäonnistui"
 msgid "Geolocation is not supported by this browser."
 msgstr "Sijaintitietoja ei tueta tässä selaimessa."
 
-msgid "how stroke we set"
-msgstr "miten aivohalvaus asetetaan"
+msgid "How is it calculated?"
+msgstr "Kuinka se lasketaan?"
 
 msgid "Result"
 msgstr "Tulos"
 
-msgid "%(name1)s likes %(name2)s with a <br>\n <b>%(compatibility_score)s%%</b> probability."
-msgstr "%(name1)s pitää %(name2)s:stä <br>\n <b>%(compatibility_score)s%%</b> todennäköisyydellä."
+msgid "likes"
+msgstr "tykkäykset"
+
+msgid "with a"
+msgstr "kanssa"
+
+msgid "probability."
+msgstr "todennäköisyys."
 
 msgid "How many people mentioned me?"
-msgstr "Kuinka moni mainitsi minut?"
+msgstr "Kuinka monta ihmistä mainitsi minut?"
 
 msgid "How does it work?"
 msgstr "Miten se toimii?"
 
 msgid "We calculate your love score using the number of strokes in each letter of your name."
-msgstr "Laskemme rakkauspisteesi käyttämällä nimesi jokaisen kirjaimen viivojen määrää."
+msgstr "Laskemme rakkauspisteesi nimesi jokaisen kirjaimen viivojen määrän perusteella."
 
 msgid "Here’s how many strokes each letter has:"
 msgstr "Tässä on, kuinka monta viivaa jokaisella kirjaimella on:"
@@ -150,6 +150,3 @@ msgstr "Mainittu (kertaa)"
 
 msgid "With who?"
 msgstr "Kenen kanssa?"
-
-msgid "English"
-msgstr "Englanti"

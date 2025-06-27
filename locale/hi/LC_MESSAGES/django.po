@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2025-06-25 09:49\n"
+"POT-Creation-Date: 2025-06-27 12:35\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -19,7 +19,7 @@ msgstr "कृपया पहला और अंतिम नाम जोड�
 msgid "Language"
 msgstr "भाषा"
 
-msgid "How much this person"
+msgid "How much does this person"
 msgstr "इस व्यक्ति की कितनी"
 
 msgid "First name"
@@ -27,15 +27,6 @@ msgstr "पहला नाम"
 
 msgid "Jennifer"
 msgstr "जेनिफर"
-
-msgid "Middle name"
-msgstr "मध्य नाम"
-
-msgid "(optional)"
-msgstr "(वैकल्पिक)"
-
-msgid "Shrader"
-msgstr "श्रेडर"
 
 msgid "Last name"
 msgstr "अंतिम नाम"
@@ -47,13 +38,13 @@ msgid "like this person"
 msgstr "इस व्यक्ति को पसंद करें"
 
 msgid "Leonardo"
-msgstr "Leonardo"
+msgstr "लियोनार्डो"
 
-msgid "DiCaprio"
-msgstr "DiCaprio"
+msgid "Dicaprio"
+msgstr "डिकैप्रियो"
 
-msgid "How to use / What is it?"
-msgstr "How to use / What is it?"
+msgid "How to use / What is this?"
+msgstr "How to use / What is this?"
 
 msgid "Calculate"
 msgstr "गणना करें"
@@ -62,22 +53,25 @@ msgid "About this"
 msgstr "इसके बारे में"
 
 msgid "This is a fun game that's popular among Korean teenagers! It calculates how much someone might like another person based on the number of strokes in their names.Try it just for fun — and share it with your friends! You can even see who’s the most popular in your school or neighborhood!"
-msgstr "यह एक मजेदार खेल है जो कोरियाई किशोरों के बीच लोकप्रिय है! यह गणना करता है कि कोई व्यक्ति किसी अन्य व्यक्ति को कितना पसंद कर सकता है उनके नामों में स्ट्रोक्स की संख्या के आधार पर। इसे सिर्फ मजे के लिए आजमाएं — और इसे अपने दोस्तों के साथ साझा करें! आप यह भी देख सकते हैं कि आपके स्कूल या पड़ोस में कौन सबसे लोकप्रिय है!"
+msgstr "यह एक मजेदार खेल है जो कोरियाई किशोरों के बीच लोकप्रिय है! यह गणना करता है कि कोई व्यक्ति किसी अन्य व्यक्ति को कितना पसंद कर सकता है उनके नाम में स्ट्रोक्स की संख्या के आधार पर। इसे सिर्फ मजे के लिए आज़माएं — और इसे अपने दोस्तों के साथ साझा करें! आप यह भी देख सकते हैं कि आपके स्कूल या पड़ोस में कौन सबसे लोकप्रिय है!"
 
 msgid "Name A (First name & Last name)"
 msgstr "नाम A (पहला नाम और अंतिम नाम)"
 
 msgid "e.g. Jennifer Lawrence"
-msgstr "उदाहरण के लिए, Jennifer Lawrence"
+msgstr "उदाहरण के लिए, जेनिफर लॉरेंस"
 
 msgid "Name B (First name & Last name)"
 msgstr "नाम B (पहला नाम और अंतिम नाम)"
 
 msgid "e.g. Leonardo Dicaprio"
-msgstr "e.g. Leonardo Dicaprio"
+msgstr "उदाहरण के लिए, लियोनार्डो डिकैप्रियो"
+
+msgid "How to use / What is it?"
+msgstr "How to use / What is it?"
 
 msgid "Who tested with"
-msgstr "किसने परीक्षण किया"
+msgstr "किसके साथ परीक्षण किया गया"
 
 msgid "Open to see"
 msgstr "देखने के लिए खोलें"
@@ -97,29 +91,35 @@ msgstr "भुगतान विफल"
 msgid "Geolocation is not supported by this browser."
 msgstr "इस ब्राउज़र द्वारा भू-स्थान समर्थन नहीं किया गया है।"
 
-msgid "how stroke we set"
-msgstr "हम स्ट्रोक कैसे सेट करें"
+msgid "How is it calculated?"
+msgstr "यह कैसे गणना की जाती है?"
 
 msgid "Result"
 msgstr "परिणाम"
 
-msgid "%(name1)s likes %(name2)s with a <br>\n <b>%(compatibility_score)s%%</b> probability."
-msgstr "%(name1)s को %(name2)s पसंद है <br>\n <b>%(compatibility_score)s%%</b> संभावना के साथ।"
+msgid "likes"
+msgstr "पसंद"
+
+msgid "with a"
+msgstr "के साथ"
+
+msgid "probability."
+msgstr "probability"
 
 msgid "How many people mentioned me?"
-msgstr "कितने लोगों ने मुझे उल्लेख किया?"
+msgstr "How many people mentioned me?"
 
 msgid "How does it work?"
-msgstr "यह कैसे काम करता है?"
+msgstr "How does it work?"
 
 msgid "We calculate your love score using the number of strokes in each letter of your name."
-msgstr "हम आपके नाम के प्रत्येक अक्षर में स्ट्रोक की संख्या का उपयोग करके आपका प्रेम स्कोर गणना करते हैं।"
+msgstr "We calculate your love score using the number of strokes in each letter of your name."
 
 msgid "Here’s how many strokes each letter has:"
-msgstr "यहाँ प्रत्येक अक्षर में कितने स्ट्रोक हैं:"
+msgstr "Here’s how many strokes each letter has:"
 
 msgid "Error retrieving your location. Please enable location services."
-msgstr "आपकी स्थान जानकारी प्राप्त करने में त्रुटि। कृपया स्थान सेवाएँ सक्षम करें।"
+msgstr "Error retrieving your location. Please enable location services."
 
 msgid "The most popular in my area"
 msgstr "मेरे क्षेत्र में सबसे लोकप्रिय"
@@ -131,13 +131,13 @@ msgid "Search"
 msgstr "खोज"
 
 msgid "1km"
-msgstr "1किमी"
+msgstr "1km"
 
 msgid "50km"
-msgstr "50km"
+msgstr "50किमी"
 
 msgid "200km"
-msgstr "200km"
+msgstr "200किमी"
 
 msgid "world"
 msgstr "दुनिया"
@@ -150,6 +150,3 @@ msgstr "उल्लेखित (बार)"
 
 msgid "With who?"
 msgstr "किसके साथ?"
-
-msgid "English"
-msgstr "अंग्रेज़ी"

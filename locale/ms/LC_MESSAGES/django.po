@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2025-06-25 09:49\n"
+"POT-Creation-Date: 2025-06-27 12:35\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -19,7 +19,7 @@ msgstr "Sila tambah nama pertama dan nama terakhir."
 msgid "Language"
 msgstr "Bahasa"
 
-msgid "How much this person"
+msgid "How much does this person"
 msgstr "Berapa banyak orang ini"
 
 msgid "First name"
@@ -27,15 +27,6 @@ msgstr "Nama pertama"
 
 msgid "Jennifer"
 msgstr "Jennifer"
-
-msgid "Middle name"
-msgstr "Nama tengah"
-
-msgid "(optional)"
-msgstr "(pilihan)"
-
-msgid "Shrader"
-msgstr "Shrader"
 
 msgid "Last name"
 msgstr "Nama terakhir"
@@ -49,11 +40,11 @@ msgstr "suka orang ini"
 msgid "Leonardo"
 msgstr "Leonardo"
 
-msgid "DiCaprio"
-msgstr "DiCaprio"
+msgid "Dicaprio"
+msgstr "Dicaprio"
 
-msgid "How to use / What is it?"
-msgstr "How to use / What is it?"
+msgid "How to use / What is this?"
+msgstr "How to use / What is this?"
 
 msgid "Calculate"
 msgstr "Kira"
@@ -62,7 +53,7 @@ msgid "About this"
 msgstr "Mengenai ini"
 
 msgid "This is a fun game that's popular among Korean teenagers! It calculates how much someone might like another person based on the number of strokes in their names.Try it just for fun — and share it with your friends! You can even see who’s the most popular in your school or neighborhood!"
-msgstr "Ini adalah permainan yang menyeronokkan yang popular di kalangan remaja Korea! Ia mengira berapa banyak seseorang mungkin suka orang lain berdasarkan bilangan strok dalam nama mereka. Cuba hanya untuk berseronok — dan kongsikan dengan rakan-rakan anda! Anda juga boleh melihat siapa yang paling popular di sekolah atau kawasan kejiranan anda!"
+msgstr "Ini adalah permainan yang menyeronokkan yang popular di kalangan remaja Korea! Ia mengira berapa banyak seseorang mungkin menyukai orang lain berdasarkan bilangan strok dalam nama mereka. Cuba sahaja untuk berseronok — dan kongsikannya dengan rakan-rakan anda! Anda juga boleh melihat siapa yang paling popular di sekolah atau kejiranan anda!"
 
 msgid "Name A (First name & Last name)"
 msgstr "Nama A (Nama pertama & Nama akhir)"
@@ -74,13 +65,16 @@ msgid "Name B (First name & Last name)"
 msgstr "Nama B (Nama pertama & Nama akhir)"
 
 msgid "e.g. Leonardo Dicaprio"
-msgstr "e.g. Leonardo Dicaprio"
+msgstr "cth. Leonardo Dicaprio"
+
+msgid "How to use / What is it?"
+msgstr "How to use / What is it?"
 
 msgid "Who tested with"
 msgstr "Siapa yang diuji dengan"
 
 msgid "Open to see"
-msgstr "Buka untuk melihat"
+msgstr "Buka untuk lihat"
 
 msgid "Payment"
 msgstr "Pembayaran"
@@ -97,14 +91,20 @@ msgstr "Pembayaran gagal"
 msgid "Geolocation is not supported by this browser."
 msgstr "Geolokasi tidak disokong oleh pelayar ini."
 
-msgid "how stroke we set"
-msgstr "bagaimana strok kita tetapkan"
+msgid "How is it calculated?"
+msgstr "Bagaimana ia dikira?"
 
 msgid "Result"
 msgstr "Keputusan"
 
-msgid "%(name1)s likes %(name2)s with a <br>\n <b>%(compatibility_score)s%%</b> probability."
-msgstr "%(name1)s suka %(name2)s dengan kebarangkalian <br>\n <b>%(compatibility_score)s%%</b>."
+msgid "likes"
+msgstr "suka"
+
+msgid "with a"
+msgstr "dengan"
+
+msgid "probability."
+msgstr "kebarangkalian."
 
 msgid "How many people mentioned me?"
 msgstr "Berapa ramai orang menyebut saya?"
@@ -150,6 +150,3 @@ msgstr "Disebut (kali)"
 
 msgid "With who?"
 msgstr "Dengan siapa?"
-
-msgid "English"
-msgstr "Bahasa Inggeris"

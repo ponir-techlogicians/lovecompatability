@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2025-06-25 09:49\n"
+"POT-Creation-Date: 2025-06-27 12:36\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -19,23 +19,14 @@ msgstr "Kérjük, adja meg a kereszt- és vezetéknevet."
 msgid "Language"
 msgstr "Nyelv"
 
-msgid "How much this person"
-msgstr "Mennyire ez a személy"
+msgid "How much does this person"
+msgstr "Mennyire kedveli ezt a személyt"
 
 msgid "First name"
 msgstr "Keresztnév"
 
 msgid "Jennifer"
 msgstr "Jennifer"
-
-msgid "Middle name"
-msgstr "Középső név"
-
-msgid "(optional)"
-msgstr "(opcionális)"
-
-msgid "Shrader"
-msgstr "Shrader"
 
 msgid "Last name"
 msgstr "Vezetéknév"
@@ -49,10 +40,10 @@ msgstr "kedveli ezt a személyt"
 msgid "Leonardo"
 msgstr "Leonardo"
 
-msgid "DiCaprio"
-msgstr "DiCaprio"
+msgid "Dicaprio"
+msgstr "Dicaprio"
 
-msgid "How to use / What is it?"
+msgid "How to use / What is this?"
 msgstr "Hogyan kell használni / Mi ez?"
 
 msgid "Calculate"
@@ -74,19 +65,22 @@ msgid "Name B (First name & Last name)"
 msgstr "Név B (Keresztnév és Vezetéknév)"
 
 msgid "e.g. Leonardo Dicaprio"
-msgstr "e.g. Leonardo Dicaprio"
+msgstr "pl. Leonardo Dicaprio"
+
+msgid "How to use / What is it?"
+msgstr "Hogyan kell használni / Mi ez?"
 
 msgid "Who tested with"
-msgstr "Ki tesztelte"
+msgstr "Kivel tesztelték"
 
 msgid "Open to see"
-msgstr "Megnyitás"
+msgstr "Megnyitás megtekintésre"
 
 msgid "Payment"
 msgstr "Fizetés"
 
 msgid "Pay now"
-msgstr "Fizessen most"
+msgstr "Fizess most"
 
 msgid "Payment successful!"
 msgstr "Fizetés sikeres!"
@@ -95,19 +89,25 @@ msgid "Payment failed"
 msgstr "Fizetés sikertelen"
 
 msgid "Geolocation is not supported by this browser."
-msgstr "A geolokációt nem támogatja ez a böngésző."
+msgstr "A földrajzi helymeghatározást nem támogatja ez a böngésző."
 
-msgid "how stroke we set"
-msgstr "hogyan állítjuk be a vonást"
+msgid "How is it calculated?"
+msgstr "Hogyan van kiszámítva?"
 
 msgid "Result"
 msgstr "Eredmény"
 
-msgid "%(name1)s likes %(name2)s with a <br>\n <b>%(compatibility_score)s%%</b> probability."
-msgstr "%(name1)s kedveli %(name2)s-t <br>\n <b>%(compatibility_score)s%%</b> valószínűséggel."
+msgid "likes"
+msgstr "kedvelések"
+
+msgid "with a"
+msgstr "egy"
+
+msgid "probability."
+msgstr "valószínűség."
 
 msgid "How many people mentioned me?"
-msgstr "Hány ember említett engem?"
+msgstr "Hány ember említett meg engem?"
 
 msgid "How does it work?"
 msgstr "Hogyan működik?"
@@ -150,6 +150,3 @@ msgstr "Említve (alkalommal)"
 
 msgid "With who?"
 msgstr "Kivel?"
-
-msgid "English"
-msgstr "Angol"
