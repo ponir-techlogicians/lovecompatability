@@ -15,6 +15,7 @@ from .models import CompatibilityResult
 import stripe
 from django.utils.translation import activate, get_language
 
+from .query_helper import filter_and_count
 from .utils import get_name_compatibility_with_5steps, get_name_compatibility, split_names_safe, GLOBAL_STROKE_DICT
 
 stripe.api_key = settings.STRIPE_SECRET_KEY
@@ -339,7 +340,6 @@ class ResultDetailView(DetailView):
         context['steps'] = steps
         return context
 
-
 class SearchView(TemplateView):
     template_name = "search.html"
 
@@ -397,7 +397,7 @@ class SearchView(TemplateView):
             name_counter[result.name1] += 1
             name_counter[result.name2] += 1
 
-        # Get sorted names 
+        # Get sorted names
         sorted_names = name_counter.most_common()
         print('sorted names',sorted_names)
 
@@ -503,6 +503,8 @@ class ListView(TemplateView):
         print(f"Filtered results: {len(results)}")
 
         return render(request, self.template_name, context)
+
+
 
 
 class SearchBasicView(TemplateView):

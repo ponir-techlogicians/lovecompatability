@@ -216,6 +216,12 @@
   });
 </script>
 <script>
+    document.addEventListener('DOMContentLoaded', function () {
+        const withButton = document.querySelector('.search__with');
+        if (withButton) {
+            withButton.scrollIntoView({behavior: 'smooth', block: 'center'});
+        }
+    });
 </script>
     <style>
         .ui-autocomplete {

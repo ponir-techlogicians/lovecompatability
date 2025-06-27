@@ -171,6 +171,8 @@
                      alert('{% trans "Payment successful!" %}');
                      document.getElementById('list').classList.remove('blur');
                      document.getElementById('popup').classList.add('hidden');
+                     document.getElementById('checkout-button').style.display = 'none';
+
                      let currentUrl = window.location.href;
                      if (currentUrl.includes('?')) {
                          window.history.pushState({}, '', currentUrl + '&success=true');
