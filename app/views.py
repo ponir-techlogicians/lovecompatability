@@ -314,6 +314,7 @@ class CalculateView(TemplateView):
         context = self.get_context_data()
         context["past_results"] = past_results
         context["top_names"] = top_names  # Send top names to template
+        context["LANGUAGES"] = settings.LANGUAGES
         return render(request, self.template_name, context)
 
 
