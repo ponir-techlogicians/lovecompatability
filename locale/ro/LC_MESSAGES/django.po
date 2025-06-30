@@ -150,3 +150,15 @@ msgstr "Menționat (ori)"
 
 msgid "With who?"
 msgstr "Cu cine?"
+
+msgid "name1_firstname"
+msgstr "Elena"
+
+msgid "name1_lastname"
+msgstr "Popescu"
+
+msgid "name2_firstname"
+msgstr "Andrei"
+
+msgid "name2_lastname"
+msgstr "Ionescu"

@@ -150,3 +150,15 @@ msgstr "הוזכר (פעמים)"
 
 msgid "With who?"
 msgstr "עם מי?"
+
+msgid "name1_firstname"
+msgstr "שרה"
+
+msgid "name1_lastname"
+msgstr "כהן"
+
+msgid "name2_firstname"
+msgstr "דוד"
+
+msgid "name2_lastname"
+msgstr "לוי"

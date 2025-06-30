@@ -150,3 +150,15 @@ msgstr "Bahsedildi (kez)"
 
 msgid "With who?"
 msgstr "Kiminle?"
+
+msgid "name1_firstname"
+msgstr "Elif"
+
+msgid "name1_lastname"
+msgstr "Yılmaz"
+
+msgid "name2_firstname"
+msgstr "Ahmet"
+
+msgid "name2_lastname"
+msgstr "Demir"

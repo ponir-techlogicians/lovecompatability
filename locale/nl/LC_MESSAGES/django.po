@@ -150,3 +150,15 @@ msgstr "Genoemd (keer)"
 
 msgid "With who?"
 msgstr "Met wie?"
+
+msgid "name1_firstname"
+msgstr "Emma"
+
+msgid "name1_lastname"
+msgstr "de Vries"
+
+msgid "name2_firstname"
+msgstr "Lucas"
+
+msgid "name2_lastname"
+msgstr "Jansen"

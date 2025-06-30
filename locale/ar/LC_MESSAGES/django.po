@@ -150,3 +150,16 @@ msgstr "مذكور (مرات)"
 
 msgid "With who?"
 msgstr "مع من؟"
+
+
+msgid "name1_firstname"
+msgstr "عائشة"
+
+msgid "name1_lastname"
+msgstr "الفهد"
+
+msgid "name2_firstname"
+msgstr "خالد"
+
+msgid "name2_lastname"
+msgstr "المنصور"

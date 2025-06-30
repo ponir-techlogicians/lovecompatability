@@ -150,3 +150,15 @@ msgstr "Αναφέρθηκε (φορές)"
 
 msgid "With who?"
 msgstr "Με ποιον;"
+
+msgid "name1_firstname"
+msgstr "Ελένη"
+
+msgid "name1_lastname"
+msgstr "Παπαδοπούλου"
+
+msgid "name2_firstname"
+msgstr "Γιώργος"
+
+msgid "name2_lastname"
+msgstr "Παπαδόπουλος"

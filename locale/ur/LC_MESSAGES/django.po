@@ -150,3 +150,15 @@ msgstr "ذکر کیا گیا (مرتبہ)"
 
 msgid "With who?"
 msgstr "کس کے ساتھ؟"
+
+msgid "name1_firstname"
+msgstr "زینب"
+
+msgid "name1_lastname"
+msgstr "احمد"
+
+msgid "name2_firstname"
+msgstr "عمر"
+
+msgid "name2_lastname"
+msgstr "خان"

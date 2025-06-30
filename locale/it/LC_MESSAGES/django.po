@@ -150,3 +150,15 @@ msgstr "Menzionato (volte)"
 
 msgid "With who?"
 msgstr "Con chi?"
+
+msgid "name1_firstname"
+msgstr "Giulia"
+
+msgid "name1_lastname"
+msgstr "Rossi"
+
+msgid "name2_firstname"
+msgstr "Marco"
+
+msgid "name2_lastname"
+msgstr "Bianchi"

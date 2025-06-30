@@ -150,3 +150,15 @@ msgstr "Упомянуто (раз)"
 
 msgid "With who?"
 msgstr "С кем?"
+
+msgid "name1_firstname"
+msgstr "Екатерина"
+
+msgid "name1_lastname"
+msgstr "Смирнова"
+
+msgid "name2_firstname"
+msgstr "Дмитрий"
+
+msgid "name2_lastname"
+msgstr "Иванов"

@@ -150,3 +150,15 @@ msgstr "Említve (alkalommal)"
 
 msgid "With who?"
 msgstr "Kivel?"
+
+msgid "name1_firstname"
+msgstr "Eszter"
+
+msgid "name1_lastname"
+msgstr "Nagy"
+
+msgid "name2_firstname"
+msgstr "Balázs"
+
+msgid "name2_lastname"
+msgstr "Kovács"

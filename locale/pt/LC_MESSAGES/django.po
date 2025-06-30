@@ -150,3 +150,15 @@ msgstr "Mencionado (vezes)"
 
 msgid "With who?"
 msgstr "Com quem?"
+
+msgid "name1_firstname"
+msgstr "Mariana"
+
+msgid "name1_lastname"
+msgstr "Silva"
+
+msgid "name2_firstname"
+msgstr "Miguel"
+
+msgid "name2_lastname"
+msgstr "Ferreira"

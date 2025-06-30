@@ -150,3 +150,16 @@ msgstr "Nævnt (gange)"
 
 msgid "With who?"
 msgstr "Med hvem?"
+
+msgid "name1_firstname"
+msgstr "Freja"
+
+msgid "name1_lastname"
+msgstr "Nielsen"
+
+msgid "name2_firstname"
+msgstr "Mikkel"
+
+msgid "name2_lastname"
+msgstr "Jensen"
+

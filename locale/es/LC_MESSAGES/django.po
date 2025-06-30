@@ -150,3 +150,15 @@ msgstr "Mencionado (veces)"
 
 msgid "With who?"
 msgstr "¿Con quién?"
+
+msgid "name1_firstname"
+msgstr "María"
+
+msgid "name1_lastname"
+msgstr "García"
+
+msgid "name2_firstname"
+msgstr "Carlos"
+
+msgid "name2_lastname"
+msgstr "Rodríguez"

@@ -150,3 +150,15 @@ msgstr "กล่าวถึง (ครั้ง)"
 
 msgid "With who?"
 msgstr "กับใคร?"
+
+msgid "name1_firstname"
+msgstr "อรทัย"
+
+msgid "name1_lastname"
+msgstr "วรรณวิไล"
+
+msgid "name2_firstname"
+msgstr "สมชาย"
+
+msgid "name2_lastname"
+msgstr "วิทยา"

@@ -14,121 +14,121 @@ msgstr ""
 "&& n%100<=10 ? 3 : n%100>=11 && n%100<=99 ? 4 : 5;\n"
 
 msgid "Please add first and last names."
-msgstr "이름과 성을 추가해 주세요."
+msgstr "Please add first and last names."
 
 msgid "Language"
-msgstr "언어"
+msgstr "Language"
 
 msgid "How much does this person"
-msgstr "이 사람은 얼마나"
+msgstr "How much does this person"
 
 msgid "First name"
-msgstr "이름"
+msgstr "First name"
 
 msgid "Jennifer"
-msgstr "제니퍼"
+msgstr "Jennifer"
 
 msgid "Last name"
-msgstr "성"
+msgstr "Last name"
 
 msgid "Lawrence"
-msgstr "로렌스"
+msgstr "Lawrence"
 
 msgid "like this person"
-msgstr "이 사람을 좋아하다"
+msgstr "like this person"
 
 msgid "Leonardo"
-msgstr "레오나르도"
+msgstr "Leonardo"
 
 msgid "Dicaprio"
-msgstr "디카프리오"
+msgstr "Dicaprio"
 
 msgid "How to use / What is this?"
-msgstr "사용 방법 / 이것은 무엇입니까?"
+msgstr "How to use / What is this?"
 
 msgid "Calculate"
-msgstr "계산하기"
+msgstr "Calculate"
 
 msgid "About this"
-msgstr "이것에 대하여"
+msgstr "About this"
 
 msgid "This is a fun game that's popular among Korean teenagers! It calculates how much someone might like another person based on the number of strokes in their names.Try it just for fun — and share it with your friends! You can even see who’s the most popular in your school or neighborhood!"
-msgstr "이것은 한국 청소년들 사이에서 인기 있는 재미있는 게임입니다! 이름의 획수를 기반으로 누군가가 다른 사람을 얼마나 좋아할지 계산합니다. 그냥 재미로 시도해보고 친구들과 공유하세요! 학교나 동네에서 누가 가장 인기 있는지까지 볼 수 있습니다!"
+msgstr "This is a fun game that's popular among Korean teenagers! It calculates how much someone might like another person based on the number of strokes in their names.Try it just for fun — and share it with your friends! You can even see who’s the most popular in your school or neighborhood!"
 
 msgid "Name A (First name & Last name)"
-msgstr "이름 A (이름 & 성)"
+msgstr "Name A (First name & Last name)"
 
 msgid "e.g. Jennifer Lawrence"
-msgstr "예: Jennifer Lawrence"
+msgstr "e.g. Jennifer Lawrence"
 
 msgid "Name B (First name & Last name)"
-msgstr "이름 B (이름 & 성)"
+msgstr "Name B (First name & Last name)"
 
 msgid "e.g. Leonardo Dicaprio"
-msgstr "예: Leonardo Dicaprio"
+msgstr "e.g. Leonardo Dicaprio"
 
 msgid "How to use / What is it?"
-msgstr "사용 방법 / 이것은 무엇입니까?"
+msgstr "How to use / What is it?"
 
 msgid "Who tested with"
-msgstr "누구와 테스트했는지"
+msgstr "Who tested with"
 
 msgid "Open to see"
-msgstr "열어서 보기"
+msgstr "Open to see"
 
 msgid "Payment"
-msgstr "결제"
+msgstr "Payment"
 
 msgid "Pay now"
-msgstr "지금 결제하기"
+msgstr "Pay now"
 
 msgid "Payment successful!"
-msgstr "결제 성공!"
+msgstr "Payment successful!"
 
 msgid "Payment failed"
-msgstr "결제 실패"
+msgstr "Payment failed"
 
 msgid "Geolocation is not supported by this browser."
-msgstr "이 브라우저에서는 지리적 위치가 지원되지 않습니다."
+msgstr "Geolocation is not supported by this browser."
 
 msgid "How is it calculated?"
-msgstr "어떻게 계산되나요?"
+msgstr "How is it calculated?"
 
 msgid "Result"
-msgstr "결과"
+msgstr "Result"
 
 msgid "likes"
-msgstr "좋아요"
+msgstr "likes"
 
 msgid "with a"
-msgstr "와 함께"
+msgstr "with a"
 
 msgid "probability."
-msgstr "확률."
+msgstr "probability."
 
 msgid "How many people mentioned me?"
-msgstr "몇 명이 나를 언급했나요?"
+msgstr "How many people mentioned me?"
 
 msgid "How does it work?"
-msgstr "어떻게 작동하나요?"
+msgstr "How does it work?"
 
 msgid "We calculate your love score using the number of strokes in each letter of your name."
-msgstr "우리는 당신의 이름 각 글자의 획수를 사용하여 사랑 점수를 계산합니다."
+msgstr "We calculate your love score using the number of strokes in each letter of your name."
 
 msgid "Here’s how many strokes each letter has:"
-msgstr "각 글자가 몇 획인지 여기에 있습니다:"
+msgstr "Here’s how many strokes each letter has:"
 
 msgid "Error retrieving your location. Please enable location services."
-msgstr "위치를 검색하는 데 오류가 발생했습니다. 위치 서비스를 활성화하세요."
+msgstr "Error retrieving your location. Please enable location services."
 
 msgid "The most popular in my area"
-msgstr "내 지역에서 가장 인기 있는 것"
+msgstr "The most popular in my area"
 
 msgid "Name"
-msgstr "이름"
+msgstr "Name"
 
 msgid "Search"
-msgstr "검색"
+msgstr "Search"
 
 msgid "1km"
 msgstr "1km"
@@ -140,25 +140,25 @@ msgid "200km"
 msgstr "200km"
 
 msgid "world"
-msgstr "세계"
+msgstr "world"
 
 msgid "Rank"
-msgstr "순위"
+msgstr "Rank"
 
 msgid "Mentioned (times)"
-msgstr "언급된 (횟수)"
+msgstr "Mentioned (times)"
 
 msgid "With who?"
-msgstr "누구와 함께?"
+msgstr "With who?"
 
 msgid "name1_firstname"
-msgstr "민지"
+msgstr "Jennifer"
 
 msgid "name1_lastname"
-msgstr "김"
+msgstr "Lawrance"
 
 msgid "name2_firstname"
-msgstr "준호"
+msgstr "Leonardo"
 
 msgid "name2_lastname"
-msgstr "이"
+msgstr "Dicaprio"

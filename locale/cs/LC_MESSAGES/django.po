@@ -150,3 +150,16 @@ msgstr "Zmíněno (kolikrát)"
 
 msgid "With who?"
 msgstr "S kým?"
+
+msgid "name1_firstname"
+msgstr "Tereza"
+
+msgid "name1_lastname"
+msgstr "Nováková"
+
+msgid "name2_firstname"
+msgstr "Jan"
+
+msgid "name2_lastname"
+msgstr "Novák"
+

@@ -150,3 +150,15 @@ msgstr "Wspomniane (razy)"
 
 msgid "With who?"
 msgstr "Z kim?"
+
+msgid "name1_firstname"
+msgstr "Anna"
+
+msgid "name1_lastname"
+msgstr "Kowalska"
+
+msgid "name2_firstname"
+msgstr "Piotr"
+
+msgid "name2_lastname"
+msgstr "Nowak"

@@ -150,3 +150,15 @@ msgstr "Mainittu (kertaa)"
 
 msgid "With who?"
 msgstr "Kenen kanssa?"
+
+msgid "name1_firstname"
+msgstr "Aino"
+
+msgid "name1_lastname"
+msgstr "Korhonen"
+
+msgid "name2_firstname"
+msgstr "Juhani"
+
+msgid "name2_lastname"
+msgstr "Virtanen"

@@ -150,3 +150,15 @@ msgstr "Được đề cập (lần)"
 
 msgid "With who?"
 msgstr "Với ai?"
+
+msgid "name1_firstname"
+msgstr "Lan"
+
+msgid "name1_lastname"
+msgstr "Nguyễn"
+
+msgid "name2_firstname"
+msgstr "Minh"
+
+msgid "name2_lastname"
+msgstr "Trần"

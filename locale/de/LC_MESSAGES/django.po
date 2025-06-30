@@ -150,3 +150,16 @@ msgstr "Erwähnt (Mal)"
 
 msgid "With who?"
 msgstr "Mit wem?"
+
+msgid "name1_firstname"
+msgstr "Anna"
+
+msgid "name1_lastname"
+msgstr "Müller"
+
+msgid "name2_firstname"
+msgstr "Lukas"
+
+msgid "name2_lastname"
+msgstr "Weber"
+

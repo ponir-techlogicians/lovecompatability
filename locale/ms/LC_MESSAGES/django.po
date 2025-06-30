@@ -150,3 +150,15 @@ msgstr "Disebut (kali)"
 
 msgid "With who?"
 msgstr "Dengan siapa?"
+
+msgid "name1_firstname"
+msgstr "Siti"
+
+msgid "name1_lastname"
+msgstr "Aminah"
+
+msgid "name2_firstname"
+msgstr "Ahmad"
+
+msgid "name2_lastname"
+msgstr "Rahman"

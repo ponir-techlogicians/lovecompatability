@@ -150,3 +150,15 @@ msgstr "उल्लेखित (बार)"
 
 msgid "With who?"
 msgstr "किसके साथ?"
+
+msgid "name1_firstname"
+msgstr "प्रिया"
+
+msgid "name1_lastname"
+msgstr "शर्मा"
+
+msgid "name2_firstname"
+msgstr "राज"
+
+msgid "name2_lastname"
+msgstr "सिंह"
