@@ -152,7 +152,7 @@
         <div class="inputGroup">
           <h3>{% trans "How much does this person" %}</h3>
 
-          {% if request.LANGUAGE_CODE != 'ko'%}
+          {% if request.LANGUAGE_CODE != 'ko' and request.LANGUAGE_CODE != 'hu' and request.LANGUAGE_CODE != 'vi'%}
           <div class="row">
             <label class="loveWrap__inputBox">
               <h5 class="loveWrap__label">{% trans "First name" %}</h5>
@@ -170,16 +170,16 @@
           {% else %}
            <div class="row">
                 <label class="loveWrap__inputBox">
-                  <h5 class="loveWrap__label">{% trans "First name" %}</h5>
-                  <input class="loveWrap__input" type="text" name="name1_first"  id="name1_first" placeholder="이">
+                  <h5 class="loveWrap__label">{% trans "Last name" %}</h5>
+                  <input class="loveWrap__input" type="text" name="name1_first"  id="name1_first" placeholder="{% if request.LANGUAGE_CODE == 'ko' %}이{% endif %}">
                 </label>
 {#               <label class="loveWrap__inputBox">#}
 {#                  <h5 class="loveWrap__label">{% trans "Middle name" %} {% trans "(optional)" %}</h5>#}
 {#                  <input class="loveWrap__input" type="text" name="name1_middle" id="name1_middle" placeholder="성">#}
 {#                </label>#}
                 <label class="loveWrap__inputBox">
-                  <h5 class="loveWrap__label">{% trans "Last name" %}</h5>
-                  <input class="loveWrap__input" type="text" name="name1_last" id="name1_last" placeholder="암">
+                  <h5 class="loveWrap__label">{% trans "First name" %}</h5>
+                  <input class="loveWrap__input" type="text" name="name1_last" id="name1_last" placeholder="{% if request.LANGUAGE_CODE == 'ko' %}암{% endif %}">
                 </label>
 
            </div>
@@ -187,7 +187,7 @@
         </div>
         <div class="inputGroup">
           <h3>{% trans "like this person" %}</h3>
-          {% if request.LANGUAGE_CODE != 'ko'%}
+          {% if request.LANGUAGE_CODE != 'ko' and request.LANGUAGE_CODE != 'hu' and request.LANGUAGE_CODE != 'vi' %}
           <div class="row">
             <label class="loveWrap__inputBox">
               <h5 class="loveWrap__label">{% trans "First name" %}</h5>
@@ -205,16 +205,16 @@
           {% else %}
            <div class="row">
                 <label class="loveWrap__inputBox">
-                  <h5 class="loveWrap__label">{% trans "First name" %}</h5>
-                  <input class="loveWrap__input" type="text" name="name2_first" id="name2_first" placeholder="하">
+                  <h5 class="loveWrap__label">{% trans "Last name" %}</h5>
+                  <input class="loveWrap__input" type="text" name="name2_first" id="name2_first" placeholder="{% if request.LANGUAGE_CODE == 'ko' %}하{% endif %}">
                 </label>
 {#               <label class="loveWrap__inputBox">#}
 {#                  <h5 class="loveWrap__label">{% trans "Middle name" %} {% trans "(optional)" %}</h5>#}
 {#                  <input class="loveWrap__input" type="text" name="name2_middle" id="name2_middle" placeholder="지">#}
 {#                </label>#}
                 <label class="loveWrap__inputBox">
-                  <h5 class="loveWrap__label">{% trans "Last name" %}</h5>
-                  <input class="loveWrap__input" type="text" name="name2_last" id="name2_last" placeholder="원">
+                  <h5 class="loveWrap__label">{% trans "First name" %}</h5>
+                  <input class="loveWrap__input" type="text" name="name2_last" id="name2_last" placeholder="{% if request.LANGUAGE_CODE == 'ko' %}원{% endif %}">
                 </label>
 
            </div>
