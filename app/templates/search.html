@@ -125,7 +125,7 @@
 
   <script>
     $(function() {
-        $(".search__input")
+        /**$(".search__input")
           .autocomplete({
             source: function(request, response) {
               $.ajax({
@@ -156,7 +156,66 @@
             return $("<li>")
               .append($("<div>").text(item.label))
               .appendTo(ul);
-          };
+          };*/
+
+          var $input = $('.search__input');
+          var $btn   = $('.search__btn');
+
+          // 1) Initialize button state on page load
+          //    (input is empty ⇒ enabled; any text ⇒ disabled)
+          $btn.prop('disabled', $input.val().length > 0);
+
+          // 2) Wire up autocomplete
+          $input
+            .autocomplete({
+              source: function(request, response) {
+                $.ajax({
+                  url: '/app/suggest-name',
+                  dataType: 'json',
+                  data: { query: request.term },
+                  success: function(data) {
+                    response(Array.isArray(data.suggestions)
+                               ? data.suggestions
+                               : []);
+                  },
+                  error: function() {
+                    response([]);
+                  }
+                });
+              },
+              minLength: 1,
+              position: { my: 'left top', at: 'left bottom' },
+              appendTo: '.search__box',
+              open: function() {
+                $(this)
+                  .autocomplete('widget')
+                  .css('z-index', 99999)
+                  .width($(this).width());
+              },
+              select: function(event, ui) {
+                // ui.item is the picked suggestion
+                // set the input’s value (in case you overrode renderItem)
+                $input.val(ui.item.value || ui.item.label);
+                // **enable** the button now that a real selection has been made
+                $btn.prop('disabled', false);
+                return false;  // prevents the default overwrite if you’re doing custom rendering
+              }
+            })
+            .autocomplete('instance')._renderItem = function(ul, item) {
+              // custom display of each <li>
+              return $('<li>')
+                .append($('<div>').text(item.label || item))
+                .appendTo(ul);
+            };
+
+          // 3) Whenever the user types (or deletes) in that field,
+          //    disable the button if there's any text at all,
+          //    but re-enable it immediately if they clear it.
+          $input.on('input', function() {
+            var hasText = $(this).val().length > 0;
+            // disable when there's text but no selection yet
+            $btn.prop('disabled', hasText);
+          });
 
 
         $("#slider" ).slider({
