@@ -234,7 +234,7 @@ class CalculateView(TemplateView):
 
     def post(self, request, *args, **kwargs):
 
-        if get_language() == 'ko':
+        if get_language() == 'ko' or get_language() == 'hu' or get_language()=='vi':
             # Korean name format
             name1_first = request.POST.get("name1_first", "").strip()
             name1_middle = request.POST.get("name1_middle", "").strip()
