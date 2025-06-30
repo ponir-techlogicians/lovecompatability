@@ -378,7 +378,7 @@ class SearchView(TemplateView):
                     if record.latitude and record.longitude:
                         record_location = (record.latitude, record.longitude)
                         distance = geodesic(user_location, record_location).km
-                        print(distance,radius)
+                        # print(distance,radius)
                         if distance <= radius:
                             filtered_results.append(record)
                             if query.lower() == record.name1.lower():
@@ -395,12 +395,8 @@ class SearchView(TemplateView):
         # Initialize name counter after filtering
         name_counter = Counter()
         for result in results:
-            if query.lower() == result.name1.lower() and query.lower() == result.name2.lower():
-                name_counter[result.name1] += 1
-            elif query.lower() == result.name1.lower():
-                name_counter[result.name1] += 1
-            elif query.lower() == result.name2.lower():
-                name_counter[result.name2] += 1
+            name_counter[result.name1] += 1
+            name_counter[result.name2] += 1
 
         # Get sorted names
         sorted_names = name_counter.most_common()
