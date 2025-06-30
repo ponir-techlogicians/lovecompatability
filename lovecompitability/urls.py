@@ -21,6 +21,6 @@ from app.views  import CalculateView
 urlpatterns = [
     path('admin/', admin.site.urls),
     path('app/', include('app.urls')),
-    # path('', lambda request: redirect('/app/calculate/', permanent=True)),
+    path('app/calculate/', lambda request: redirect('/')),
     path('', CalculateView.as_view(), name='calculate'),
 ]
