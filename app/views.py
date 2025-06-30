@@ -390,13 +390,17 @@ class SearchView(TemplateView):
             except ValueError:
                 pass  # Ignore errors if input is incorrect
 
-        
-        
-        # Initialize name counter after filtering
+
+
         name_counter = Counter()
         for result in results:
-            name_counter[result.name1] += 1
-            name_counter[result.name2] += 1
+            if result.name1 == result.name2:
+                # same name, count once
+                name_counter[result.name1] += 1
+            else:
+                # two different names, count both
+                name_counter[result.name1] += 1
+                name_counter[result.name2] += 1
 
         # Get sorted names
         sorted_names = name_counter.most_common()
