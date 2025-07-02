@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2025-06-27 12:35\n"
+"POT-Creation-Date: 2025-07-02 12:45\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -34,8 +34,8 @@ msgstr "Фамилия"
 msgid "Lawrence"
 msgstr "Лоуренс"
 
-msgid "like this person"
-msgstr "нравится этому человеку"
+msgid "like this person?"
+msgstr "нравится этот человек?"
 
 msgid "Leonardo"
 msgstr "Леонардо"
@@ -53,7 +53,7 @@ msgid "About this"
 msgstr "Об этом"
 
 msgid "This is a fun game that's popular among Korean teenagers! It calculates how much someone might like another person based on the number of strokes in their names.Try it just for fun — and share it with your friends! You can even see who’s the most popular in your school or neighborhood!"
-msgstr "Это веселая игра, популярная среди корейских подростков! Она вычисляет, насколько кто-то может нравиться другому человеку, основываясь на количестве черт в их именах. Попробуйте просто ради удовольствия — и поделитесь с друзьями! Вы даже можете увидеть, кто самый популярный в вашей школе или районе!"
+msgstr "Это веселая игра, популярная среди корейских подростков! Она вычисляет, насколько кто-то может понравиться другому человеку, основываясь на количестве штрихов в их именах. Попробуйте просто ради удовольствия — и поделитесь с друзьями! Вы даже можете увидеть, кто самый популярный в вашей школе или районе!"
 
 msgid "Name A (First name & Last name)"
 msgstr "Имя A (Имя и Фамилия)"
@@ -86,7 +86,7 @@ msgid "Payment successful!"
 msgstr "Оплата успешна!"
 
 msgid "Payment failed"
-msgstr "Оплата не удалась"
+msgstr "Оплата не прошла"
 
 msgid "Geolocation is not supported by this browser."
 msgstr "Геолокация не поддерживается этим браузером."
@@ -101,10 +101,10 @@ msgid "likes"
 msgstr "нравится"
 
 msgid "with a"
-msgstr "с помощью"
+msgstr "с"
 
 msgid "probability."
-msgstr "вероятность"
+msgstr "вероятность."
 
 msgid "How many people mentioned me?"
 msgstr "Сколько людей упомянули меня?"
@@ -121,8 +121,8 @@ msgstr "Вот сколько штрихов имеет каждая буква:
 msgid "Error retrieving your location. Please enable location services."
 msgstr "Ошибка при получении вашего местоположения. Пожалуйста, включите службы определения местоположения."
 
-msgid "The most popular in my area"
-msgstr "Самое популярное в моем районе"
+msgid "The most popular person in my area"
+msgstr "Самый популярный человек в моем районе"
 
 msgid "Name"
 msgstr "Имя"
@@ -150,6 +150,12 @@ msgstr "Упомянуто (раз)"
 
 msgid "With who?"
 msgstr "С кем?"
+
+msgid "%(name1)s likes %(name2)s with a <br><b>%(compatibility_score)s%%</b> probability."
+msgstr "%(name1)s нравится %(name2)s с вероятностью <br><b>%(compatibility_score)s%%</b>."
+
+msgid "Who tested with %(search_key)s?"
+msgstr "Кто тестировал с %(search_key)s?"
 
 msgid "name1_firstname"
 msgstr "Екатерина"

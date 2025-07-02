@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2025-06-27 12:35\n"
+"POT-Creation-Date: 2025-07-02 12:45\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -34,8 +34,8 @@ msgstr "Efternamn"
 msgid "Lawrence"
 msgstr "Lawrence"
 
-msgid "like this person"
-msgstr "gillar denna person"
+msgid "like this person?"
+msgstr "gillar denna person?"
 
 msgid "Leonardo"
 msgstr "Leonardo"
@@ -104,7 +104,7 @@ msgid "with a"
 msgstr "med en"
 
 msgid "probability."
-msgstr "sannolikhet."
+msgstr "probability."
 
 msgid "How many people mentioned me?"
 msgstr "Hur många personer nämnde mig?"
@@ -121,8 +121,8 @@ msgstr "Här är hur många streck varje bokstav har:"
 msgid "Error retrieving your location. Please enable location services."
 msgstr "Fel vid hämtning av din plats. Vänligen aktivera platstjänster."
 
-msgid "The most popular in my area"
-msgstr "Det mest populära i mitt område"
+msgid "The most popular person in my area"
+msgstr "Den mest populära personen i mitt område"
 
 msgid "Name"
 msgstr "Namn"
@@ -150,6 +150,12 @@ msgstr "Nämnd (gånger)"
 
 msgid "With who?"
 msgstr "Med vem?"
+
+msgid "%(name1)s likes %(name2)s with a <br><b>%(compatibility_score)s%%</b> probability."
+msgstr "%(name1)s gillar %(name2)s med en <br><b>%(compatibility_score)s%%</b> sannolikhet."
+
+msgid "Who tested with %(search_key)s?"
+msgstr "Vem testade med %(search_key)s?"
 
 msgid "name1_firstname"
 msgstr "Astrid"

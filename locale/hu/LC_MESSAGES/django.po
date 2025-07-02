@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2025-06-27 12:36\n"
+"POT-Creation-Date: 2025-07-02 12:45\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -20,7 +20,7 @@ msgid "Language"
 msgstr "Nyelv"
 
 msgid "How much does this person"
-msgstr "Mennyire kedveli ezt a személyt"
+msgstr "Mennyibe kerül ez a személy"
 
 msgid "First name"
 msgstr "Keresztnév"
@@ -34,8 +34,8 @@ msgstr "Vezetéknév"
 msgid "Lawrence"
 msgstr "Lawrence"
 
-msgid "like this person"
-msgstr "kedveli ezt a személyt"
+msgid "like this person?"
+msgstr "kedveli ezt a személyt?"
 
 msgid "Leonardo"
 msgstr "Leonardo"
@@ -107,13 +107,13 @@ msgid "probability."
 msgstr "valószínűség."
 
 msgid "How many people mentioned me?"
-msgstr "Hány ember említett meg engem?"
+msgstr "Hány ember említett engem?"
 
 msgid "How does it work?"
 msgstr "Hogyan működik?"
 
 msgid "We calculate your love score using the number of strokes in each letter of your name."
-msgstr "A szerelmi pontszámodat a neved minden betűjének vonásszámával számítjuk ki."
+msgstr "A szerelmi pontszámodat a neved minden betűjének vonásszámával számoljuk ki."
 
 msgid "Here’s how many strokes each letter has:"
 msgstr "Íme, hány vonása van minden betűnek:"
@@ -121,8 +121,8 @@ msgstr "Íme, hány vonása van minden betűnek:"
 msgid "Error retrieving your location. Please enable location services."
 msgstr "Hiba történt a helyzeted lekérésekor. Kérlek, engedélyezd a helymeghatározási szolgáltatásokat."
 
-msgid "The most popular in my area"
-msgstr "A legnépszerűbb a környékemen"
+msgid "The most popular person in my area"
+msgstr "A legnépszerűbb ember a környékemen"
 
 msgid "Name"
 msgstr "Név"
@@ -150,6 +150,12 @@ msgstr "Említve (alkalommal)"
 
 msgid "With who?"
 msgstr "Kivel?"
+
+msgid "%(name1)s likes %(name2)s with a <br><b>%(compatibility_score)s%%</b> probability."
+msgstr "%(name1)s kedveli %(name2)s-t <br><b>%(compatibility_score)s%%</b> valószínűséggel."
+
+msgid "Who tested with %(search_key)s?"
+msgstr "Ki tesztelte %(search_key)s-val?"
 
 msgid "name1_firstname"
 msgstr "Eszter"

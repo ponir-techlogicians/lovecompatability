@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2025-06-27 12:35\n"
+"POT-Creation-Date: 2025-07-02 12:45\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -34,8 +34,8 @@ msgstr "Nama terakhir"
 msgid "Lawrence"
 msgstr "Lawrence"
 
-msgid "like this person"
-msgstr "suka orang ini"
+msgid "like this person?"
+msgstr "suka orang ini?"
 
 msgid "Leonardo"
 msgstr "Leonardo"
@@ -53,16 +53,16 @@ msgid "About this"
 msgstr "Mengenai ini"
 
 msgid "This is a fun game that's popular among Korean teenagers! It calculates how much someone might like another person based on the number of strokes in their names.Try it just for fun — and share it with your friends! You can even see who’s the most popular in your school or neighborhood!"
-msgstr "Ini adalah permainan yang menyeronokkan yang popular di kalangan remaja Korea! Ia mengira berapa banyak seseorang mungkin menyukai orang lain berdasarkan bilangan strok dalam nama mereka. Cuba sahaja untuk berseronok — dan kongsikannya dengan rakan-rakan anda! Anda juga boleh melihat siapa yang paling popular di sekolah atau kejiranan anda!"
+msgstr "Ini adalah permainan yang menyeronokkan yang popular di kalangan remaja Korea! Ia mengira berapa banyak seseorang mungkin menyukai orang lain berdasarkan bilangan strok dalam nama mereka. Cuba hanya untuk berseronok — dan kongsikan dengan rakan-rakan anda! Anda juga boleh melihat siapa yang paling popular di sekolah atau kejiranan anda!"
 
 msgid "Name A (First name & Last name)"
-msgstr "Nama A (Nama pertama & Nama akhir)"
+msgstr "Nama A (Nama pertama & Nama keluarga)"
 
 msgid "e.g. Jennifer Lawrence"
 msgstr "cth. Jennifer Lawrence"
 
 msgid "Name B (First name & Last name)"
-msgstr "Nama B (Nama pertama & Nama akhir)"
+msgstr "Nama B (Nama pertama & Nama keluarga)"
 
 msgid "e.g. Leonardo Dicaprio"
 msgstr "cth. Leonardo Dicaprio"
@@ -74,7 +74,7 @@ msgid "Who tested with"
 msgstr "Siapa yang diuji dengan"
 
 msgid "Open to see"
-msgstr "Buka untuk lihat"
+msgstr "Buka untuk melihat"
 
 msgid "Payment"
 msgstr "Pembayaran"
@@ -101,10 +101,10 @@ msgid "likes"
 msgstr "suka"
 
 msgid "with a"
-msgstr "dengan"
+msgstr "dengan a"
 
 msgid "probability."
-msgstr "kebarangkalian."
+msgstr "probability."
 
 msgid "How many people mentioned me?"
 msgstr "Berapa ramai orang menyebut saya?"
@@ -121,8 +121,8 @@ msgstr "Berikut adalah bilangan strok setiap huruf:"
 msgid "Error retrieving your location. Please enable location services."
 msgstr "Ralat mendapatkan lokasi anda. Sila aktifkan perkhidmatan lokasi."
 
-msgid "The most popular in my area"
-msgstr "Yang paling popular di kawasan saya"
+msgid "The most popular person in my area"
+msgstr "Orang paling popular di kawasan saya"
 
 msgid "Name"
 msgstr "Nama"
@@ -151,6 +151,12 @@ msgstr "Disebut (kali)"
 msgid "With who?"
 msgstr "Dengan siapa?"
 
+msgid "%(name1)s likes %(name2)s with a <br><b>%(compatibility_score)s%%</b> probability."
+msgstr "%(name1)s suka %(name2)s dengan kebarangkalian <br><b>%(compatibility_score)s%%</b>."
+
+msgid "Who tested with %(search_key)s?"
+msgstr "Siapa yang diuji dengan %(search_key)s?"
+
 msgid "name1_firstname"
 msgstr "Siti"
 
@@ -162,3 +168,4 @@ msgstr "Ahmad"
 
 msgid "name2_lastname"
 msgstr "Rahman"
+

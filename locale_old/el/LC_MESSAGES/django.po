@@ -1,0 +1,164 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2025-06-27 12:36\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=6; plural=n==0 ? 0 : n==1 ? 1 : n==2 ? 2 : n%100>=3 "
+"&& n%100<=10 ? 3 : n%100>=11 && n%100<=99 ? 4 : 5;\n"
+
+msgid "Please add first and last names."
+msgstr "Παρακαλώ προσθέστε το όνομα και το επώνυμο."
+
+msgid "Language"
+msgstr "Γλώσσα"
+
+msgid "How much does this person"
+msgstr "Πόσο κοστίζει αυτό το άτομο"
+
+msgid "First name"
+msgstr "Όνομα"
+
+msgid "Jennifer"
+msgstr "Τζένιφερ"
+
+msgid "Last name"
+msgstr "Επώνυμο"
+
+msgid "Lawrence"
+msgstr "Λόρενς"
+
+msgid "like this person"
+msgstr "σαν αυτό το άτομο"
+
+msgid "Leonardo"
+msgstr "Λεονάρντο"
+
+msgid "Dicaprio"
+msgstr "Ντι Κάπριο"
+
+msgid "How to use / What is this?"
+msgstr "Πώς να χρησιμοποιήσετε / Τι είναι αυτό;"
+
+msgid "Calculate"
+msgstr "Υπολογίστε"
+
+msgid "About this"
+msgstr "Σχετικά με αυτό"
+
+msgid "This is a fun game that's popular among Korean teenagers! It calculates how much someone might like another person based on the number of strokes in their names.Try it just for fun — and share it with your friends! You can even see who’s the most popular in your school or neighborhood!"
+msgstr "Αυτό είναι ένα διασκεδαστικό παιχνίδι που είναι δημοφιλές μεταξύ των Κορεατών εφήβων! Υπολογίζει πόσο μπορεί να αρέσει κάποιος σε κάποιον άλλο με βάση τον αριθμό των γραμμών στα ονόματά τους. Δοκιμάστε το απλά για διασκέδαση — και μοιραστείτε το με τους φίλους σας! Μπορείτε ακόμη να δείτε ποιος είναι ο πιο δημοφιλής στο σχολείο ή στη γειτονιά σας!"
+
+msgid "Name A (First name & Last name)"
+msgstr "Όνομα Α (Όνομα & Επώνυμο)"
+
+msgid "e.g. Jennifer Lawrence"
+msgstr "π.χ. Jennifer Lawrence"
+
+msgid "Name B (First name & Last name)"
+msgstr "Όνομα Β (Όνομα & Επώνυμο)"
+
+msgid "e.g. Leonardo Dicaprio"
+msgstr "π.χ. Leonardo Dicaprio"
+
+msgid "How to use / What is it?"
+msgstr "Πώς να χρησιμοποιήσετε / Τι είναι αυτό;"
+
+msgid "Who tested with"
+msgstr "Ποιος δοκίμασε με"
+
+msgid "Open to see"
+msgstr "Άνοιξε για να δεις"
+
+msgid "Payment"
+msgstr "Πληρωμή"
+
+msgid "Pay now"
+msgstr "Πλήρωσε τώρα"
+
+msgid "Payment successful!"
+msgstr "Η πληρωμή ήταν επιτυχής!"
+
+msgid "Payment failed"
+msgstr "Η πληρωμή απέτυχε"
+
+msgid "Geolocation is not supported by this browser."
+msgstr "Η γεωτοποθέτηση δεν υποστηρίζεται από αυτό το πρόγραμμα περιήγησης."
+
+msgid "How is it calculated?"
+msgstr "Πώς υπολογίζεται;"
+
+msgid "Result"
+msgstr "Αποτέλεσμα"
+
+msgid "likes"
+msgstr "μου αρέσει"
+
+msgid "with a"
+msgstr "με ένα"
+
+msgid "probability."
+msgstr "πιθανότητα."
+
+msgid "How many people mentioned me?"
+msgstr "Πόσοι άνθρωποι με ανέφεραν;"
+
+msgid "How does it work?"
+msgstr "Πώς λειτουργεί;"
+
+msgid "We calculate your love score using the number of strokes in each letter of your name."
+msgstr "Υπολογίζουμε το σκορ αγάπης σας χρησιμοποιώντας τον αριθμό των γραμμών σε κάθε γράμμα του ονόματός σας."
+
+msgid "Here’s how many strokes each letter has:"
+msgstr "Εδώ είναι πόσες γραμμές έχει κάθε γράμμα:"
+
+msgid "Error retrieving your location. Please enable location services."
+msgstr "Σφάλμα κατά την ανάκτηση της τοποθεσίας σας. Παρακαλώ ενεργοποιήστε τις υπηρεσίες τοποθεσίας."
+
+msgid "The most popular in my area"
+msgstr "Το πιο δημοφιλές στην περιοχή μου"
+
+msgid "Name"
+msgstr "Όνομα"
+
+msgid "Search"
+msgstr "Αναζήτηση"
+
+msgid "1km"
+msgstr "1km"
+
+msgid "50km"
+msgstr "50km"
+
+msgid "200km"
+msgstr "200km"
+
+msgid "world"
+msgstr "κόσμος"
+
+msgid "Rank"
+msgstr "Κατάταξη"
+
+msgid "Mentioned (times)"
+msgstr "Αναφέρθηκε (φορές)"
+
+msgid "With who?"
+msgstr "Με ποιον;"
+
+msgid "name1_firstname"
+msgstr "Ελένη"
+
+msgid "name1_lastname"
+msgstr "Παπαδοπούλου"
+
+msgid "name2_firstname"
+msgstr "Γιώργος"
+
+msgid "name2_lastname"
+msgstr "Παπαδόπουλος"

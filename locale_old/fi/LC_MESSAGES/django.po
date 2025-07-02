@@ -1,0 +1,164 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2025-06-27 12:35\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=6; plural=n==0 ? 0 : n==1 ? 1 : n==2 ? 2 : n%100>=3 "
+"&& n%100<=10 ? 3 : n%100>=11 && n%100<=99 ? 4 : 5;\n"
+
+msgid "Please add first and last names."
+msgstr "Lisää etu- ja sukunimet."
+
+msgid "Language"
+msgstr "Kieli"
+
+msgid "How much does this person"
+msgstr "Kuinka paljon tämä henkilö"
+
+msgid "First name"
+msgstr "Etunimi"
+
+msgid "Jennifer"
+msgstr "Jennifer"
+
+msgid "Last name"
+msgstr "Sukunimi"
+
+msgid "Lawrence"
+msgstr "Lawrence"
+
+msgid "like this person"
+msgstr "pidä tästä henkilöstä"
+
+msgid "Leonardo"
+msgstr "Leonardo"
+
+msgid "Dicaprio"
+msgstr "Dicaprio"
+
+msgid "How to use / What is this?"
+msgstr "Kuinka käyttää / Mikä tämä on?"
+
+msgid "Calculate"
+msgstr "Laske"
+
+msgid "About this"
+msgstr "Tietoa tästä"
+
+msgid "This is a fun game that's popular among Korean teenagers! It calculates how much someone might like another person based on the number of strokes in their names.Try it just for fun — and share it with your friends! You can even see who’s the most popular in your school or neighborhood!"
+msgstr "Tämä on hauska peli, joka on suosittu korealaisten teini-ikäisten keskuudessa! Se laskee, kuinka paljon joku saattaa pitää toisesta henkilöstä heidän nimissään olevien viivojen määrän perusteella. Kokeile vain huvin vuoksi — ja jaa se ystäviesi kanssa! Voit jopa nähdä, kuka on suosituin koulussasi tai naapurustossasi!"
+
+msgid "Name A (First name & Last name)"
+msgstr "Nimi A (Etunimi & Sukunimi)"
+
+msgid "e.g. Jennifer Lawrence"
+msgstr "esim. Jennifer Lawrence"
+
+msgid "Name B (First name & Last name)"
+msgstr "Nimi B (Etunimi & Sukunimi)"
+
+msgid "e.g. Leonardo Dicaprio"
+msgstr "esim. Leonardo Dicaprio"
+
+msgid "How to use / What is it?"
+msgstr "Kuinka käyttää / Mikä se on?"
+
+msgid "Who tested with"
+msgstr "Kuka testasi kenen kanssa"
+
+msgid "Open to see"
+msgstr "Avaa nähdäksesi"
+
+msgid "Payment"
+msgstr "Maksu"
+
+msgid "Pay now"
+msgstr "Maksa nyt"
+
+msgid "Payment successful!"
+msgstr "Maksu onnistui!"
+
+msgid "Payment failed"
+msgstr "Maksu epäonnistui"
+
+msgid "Geolocation is not supported by this browser."
+msgstr "Sijaintitietoja ei tueta tässä selaimessa."
+
+msgid "How is it calculated?"
+msgstr "Kuinka se lasketaan?"
+
+msgid "Result"
+msgstr "Tulos"
+
+msgid "likes"
+msgstr "tykkäykset"
+
+msgid "with a"
+msgstr "kanssa"
+
+msgid "probability."
+msgstr "todennäköisyys."
+
+msgid "How many people mentioned me?"
+msgstr "Kuinka monta ihmistä mainitsi minut?"
+
+msgid "How does it work?"
+msgstr "Miten se toimii?"
+
+msgid "We calculate your love score using the number of strokes in each letter of your name."
+msgstr "Laskemme rakkauspisteesi nimesi jokaisen kirjaimen viivojen määrän perusteella."
+
+msgid "Here’s how many strokes each letter has:"
+msgstr "Tässä on, kuinka monta viivaa jokaisella kirjaimella on:"
+
+msgid "Error retrieving your location. Please enable location services."
+msgstr "Virhe sijaintisi hakemisessa. Ota sijaintipalvelut käyttöön."
+
+msgid "The most popular in my area"
+msgstr "Alueeni suosituin"
+
+msgid "Name"
+msgstr "Nimi"
+
+msgid "Search"
+msgstr "Haku"
+
+msgid "1km"
+msgstr "1km"
+
+msgid "50km"
+msgstr "50km"
+
+msgid "200km"
+msgstr "200km"
+
+msgid "world"
+msgstr "maailma"
+
+msgid "Rank"
+msgstr "Sijoitus"
+
+msgid "Mentioned (times)"
+msgstr "Mainittu (kertaa)"
+
+msgid "With who?"
+msgstr "Kenen kanssa?"
+
+msgid "name1_firstname"
+msgstr "Aino"
+
+msgid "name1_lastname"
+msgstr "Korhonen"
+
+msgid "name2_firstname"
+msgstr "Juhani"
+
+msgid "name2_lastname"
+msgstr "Virtanen"

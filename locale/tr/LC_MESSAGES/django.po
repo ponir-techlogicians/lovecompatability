@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2025-06-27 12:35\n"
+"POT-Creation-Date: 2025-07-02 12:45\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -34,8 +34,8 @@ msgstr "Soyad"
 msgid "Lawrence"
 msgstr "Lawrence"
 
-msgid "like this person"
-msgstr "bu kişiyi beğen"
+msgid "like this person?"
+msgstr "bu kişiyi beğeniyor musunuz?"
 
 msgid "Leonardo"
 msgstr "Leonardo"
@@ -89,7 +89,7 @@ msgid "Payment failed"
 msgstr "Ödeme başarısız"
 
 msgid "Geolocation is not supported by this browser."
-msgstr "Bu tarayıcı coğrafi konum desteklemiyor."
+msgstr "Bu tarayıcı tarafından coğrafi konum desteklenmiyor."
 
 msgid "How is it calculated?"
 msgstr "Nasıl hesaplanıyor?"
@@ -104,7 +104,7 @@ msgid "with a"
 msgstr "ile bir"
 
 msgid "probability."
-msgstr "olasılık."
+msgstr "probability."
 
 msgid "How many people mentioned me?"
 msgstr "Kaç kişi beni bahsetti?"
@@ -113,7 +113,7 @@ msgid "How does it work?"
 msgstr "Nasıl çalışır?"
 
 msgid "We calculate your love score using the number of strokes in each letter of your name."
-msgstr "Aşk puanınızı, adınızdaki her harfin vuruş sayısını kullanarak hesaplıyoruz."
+msgstr "Aşk puanınızı adınızdaki her harfin vuruş sayısını kullanarak hesaplıyoruz."
 
 msgid "Here’s how many strokes each letter has:"
 msgstr "İşte her harfin kaç vuruşu olduğu:"
@@ -121,8 +121,8 @@ msgstr "İşte her harfin kaç vuruşu olduğu:"
 msgid "Error retrieving your location. Please enable location services."
 msgstr "Konumunuzu alırken hata oluştu. Lütfen konum hizmetlerini etkinleştirin."
 
-msgid "The most popular in my area"
-msgstr "Benim bölgemde en popüler olan"
+msgid "The most popular person in my area"
+msgstr "Bölgemdeki en popüler kişi"
 
 msgid "Name"
 msgstr "İsim"
@@ -146,10 +146,16 @@ msgid "Rank"
 msgstr "Sıralama"
 
 msgid "Mentioned (times)"
-msgstr "Bahsedildi (kez)"
+msgstr "Bahsedilen (kez)"
 
 msgid "With who?"
 msgstr "Kiminle?"
+
+msgid "%(name1)s likes %(name2)s with a <br><b>%(compatibility_score)s%%</b> probability."
+msgstr "%(name1)s, %(name2)s'i <br><b>%(compatibility_score)s%%</b> olasılıkla seviyor."
+
+msgid "Who tested with %(search_key)s?"
+msgstr "Kim %(search_key)s ile test etti?"
 
 msgid "name1_firstname"
 msgstr "Elif"

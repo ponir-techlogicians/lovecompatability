@@ -8,6 +8,7 @@ from django.shortcuts import render, redirect
 from django.http import JsonResponse
 from django.db.models import Q
 from geopy.distance import geodesic
+from django.utils.translation import gettext as _
 
 from lovecompitability import settings
 from lovecompitability.settings import LANGUAGE_SESSION_KEY
@@ -341,6 +342,13 @@ class ResultDetailView(DetailView):
         stroke_dict = GLOBAL_STROKE_DICT.get(get_language())
         context['stroke_dict'] = stroke_dict
         context['steps'] = steps
+        sentence = _("%(name1)s likes %(name2)s with a <br><b>%(compatibility_score)s%%</b> probability.") % {
+            "name1": result.name1,
+            "name2": result.name2,
+            "compatibility_score": result.compatibility_score
+        }
+        print(sentence)
+        context['sentence'] = sentence
         return context
 
 class SearchView(TemplateView):

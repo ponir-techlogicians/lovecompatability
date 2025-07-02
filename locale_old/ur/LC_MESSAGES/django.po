@@ -1,0 +1,164 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2025-06-27 12:35\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=6; plural=n==0 ? 0 : n==1 ? 1 : n==2 ? 2 : n%100>=3 "
+"&& n%100<=10 ? 3 : n%100>=11 && n%100<=99 ? 4 : 5;\n"
+
+msgid "Please add first and last names."
+msgstr "براہ کرم پہلا اور آخری نام شامل کریں۔"
+
+msgid "Language"
+msgstr "زبان"
+
+msgid "How much does this person"
+msgstr "یہ شخص کتنا کرتا ہے"
+
+msgid "First name"
+msgstr "پہلا نام"
+
+msgid "Jennifer"
+msgstr "جینیفر"
+
+msgid "Last name"
+msgstr "آخری نام"
+
+msgid "Lawrence"
+msgstr "لارنس"
+
+msgid "like this person"
+msgstr "اس شخص کو پسند کریں"
+
+msgid "Leonardo"
+msgstr "لیونارڈو"
+
+msgid "Dicaprio"
+msgstr "ڈیکاپریو"
+
+msgid "How to use / What is this?"
+msgstr "اسے کیسے استعمال کریں / یہ کیا ہے؟"
+
+msgid "Calculate"
+msgstr "حساب لگائیں"
+
+msgid "About this"
+msgstr "اس کے بارے میں"
+
+msgid "This is a fun game that's popular among Korean teenagers! It calculates how much someone might like another person based on the number of strokes in their names.Try it just for fun — and share it with your friends! You can even see who’s the most popular in your school or neighborhood!"
+msgstr "یہ ایک مزے دار کھیل ہے جو کوریائی نوجوانوں میں مقبول ہے! یہ اس بات کا حساب لگاتا ہے کہ کوئی شخص دوسرے کو کتنا پسند کر سکتا ہے ان کے ناموں میں موجود حروف کی تعداد کی بنیاد پر۔ صرف مزے کے لیے آزمائیں — اور اپنے دوستوں کے ساتھ شیئر کریں! آپ یہاں تک دیکھ سکتے ہیں کہ آپ کے اسکول یا محلے میں کون سب سے زیادہ مقبول ہے!"
+
+msgid "Name A (First name & Last name)"
+msgstr "نام A (پہلا نام اور آخری نام)"
+
+msgid "e.g. Jennifer Lawrence"
+msgstr "مثلاً جینیفر لارنس"
+
+msgid "Name B (First name & Last name)"
+msgstr "نام B (پہلا نام اور آخری نام)"
+
+msgid "e.g. Leonardo Dicaprio"
+msgstr "مثلاً لیونارڈو ڈیکاپریو"
+
+msgid "How to use / What is it?"
+msgstr "اسے کیسے استعمال کریں / یہ کیا ہے؟"
+
+msgid "Who tested with"
+msgstr "کس کے ساتھ تجربہ کیا گیا"
+
+msgid "Open to see"
+msgstr "دیکھنے کے لئے کھولیں"
+
+msgid "Payment"
+msgstr "ادائیگی"
+
+msgid "Pay now"
+msgstr "ابھی ادائیگی کریں"
+
+msgid "Payment successful!"
+msgstr "ادائیگی کامیاب!"
+
+msgid "Payment failed"
+msgstr "ادائیگی ناکام ہوگئی"
+
+msgid "Geolocation is not supported by this browser."
+msgstr "اس براؤزر کے ذریعہ جغرافیائی مقام کی حمایت نہیں کی جاتی ہے۔"
+
+msgid "How is it calculated?"
+msgstr "یہ کیسے حساب کیا جاتا ہے؟"
+
+msgid "Result"
+msgstr "نتیجہ"
+
+msgid "likes"
+msgstr "پسندیدگیاں"
+
+msgid "with a"
+msgstr "کے ساتھ"
+
+msgid "probability."
+msgstr "احتمال"
+
+msgid "How many people mentioned me?"
+msgstr "کتنے لوگوں نے میرا ذکر کیا؟"
+
+msgid "How does it work?"
+msgstr "یہ کیسے کام کرتا ہے؟"
+
+msgid "We calculate your love score using the number of strokes in each letter of your name."
+msgstr "ہم آپ کے نام کے ہر حرف میں موجود لکیروں کی تعداد کا استعمال کرتے ہوئے آپ کا محبت کا سکور حساب کرتے ہیں۔"
+
+msgid "Here’s how many strokes each letter has:"
+msgstr "یہاں ہر حرف میں کتنی لکیریں ہیں:"
+
+msgid "Error retrieving your location. Please enable location services."
+msgstr "آپ کی جگہ حاصل کرنے میں خرابی۔ براہ کرم مقام کی خدمات کو فعال کریں۔"
+
+msgid "The most popular in my area"
+msgstr "میرے علاقے میں سب سے زیادہ مقبول"
+
+msgid "Name"
+msgstr "نام"
+
+msgid "Search"
+msgstr "تلاش"
+
+msgid "1km"
+msgstr "1کلومیٹر"
+
+msgid "50km"
+msgstr "50کلومیٹر"
+
+msgid "200km"
+msgstr "200کلومیٹر"
+
+msgid "world"
+msgstr "دنیا"
+
+msgid "Rank"
+msgstr "درجہ بندی"
+
+msgid "Mentioned (times)"
+msgstr "ذکر کیا گیا (مرتبہ)"
+
+msgid "With who?"
+msgstr "کس کے ساتھ؟"
+
+msgid "name1_firstname"
+msgstr "زینب"
+
+msgid "name1_lastname"
+msgstr "احمد"
+
+msgid "name2_firstname"
+msgstr "عمر"
+
+msgid "name2_lastname"
+msgstr "خان"

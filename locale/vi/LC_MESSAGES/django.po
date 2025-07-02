@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2025-06-27 12:35\n"
+"POT-Creation-Date: 2025-07-02 12:45\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -34,8 +34,8 @@ msgstr "Họ"
 msgid "Lawrence"
 msgstr "Lawrence"
 
-msgid "like this person"
-msgstr "thích người này"
+msgid "like this person?"
+msgstr "thích người này?"
 
 msgid "Leonardo"
 msgstr "Leonardo"
@@ -56,13 +56,13 @@ msgid "This is a fun game that's popular among Korean teenagers! It calculates h
 msgstr "Đây là một trò chơi thú vị phổ biến trong giới thanh thiếu niên Hàn Quốc! Nó tính toán mức độ ai đó có thể thích người khác dựa trên số nét trong tên của họ. Thử chỉ để vui — và chia sẻ với bạn bè của bạn! Bạn thậm chí có thể xem ai là người nổi tiếng nhất trong trường học hoặc khu phố của bạn!"
 
 msgid "Name A (First name & Last name)"
-msgstr "Tên A (Tên và Họ)"
+msgstr "Tên A (Tên & Họ)"
 
 msgid "e.g. Jennifer Lawrence"
 msgstr "ví dụ: Jennifer Lawrence"
 
 msgid "Name B (First name & Last name)"
-msgstr "Tên B (Tên và Họ)"
+msgstr "Tên B (Tên & Họ)"
 
 msgid "e.g. Leonardo Dicaprio"
 msgstr "ví dụ: Leonardo Dicaprio"
@@ -89,10 +89,10 @@ msgid "Payment failed"
 msgstr "Thanh toán thất bại"
 
 msgid "Geolocation is not supported by this browser."
-msgstr "Trình duyệt này không hỗ trợ định vị địa lý."
+msgstr "Định vị địa lý không được trình duyệt này hỗ trợ."
 
 msgid "How is it calculated?"
-msgstr "Nó được tính như thế nào?"
+msgstr "Nó được tính toán như thế nào?"
 
 msgid "Result"
 msgstr "Kết quả"
@@ -104,7 +104,7 @@ msgid "with a"
 msgstr "với một"
 
 msgid "probability."
-msgstr "xác suất"
+msgstr "probability."
 
 msgid "How many people mentioned me?"
 msgstr "Có bao nhiêu người đã nhắc đến tôi?"
@@ -119,10 +119,10 @@ msgid "Here’s how many strokes each letter has:"
 msgstr "Đây là số nét mà mỗi chữ cái có:"
 
 msgid "Error retrieving your location. Please enable location services."
-msgstr "Lỗi khi truy xuất vị trí của bạn. Vui lòng bật dịch vụ vị trí."
+msgstr "Lỗi khi lấy vị trí của bạn. Vui lòng bật dịch vụ định vị."
 
-msgid "The most popular in my area"
-msgstr "Phổ biến nhất trong khu vực của tôi"
+msgid "The most popular person in my area"
+msgstr "Người nổi tiếng nhất trong khu vực của tôi"
 
 msgid "Name"
 msgstr "Tên"
@@ -143,13 +143,19 @@ msgid "world"
 msgstr "thế giới"
 
 msgid "Rank"
-msgstr "Xếp hạng"
+msgstr "Hạng"
 
 msgid "Mentioned (times)"
 msgstr "Được đề cập (lần)"
 
 msgid "With who?"
 msgstr "Với ai?"
+
+msgid "%(name1)s likes %(name2)s with a <br><b>%(compatibility_score)s%%</b> probability."
+msgstr "%(name1)s thích %(name2)s với xác suất <br><b>%(compatibility_score)s%%</b>."
+
+msgid "Who tested with %(search_key)s?"
+msgstr "Ai đã thử với %(search_key)s?"
 
 msgid "name1_firstname"
 msgstr "Lan"

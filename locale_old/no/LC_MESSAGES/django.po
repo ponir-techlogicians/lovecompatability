@@ -1,0 +1,164 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2025-06-27 12:35\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=6; plural=n==0 ? 0 : n==1 ? 1 : n==2 ? 2 : n%100>=3 "
+"&& n%100<=10 ? 3 : n%100>=11 && n%100<=99 ? 4 : 5;\n"
+
+msgid "Please add first and last names."
+msgstr "Vennligst legg til fornavn og etternavn."
+
+msgid "Language"
+msgstr "Språk"
+
+msgid "How much does this person"
+msgstr "Hvor mye koster denne personen"
+
+msgid "First name"
+msgstr "Fornavn"
+
+msgid "Jennifer"
+msgstr "Jennifer"
+
+msgid "Last name"
+msgstr "Etternavn"
+
+msgid "Lawrence"
+msgstr "Lawrence"
+
+msgid "like this person"
+msgstr "liker denne personen"
+
+msgid "Leonardo"
+msgstr "Leonardo"
+
+msgid "Dicaprio"
+msgstr "Dicaprio"
+
+msgid "How to use / What is this?"
+msgstr "Hvordan bruke / Hva er dette?"
+
+msgid "Calculate"
+msgstr "Beregn"
+
+msgid "About this"
+msgstr "Om dette"
+
+msgid "This is a fun game that's popular among Korean teenagers! It calculates how much someone might like another person based on the number of strokes in their names.Try it just for fun — and share it with your friends! You can even see who’s the most popular in your school or neighborhood!"
+msgstr "Dette er et morsomt spill som er populært blant koreanske tenåringer! Det beregner hvor mye noen kanskje liker en annen person basert på antall streker i navnene deres. Prøv det bare for moro skyld — og del det med vennene dine! Du kan til og med se hvem som er mest populær på skolen din eller i nabolaget ditt!"
+
+msgid "Name A (First name & Last name)"
+msgstr "Navn A (Fornavn & Etternavn)"
+
+msgid "e.g. Jennifer Lawrence"
+msgstr "f.eks. Jennifer Lawrence"
+
+msgid "Name B (First name & Last name)"
+msgstr "Navn B (Fornavn & Etternavn)"
+
+msgid "e.g. Leonardo Dicaprio"
+msgstr "f.eks. Leonardo Dicaprio"
+
+msgid "How to use / What is it?"
+msgstr "Hvordan bruke / Hva er det?"
+
+msgid "Who tested with"
+msgstr "Hvem testet med"
+
+msgid "Open to see"
+msgstr "Åpne for å se"
+
+msgid "Payment"
+msgstr "Betaling"
+
+msgid "Pay now"
+msgstr "Betal nå"
+
+msgid "Payment successful!"
+msgstr "Betaling vellykket!"
+
+msgid "Payment failed"
+msgstr "Betaling mislyktes"
+
+msgid "Geolocation is not supported by this browser."
+msgstr "Geolokalisering støttes ikke av denne nettleseren."
+
+msgid "How is it calculated?"
+msgstr "Hvordan beregnes det?"
+
+msgid "Result"
+msgstr "Resultat"
+
+msgid "likes"
+msgstr "liker"
+
+msgid "with a"
+msgstr "med en"
+
+msgid "probability."
+msgstr "sannsynlighet."
+
+msgid "How many people mentioned me?"
+msgstr "Hvor mange mennesker nevnte meg?"
+
+msgid "How does it work?"
+msgstr "Hvordan fungerer det?"
+
+msgid "We calculate your love score using the number of strokes in each letter of your name."
+msgstr "Vi beregner kjærlighetspoengsummen din ved å bruke antall streker i hver bokstav i navnet ditt."
+
+msgid "Here’s how many strokes each letter has:"
+msgstr "Her er hvor mange streker hver bokstav har:"
+
+msgid "Error retrieving your location. Please enable location services."
+msgstr "Feil ved henting av posisjonen din. Vennligst aktiver posisjonstjenester."
+
+msgid "The most popular in my area"
+msgstr "Den mest populære i mitt område"
+
+msgid "Name"
+msgstr "Navn"
+
+msgid "Search"
+msgstr "Søk"
+
+msgid "1km"
+msgstr "1km"
+
+msgid "50km"
+msgstr "50km"
+
+msgid "200km"
+msgstr "200km"
+
+msgid "world"
+msgstr "verden"
+
+msgid "Rank"
+msgstr "Rang"
+
+msgid "Mentioned (times)"
+msgstr "Nevnt (ganger)"
+
+msgid "With who?"
+msgstr "Med hvem?"
+
+msgid "name1_firstname"
+msgstr "Ingrid"
+
+msgid "name1_lastname"
+msgstr "Johansen"
+
+msgid "name2_firstname"
+msgstr "Magnus"
+
+msgid "name2_lastname"
+msgstr "Eriksen"

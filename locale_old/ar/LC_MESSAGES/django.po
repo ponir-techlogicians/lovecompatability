@@ -1,0 +1,165 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2025-06-27 12:35\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=6; plural=n==0 ? 0 : n==1 ? 1 : n==2 ? 2 : n%100>=3 "
+"&& n%100<=10 ? 3 : n%100>=11 && n%100<=99 ? 4 : 5;\n"
+
+msgid "Please add first and last names."
+msgstr "الرجاء إضافة الاسم الأول واسم العائلة."
+
+msgid "Language"
+msgstr "اللغة"
+
+msgid "How much does this person"
+msgstr "كم يكلف هذا الشخص"
+
+msgid "First name"
+msgstr "الاسم الأول"
+
+msgid "Jennifer"
+msgstr "جينيفر"
+
+msgid "Last name"
+msgstr "اسم العائلة"
+
+msgid "Lawrence"
+msgstr "لورانس"
+
+msgid "like this person"
+msgstr "مثل هذا الشخص"
+
+msgid "Leonardo"
+msgstr "ليوناردو"
+
+msgid "Dicaprio"
+msgstr "ديكابريو"
+
+msgid "How to use / What is this?"
+msgstr "كيفية الاستخدام / ما هذا؟"
+
+msgid "Calculate"
+msgstr "احسب"
+
+msgid "About this"
+msgstr "حول هذا"
+
+msgid "This is a fun game that's popular among Korean teenagers! It calculates how much someone might like another person based on the number of strokes in their names.Try it just for fun — and share it with your friends! You can even see who’s the most popular in your school or neighborhood!"
+msgstr "هذه لعبة ممتعة تحظى بشعبية بين المراهقين الكوريين! تحسب مدى إعجاب شخص بآخر بناءً على عدد الحركات في أسمائهم. جربها للمتعة فقط - وشاركها مع أصدقائك! يمكنك حتى معرفة من هو الأكثر شعبية في مدرستك أو حيّك!"
+
+msgid "Name A (First name & Last name)"
+msgstr "الاسم أ (الاسم الأول واسم العائلة)"
+
+msgid "e.g. Jennifer Lawrence"
+msgstr "على سبيل المثال، جينيفر لورانس"
+
+msgid "Name B (First name & Last name)"
+msgstr "الاسم ب (الاسم الأول واسم العائلة)"
+
+msgid "e.g. Leonardo Dicaprio"
+msgstr "على سبيل المثال، ليوناردو ديكابريو"
+
+msgid "How to use / What is it?"
+msgstr "كيفية الاستخدام / ما هو؟"
+
+msgid "Who tested with"
+msgstr "من اختبر مع"
+
+msgid "Open to see"
+msgstr "مفتوح للرؤية"
+
+msgid "Payment"
+msgstr "الدفع"
+
+msgid "Pay now"
+msgstr "ادفع الآن"
+
+msgid "Payment successful!"
+msgstr "تم الدفع بنجاح!"
+
+msgid "Payment failed"
+msgstr "فشل الدفع"
+
+msgid "Geolocation is not supported by this browser."
+msgstr "تحديد الموقع الجغرافي غير مدعوم من هذا المتصفح."
+
+msgid "How is it calculated?"
+msgstr "كيف يتم حسابه؟"
+
+msgid "Result"
+msgstr "النتيجة"
+
+msgid "likes"
+msgstr "إعجابات"
+
+msgid "with a"
+msgstr "مع"
+
+msgid "probability."
+msgstr "الاحتمالية"
+
+msgid "How many people mentioned me?"
+msgstr "كم عدد الأشخاص الذين ذكروني؟"
+
+msgid "How does it work?"
+msgstr "كيف يعمل هذا؟"
+
+msgid "We calculate your love score using the number of strokes in each letter of your name."
+msgstr "نحسب درجة حبك باستخدام عدد الحركات في كل حرف من اسمك."
+
+msgid "Here’s how many strokes each letter has:"
+msgstr "إليك عدد الحركات التي يحتوي عليها كل حرف:"
+
+msgid "Error retrieving your location. Please enable location services."
+msgstr "خطأ في استرجاع موقعك. يرجى تمكين خدمات الموقع."
+
+msgid "The most popular in my area"
+msgstr "الأكثر شعبية في منطقتي"
+
+msgid "Name"
+msgstr "الاسم"
+
+msgid "Search"
+msgstr "بحث"
+
+msgid "1km"
+msgstr "1كم"
+
+msgid "50km"
+msgstr "50كم"
+
+msgid "200km"
+msgstr "200كم"
+
+msgid "world"
+msgstr "العالم"
+
+msgid "Rank"
+msgstr "الترتيب"
+
+msgid "Mentioned (times)"
+msgstr "مذكور (مرات)"
+
+msgid "With who?"
+msgstr "مع من؟"
+
+
+msgid "name1_firstname"
+msgstr "عائشة"
+
+msgid "name1_lastname"
+msgstr "الفهد"
+
+msgid "name2_firstname"
+msgstr "خالد"
+
+msgid "name2_lastname"
+msgstr "المنصور"

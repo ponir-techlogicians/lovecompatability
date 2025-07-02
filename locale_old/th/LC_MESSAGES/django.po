@@ -1,0 +1,164 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2025-06-27 12:35\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=6; plural=n==0 ? 0 : n==1 ? 1 : n==2 ? 2 : n%100>=3 "
+"&& n%100<=10 ? 3 : n%100>=11 && n%100<=99 ? 4 : 5;\n"
+
+msgid "Please add first and last names."
+msgstr "กรุณาเพิ่มชื่อและนามสกุล"
+
+msgid "Language"
+msgstr "ภาษา"
+
+msgid "How much does this person"
+msgstr "บุคคลนี้มีค่าเท่าไร"
+
+msgid "First name"
+msgstr "ชื่อ"
+
+msgid "Jennifer"
+msgstr "เจนนิเฟอร์"
+
+msgid "Last name"
+msgstr "นามสกุล"
+
+msgid "Lawrence"
+msgstr "ลอว์เรนซ์"
+
+msgid "like this person"
+msgstr "ชอบบุคคลนี้"
+
+msgid "Leonardo"
+msgstr "ลีโอนาร์โด"
+
+msgid "Dicaprio"
+msgstr "ดิคาปริโอ"
+
+msgid "How to use / What is this?"
+msgstr "วิธีใช้ / นี่คืออะไร"
+
+msgid "Calculate"
+msgstr "คำนวณ"
+
+msgid "About this"
+msgstr "เกี่ยวกับสิ่งนี้"
+
+msgid "This is a fun game that's popular among Korean teenagers! It calculates how much someone might like another person based on the number of strokes in their names.Try it just for fun — and share it with your friends! You can even see who’s the most popular in your school or neighborhood!"
+msgstr "นี่คือเกมสนุกที่ได้รับความนิยมในหมู่วัยรุ่นเกาหลี! มันคำนวณว่ามีคนชอบอีกคนมากแค่ไหนโดยอิงจากจำนวนเส้นในชื่อของพวกเขา ลองเล่นเพื่อความสนุก — และแชร์กับเพื่อนของคุณ! คุณยังสามารถดูได้ว่าใครเป็นที่นิยมที่สุดในโรงเรียนหรือย่านของคุณ!"
+
+msgid "Name A (First name & Last name)"
+msgstr "ชื่อ A (ชื่อและนามสกุล)"
+
+msgid "e.g. Jennifer Lawrence"
+msgstr "เช่น Jennifer Lawrence"
+
+msgid "Name B (First name & Last name)"
+msgstr "ชื่อ B (ชื่อและนามสกุล)"
+
+msgid "e.g. Leonardo Dicaprio"
+msgstr "เช่น Leonardo Dicaprio"
+
+msgid "How to use / What is it?"
+msgstr "วิธีใช้ / มันคืออะไร"
+
+msgid "Who tested with"
+msgstr "ใครที่ทดสอบด้วย"
+
+msgid "Open to see"
+msgstr "เปิดเพื่อดู"
+
+msgid "Payment"
+msgstr "การชำระเงิน"
+
+msgid "Pay now"
+msgstr "ชำระเงินตอนนี้"
+
+msgid "Payment successful!"
+msgstr "การชำระเงินสำเร็จ!"
+
+msgid "Payment failed"
+msgstr "การชำระเงินล้มเหลว"
+
+msgid "Geolocation is not supported by this browser."
+msgstr "เบราว์เซอร์นี้ไม่รองรับการระบุตำแหน่งทางภูมิศาสตร์"
+
+msgid "How is it calculated?"
+msgstr "คำนวณอย่างไร?"
+
+msgid "Result"
+msgstr "ผลลัพธ์"
+
+msgid "likes"
+msgstr "ถูกใจ"
+
+msgid "with a"
+msgstr "ด้วย"
+
+msgid "probability."
+msgstr "ความน่าจะเป็น"
+
+msgid "How many people mentioned me?"
+msgstr "มีคนพูดถึงฉันกี่คน?"
+
+msgid "How does it work?"
+msgstr "มันทำงานอย่างไร?"
+
+msgid "We calculate your love score using the number of strokes in each letter of your name."
+msgstr "เราคำนวณคะแนนความรักของคุณโดยใช้จำนวนเส้นในแต่ละตัวอักษรของชื่อคุณ"
+
+msgid "Here’s how many strokes each letter has:"
+msgstr "นี่คือจำนวนเส้นที่แต่ละตัวอักษรมี:"
+
+msgid "Error retrieving your location. Please enable location services."
+msgstr "ข้อผิดพลาดในการดึงตำแหน่งของคุณ โปรดเปิดใช้งานบริการตำแหน่ง"
+
+msgid "The most popular in my area"
+msgstr "ที่นิยมมากที่สุดในพื้นที่ของฉัน"
+
+msgid "Name"
+msgstr "ชื่อ"
+
+msgid "Search"
+msgstr "ค้นหา"
+
+msgid "1km"
+msgstr "1กม."
+
+msgid "50km"
+msgstr "50กม."
+
+msgid "200km"
+msgstr "200กม."
+
+msgid "world"
+msgstr "โลก"
+
+msgid "Rank"
+msgstr "อันดับ"
+
+msgid "Mentioned (times)"
+msgstr "กล่าวถึง (ครั้ง)"
+
+msgid "With who?"
+msgstr "กับใคร?"
+
+msgid "name1_firstname"
+msgstr "อรทัย"
+
+msgid "name1_lastname"
+msgstr "วรรณวิไล"
+
+msgid "name2_firstname"
+msgstr "สมชาย"
+
+msgid "name2_lastname"
+msgstr "วิทยา"

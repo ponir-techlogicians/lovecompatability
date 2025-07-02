@@ -1,0 +1,164 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2025-06-27 12:35\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=6; plural=n==0 ? 0 : n==1 ? 1 : n==2 ? 2 : n%100>=3 "
+"&& n%100<=10 ? 3 : n%100>=11 && n%100<=99 ? 4 : 5;\n"
+
+msgid "Please add first and last names."
+msgstr "Veuillez ajouter le prénom et le nom de famille."
+
+msgid "Language"
+msgstr "Langue"
+
+msgid "How much does this person"
+msgstr "Combien cette personne"
+
+msgid "First name"
+msgstr "Prénom"
+
+msgid "Jennifer"
+msgstr "Jennifer"
+
+msgid "Last name"
+msgstr "Nom de famille"
+
+msgid "Lawrence"
+msgstr "Lawrence"
+
+msgid "like this person"
+msgstr "aime cette personne"
+
+msgid "Leonardo"
+msgstr "Leonardo"
+
+msgid "Dicaprio"
+msgstr "Dicaprio"
+
+msgid "How to use / What is this?"
+msgstr "Comment utiliser / Qu'est-ce que c'est ?"
+
+msgid "Calculate"
+msgstr "Calculer"
+
+msgid "About this"
+msgstr "À propos de cela"
+
+msgid "This is a fun game that's popular among Korean teenagers! It calculates how much someone might like another person based on the number of strokes in their names.Try it just for fun — and share it with your friends! You can even see who’s the most popular in your school or neighborhood!"
+msgstr "C'est un jeu amusant qui est populaire parmi les adolescents coréens ! Il calcule combien quelqu'un pourrait aimer une autre personne en fonction du nombre de traits dans leurs noms. Essayez-le juste pour le plaisir — et partagez-le avec vos amis ! Vous pouvez même voir qui est le plus populaire dans votre école ou votre quartier !"
+
+msgid "Name A (First name & Last name)"
+msgstr "Nom A (Prénom & Nom de famille)"
+
+msgid "e.g. Jennifer Lawrence"
+msgstr "par exemple Jennifer Lawrence"
+
+msgid "Name B (First name & Last name)"
+msgstr "Nom B (Prénom & Nom de famille)"
+
+msgid "e.g. Leonardo Dicaprio"
+msgstr "par exemple Leonardo Dicaprio"
+
+msgid "How to use / What is it?"
+msgstr "Comment utiliser / Qu'est-ce que c'est ?"
+
+msgid "Who tested with"
+msgstr "Qui a testé avec"
+
+msgid "Open to see"
+msgstr "Ouvrir pour voir"
+
+msgid "Payment"
+msgstr "Paiement"
+
+msgid "Pay now"
+msgstr "Payer maintenant"
+
+msgid "Payment successful!"
+msgstr "Paiement réussi !"
+
+msgid "Payment failed"
+msgstr "Paiement échoué"
+
+msgid "Geolocation is not supported by this browser."
+msgstr "La géolocalisation n'est pas prise en charge par ce navigateur."
+
+msgid "How is it calculated?"
+msgstr "Comment est-ce calculé ?"
+
+msgid "Result"
+msgstr "Résultat"
+
+msgid "likes"
+msgstr "aime"
+
+msgid "with a"
+msgstr "avec un"
+
+msgid "probability."
+msgstr "probabilité"
+
+msgid "How many people mentioned me?"
+msgstr "Combien de personnes m'ont mentionné ?"
+
+msgid "How does it work?"
+msgstr "Comment ça marche ?"
+
+msgid "We calculate your love score using the number of strokes in each letter of your name."
+msgstr "Nous calculons votre score d'amour en utilisant le nombre de traits dans chaque lettre de votre nom."
+
+msgid "Here’s how many strokes each letter has:"
+msgstr "Voici combien de traits chaque lettre a :"
+
+msgid "Error retrieving your location. Please enable location services."
+msgstr "Erreur lors de la récupération de votre position. Veuillez activer les services de localisation."
+
+msgid "The most popular in my area"
+msgstr "Le plus populaire dans ma région"
+
+msgid "Name"
+msgstr "Nom"
+
+msgid "Search"
+msgstr "Rechercher"
+
+msgid "1km"
+msgstr "1km"
+
+msgid "50km"
+msgstr "50km"
+
+msgid "200km"
+msgstr "200km"
+
+msgid "world"
+msgstr "monde"
+
+msgid "Rank"
+msgstr "Rang"
+
+msgid "Mentioned (times)"
+msgstr "Mentionné (fois)"
+
+msgid "With who?"
+msgstr "Avec qui ?"
+
+msgid "name1_firstname"
+msgstr "Juliette"
+
+msgid "name1_lastname"
+msgstr "Dubois"
+
+msgid "name2_firstname"
+msgstr "Louis"
+
+msgid "name2_lastname"
+msgstr "Martin"

@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2025-06-27 12:35\n"
+"POT-Creation-Date: 2025-07-02 12:45\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -14,7 +14,7 @@ msgstr ""
 "&& n%100<=10 ? 3 : n%100>=11 && n%100<=99 ? 4 : 5;\n"
 
 msgid "Please add first and last names."
-msgstr "Tilføj venligst fornavn og efternavn."
+msgstr "Tilføj venligst for- og efternavne."
 
 msgid "Language"
 msgstr "Sprog"
@@ -34,8 +34,8 @@ msgstr "Efternavn"
 msgid "Lawrence"
 msgstr "Lawrence"
 
-msgid "like this person"
-msgstr "kan lide denne person"
+msgid "like this person?"
+msgstr "kan lide denne person?"
 
 msgid "Leonardo"
 msgstr "Leonardo"
@@ -44,7 +44,7 @@ msgid "Dicaprio"
 msgstr "Dicaprio"
 
 msgid "How to use / What is this?"
-msgstr "How to use / What is this?"
+msgstr "Hvordan man bruger / Hvad er dette?"
 
 msgid "Calculate"
 msgstr "Beregn"
@@ -89,7 +89,7 @@ msgid "Payment failed"
 msgstr "Betaling mislykkedes"
 
 msgid "Geolocation is not supported by this browser."
-msgstr "Geolokalisering understøttes ikke af denne browser."
+msgstr "Geolokation understøttes ikke af denne browser."
 
 msgid "How is it calculated?"
 msgstr "Hvordan beregnes det?"
@@ -104,7 +104,7 @@ msgid "with a"
 msgstr "med en"
 
 msgid "probability."
-msgstr "sandsynlighed."
+msgstr "probability."
 
 msgid "How many people mentioned me?"
 msgstr "Hvor mange mennesker nævnte mig?"
@@ -121,8 +121,8 @@ msgstr "Her er hvor mange streger hvert bogstav har:"
 msgid "Error retrieving your location. Please enable location services."
 msgstr "Fejl ved hentning af din placering. Aktiver venligst lokationstjenester."
 
-msgid "The most popular in my area"
-msgstr "Den mest populære i mit område"
+msgid "The most popular person in my area"
+msgstr "Den mest populære person i mit område"
 
 msgid "Name"
 msgstr "Navn"
@@ -151,6 +151,12 @@ msgstr "Nævnt (gange)"
 msgid "With who?"
 msgstr "Med hvem?"
 
+msgid "%(name1)s likes %(name2)s with a <br><b>%(compatibility_score)s%%</b> probability."
+msgstr "%(name1)s kan lide %(name2)s med en <br><b>%(compatibility_score)s%%</b> sandsynlighed."
+
+msgid "Who tested with %(search_key)s?"
+msgstr "Hvem testede med %(search_key)s?"
+
 msgid "name1_firstname"
 msgstr "Freja"
 
@@ -162,4 +168,3 @@ msgstr "Mikkel"
 
 msgid "name2_lastname"
 msgstr "Jensen"
-

@@ -135,8 +135,13 @@
 {#      </div>#}
     </div>
     <div class="result__text">
-        {{ name1 }} {% trans 'likes' %} {{ name2 }} {% trans 'with a' %} <br>
-            <b>{{ compatibility_score }}%</b> {% trans 'probability.'%}
+{#        {{ name1 }} {% trans 'likes' %} {{ name2 }} {% trans 'with a' %} <br>#}
+{#            <b>{{ compatibility_score }}%</b> {% trans 'probability.'%}#}
+
+{#        {% blocktrans with name1=name1 name2=name2 compatibility_score=compatibility_score %}#}
+{#        {{ name1 }} likes {{ name2 }} with a <br><b>{{ compatibility_score }}%</b> probability.#}
+{#        {% endblocktrans %}#}
+          {{ sentence| safe }}
     </div>
     <button type="button" class="result__btn" onclick="sendLocationAndRedirect();">
         {% trans "How many people mentioned me?" %}

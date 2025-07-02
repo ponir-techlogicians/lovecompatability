@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2025-06-27 12:35\n"
+"POT-Creation-Date: 2025-07-02 12:45\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -20,7 +20,7 @@ msgid "Language"
 msgstr "زبان"
 
 msgid "How much does this person"
-msgstr "یہ شخص کتنا کرتا ہے"
+msgstr "اس شخص کی کتنی قیمت ہے"
 
 msgid "First name"
 msgstr "پہلا نام"
@@ -34,8 +34,8 @@ msgstr "آخری نام"
 msgid "Lawrence"
 msgstr "لارنس"
 
-msgid "like this person"
-msgstr "اس شخص کو پسند کریں"
+msgid "like this person?"
+msgstr "اس شخص کو پسند کرتے ہیں؟"
 
 msgid "Leonardo"
 msgstr "لیونارڈو"
@@ -44,37 +44,37 @@ msgid "Dicaprio"
 msgstr "ڈیکاپریو"
 
 msgid "How to use / What is this?"
-msgstr "اسے کیسے استعمال کریں / یہ کیا ہے؟"
+msgstr "How to use / What is this?"
 
 msgid "Calculate"
-msgstr "حساب لگائیں"
+msgstr "حساب کریں"
 
 msgid "About this"
 msgstr "اس کے بارے میں"
 
 msgid "This is a fun game that's popular among Korean teenagers! It calculates how much someone might like another person based on the number of strokes in their names.Try it just for fun — and share it with your friends! You can even see who’s the most popular in your school or neighborhood!"
-msgstr "یہ ایک مزے دار کھیل ہے جو کوریائی نوجوانوں میں مقبول ہے! یہ اس بات کا حساب لگاتا ہے کہ کوئی شخص دوسرے کو کتنا پسند کر سکتا ہے ان کے ناموں میں موجود حروف کی تعداد کی بنیاد پر۔ صرف مزے کے لیے آزمائیں — اور اپنے دوستوں کے ساتھ شیئر کریں! آپ یہاں تک دیکھ سکتے ہیں کہ آپ کے اسکول یا محلے میں کون سب سے زیادہ مقبول ہے!"
+msgstr "یہ ایک مزے دار کھیل ہے جو کوریائی نوجوانوں میں مقبول ہے! یہ اس بات کا حساب لگاتا ہے کہ کوئی شخص کسی دوسرے کو کتنا پسند کر سکتا ہے ان کے ناموں میں موجود حروف کی تعداد کی بنیاد پر۔ صرف تفریح کے لیے آزمائیں — اور اسے اپنے دوستوں کے ساتھ شیئر کریں! آپ یہاں تک دیکھ سکتے ہیں کہ آپ کے اسکول یا محلے میں کون سب سے زیادہ مقبول ہے!"
 
 msgid "Name A (First name & Last name)"
-msgstr "نام A (پہلا نام اور آخری نام)"
+msgstr "Name A (First name & Last name)"
 
 msgid "e.g. Jennifer Lawrence"
-msgstr "مثلاً جینیفر لارنس"
+msgstr "e.g. Jennifer Lawrence"
 
 msgid "Name B (First name & Last name)"
-msgstr "نام B (پہلا نام اور آخری نام)"
+msgstr "Name B (First name & Last name)"
 
 msgid "e.g. Leonardo Dicaprio"
-msgstr "مثلاً لیونارڈو ڈیکاپریو"
+msgstr "e.g. Leonardo Dicaprio"
 
 msgid "How to use / What is it?"
-msgstr "اسے کیسے استعمال کریں / یہ کیا ہے؟"
+msgstr "How to use / What is it?"
 
 msgid "Who tested with"
 msgstr "کس کے ساتھ تجربہ کیا گیا"
 
 msgid "Open to see"
-msgstr "دیکھنے کے لئے کھولیں"
+msgstr "دیکھنے کے لیے کھولیں"
 
 msgid "Payment"
 msgstr "ادائیگی"
@@ -86,7 +86,7 @@ msgid "Payment successful!"
 msgstr "ادائیگی کامیاب!"
 
 msgid "Payment failed"
-msgstr "ادائیگی ناکام ہوگئی"
+msgstr "ادائیگی ناکام"
 
 msgid "Geolocation is not supported by this browser."
 msgstr "اس براؤزر کے ذریعہ جغرافیائی مقام کی حمایت نہیں کی جاتی ہے۔"
@@ -104,34 +104,34 @@ msgid "with a"
 msgstr "کے ساتھ"
 
 msgid "probability."
-msgstr "احتمال"
+msgstr "probability."
 
 msgid "How many people mentioned me?"
-msgstr "کتنے لوگوں نے میرا ذکر کیا؟"
+msgstr "How many people mentioned me?"
 
 msgid "How does it work?"
-msgstr "یہ کیسے کام کرتا ہے؟"
+msgstr "How does it work?"
 
 msgid "We calculate your love score using the number of strokes in each letter of your name."
-msgstr "ہم آپ کے نام کے ہر حرف میں موجود لکیروں کی تعداد کا استعمال کرتے ہوئے آپ کا محبت کا سکور حساب کرتے ہیں۔"
+msgstr "ہم آپ کے نام کے ہر حرف میں موجود اسٹروک کی تعداد کا استعمال کرتے ہوئے آپ کا محبت کا اسکور حساب کرتے ہیں۔"
 
 msgid "Here’s how many strokes each letter has:"
-msgstr "یہاں ہر حرف میں کتنی لکیریں ہیں:"
+msgstr "یہاں ہر حرف میں کتنے اسٹروک ہیں:"
 
 msgid "Error retrieving your location. Please enable location services."
 msgstr "آپ کی جگہ حاصل کرنے میں خرابی۔ براہ کرم مقام کی خدمات کو فعال کریں۔"
 
-msgid "The most popular in my area"
-msgstr "میرے علاقے میں سب سے زیادہ مقبول"
+msgid "The most popular person in my area"
+msgstr "میرے علاقے میں سب سے مشہور شخص"
 
 msgid "Name"
 msgstr "نام"
 
 msgid "Search"
-msgstr "تلاش"
+msgstr "تلاش کریں"
 
 msgid "1km"
-msgstr "1کلومیٹر"
+msgstr "1km"
 
 msgid "50km"
 msgstr "50کلومیٹر"
@@ -143,13 +143,19 @@ msgid "world"
 msgstr "دنیا"
 
 msgid "Rank"
-msgstr "درجہ بندی"
+msgstr "رینک"
 
 msgid "Mentioned (times)"
 msgstr "ذکر کیا گیا (مرتبہ)"
 
 msgid "With who?"
 msgstr "کس کے ساتھ؟"
+
+msgid "%(name1)s likes %(name2)s with a <br><b>%(compatibility_score)s%%</b> probability."
+msgstr "%(name1)s کو %(name2)s پسند ہے <br><b>%(compatibility_score)s%%</b> امکان کے ساتھ۔"
+
+msgid "Who tested with %(search_key)s?"
+msgstr "کس نے %(search_key)s کے ساتھ تجربہ کیا؟"
 
 msgid "name1_firstname"
 msgstr "زینب"

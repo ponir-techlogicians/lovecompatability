@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2025-06-27 12:35\n"
+"POT-Creation-Date: 2025-07-02 12:45\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -34,8 +34,8 @@ msgstr "Nama belakang"
 msgid "Lawrence"
 msgstr "Lawrence"
 
-msgid "like this person"
-msgstr "suka orang ini"
+msgid "like this person?"
+msgstr "suka orang ini?"
 
 msgid "Leonardo"
 msgstr "Leonardo"
@@ -104,7 +104,7 @@ msgid "with a"
 msgstr "dengan a"
 
 msgid "probability."
-msgstr "probabilitas"
+msgstr "probability."
 
 msgid "How many people mentioned me?"
 msgstr "Berapa banyak orang yang menyebut saya?"
@@ -113,16 +113,16 @@ msgid "How does it work?"
 msgstr "Bagaimana cara kerjanya?"
 
 msgid "We calculate your love score using the number of strokes in each letter of your name."
-msgstr "Kami menghitung skor cinta Anda menggunakan jumlah goresan di setiap huruf nama Anda."
+msgstr "Kami menghitung skor cinta Anda menggunakan jumlah goresan pada setiap huruf nama Anda."
 
 msgid "Here’s how many strokes each letter has:"
 msgstr "Berikut adalah jumlah goresan yang dimiliki setiap huruf:"
 
 msgid "Error retrieving your location. Please enable location services."
-msgstr "Kesalahan mengambil lokasi Anda. Silakan aktifkan layanan lokasi."
+msgstr "Kesalahan dalam mengambil lokasi Anda. Silakan aktifkan layanan lokasi."
 
-msgid "The most popular in my area"
-msgstr "Yang paling populer di daerah saya"
+msgid "The most popular person in my area"
+msgstr "Orang paling populer di daerah saya"
 
 msgid "Name"
 msgstr "Nama"
@@ -151,6 +151,12 @@ msgstr "Disebutkan (kali)"
 msgid "With who?"
 msgstr "Dengan siapa?"
 
+msgid "%(name1)s likes %(name2)s with a <br><b>%(compatibility_score)s%%</b> probability."
+msgstr "%(name1)s menyukai %(name2)s dengan kemungkinan <br><b>%(compatibility_score)s%%</b>."
+
+msgid "Who tested with %(search_key)s?"
+msgstr "Siapa yang diuji dengan %(search_key)s?"
+
 msgid "name1_firstname"
 msgstr "Dewi"
 
@@ -162,3 +168,4 @@ msgstr "Budi"
 
 msgid "name2_lastname"
 msgstr "Santoso"
+

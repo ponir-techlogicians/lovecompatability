@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2025-06-27 12:35\n"
+"POT-Creation-Date: 2025-07-02 12:45\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -14,7 +14,7 @@ msgstr ""
 "&& n%100<=10 ? 3 : n%100>=11 && n%100<=99 ? 4 : 5;\n"
 
 msgid "Please add first and last names."
-msgstr "이름과 성을 추가해 주세요."
+msgstr "이름과 성을 추가하세요."
 
 msgid "Language"
 msgstr "언어"
@@ -34,8 +34,8 @@ msgstr "성"
 msgid "Lawrence"
 msgstr "로렌스"
 
-msgid "like this person"
-msgstr "이 사람을 좋아하다"
+msgid "like this person?"
+msgstr "이 사람을 좋아하나요?"
 
 msgid "Leonardo"
 msgstr "레오나르도"
@@ -44,7 +44,7 @@ msgid "Dicaprio"
 msgstr "디카프리오"
 
 msgid "How to use / What is this?"
-msgstr "사용 방법 / 이것은 무엇입니까?"
+msgstr "사용 방법 / 이것은 무엇인가요?"
 
 msgid "Calculate"
 msgstr "계산하기"
@@ -53,7 +53,7 @@ msgid "About this"
 msgstr "이것에 대하여"
 
 msgid "This is a fun game that's popular among Korean teenagers! It calculates how much someone might like another person based on the number of strokes in their names.Try it just for fun — and share it with your friends! You can even see who’s the most popular in your school or neighborhood!"
-msgstr "이것은 한국 청소년들 사이에서 인기 있는 재미있는 게임입니다! 이름의 획수를 기반으로 누군가가 다른 사람을 얼마나 좋아할지 계산합니다. 그냥 재미로 시도해보고 친구들과 공유하세요! 학교나 동네에서 누가 가장 인기 있는지까지 볼 수 있습니다!"
+msgstr "이것은 한국 청소년들 사이에서 인기 있는 재미있는 게임입니다! 이름의 획수를 기반으로 누군가가 다른 사람을 얼마나 좋아할지 계산합니다. 그냥 재미로 시도해보고 친구들과 공유하세요! 학교나 동네에서 누가 가장 인기 있는지도 볼 수 있습니다!"
 
 msgid "Name A (First name & Last name)"
 msgstr "이름 A (이름 & 성)"
@@ -68,7 +68,7 @@ msgid "e.g. Leonardo Dicaprio"
 msgstr "예: Leonardo Dicaprio"
 
 msgid "How to use / What is it?"
-msgstr "사용 방법 / 이것은 무엇입니까?"
+msgstr "사용 방법 / 이것은 무엇인가요?"
 
 msgid "Who tested with"
 msgstr "누구와 테스트했는지"
@@ -80,7 +80,7 @@ msgid "Payment"
 msgstr "결제"
 
 msgid "Pay now"
-msgstr "지금 결제하기"
+msgstr "지금 결제"
 
 msgid "Payment successful!"
 msgstr "결제 성공!"
@@ -104,25 +104,25 @@ msgid "with a"
 msgstr "와 함께"
 
 msgid "probability."
-msgstr "확률."
+msgstr "probability."
 
 msgid "How many people mentioned me?"
-msgstr "몇 명이 나를 언급했나요?"
+msgstr "How many people mentioned me?"
 
 msgid "How does it work?"
-msgstr "어떻게 작동하나요?"
+msgstr "How does it work?"
 
 msgid "We calculate your love score using the number of strokes in each letter of your name."
-msgstr "우리는 당신의 이름 각 글자의 획수를 사용하여 사랑 점수를 계산합니다."
+msgstr "We calculate your love score using the number of strokes in each letter of your name."
 
 msgid "Here’s how many strokes each letter has:"
-msgstr "각 글자가 몇 획인지 여기에 있습니다:"
+msgstr "Here’s how many strokes each letter has:"
 
 msgid "Error retrieving your location. Please enable location services."
-msgstr "위치를 검색하는 데 오류가 발생했습니다. 위치 서비스를 활성화하세요."
+msgstr "Error retrieving your location. Please enable location services."
 
-msgid "The most popular in my area"
-msgstr "내 지역에서 가장 인기 있는 것"
+msgid "The most popular person in my area"
+msgstr "내 지역에서 가장 인기 있는 사람"
 
 msgid "Name"
 msgstr "이름"
@@ -150,6 +150,12 @@ msgstr "언급된 (횟수)"
 
 msgid "With who?"
 msgstr "누구와 함께?"
+
+msgid "%(name1)s likes %(name2)s with a <br><b>%(compatibility_score)s%%</b> probability."
+msgstr "%(name1)s는 %(name2)s를 <br><b>%(compatibility_score)s%%</b> 확률로 좋아합니다."
+
+msgid "Who tested with %(search_key)s?"
+msgstr "%(search_key)s와 테스트한 사람은 누구입니까?"
 
 msgid "name1_firstname"
 msgstr "민지"

@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2025-06-27 12:36\n"
+"POT-Creation-Date: 2025-07-02 12:45\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -14,7 +14,7 @@ msgstr ""
 "&& n%100<=10 ? 3 : n%100>=11 && n%100<=99 ? 4 : 5;\n"
 
 msgid "Please add first and last names."
-msgstr "Παρακαλώ προσθέστε το όνομα και το επώνυμο."
+msgstr "Παρακαλώ προσθέστε όνομα και επώνυμο."
 
 msgid "Language"
 msgstr "Γλώσσα"
@@ -34,8 +34,8 @@ msgstr "Επώνυμο"
 msgid "Lawrence"
 msgstr "Λόρενς"
 
-msgid "like this person"
-msgstr "σαν αυτό το άτομο"
+msgid "like this person?"
+msgstr "σας αρέσει αυτό το άτομο;"
 
 msgid "Leonardo"
 msgstr "Λεονάρντο"
@@ -80,7 +80,7 @@ msgid "Payment"
 msgstr "Πληρωμή"
 
 msgid "Pay now"
-msgstr "Πλήρωσε τώρα"
+msgstr "Πληρώστε τώρα"
 
 msgid "Payment successful!"
 msgstr "Η πληρωμή ήταν επιτυχής!"
@@ -119,10 +119,10 @@ msgid "Here’s how many strokes each letter has:"
 msgstr "Εδώ είναι πόσες γραμμές έχει κάθε γράμμα:"
 
 msgid "Error retrieving your location. Please enable location services."
-msgstr "Σφάλμα κατά την ανάκτηση της τοποθεσίας σας. Παρακαλώ ενεργοποιήστε τις υπηρεσίες τοποθεσίας."
+msgstr "Σφάλμα στην ανάκτηση της τοποθεσίας σας. Παρακαλώ ενεργοποιήστε τις υπηρεσίες τοποθεσίας."
 
-msgid "The most popular in my area"
-msgstr "Το πιο δημοφιλές στην περιοχή μου"
+msgid "The most popular person in my area"
+msgstr "Το πιο δημοφιλές άτομο στην περιοχή μου"
 
 msgid "Name"
 msgstr "Όνομα"
@@ -151,6 +151,12 @@ msgstr "Αναφέρθηκε (φορές)"
 msgid "With who?"
 msgstr "Με ποιον;"
 
+msgid "%(name1)s likes %(name2)s with a <br><b>%(compatibility_score)s%%</b> probability."
+msgstr "%(name1)s αρέσει %(name2)s με πιθανότητα <br><b>%(compatibility_score)s%%</b>."
+
+msgid "Who tested with %(search_key)s?"
+msgstr "Ποιος δοκιμάστηκε με %(search_key)s;"
+
 msgid "name1_firstname"
 msgstr "Ελένη"
 
@@ -162,3 +168,4 @@ msgstr "Γιώργος"
 
 msgid "name2_lastname"
 msgstr "Παπαδόπουλος"
+

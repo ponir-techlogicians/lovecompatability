@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2025-06-27 12:36\n"
+"POT-Creation-Date: 2025-07-02 12:45\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -34,8 +34,8 @@ msgstr "Nume de familie"
 msgid "Lawrence"
 msgstr "Lawrence"
 
-msgid "like this person"
-msgstr "ca această persoană"
+msgid "like this person?"
+msgstr "îți place această persoană?"
 
 msgid "Leonardo"
 msgstr "Leonardo"
@@ -44,7 +44,7 @@ msgid "Dicaprio"
 msgstr "Dicaprio"
 
 msgid "How to use / What is this?"
-msgstr "Cum să folosești / Ce este asta?"
+msgstr "Cum se folosește / Ce este asta?"
 
 msgid "Calculate"
 msgstr "Calculează"
@@ -53,22 +53,22 @@ msgid "About this"
 msgstr "Despre asta"
 
 msgid "This is a fun game that's popular among Korean teenagers! It calculates how much someone might like another person based on the number of strokes in their names.Try it just for fun — and share it with your friends! You can even see who’s the most popular in your school or neighborhood!"
-msgstr "Acesta este un joc distractiv care este popular printre adolescenții coreeni! Calculează cât de mult ar putea plăcea cineva altcuiva pe baza numărului de trăsături din numele lor. Încearcă-l doar pentru distracție — și împărtășește-l cu prietenii tăi! Poți chiar să vezi cine este cel mai popular în școala sau cartierul tău!"
+msgstr "Acesta este un joc distractiv care este popular printre adolescenții coreeni! Calculează cât de mult ar putea plăcea cineva altcuiva pe baza numărului de trăsături din numele lor. Încercați-l doar pentru distracție — și împărtășiți-l cu prietenii voștri! Puteți chiar să vedeți cine este cel mai popular în școala sau cartierul vostru!"
 
 msgid "Name A (First name & Last name)"
 msgstr "Nume A (Prenume & Nume de familie)"
 
 msgid "e.g. Jennifer Lawrence"
-msgstr "ex. Jennifer Lawrence"
+msgstr "de exemplu, Jennifer Lawrence"
 
 msgid "Name B (First name & Last name)"
 msgstr "Nume B (Prenume & Nume de familie)"
 
 msgid "e.g. Leonardo Dicaprio"
-msgstr "ex. Leonardo Dicaprio"
+msgstr "de exemplu, Leonardo Dicaprio"
 
 msgid "How to use / What is it?"
-msgstr "Cum să folosești / Ce este?"
+msgstr "Cum se folosește / Ce este?"
 
 msgid "Who tested with"
 msgstr "Cine a testat cu"
@@ -92,7 +92,7 @@ msgid "Geolocation is not supported by this browser."
 msgstr "Geolocația nu este suportată de acest browser."
 
 msgid "How is it calculated?"
-msgstr "Cum este calculat?"
+msgstr "Cum se calculează?"
 
 msgid "Result"
 msgstr "Rezultat"
@@ -101,10 +101,10 @@ msgid "likes"
 msgstr "aprecieri"
 
 msgid "with a"
-msgstr "cu un"
+msgstr "cu un/una"
 
 msgid "probability."
-msgstr "probabilitate"
+msgstr "probabilitate."
 
 msgid "How many people mentioned me?"
 msgstr "Câți oameni m-au menționat?"
@@ -119,10 +119,10 @@ msgid "Here’s how many strokes each letter has:"
 msgstr "Iată câte trăsături are fiecare literă:"
 
 msgid "Error retrieving your location. Please enable location services."
-msgstr "Eroare la recuperarea locației tale. Te rog să activezi serviciile de localizare."
+msgstr "Eroare la obținerea locației tale. Te rog să activezi serviciile de localizare."
 
-msgid "The most popular in my area"
-msgstr "Cel mai popular în zona mea"
+msgid "The most popular person in my area"
+msgstr "Cea mai populară persoană din zona mea"
 
 msgid "Name"
 msgstr "Nume"
@@ -151,6 +151,12 @@ msgstr "Menționat (ori)"
 msgid "With who?"
 msgstr "Cu cine?"
 
+msgid "%(name1)s likes %(name2)s with a <br><b>%(compatibility_score)s%%</b> probability."
+msgstr "%(name1)s îl place pe %(name2)s cu o probabilitate de <br><b>%(compatibility_score)s%%</b>."
+
+msgid "Who tested with %(search_key)s?"
+msgstr "Cine a testat cu %(search_key)s?"
+
 msgid "name1_firstname"
 msgstr "Elena"
 
@@ -162,3 +168,4 @@ msgstr "Andrei"
 
 msgid "name2_lastname"
 msgstr "Ionescu"
+

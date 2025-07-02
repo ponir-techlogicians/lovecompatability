@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2025-06-27 12:35\n"
+"POT-Creation-Date: 2025-07-02 12:45\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -34,8 +34,8 @@ msgstr "Achternaam"
 msgid "Lawrence"
 msgstr "Lawrence"
 
-msgid "like this person"
-msgstr "vind deze persoon leuk"
+msgid "like this person?"
+msgstr "vind je deze persoon leuk?"
 
 msgid "Leonardo"
 msgstr "Leonardo"
@@ -53,19 +53,19 @@ msgid "About this"
 msgstr "Over dit"
 
 msgid "This is a fun game that's popular among Korean teenagers! It calculates how much someone might like another person based on the number of strokes in their names.Try it just for fun — and share it with your friends! You can even see who’s the most popular in your school or neighborhood!"
-msgstr "Dit is een leuk spel dat populair is onder Koreaanse tieners! Het berekent hoeveel iemand een ander leuk zou kunnen vinden op basis van het aantal streken in hun namen. Probeer het gewoon voor de lol — en deel het met je vrienden! Je kunt zelfs zien wie de populairste is op jouw school of in jouw buurt!"
+msgstr "Dit is een leuk spel dat populair is onder Koreaanse tieners! Het berekent hoeveel iemand een ander leuk zou kunnen vinden op basis van het aantal streken in hun namen. Probeer het gewoon voor de lol — en deel het met je vrienden! Je kunt zelfs zien wie de populairste is op je school of in je buurt!"
 
 msgid "Name A (First name & Last name)"
 msgstr "Naam A (Voornaam & Achternaam)"
 
 msgid "e.g. Jennifer Lawrence"
-msgstr "b.v. Jennifer Lawrence"
+msgstr "bijv. Jennifer Lawrence"
 
 msgid "Name B (First name & Last name)"
 msgstr "Naam B (Voornaam & Achternaam)"
 
 msgid "e.g. Leonardo Dicaprio"
-msgstr "b.v. Leonardo Dicaprio"
+msgstr "bijv. Leonardo Dicaprio"
 
 msgid "How to use / What is it?"
 msgstr "Hoe te gebruiken / Wat is het?"
@@ -80,7 +80,7 @@ msgid "Payment"
 msgstr "Betaling"
 
 msgid "Pay now"
-msgstr "Betaal nu"
+msgstr "Nu betalen"
 
 msgid "Payment successful!"
 msgstr "Betaling geslaagd!"
@@ -104,16 +104,16 @@ msgid "with a"
 msgstr "met een"
 
 msgid "probability."
-msgstr "waarschijnlijkheid"
+msgstr "waarschijnlijkheid."
 
 msgid "How many people mentioned me?"
-msgstr "Hoeveel mensen hebben mij genoemd?"
+msgstr "Hoeveel mensen hebben me genoemd?"
 
 msgid "How does it work?"
 msgstr "Hoe werkt het?"
 
 msgid "We calculate your love score using the number of strokes in each letter of your name."
-msgstr "We berekenen je liefdesscore aan de hand van het aantal streken in elke letter van je naam."
+msgstr "We berekenen je liefdesscore met behulp van het aantal streken in elke letter van je naam."
 
 msgid "Here’s how many strokes each letter has:"
 msgstr "Hier is hoeveel streken elke letter heeft:"
@@ -121,8 +121,8 @@ msgstr "Hier is hoeveel streken elke letter heeft:"
 msgid "Error retrieving your location. Please enable location services."
 msgstr "Fout bij het ophalen van je locatie. Schakel locatievoorzieningen in."
 
-msgid "The most popular in my area"
-msgstr "De meest populaire in mijn omgeving"
+msgid "The most popular person in my area"
+msgstr "De meest populaire persoon in mijn omgeving"
 
 msgid "Name"
 msgstr "Naam"
@@ -150,6 +150,12 @@ msgstr "Genoemd (keer)"
 
 msgid "With who?"
 msgstr "Met wie?"
+
+msgid "%(name1)s likes %(name2)s with a <br><b>%(compatibility_score)s%%</b> probability."
+msgstr "%(name1)s vindt %(name2)s leuk met een <br><b>%(compatibility_score)s%%</b> waarschijnlijkheid."
+
+msgid "Who tested with %(search_key)s?"
+msgstr "Wie heeft getest met %(search_key)s?"
 
 msgid "name1_firstname"
 msgstr "Emma"

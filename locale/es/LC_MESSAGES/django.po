@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2025-06-27 12:35\n"
+"POT-Creation-Date: 2025-07-02 12:45\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -34,8 +34,8 @@ msgstr "Apellido"
 msgid "Lawrence"
 msgstr "Lawrence"
 
-msgid "like this person"
-msgstr "como esta persona"
+msgid "like this person?"
+msgstr "¿te gusta esta persona?"
 
 msgid "Leonardo"
 msgstr "Leonardo"
@@ -53,7 +53,7 @@ msgid "About this"
 msgstr "Acerca de esto"
 
 msgid "This is a fun game that's popular among Korean teenagers! It calculates how much someone might like another person based on the number of strokes in their names.Try it just for fun — and share it with your friends! You can even see who’s the most popular in your school or neighborhood!"
-msgstr "¡Este es un juego divertido que es popular entre los adolescentes coreanos! Calcula cuánto podría gustarle una persona a otra basándose en el número de trazos en sus nombres. ¡Pruébalo solo por diversión y compártelo con tus amigos! ¡Incluso puedes ver quién es el más popular en tu escuela o vecindario!"
+msgstr "¡Este es un juego divertido que es popular entre los adolescentes coreanos! Calcula cuánto podría gustarle una persona a otra basada en el número de trazos en sus nombres. ¡Pruébalo solo por diversión y compártelo con tus amigos! ¡Incluso puedes ver quién es el más popular en tu escuela o vecindario!"
 
 msgid "Name A (First name & Last name)"
 msgstr "Nombre A (Nombre y Apellido)"
@@ -104,7 +104,7 @@ msgid "with a"
 msgstr "con un"
 
 msgid "probability."
-msgstr "probabilidad."
+msgstr "probability."
 
 msgid "How many people mentioned me?"
 msgstr "¿Cuántas personas me mencionaron?"
@@ -113,7 +113,7 @@ msgid "How does it work?"
 msgstr "¿Cómo funciona?"
 
 msgid "We calculate your love score using the number of strokes in each letter of your name."
-msgstr "Calculamos tu puntuación de amor usando el número de trazos en cada letra de tu nombre."
+msgstr "Calculamos tu puntaje de amor usando el número de trazos en cada letra de tu nombre."
 
 msgid "Here’s how many strokes each letter has:"
 msgstr "Aquí está cuántos trazos tiene cada letra:"
@@ -121,8 +121,8 @@ msgstr "Aquí está cuántos trazos tiene cada letra:"
 msgid "Error retrieving your location. Please enable location services."
 msgstr "Error al recuperar tu ubicación. Por favor, habilita los servicios de ubicación."
 
-msgid "The most popular in my area"
-msgstr "Lo más popular en mi área"
+msgid "The most popular person in my area"
+msgstr "La persona más popular en mi área"
 
 msgid "Name"
 msgstr "Nombre"
@@ -150,6 +150,12 @@ msgstr "Mencionado (veces)"
 
 msgid "With who?"
 msgstr "¿Con quién?"
+
+msgid "%(name1)s likes %(name2)s with a <br><b>%(compatibility_score)s%%</b> probability."
+msgstr "A %(name1)s le gusta %(name2)s con una probabilidad de <br><b>%(compatibility_score)s%%</b>."
+
+msgid "Who tested with %(search_key)s?"
+msgstr "¿Quién probó con %(search_key)s?"
 
 msgid "name1_firstname"
 msgstr "María"

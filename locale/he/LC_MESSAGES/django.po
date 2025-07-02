@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2025-06-27 12:36\n"
+"POT-Creation-Date: 2025-07-02 12:45\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -20,7 +20,7 @@ msgid "Language"
 msgstr "שפה"
 
 msgid "How much does this person"
-msgstr "כמה עולה האדם הזה"
+msgstr "כמה עולה לאדם זה"
 
 msgid "First name"
 msgstr "שם פרטי"
@@ -34,8 +34,8 @@ msgstr "שם משפחה"
 msgid "Lawrence"
 msgstr "לורנס"
 
-msgid "like this person"
-msgstr "כמו האדם הזה"
+msgid "like this person?"
+msgstr "אוהב את האדם הזה?"
 
 msgid "Leonardo"
 msgstr "לאונרדו"
@@ -53,7 +53,7 @@ msgid "About this"
 msgstr "על זה"
 
 msgid "This is a fun game that's popular among Korean teenagers! It calculates how much someone might like another person based on the number of strokes in their names.Try it just for fun — and share it with your friends! You can even see who’s the most popular in your school or neighborhood!"
-msgstr "זהו משחק מהנה שזוכה לפופולריות בקרב בני נוער קוריאנים! הוא מחשב כמה מישהו עשוי לחבב אדם אחר על סמך מספר הקווים בשמותיהם. נסו את זה רק בשביל הכיף — ושתפו את זה עם החברים שלכם! אתם אפילו יכולים לראות מי הכי פופולרי בבית הספר או בשכונה שלכם!"
+msgstr "זהו משחק מהנה שזוכה לפופולריות בקרב בני נוער קוריאנים! הוא מחשב כמה מישהו עשוי לחבב אדם אחר על סמך מספר הקווים בשמותיהם. נסו את זה רק בשביל הכיף — ושתפו את זה עם חבריכם! אתם אפילו יכולים לראות מי הכי פופולרי בבית הספר או בשכונה שלכם!"
 
 msgid "Name A (First name & Last name)"
 msgstr "שם א' (שם פרטי ושם משפחה)"
@@ -104,25 +104,25 @@ msgid "with a"
 msgstr "עם"
 
 msgid "probability."
-msgstr "הסתברות"
+msgstr "probability."
 
 msgid "How many people mentioned me?"
-msgstr "כמה אנשים הזכירו אותי?"
+msgstr "How many people mentioned me?"
 
 msgid "How does it work?"
-msgstr "איך זה עובד?"
+msgstr "How does it work?"
 
 msgid "We calculate your love score using the number of strokes in each letter of your name."
-msgstr "אנו מחשבים את ציון האהבה שלך באמצעות מספר הקווים בכל אות של שמך."
+msgstr "We calculate your love score using the number of strokes in each letter of your name."
 
 msgid "Here’s how many strokes each letter has:"
-msgstr "הנה כמה קווים יש לכל אות:"
+msgstr "Here’s how many strokes each letter has:"
 
 msgid "Error retrieving your location. Please enable location services."
-msgstr "שגיאה באחזור המיקום שלך. אנא הפעל שירותי מיקום."
+msgstr "Error retrieving your location. Please enable location services."
 
-msgid "The most popular in my area"
-msgstr "הפופולרי ביותר באזור שלי"
+msgid "The most popular person in my area"
+msgstr "האדם הפופולרי ביותר באזור שלי"
 
 msgid "Name"
 msgstr "שם"
@@ -131,7 +131,7 @@ msgid "Search"
 msgstr "חיפוש"
 
 msgid "1km"
-msgstr "1קמ"
+msgstr "1km"
 
 msgid "50km"
 msgstr "50km"
@@ -150,6 +150,12 @@ msgstr "הוזכר (פעמים)"
 
 msgid "With who?"
 msgstr "עם מי?"
+
+msgid "%(name1)s likes %(name2)s with a <br><b>%(compatibility_score)s%%</b> probability."
+msgstr "%(name1)s אוהב את %(name2)s עם <br><b>%(compatibility_score)s%%</b> סיכוי."
+
+msgid "Who tested with %(search_key)s?"
+msgstr "מי נבדק עם %(search_key)s?"
 
 msgid "name1_firstname"
 msgstr "שרה"

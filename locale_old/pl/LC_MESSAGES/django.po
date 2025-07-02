@@ -1,0 +1,164 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2025-06-27 12:35\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=6; plural=n==0 ? 0 : n==1 ? 1 : n==2 ? 2 : n%100>=3 "
+"&& n%100<=10 ? 3 : n%100>=11 && n%100<=99 ? 4 : 5;\n"
+
+msgid "Please add first and last names."
+msgstr "Proszę dodać imię i nazwisko."
+
+msgid "Language"
+msgstr "Język"
+
+msgid "How much does this person"
+msgstr "Ile ta osoba"
+
+msgid "First name"
+msgstr "Imię"
+
+msgid "Jennifer"
+msgstr "Jennifer"
+
+msgid "Last name"
+msgstr "Nazwisko"
+
+msgid "Lawrence"
+msgstr "Lawrence"
+
+msgid "like this person"
+msgstr "lubi tę osobę"
+
+msgid "Leonardo"
+msgstr "Leonardo"
+
+msgid "Dicaprio"
+msgstr "Dicaprio"
+
+msgid "How to use / What is this?"
+msgstr "Jak używać / Co to jest?"
+
+msgid "Calculate"
+msgstr "Oblicz"
+
+msgid "About this"
+msgstr "O tym"
+
+msgid "This is a fun game that's popular among Korean teenagers! It calculates how much someone might like another person based on the number of strokes in their names.Try it just for fun — and share it with your friends! You can even see who’s the most popular in your school or neighborhood!"
+msgstr "To jest zabawna gra, która jest popularna wśród koreańskich nastolatków! Oblicza, jak bardzo ktoś może lubić inną osobę na podstawie liczby kresek w ich imionach. Wypróbuj to dla zabawy — i podziel się z przyjaciółmi! Możesz nawet zobaczyć, kto jest najpopularniejszy w twojej szkole lub okolicy!"
+
+msgid "Name A (First name & Last name)"
+msgstr "Imię A (Imię i nazwisko)"
+
+msgid "e.g. Jennifer Lawrence"
+msgstr "np. Jennifer Lawrence"
+
+msgid "Name B (First name & Last name)"
+msgstr "Imię B (Imię i nazwisko)"
+
+msgid "e.g. Leonardo Dicaprio"
+msgstr "np. Leonardo Dicaprio"
+
+msgid "How to use / What is it?"
+msgstr "Jak używać / Co to jest?"
+
+msgid "Who tested with"
+msgstr "Kto testował z"
+
+msgid "Open to see"
+msgstr "Otwórz, aby zobaczyć"
+
+msgid "Payment"
+msgstr "Płatność"
+
+msgid "Pay now"
+msgstr "Zapłać teraz"
+
+msgid "Payment successful!"
+msgstr "Płatność zakończona sukcesem!"
+
+msgid "Payment failed"
+msgstr "Płatność nieudana"
+
+msgid "Geolocation is not supported by this browser."
+msgstr "Geolokalizacja nie jest obsługiwana przez tę przeglądarkę."
+
+msgid "How is it calculated?"
+msgstr "Jak to jest obliczane?"
+
+msgid "Result"
+msgstr "Wynik"
+
+msgid "likes"
+msgstr "polubienia"
+
+msgid "with a"
+msgstr "z"
+
+msgid "probability."
+msgstr "prawdopodobieństwo."
+
+msgid "How many people mentioned me?"
+msgstr "Ilu ludzi mnie wspomniało?"
+
+msgid "How does it work?"
+msgstr "Jak to działa?"
+
+msgid "We calculate your love score using the number of strokes in each letter of your name."
+msgstr "Obliczamy Twój wynik miłości, używając liczby kresek w każdej literze Twojego imienia."
+
+msgid "Here’s how many strokes each letter has:"
+msgstr "Oto ile kresek ma każda litera:"
+
+msgid "Error retrieving your location. Please enable location services."
+msgstr "Błąd w pobieraniu Twojej lokalizacji. Proszę włączyć usługi lokalizacyjne."
+
+msgid "The most popular in my area"
+msgstr "Najpopularniejsze w mojej okolicy"
+
+msgid "Name"
+msgstr "Imię"
+
+msgid "Search"
+msgstr "Szukaj"
+
+msgid "1km"
+msgstr "1km"
+
+msgid "50km"
+msgstr "50km"
+
+msgid "200km"
+msgstr "200km"
+
+msgid "world"
+msgstr "świat"
+
+msgid "Rank"
+msgstr "Ranga"
+
+msgid "Mentioned (times)"
+msgstr "Wspomniane (razy)"
+
+msgid "With who?"
+msgstr "Z kim?"
+
+msgid "name1_firstname"
+msgstr "Anna"
+
+msgid "name1_lastname"
+msgstr "Kowalska"
+
+msgid "name2_firstname"
+msgstr "Piotr"
+
+msgid "name2_lastname"
+msgstr "Nowak"

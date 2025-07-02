@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2025-06-27 12:36\n"
+"POT-Creation-Date: 2025-07-02 12:45\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -34,8 +34,8 @@ msgstr "Příjmení"
 msgid "Lawrence"
 msgstr "Lawrence"
 
-msgid "like this person"
-msgstr "jako tato osoba"
+msgid "like this person?"
+msgstr "má rád tuto osobu?"
 
 msgid "Leonardo"
 msgstr "Leonardo"
@@ -44,7 +44,7 @@ msgid "Dicaprio"
 msgstr "Dicaprio"
 
 msgid "How to use / What is this?"
-msgstr "Jak používat / Co je to?"
+msgstr "Jak používat / Co to je?"
 
 msgid "Calculate"
 msgstr "Vypočítat"
@@ -56,19 +56,19 @@ msgid "This is a fun game that's popular among Korean teenagers! It calculates h
 msgstr "Toto je zábavná hra, která je populární mezi korejskými teenagery! Vypočítává, jak moc by se někomu mohl líbit jiný člověk na základě počtu tahů v jejich jménech. Vyzkoušejte to jen pro zábavu — a sdílejte to se svými přáteli! Můžete dokonce zjistit, kdo je nejoblíbenější ve vaší škole nebo sousedství!"
 
 msgid "Name A (First name & Last name)"
-msgstr "Jméno A (Křestní jméno a Příjmení)"
+msgstr "Jméno A (Křestní jméno & Příjmení)"
 
 msgid "e.g. Jennifer Lawrence"
 msgstr "např. Jennifer Lawrence"
 
 msgid "Name B (First name & Last name)"
-msgstr "Jméno B (Křestní jméno a Příjmení)"
+msgstr "Jméno B (Křestní jméno & Příjmení)"
 
 msgid "e.g. Leonardo Dicaprio"
 msgstr "např. Leonardo Dicaprio"
 
 msgid "How to use / What is it?"
-msgstr "Jak používat / Co je to?"
+msgstr "Jak používat / Co to je?"
 
 msgid "Who tested with"
 msgstr "Kdo testoval s"
@@ -121,8 +121,8 @@ msgstr "Zde je počet tahů, které má každé písmeno:"
 msgid "Error retrieving your location. Please enable location services."
 msgstr "Chyba při získávání vaší polohy. Prosím, povolte služby určování polohy."
 
-msgid "The most popular in my area"
-msgstr "Nejoblíbenější v mé oblasti"
+msgid "The most popular person in my area"
+msgstr "Nejoblíbenější osoba v mé oblasti"
 
 msgid "Name"
 msgstr "Jméno"
@@ -143,13 +143,19 @@ msgid "world"
 msgstr "svět"
 
 msgid "Rank"
-msgstr "Hodnocení"
+msgstr "Pořadí"
 
 msgid "Mentioned (times)"
-msgstr "Zmíněno (kolikrát)"
+msgstr "Zmíněno (krát)"
 
 msgid "With who?"
 msgstr "S kým?"
+
+msgid "%(name1)s likes %(name2)s with a <br><b>%(compatibility_score)s%%</b> probability."
+msgstr "%(name1)s má rád %(name2)s s <br><b>%(compatibility_score)s%%</b> pravděpodobností."
+
+msgid "Who tested with %(search_key)s?"
+msgstr "Kdo testoval s %(search_key)s?"
 
 msgid "name1_firstname"
 msgstr "Tereza"
@@ -162,4 +168,3 @@ msgstr "Jan"
 
 msgid "name2_lastname"
 msgstr "Novák"
-

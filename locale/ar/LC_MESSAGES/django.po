@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2025-06-27 12:35\n"
+"POT-Creation-Date: 2025-07-02 12:45\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -14,7 +14,7 @@ msgstr ""
 "&& n%100<=10 ? 3 : n%100>=11 && n%100<=99 ? 4 : 5;\n"
 
 msgid "Please add first and last names."
-msgstr "الرجاء إضافة الاسم الأول واسم العائلة."
+msgstr "يرجى إضافة الاسم الأول واسم العائلة."
 
 msgid "Language"
 msgstr "اللغة"
@@ -34,8 +34,8 @@ msgstr "اسم العائلة"
 msgid "Lawrence"
 msgstr "لورانس"
 
-msgid "like this person"
-msgstr "مثل هذا الشخص"
+msgid "like this person?"
+msgstr "هل تحب هذا الشخص؟"
 
 msgid "Leonardo"
 msgstr "ليوناردو"
@@ -74,7 +74,7 @@ msgid "Who tested with"
 msgstr "من اختبر مع"
 
 msgid "Open to see"
-msgstr "مفتوح للرؤية"
+msgstr "افتح لترى"
 
 msgid "Payment"
 msgstr "الدفع"
@@ -104,13 +104,13 @@ msgid "with a"
 msgstr "مع"
 
 msgid "probability."
-msgstr "الاحتمالية"
+msgstr "الاحتمالية."
 
 msgid "How many people mentioned me?"
 msgstr "كم عدد الأشخاص الذين ذكروني؟"
 
 msgid "How does it work?"
-msgstr "كيف يعمل هذا؟"
+msgstr "كيف يعمل؟"
 
 msgid "We calculate your love score using the number of strokes in each letter of your name."
 msgstr "نحسب درجة حبك باستخدام عدد الحركات في كل حرف من اسمك."
@@ -121,8 +121,8 @@ msgstr "إليك عدد الحركات التي يحتوي عليها كل حر�
 msgid "Error retrieving your location. Please enable location services."
 msgstr "خطأ في استرجاع موقعك. يرجى تمكين خدمات الموقع."
 
-msgid "The most popular in my area"
-msgstr "الأكثر شعبية في منطقتي"
+msgid "The most popular person in my area"
+msgstr "الشخص الأكثر شعبية في منطقتي"
 
 msgid "Name"
 msgstr "الاسم"
@@ -151,6 +151,11 @@ msgstr "مذكور (مرات)"
 msgid "With who?"
 msgstr "مع من؟"
 
+msgid "%(name1)s likes %(name2)s with a <br><b>%(compatibility_score)s%%</b> probability."
+msgstr "%(name1)s يحب %(name2)s باحتمالية <br><b>%(compatibility_score)s%%</b>."
+
+msgid "Who tested with %(search_key)s?"
+msgstr "من اختبر مع %(search_key)s؟"
 
 msgid "name1_firstname"
 msgstr "عائشة"

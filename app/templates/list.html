@@ -48,7 +48,9 @@
 </div>
 <div class="loveWrap tested">
     <div class="tested__tit">
-        {% trans "Who tested with" %} <br><span>{{ search_key }}</span>?
+{#        {% trans "Who tested with" %} <br><span>{{ search_key }}</span>?#}
+        {% blocktrans with search_key=search_key %}Who tested with {{ search_key }}?{% endblocktrans %}
+
     </div>
 
     <!-- Remove the blur class when the button is clicked. -->
