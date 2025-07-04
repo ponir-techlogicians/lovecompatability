@@ -169,3 +169,15 @@ msgstr "준호"
 
 msgid "name2_lastname"
 msgstr "이"
+
+msgid "Person 1"
+msgstr "사람 1"
+
+msgid "Person 2"
+msgstr "사람 2"
+
+msgid "What percent chance is there that your crush likes you back?"
+msgstr "당신의 짝사랑이 당신을 좋아할 확률은 몇 퍼센트일까요?"
+
+msgid "Enter both names now to find out!"
+msgstr "지금 두 사람의 이름을 입력하고 확인해보세요!"

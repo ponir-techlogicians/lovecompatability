@@ -168,3 +168,16 @@ msgstr "Minh"
 
 msgid "name2_lastname"
 msgstr "Trần"
+
+msgid "Person 1"
+msgstr "Người 1"
+
+msgid "Person 2"
+msgstr "Người 2"
+
+msgid "What percent chance is there that your crush likes you back?"
+msgstr "Có bao nhiêu phần trăm khả năng người bạn thích cũng thích bạn?"
+
+msgid "Enter both names now to find out!"
+msgstr "Nhập cả hai tên ngay bây giờ để biết kết quả!"
+

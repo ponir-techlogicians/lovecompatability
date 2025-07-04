@@ -169,3 +169,15 @@ msgstr "Ahmad"
 msgid "name2_lastname"
 msgstr "Rahman"
 
+msgid "Person 1"
+msgstr "Orang 1"
+
+msgid "Person 2"
+msgstr "Orang 2"
+
+msgid "What percent chance is there that your crush likes you back?"
+msgstr "Berapakah peratus kemungkinan orang yang anda suka turut menyukai anda?"
+
+msgid "Enter both names now to find out!"
+msgstr "Masukkan kedua-dua nama sekarang untuk mengetahui jawapannya!"
+

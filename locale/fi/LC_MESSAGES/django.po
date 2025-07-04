@@ -169,3 +169,14 @@ msgstr "Juhani"
 msgid "name2_lastname"
 msgstr "Virtanen"
 
+msgid "Person 1"
+msgstr "Henkilö 1"
+
+msgid "Person 2"
+msgstr "Henkilö 2"
+
+msgid "What percent chance is there that your crush likes you back?"
+msgstr "Mikä on mahdollisuus, että ihastuksesi pitää myös sinusta?"
+
+msgid "Enter both names now to find out!"
+msgstr "Syötä molemmat nimet nyt ja selvitä se!"

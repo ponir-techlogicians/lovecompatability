@@ -168,3 +168,15 @@ msgstr "عمر"
 
 msgid "name2_lastname"
 msgstr "خان"
+
+msgid "Person 1"
+msgstr "شخص 1"
+
+msgid "Person 2"
+msgstr "شخص 2"
+
+msgid "What percent chance is there that your crush likes you back?"
+msgstr "کتنی فیصد امکان ہے کہ آپ کی پسندیدہ شخص آپ کو پسند کرے؟"
+
+msgid "Enter both names now to find out!"
+msgstr "اب دونوں نام درج کریں اور پتہ کریں!"

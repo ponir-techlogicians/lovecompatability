@@ -148,7 +148,7 @@ body {
 }
 @media screen and (min-width: 390px) {
   .loveWrap__titImg img {
-    width: 100%;
+    width: 75%;
   }
 }
 @media screen and (min-width: 390px) {
@@ -275,7 +275,8 @@ body {
 }
 @media screen and (min-width: 390px) {
   .loveWrap__info {
-    margin: 29px auto 50px;
+    /*margin: 29px auto 50px;*/
+    margin: 0px auto 50px;
     font-size: 15px;
   }
 }
@@ -973,7 +974,8 @@ body {
   flex-direction: column;
   width: 88%;
   max-width: 440px;
-  margin: 0 auto;
+  /*margin: 0 auto;*/
+  margin: 25px auto;
   gap: 16px;
 }
 .desktop23 .inputWrap .inputGroup {
@@ -1037,6 +1039,18 @@ body {
     width: calc(100% - 40px);
     left: 20px;
   }
+}
+.headline{
+  text-align: center;
+}
+.headline h2 {
+    font-size: 20px;
+    color: white;
+}
+
+.headline p {
+    font-size: 20px;
+    color: white;
 }
 
 /*# sourceMappingURL=index.css.map */

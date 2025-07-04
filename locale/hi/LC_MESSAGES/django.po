@@ -168,3 +168,15 @@ msgstr "राज"
 
 msgid "name2_lastname"
 msgstr "सिंह"
+
+msgid "Person 1"
+msgstr "व्यक्ति 1"
+
+msgid "Person 2"
+msgstr "व्यक्ति 2"
+
+msgid "What percent chance is there that your crush likes you back?"
+msgstr "क्या प्रतिशत संभावना है कि आपका क्रश भी आपको पसंद करता है?"
+
+msgid "Enter both names now to find out!"
+msgstr "अब दोनों नाम दर्ज करें और पता करें!"

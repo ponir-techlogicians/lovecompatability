@@ -168,3 +168,15 @@ msgstr "Mikkel"
 
 msgid "name2_lastname"
 msgstr "Jensen"
+
+msgid "Person 1"
+msgstr "Person 1"
+
+msgid "Person 2"
+msgstr "Person 2"
+
+msgid "What percent chance is there that your crush likes you back?"
+msgstr "Hvad er sandsynligheden for, at din crush også kan lide dig?"
+
+msgid "Enter both names now to find out!"
+msgstr "Indtast begge navne nu for at finde ud af det!"

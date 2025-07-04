@@ -144,13 +144,21 @@
 {#          </select>#}
       </div>
 
-        <div class="loveWrap__titImg">
+      <div class="loveWrap__titImg">
         <img src="{% static 'app/img/img_calc.png' %}" alt="" class="mobile">
         <img src="{% static 'app/img/img_calc.png' %}" alt="" class="pc">
       </div>
+      <div class="headline">
+        <p>{% trans "What percent chance is there that your crush likes you back?" %}</p>
+        <p>{% trans "Enter both names now to find out!" %}</p>
+      </div>
+      <div class="loveWrap__info">
+        <a href="#a" class="loveWrap__infoLink">{% trans "How to use / What is this?" %}</a>
+      </div>
       <div class="inputWrap">
         <div class="inputGroup">
-          <h3>{% trans "How much does this person" %}</h3>
+{#          <h3>{% trans "How much does this person" %}</h3>#}
+          <h3>{% trans "Person 1" %}</h3>
 
           {% if request.LANGUAGE_CODE != 'ko' and request.LANGUAGE_CODE != 'hu' and request.LANGUAGE_CODE != 'vi'%}
           <div class="row">
@@ -186,7 +194,8 @@
           {% endif %}
         </div>
         <div class="inputGroup">
-          <h3>{% trans "like this person?" %}</h3>
+{#          <h3>{% trans "like this person?" %}</h3>#}
+          <h3>{% trans "Person 2" %}</h3>
           {% if request.LANGUAGE_CODE != 'ko' and request.LANGUAGE_CODE != 'hu' and request.LANGUAGE_CODE != 'vi' %}
           <div class="row">
             <label class="loveWrap__inputBox">
@@ -220,9 +229,6 @@
            </div>
           {% endif %}
         </div>
-      </div>
-      <div class="loveWrap__info">
-        <a href="#a" class="loveWrap__infoLink">{% trans "How to use / What is this?" %}</a>
       </div>
       <button type="button" class="loveWrap__btn" onclick="getLocationAndSubmit()">{% trans "Calculate" %}</button>
     </div>

@@ -169,3 +169,14 @@ msgstr "Γιώργος"
 msgid "name2_lastname"
 msgstr "Παπαδόπουλος"
 
+msgid "Person 1"
+msgstr "Άτομο 1"
+
+msgid "Person 2"
+msgstr "Άτομο 2"
+
+msgid "What percent chance is there that your crush likes you back?"
+msgstr "Ποιες είναι οι πιθανότητες να σε αρέσει το άτομο που σου αρέσει;"
+
+msgid "Enter both names now to find out!"
+msgstr "Καταχώρισε και τα δύο ονόματα τώρα για να μάθεις!"

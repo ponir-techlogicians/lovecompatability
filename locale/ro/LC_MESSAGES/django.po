@@ -169,3 +169,15 @@ msgstr "Andrei"
 msgid "name2_lastname"
 msgstr "Ionescu"
 
+msgid "Person 1"
+msgstr "Persoana 1"
+
+msgid "Person 2"
+msgstr "Persoana 2"
+
+msgid "What percent chance is there that your crush likes you back?"
+msgstr "Care este procentajul șanselor ca persoana care îți place să te placă și ea?"
+
+msgid "Enter both names now to find out!"
+msgstr "Introdu ambele nume acum ca să afli!"
+

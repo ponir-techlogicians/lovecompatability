@@ -169,3 +169,14 @@ msgstr "Louis"
 msgid "name2_lastname"
 msgstr "Martin"
 
+msgid "Person 1"
+msgstr "Personne 1"
+
+msgid "Person 2"
+msgstr "Personne 2"
+
+msgid "What percent chance is there that your crush likes you back?"
+msgstr "Quelle est la probabilité que ton crush t'aime aussi ?"
+
+msgid "Enter both names now to find out!"
+msgstr "Entrez les deux noms maintenant pour le découvrir !"

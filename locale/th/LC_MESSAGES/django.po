@@ -169,3 +169,15 @@ msgstr "สมชาย"
 msgid "name2_lastname"
 msgstr "วิทยา"
 
+msgid "Person 1"
+msgstr "คนที่ 1"
+
+msgid "Person 2"
+msgstr "คนที่ 2"
+
+msgid "What percent chance is there that your crush likes you back?"
+msgstr "มีโอกาสกี่เปอร์เซ็นต์ที่คนที่คุณชอบจะชอบคุณกลับ?"
+
+msgid "Enter both names now to find out!"
+msgstr "กรอกทั้งสองชื่อตอนนี้เพื่อหาคำตอบ!"
+

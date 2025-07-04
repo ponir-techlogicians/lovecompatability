@@ -168,3 +168,15 @@ msgstr "Balázs"
 
 msgid "name2_lastname"
 msgstr "Kovács"
+
+msgid "Person 1"
+msgstr "Személy 1"
+
+msgid "Person 2"
+msgstr "Személy 2"
+
+msgid "What percent chance is there that your crush likes you back?"
+msgstr "Mekkora a valószínűsége, hogy a kiszemelt személy viszonozza az érzéseidet?"
+
+msgid "Enter both names now to find out!"
+msgstr "Írd be most mindkét nevet, hogy megtudd!"
