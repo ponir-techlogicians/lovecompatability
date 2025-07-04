@@ -383,6 +383,7 @@ class ResultDetailView(DetailView):
         context['sentence'] = sentence
         return context
 
+
 class SearchView(TemplateView):
     template_name = "search.html"
 
@@ -390,103 +391,198 @@ class SearchView(TemplateView):
         query = request.GET.get("query", "").strip()
         latitude = request.GET.get("latitude", None)
         longitude = request.GET.get("longitude", None)
-        radius_input = request.GET.get("radius", None)  # Radius in KM
+        radius_input = request.GET.get("radius", None)
 
         results = CompatibilityResult.objects.all()
         mention_count = 0
 
-        # if query:
-        #     # results = results.filter(Q(name1__icontains=query) | Q(name2__icontains=query))
-        #     results = results.filter(Q(name1=query) | Q(name2=query))
-
+        # Radius filtering
         if latitude and longitude and radius_input:
             try:
                 user_location = (float(latitude), float(longitude))
-                radius = 1
-                if radius_input == '1':
-                    radius = 1
-                if radius_input == '2':
-                    radius = 50
-                if radius_input == '3':
-                    radius = 200
-                if radius_input == '4':
-                    radius = 99999999999
+                radius_map = {
+                    '1': 1,
+                    '2': 50,
+                    '3': 200,
+                    '4': 99999999999
+                }
+                radius = radius_map.get(radius_input, 1)
 
-                radius = float(radius)
-
-                # Apply distance filter
                 filtered_results = []
-
                 for record in results:
                     if record.latitude and record.longitude:
                         record_location = (record.latitude, record.longitude)
                         distance = geodesic(user_location, record_location).km
-                        # print(distance,radius)
                         if distance <= radius:
                             filtered_results.append(record)
+
                             if query.lower() == record.name1.lower():
                                 mention_count += 1
                             if query.lower() == record.name2.lower():
                                 mention_count += 1
 
-                results = filtered_results  # Override results with filtered data
+                results = filtered_results
             except ValueError:
-                pass  # Ignore errors if input is incorrect
+                pass  # Ignore invalid location input
 
-
-
+        # Case-insensitive name counting
         name_counter = Counter()
+        name_display_map = {}
+
         for result in results:
-            if result.name1 == result.name2:
-                # same name, count once
-                name_counter[result.name1] += 1
-            else:
-                # two different names, count both
-                name_counter[result.name1] += 1
-                name_counter[result.name2] += 1
+            unique_names = set([result.name1, result.name2])  # Avoid double counting if same name
+            for name in unique_names:
+                name_lower = name.lower()
+                name_counter[name_lower] += 1
+                if name_lower not in name_display_map:
+                    name_display_map[name_lower] = name  # Preserve original casing
 
-        # Get sorted names
-        sorted_names = name_counter.most_common()
-        print('sorted names',sorted_names)
+        # Sorted names with original casing
+        sorted_names = [
+            (name_display_map[name_lower], count) for name_lower, count in name_counter.most_common()
+        ]
 
-        # Calculate ranks with same rank for equal mentions
+        print(sorted_names)
+
+        # Ranking logic with same-rank for equal counts
         ranked_names = []
         current_rank = 1
         current_count = None
-        skip_ranks = 0
 
         for idx, (name, count) in enumerate(sorted_names):
             if count != current_count:
                 current_rank = idx + 1
                 current_count = count
-
             ranked_names.append((name, count, current_rank))
 
-        # Get top 10 with ranks
+        # Top 10 names
         top_names = ranked_names[:10]
 
-        # Get rank of the query
+        # Search rank for the query
         search_rank = None
         query_lower = query.lower()
         for idx, (name, count, rank) in enumerate(ranked_names):
             if name.lower() == query_lower:
-                search_rank = idx+1
+                search_rank = idx + 1
                 break
-        # print(results)
+
         context = {
             "results": results,
             "search_key": query,
             "mention_count": mention_count,
-            "top_names" : [(name, count) for name, count, rank in top_names],
+            "top_names": [(name, count) for name, count, rank in top_names],
             "top_names_with_ranks": top_names,
             "radius_input": radius_input,
-            "search_rank":search_rank,
-            "lat" : latitude if latitude else None,
-            "lon" : longitude if longitude else None,
+            "search_rank": search_rank,
+            "lat": latitude if latitude else None,
+            "lon": longitude if longitude else None,
         }
 
         return render(request, self.template_name, context)
 
+# class SearchView(TemplateView):
+#     template_name = "search.html"
+#
+#     def get(self, request, *args, **kwargs):
+#         query = request.GET.get("query", "").strip()
+#         latitude = request.GET.get("latitude", None)
+#         longitude = request.GET.get("longitude", None)
+#         radius_input = request.GET.get("radius", None)  # Radius in KM
+#
+#         results = CompatibilityResult.objects.all()
+#         mention_count = 0
+#
+#         # if query:
+#         #     # results = results.filter(Q(name1__icontains=query) | Q(name2__icontains=query))
+#         #     results = results.filter(Q(name1=query) | Q(name2=query))
+#
+#         if latitude and longitude and radius_input:
+#             try:
+#                 user_location = (float(latitude), float(longitude))
+#                 radius = 1
+#                 if radius_input == '1':
+#                     radius = 1
+#                 if radius_input == '2':
+#                     radius = 50
+#                 if radius_input == '3':
+#                     radius = 200
+#                 if radius_input == '4':
+#                     radius = 99999999999
+#
+#                 radius = float(radius)
+#
+#                 # Apply distance filter
+#                 filtered_results = []
+#
+#                 for record in results:
+#                     if record.latitude and record.longitude:
+#                         record_location = (record.latitude, record.longitude)
+#                         distance = geodesic(user_location, record_location).km
+#                         # print(distance,radius)
+#                         if distance <= radius:
+#                             filtered_results.append(record)
+#                             if query.lower() == record.name1.lower():
+#                                 mention_count += 1
+#                             if query.lower() == record.name2.lower():
+#                                 mention_count += 1
+#
+#                 results = filtered_results  # Override results with filtered data
+#             except ValueError:
+#                 pass  # Ignore errors if input is incorrect
+#
+#
+#
+#         name_counter = Counter()
+#         for result in results:
+#             if result.name1 == result.name2:
+#                 # same name, count once
+#                 name_counter[result.name1] += 1
+#             else:
+#                 # two different names, count both
+#                 name_counter[result.name1] += 1
+#                 name_counter[result.name2] += 1
+#
+#         # Get sorted names
+#         sorted_names = name_counter.most_common()
+#         print('sorted names',sorted_names)
+#
+#         # Calculate ranks with same rank for equal mentions
+#         ranked_names = []
+#         current_rank = 1
+#         current_count = None
+#         skip_ranks = 0
+#
+#         for idx, (name, count) in enumerate(sorted_names):
+#             if count != current_count:
+#                 current_rank = idx + 1
+#                 current_count = count
+#
+#             ranked_names.append((name, count, current_rank))
+#
+#         # Get top 10 with ranks
+#         top_names = ranked_names[:10]
+#
+#         # Get rank of the query
+#         search_rank = None
+#         query_lower = query.lower()
+#         for idx, (name, count, rank) in enumerate(ranked_names):
+#             if name.lower() == query_lower:
+#                 search_rank = idx+1
+#                 break
+#         # print(results)
+#         context = {
+#             "results": results,
+#             "search_key": query,
+#             "mention_count": mention_count,
+#             "top_names" : [(name, count) for name, count, rank in top_names],
+#             "top_names_with_ranks": top_names,
+#             "radius_input": radius_input,
+#             "search_rank":search_rank,
+#             "lat" : latitude if latitude else None,
+#             "lon" : longitude if longitude else None,
+#         }
+#
+#         return render(request, self.template_name, context)
 
 class ListView(TemplateView):
     template_name = "list.html"
@@ -497,60 +593,123 @@ class ListView(TemplateView):
         longitude = request.GET.get("lon", None)
         radius_input = request.GET.get("radius", None)
         success = request.GET.get("success", None)
+
         results = CompatibilityResult.objects.all()
         mention_count = 0
-        # Filter by Name
-        if query:
-            # results = results.filter(Q(name1__icontains=query) | Q(name2__icontains=query))
-            results = results.filter(Q(name1=query) | Q(name2=query))
 
-        # Filter by Location Radius
+        # Case-insensitive name filtering
+        if query:
+            results = results.filter(
+                Q(name1__iexact=query) | Q(name2__iexact=query)
+            )
+
+        # Radius filtering
         if latitude and longitude and radius_input:
             try:
                 user_location = (float(latitude), float(longitude))
-                radius = 1
-                if radius_input == '1':
-                    radius = 1
-                if radius_input == '2':
-                    radius = 50
-                if radius_input == '3':
-                    radius = 200
-                if radius_input == '4':
-                    radius = 99999999999
+                radius_map = {
+                    '1': 1,
+                    '2': 50,
+                    '3': 200,
+                    '4': 99999999999
+                }
+                radius = radius_map.get(radius_input, 1)
 
-                radius = float(radius)
-
-                # Apply distance filter
                 filtered_results = []
-
                 for record in results:
                     if record.latitude and record.longitude:
                         record_location = (record.latitude, record.longitude)
                         distance = geodesic(user_location, record_location).km
                         if distance <= radius:
                             filtered_results.append(record)
+
+                            # Case-insensitive mention count
                             if query.lower() == record.name1.lower():
                                 mention_count += 1
                             if query.lower() == record.name2.lower():
                                 mention_count += 1
 
-                results = filtered_results  # Override results with filtered data
+                results = filtered_results
             except ValueError:
-                pass  # Ignore errors if input is incorrect
+                pass  # Ignore invalid inputs
+
         context = {
             "results": results,
             "search_key": query,
             "mention_count": mention_count,
-            "radius_input" : radius_input,
-            "lat" : latitude if latitude else None,
-            "lon" : longitude if longitude else None,
-            "STRIPE_PUBLISHABLE_KEY":settings.STRIPE_PUBLISHABLE_KEY,
-            "success":success
+            "radius_input": radius_input,
+            "lat": latitude if latitude else None,
+            "lon": longitude if longitude else None,
+            "STRIPE_PUBLISHABLE_KEY": settings.STRIPE_PUBLISHABLE_KEY,
+            "success": success
         }
 
         print(f"Filtered results: {len(results)}")
-
         return render(request, self.template_name, context)
+
+# class ListView(TemplateView):
+#     template_name = "list.html"
+#
+#     def get(self, request, *args, **kwargs):
+#         query = request.GET.get("key", "").strip()
+#         latitude = request.GET.get("lat", None)
+#         longitude = request.GET.get("lon", None)
+#         radius_input = request.GET.get("radius", None)
+#         success = request.GET.get("success", None)
+#         results = CompatibilityResult.objects.all()
+#         mention_count = 0
+#         # Filter by Name
+#         if query:
+#             # results = results.filter(Q(name1__icontains=query) | Q(name2__icontains=query))
+#             results = results.filter(Q(name1=query) | Q(name2=query))
+#
+#         # Filter by Location Radius
+#         if latitude and longitude and radius_input:
+#             try:
+#                 user_location = (float(latitude), float(longitude))
+#                 radius = 1
+#                 if radius_input == '1':
+#                     radius = 1
+#                 if radius_input == '2':
+#                     radius = 50
+#                 if radius_input == '3':
+#                     radius = 200
+#                 if radius_input == '4':
+#                     radius = 99999999999
+#
+#                 radius = float(radius)
+#
+#                 # Apply distance filter
+#                 filtered_results = []
+#
+#                 for record in results:
+#                     if record.latitude and record.longitude:
+#                         record_location = (record.latitude, record.longitude)
+#                         distance = geodesic(user_location, record_location).km
+#                         if distance <= radius:
+#                             filtered_results.append(record)
+#                             if query.lower() == record.name1.lower():
+#                                 mention_count += 1
+#                             if query.lower() == record.name2.lower():
+#                                 mention_count += 1
+#
+#                 results = filtered_results  # Override results with filtered data
+#             except ValueError:
+#                 pass  # Ignore errors if input is incorrect
+#         context = {
+#             "results": results,
+#             "search_key": query,
+#             "mention_count": mention_count,
+#             "radius_input" : radius_input,
+#             "lat" : latitude if latitude else None,
+#             "lon" : longitude if longitude else None,
+#             "STRIPE_PUBLISHABLE_KEY":settings.STRIPE_PUBLISHABLE_KEY,
+#             "success":success
+#         }
+#
+#         print(f"Filtered results: {len(results)}")
+#
+#         return render(request, self.template_name, context)
 
 
 
