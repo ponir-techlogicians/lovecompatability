@@ -116,38 +116,70 @@ def save_location(request):
 
 
 
+# def auto_suggest_names(request):
+#     raw_query = request.GET.get('query', '').strip().lower()
+#     if not raw_query:
+#         return JsonResponse({'suggestions': []})
+#
+#     # Split on spaces so "jo sm" still works
+#     query_parts = raw_query.split()
+#
+#     # Pull only the two name fields from records with coords
+#     results = CompatibilityResult.objects.filter(
+#         latitude__isnull=False,
+#         longitude__isnull=False
+#     ).values_list('name1', 'name2')
+#
+#     unique_names = set()
+#     for name1, name2 in results:
+#         for name in (name1, name2):
+#             name_lower = name.lower()
+#             # also consider the version without any spaces
+#             name_nospace = name_lower.replace(" ", "")
+#
+#             for q in query_parts:
+#                 # match if q is in any word, or in the full nospace string
+#                 if (
+#                     any(q in part for part in name_lower.split()) or
+#                     q in name_nospace
+#                 ):
+#                     unique_names.add(name)
+#                     break
+#
+#     suggestions = list(unique_names)[:10]
+#     return JsonResponse({'suggestions': suggestions})
+
 def auto_suggest_names(request):
     raw_query = request.GET.get('query', '').strip().lower()
     if not raw_query:
         return JsonResponse({'suggestions': []})
 
-    # Split on spaces so "jo sm" still works
     query_parts = raw_query.split()
 
-    # Pull only the two name fields from records with coords
     results = CompatibilityResult.objects.filter(
         latitude__isnull=False,
         longitude__isnull=False
     ).values_list('name1', 'name2')
 
-    unique_names = set()
+    unique_names = {}
     for name1, name2 in results:
         for name in (name1, name2):
             name_lower = name.lower()
-            # also consider the version without any spaces
             name_nospace = name_lower.replace(" ", "")
 
             for q in query_parts:
-                # match if q is in any word, or in the full nospace string
                 if (
                     any(q in part for part in name_lower.split()) or
                     q in name_nospace
                 ):
-                    unique_names.add(name)
+                    if name_lower not in unique_names:
+                        unique_names[name_lower] = name  # store original casing
                     break
 
-    suggestions = list(unique_names)[:10]
+    suggestions = list(unique_names.values())[:10]
     return JsonResponse({'suggestions': suggestions})
+
+
 @csrf_exempt
 def create_checkout_session(request):
     # success_url = request.GET.get("success_url", "https://yourwebsite.com/success")
