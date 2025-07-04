@@ -107,19 +107,20 @@ msgid "probability."
 msgstr "probability."
 
 msgid "How many people mentioned me?"
-msgstr "How many people mentioned me?"
+msgstr "몇 명이 나를 언급했나요?"
 
 msgid "How does it work?"
-msgstr "How does it work?"
+msgstr "어떻게 작동하나요?"
 
 msgid "We calculate your love score using the number of strokes in each letter of your name."
-msgstr "We calculate your love score using the number of strokes in each letter of your name."
+msgstr "우리는 당신의 이름 각 글자의 획수를 사용하여 사랑 점수를 계산합니다."
 
 msgid "Here’s how many strokes each letter has:"
-msgstr "Here’s how many strokes each letter has:"
+msgstr "각 글자가 몇 획인지 여기에 있습니다:"
 
 msgid "Error retrieving your location. Please enable location services."
-msgstr "Error retrieving your location. Please enable location services."
+msgstr "위치를 검색하는 데 오류가 발생했습니다. 위치 서비스를 활성화하세요."
+
 
 msgid "The most popular person in my area"
 msgstr "내 지역에서 가장 인기 있는 사람"
