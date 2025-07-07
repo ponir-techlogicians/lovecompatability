@@ -5,7 +5,7 @@ from django.contrib.auth import views as auth_views
 
 from app.api_views import CalculateAPIView, ResultDetailAPIView, SaveLocationAPIView, CreatePaymentIntentAPIView, \
     ListAPIView, SearchAPIView, SubscriptionValidationView, RestorPurchaseView, GooglePlayBillingNotification, \
-    IosBillingNotification, UsageLeftView
+    IosBillingNotification, UsageLeftView, LanguageListAPIView
 from app.views import DashboardView, SearchBasicView, set_language_view, CalculateView, SearchView, ListView, \
     save_location, ResultDetailView, create_checkout_session, auto_suggest_names
 
@@ -25,6 +25,7 @@ urlpatterns = [
     path("search-basic/", SearchBasicView.as_view(), name="search-basic"),
 
     path('api/calculate/', CalculateAPIView.as_view(), name='calculate-api'),
+    path('api/language-list/', LanguageListAPIView.as_view(), name='language-list-api'),
     path('api/result/<int:id>/', ResultDetailAPIView.as_view(), name='result-detail-api'),
 
     path('api/save-location/', SaveLocationAPIView.as_view(), name='save-location-api'),
