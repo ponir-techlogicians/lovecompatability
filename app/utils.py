@@ -578,14 +578,16 @@ def split_names_safe(name1, name2):
             merged.append("_")
         return merged[:6]
 
-def get_total_stroke(word: str) -> int:
+def get_total_stroke(word: str,language=None) -> int:
     """Return the total stroke count for a word."""
     # for ch in word.upper():
     #     print(stroke_dict)
     #     print(ch,stroke_dict.get(ch, 0))
-        
-    stroke_dict = GLOBAL_STROKE_DICT.get(get_language())
-    if get_language() == 'ko':
+    if language != None:
+        stroke_dict = GLOBAL_STROKE_DICT.get(language)
+    else:
+        stroke_dict = GLOBAL_STROKE_DICT.get(get_language())
+    if get_language() == 'ko' or language == 'ko':
         total = 0
         for char in word.upper():
             if '가' <= char <= '힣':
@@ -670,19 +672,19 @@ def adjacency_sum_steps_fixed_3(arr: list) -> list:
             steps.append(arr[:])
     return steps
 
-def get_name_compatibility_with_5steps(name1: str, name2: str) -> tuple:
+def get_name_compatibility_with_5steps(name1: str, name2: str,language=None) -> tuple:
     """Get compatibility score with 5 steps starting from 6 tokens."""
     #set_current_language()
     splits = get_number_of_split(name1, name2)
     if len(splits) > 4:
         six_parts = split_names_into_6(name1, name2)
-        initial_strokes = [get_total_stroke(word) for word in six_parts]
+        initial_strokes = [get_total_stroke(word,language=language) for word in six_parts]
         steps = adjacency_sum_steps_fixed_5(initial_strokes)
         final_score = int("".join(map(str, steps[-1])))
         return final_score, steps
     else:
         four_parts = split_names_into_4(name1, name2)
-        initial_strokes = [get_total_stroke(word) for word in four_parts]
+        initial_strokes = [get_total_stroke(word,language=language) for word in four_parts]
         steps = adjacency_sum_steps_fixed_3(initial_strokes)
         final_score = int("".join(map(str, steps[-1])))
         return final_score, steps
