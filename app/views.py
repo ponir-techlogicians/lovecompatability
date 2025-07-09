@@ -460,10 +460,12 @@ class SearchView(TemplateView):
 
         # Search rank for the query
         search_rank = None
+        search_id = None
         query_lower = query.lower()
         for idx, (name, count, rank) in enumerate(ranked_names):
             if name.lower() == query_lower:
-                search_rank = idx + 1
+                search_id = idx + 1
+                search_rank = rank
                 break
 
         context = {
@@ -474,6 +476,7 @@ class SearchView(TemplateView):
             "top_names_with_ranks": top_names,
             "radius_input": radius_input,
             "search_rank": search_rank,
+            "search_id": search_id,
             "lat": latitude if latitude else None,
             "lon": longitude if longitude else None,
         }

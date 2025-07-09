@@ -61,12 +61,12 @@
         {% for name, count , rank in top_names_with_ranks %}
             <li class="row">
                 <div class="search__listBody__itemWrap">
-                    <div class="search__listBody__item {% if forloop.counter ==  search_rank %} search__listFooter__item {% endif %}">{{ rank }}</div>
-                    <div class="search__listBody__item {% if forloop.counter ==  search_rank %} search__listFooter__item {% endif %}">{{ name }}</div>
-                    <div class="search__listBody__item {% if forloop.counter ==  search_rank %} search__listFooter__item {% endif %}">{{ count }}</div>
+                    <div class="search__listBody__item {% if forloop.counter ==  search_id %} search__listFooter__item {% endif %}">{{ rank }}</div>
+                    <div class="search__listBody__item {% if forloop.counter ==  search_id %} search__listFooter__item {% endif %}">{{ name }}</div>
+                    <div class="search__listBody__item {% if forloop.counter ==  search_id %} search__listFooter__item {% endif %}">{{ count }}</div>
 
                 </div>
-                {% if forloop.counter ==  search_rank %}
+                {% if forloop.counter ==  search_id %}
                     <button type="button" class="search__with" onclick="goto();">
                         {% trans "With who?" %}
                     </button>
@@ -78,7 +78,7 @@
       <!-- The area is exposed when the search results are not ranked. -->
 
      {% if results %}
-      {% if mention_count > 0 and search_rank > 10 %}
+      {% if mention_count > 0 and search_id > 10 %}
           <div class="search__listFooter">
             <div class="row">
               <div class="search__listBody__itemWrap">
@@ -86,7 +86,7 @@
                   <div class="search__listFooter__item">{{ search_key }}</div>
                   <div class="search__listFooter__item">{{ mention_count }}</div>
               </div>
-              {% if mention_count > 0 and search_rank > 10 %}
+              {% if mention_count > 0 and search_id > 10 %}
                     <button type="button" class="search__with" onclick="goto();">
                         {% trans "With who?" %}
                     </button>
