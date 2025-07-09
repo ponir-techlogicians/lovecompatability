@@ -94,7 +94,7 @@
     </form>
     <div class="loveWrap desktop23" id="nameForm">
         {% csrf_token %}
-        <div class="loveWrap__selectBox" style="margin-bottom: 30px">
+        <div class="loveWrap__selectBox" style="margin-bottom: 0px;margin-top: 30px;">
         <div class="loveWrap__label">{% trans "Language" %}</div>
             <select id="languageSelect" class="loveWrap__select" onchange="changeLanguage(this.value)">
                 {% get_current_language as LANGUAGE_CODE %}

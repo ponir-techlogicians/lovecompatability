@@ -326,16 +326,31 @@ body {
   display: flex;
   justify-content: flex-start;
 }
+.loveWrap__ad:empty {
+  display: none; /* remove it entirely when empty */
+}
 @media screen and (min-width: 390px) {
   .loveWrap__ad p {
     display: inline-block;
     margin: 0;
   }
+  .loveWrap__ad:empty {
+  display: none; /* remove it entirely when empty */
+  }
+  .loveWrap__ad {
+  background: #23183c; /* fallback to main background */
+}
 }
 @media screen and (max-width: 599px) {
   .loveWrap__ad p {
     display: none;
   }
+  .loveWrap__ad:empty {
+  display: none; /* remove it entirely when empty */
+}
+  .loveWrap__ad {
+  background: #23183c; /* fallback to main background */
+}
 }
 @media screen and (min-width: 390px) {
   .loveWrap__ad {
@@ -348,6 +363,12 @@ body {
     padding-block: 10px;
     gap: 16px;
   }
+  .loveWrap__ad:empty {
+  display: none; /* remove it entirely when empty */
+}
+  .loveWrap__ad {
+  background: #23183c; /* fallback to main background */
+}
 }
 
 .result {
@@ -992,22 +1013,35 @@ body {
   font-weight: 500;
   color: #ffffff;
 }
+/*.desktop23 .inputWrap .inputGroup .row {*/
+/*  display: flex;*/
+/*  align-items: center;*/
+/*  flex-direction: column;*/
+/*  width: 100%;*/
+/*  gap: 5px;*/
+/*}*/
+/*@media screen and (min-width: 390px) {*/
+/*  .desktop23 .inputWrap .inputGroup .row {*/
+/*    display: flex;*/
+/*    align-items: center;*/
+/*    flex-direction: row;*/
+/*  }*/
+/*  .desktop23 .inputWrap .inputGroup .row .loveWrap__inputBox {*/
+/*    margin-top: 0;*/
+/*  }*/
+/*}*/
+
 .desktop23 .inputWrap .inputGroup .row {
   display: flex;
-  align-items: center;
-  flex-direction: column;
+  flex-direction: row; /* always row */
+  flex-wrap: wrap; /* allow wrapping on very narrow screens */
   width: 100%;
-  gap: 5px;
+  gap: 10px; /* spacing between inputs */
 }
-@media screen and (min-width: 390px) {
-  .desktop23 .inputWrap .inputGroup .row {
-    display: flex;
-    align-items: center;
-    flex-direction: row;
-  }
-  .desktop23 .inputWrap .inputGroup .row .loveWrap__inputBox {
-    margin-top: 0;
-  }
+
+.desktop23 .inputWrap .inputGroup .row .loveWrap__inputBox {
+  flex: 1 1 45%; /* allows 2 inputs per row, responsive */
+  margin-top: 0; /* remove default margin */
 }
 
 #slider {
