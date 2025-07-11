@@ -330,8 +330,8 @@ class ListAPIView(APIView):
             if limit == 0:
                 return Response({'success':False,'reason':'not_limit'},status=status.HTTP_400_BAD_REQUEST)
 
-            if user.is_expired():
-                return Response({'success':False,'reason':'expired'},status=status.HTTP_400_BAD_REQUEST)
+            # if user.is_expired():
+            #     return Response({'success':False,'reason':'expired'},status=status.HTTP_400_BAD_REQUEST)
 
             # query = request.GET.get("key", "").strip()
             # latitude = request.GET.get("lat", None)
