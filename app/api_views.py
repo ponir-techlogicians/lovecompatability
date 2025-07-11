@@ -308,7 +308,7 @@ class SearchAPIView(APIView):
                 break
 
         data = {
-            "results": results,
+            "results": CompatibilityResultSerializer(results, many=True).data,
             "search_key": query,
             "mention_count": mention_count,
             "top_names": [(name, count) for name, count, rank in top_names],
