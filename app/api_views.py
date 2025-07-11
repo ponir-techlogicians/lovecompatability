@@ -504,8 +504,8 @@ class SubscriptionValidationView(APIView):
             defaults={
                 'platform': platform,
                 'product_id': product_id,
-                'expiration_date': expiry,
-                'auto_renewing': auto_renew,
+                # 'expiration_date': expiry,
+                # 'auto_renewing': auto_renew,
                 'limit': 3
             }
         )

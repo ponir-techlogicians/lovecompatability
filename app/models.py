@@ -25,8 +25,8 @@ class SubscriptionUser(models.Model):
     platform = models.CharField(max_length=10, choices=PLATFORM_CHOICES)
     unique_subscription_id = models.CharField(max_length=255, unique=True)  # original_transaction_id or purchaseToken
     product_id = models.CharField(max_length=255)
-    expiration_date = models.DateTimeField()
-    auto_renewing = models.BooleanField(default=True)
+    expiration_date = models.DateTimeField(null=True, blank=True)
+    auto_renewing = models.BooleanField(default=False)
     last_validated = models.DateTimeField(auto_now=True)
     created_at = models.DateTimeField(auto_now_add=True)
     limit = models.IntegerField(default=3)
