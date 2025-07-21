@@ -18,7 +18,8 @@ def parse_apple_datetime(date_str):
 
 def get_google_access_token():
     SCOPES = ['https://www.googleapis.com/auth/androidpublisher']
-    SERVICE_ACCOUNT_FILE = 'crush-o-meter-457507-7be00c722fed.json'
+    # SERVICE_ACCOUNT_FILE = 'crush-o-meter-457507-7be00c722fed.json'
+    SERVICE_ACCOUNT_FILE = 'crush-o-meter-457507-f3ae8ffb4892.json'
 
     credentials = service_account.Credentials.from_service_account_file(
         SERVICE_ACCOUNT_FILE, scopes=SCOPES
@@ -138,9 +139,11 @@ def validate_with_apple(receipt_data):
 def validate_with_google(package_name, subscription_id, token):
     access_token = get_google_access_token()  # You need to implement this
     url = f"https://androidpublisher.googleapis.com/androidpublisher/v3/applications/{package_name}/purchases/subscriptions/{subscription_id}/tokens/{token}"
-
+    print('url',url)
+    print('access_token:', access_token)
     headers = {"Authorization": f"Bearer {access_token}"}
     response = requests.get(url, headers=headers)
+    print(response.json())
 
     if response.status_code != 200:
         return None

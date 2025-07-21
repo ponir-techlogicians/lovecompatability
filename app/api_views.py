@@ -10,7 +10,7 @@ from .helper import validate_with_apple, validate_with_google, parse_apple_datet
 from .models import CompatibilityResult, SubscriptionUser
 from .serializers import CompatibilityResultSerializer
 from .utils import get_name_compatibility, split_names, get_name_compatibility_with_steps, \
-    get_name_compatibility_with_5steps
+    get_name_compatibility_with_5steps, split_names_safe
 from django.utils.dateparse import parse_datetime
 from django.utils.timezone import make_aware
 from geopy.distance import geodesic
@@ -136,7 +136,7 @@ class ResultDetailAPIView(APIView):
             "compatibility_score": result.compatibility_score,
             "name1": result.name1,
             "name2": result.name2,
-            "name_parts": split_names(result.name1, result.name2),
+            "name_parts": split_names_safe(result.name1, result.name2),
             "result": CompatibilityResultSerializer(result).data
         }
 
@@ -479,7 +479,7 @@ class SubscriptionValidationView(APIView):
             auto_renew = receipt_info.get('auto_renew_status', False)
 
         elif platform == 'google':
-            gplay_response = request.data.get('response')
+            gplay_response = request.data.get('receipt_data')
             token = gplay_response.get('purchaseToken')
             # token = request.data.get('receipt_data')
             # package_name = request.data.get('package_name')
