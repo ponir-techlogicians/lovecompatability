@@ -324,12 +324,14 @@ class SearchAPIView(APIView):
 class ListAPIView(APIView):
     def get(self, request, *args, **kwargs):
         user_id = request.GET.get("user_id", None)
-        user = SubscriptionUser.objects.filter(id=user_id).first()
-        limit = user.limit
+        skip_user = request.GET.get("skip_user","false")
         if user_id:
+            user = SubscriptionUser.objects.filter(id=user_id).first()
+            limit = user.limit
             if limit == 0:
-                return Response({'success':False,'reason':'not_limit'},status=status.HTTP_400_BAD_REQUEST)
+                return Response({'success': False, 'reason': 'not_limit'}, status=status.HTTP_400_BAD_REQUEST)
 
+        if user_id or skip_user=="true":
             # if user.is_expired():
             #     return Response({'success':False,'reason':'expired'},status=status.HTTP_400_BAD_REQUEST)
 
@@ -422,8 +424,9 @@ class ListAPIView(APIView):
                 "STRIPE_PUBLISHABLE_KEY": settings.STRIPE_PUBLISHABLE_KEY,
                 "success": success
             }
-            user.limit -= 1
-            user.save()
+            if user_id:
+                user.limit -= 1
+                user.save()
             return Response(data, status=status.HTTP_200_OK)
 
 class CreatePaymentIntentAPIView(APIView):
