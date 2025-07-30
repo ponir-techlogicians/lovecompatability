@@ -802,3 +802,5 @@ class SearchBasicView(TemplateView):
         return render(request, self.template_name, context)
 
 
+class PrivacyView(TemplateView):
+    template_name = "privacy.html"

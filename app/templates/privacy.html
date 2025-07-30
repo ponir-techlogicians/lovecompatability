@@ -1,0 +1,72 @@
+{% extends "layout/main.html" %}
+{% load static %}
+{% load i18n %}
+{% block content %}
+<style>
+    html, body {
+        background-color: black !important;
+        margin: 0;
+        padding: 0;
+        min-height: 100vh;
+    }
+    footer {
+        background-color: black !important;
+        border-top-color: #333 !important;
+    }
+    footer a {
+        color: #999 !important;
+    }
+</style>
+<div class="loveWrap desktop23" style="background-color: black; color: white;">
+    <div class="headline" style="color: white;">
+        <h1 style="color: white;">Privacy Policy (Crush-O-Meter)</h1>
+        <p style="color: white;"><strong style="color: white;">Effective Date: July 29, 2025</strong></p>
+        <hr style="border: 1px solid white; width: 100%; margin: 20px auto;">
+    </div>
+    <div class="privacy-content" style="padding: 20px; color: white;">
+        <style>
+            .privacy-content h2, .privacy-content strong, .privacy-content li {
+                color: white;
+            }
+        </style>
+        <p>Crush-O-Meter (hereinafter referred to as "we", "our", or "the service") is committed to protecting your privacy. This Privacy Policy explains what personal information we collect when you use our app or website, and how we use and store that information.</p>
+
+        <h2>1. Information We Collect</h2>
+        <p>We collect the following information:</p>
+        <ul>
+            <li><strong>Name:</strong> The name entered by the user</li>
+            <li><strong>Location Information:</strong> Real-time location data (collected via device GPS or browser location access) during use of the service</li>
+        </ul>
+
+        <h2>2. Purpose of Data Use</h2>
+        <p>We use the collected information for the following purposes:</p>
+        <ul>
+            <li>To generate and display location-based rankings</li>
+            <li>To provide proximity-based service features and enhance user experience</li>
+        </ul>
+
+        <h2>3. Data Storage and Retention</h2>
+        <ul>
+            <li>The collected name and location data are stored on our servers.</li>
+            <li>This data is used continuously to operate the ranking features and is retained indefinitely, unless the service is discontinued.</li>
+            <li>As the service does not require login or account creation, we do not store any other identifiable personal information.</li>
+        </ul>
+
+        <h2>4. No User Accounts</h2>
+        <ul>
+            <li>Our service does not require login or account registration.</li>
+            <li>Therefore, we are unable to identify or authenticate individual users.</li>
+            <li>As a result, we cannot process user requests to access, modify, or delete specific personal data, since we cannot verify the identity of any particular user.</li>
+        </ul>
+
+        <h2>5. Policy Changes</h2>
+        <p>This Privacy Policy may be updated from time to time. All updates will be announced within the app or website.</p>
+
+        <h2>6. Contact Information</h2>
+        <p>If you have any questions regarding this Privacy Policy, please contact us at:</p>
+        <p>📧 support@kemi.ai</p>
+        <p>🏢 Bgoos., Inc</p>
+        <p>🧑‍💻 Crush-O-Meter Team</p>
+    </div>
+</div>
+{% endblock %}

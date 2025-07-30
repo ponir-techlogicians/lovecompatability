@@ -17,10 +17,12 @@ Including another URLconf
 from django.contrib import admin
 from django.shortcuts import redirect
 from django.urls import path,include
-from app.views  import CalculateView
+from app.views import CalculateView, PrivacyView
+
 urlpatterns = [
     path('admin/', admin.site.urls),
     path('app/', include('app.urls')),
     path('app/calculate/', lambda request: redirect('/')),
     path('', CalculateView.as_view(), name='calculate'),
+    path('privacy/', PrivacyView.as_view(), name='privacy'),
 ]
