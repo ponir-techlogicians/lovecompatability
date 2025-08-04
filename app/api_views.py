@@ -496,8 +496,8 @@ class SubscriptionValidationView(APIView):
 
             unique_id = purchase_info['purchaseToken']
             product_id = subscription_id
-            expiry = make_aware(parse_datetime(purchase_info['expiryTime']))
-            auto_renew = purchase_info.get('autoRenewing', False)
+            # expiry = make_aware(parse_datetime(purchase_info['expiryTime']))
+            # auto_renew = purchase_info.get('autoRenewing', False)
 
         else:
             return Response({'error': 'Unsupported platform'}, status=status.HTTP_400_BAD_REQUEST)
