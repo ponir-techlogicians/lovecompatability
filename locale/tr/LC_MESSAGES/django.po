@@ -76,6 +76,9 @@ msgstr "Kim ile test edildi"
 msgid "Open to see"
 msgstr "Görmek için aç"
 
+msgid "Open to see by app"
+msgstr "Uygulamada görmek için aç"
+
 msgid "Payment"
 msgstr "Ödeme"
 

@@ -76,6 +76,9 @@ msgstr "누구와 테스트했는지"
 msgid "Open to see"
 msgstr "열어서 보기"
 
+msgid "Open to see by app"
+msgstr "앱에서 열어보세요"
+
 msgid "Payment"
 msgstr "결제"
 

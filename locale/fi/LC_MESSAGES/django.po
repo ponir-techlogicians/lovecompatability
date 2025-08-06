@@ -76,6 +76,9 @@ msgstr "Kuka testasi kenen kanssa"
 msgid "Open to see"
 msgstr "Avaa nähdäksesi"
 
+msgid "Open to see by app"
+msgstr "Avaa nähdäksesi sovelluksessa"
+
 msgid "Payment"
 msgstr "Maksu"
 

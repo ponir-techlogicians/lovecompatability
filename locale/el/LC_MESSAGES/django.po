@@ -76,6 +76,9 @@ msgstr "Ποιος δοκίμασε με"
 msgid "Open to see"
 msgstr "Άνοιξε για να δεις"
 
+msgid "Open to see by app"
+msgstr "Άνοιξε για να δεις στην εφαρμογή"
+
 msgid "Payment"
 msgstr "Πληρωμή"
 

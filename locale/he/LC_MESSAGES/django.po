@@ -76,6 +76,9 @@ msgstr "מי נבדק עם"
 msgid "Open to see"
 msgstr "פתוח לצפייה"
 
+msgid "Open to see by app"
+msgstr "פתח כדי לראות באפליקציה"
+
 msgid "Payment"
 msgstr "תשלום"
 

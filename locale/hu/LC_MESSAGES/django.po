@@ -76,6 +76,9 @@ msgstr "Kivel tesztelték"
 msgid "Open to see"
 msgstr "Megnyitás megtekintésre"
 
+msgid "Open to see by app"
+msgstr "Nyisd meg az alkalmazásban a megtekintéshez"
+
 msgid "Payment"
 msgstr "Fizetés"
 

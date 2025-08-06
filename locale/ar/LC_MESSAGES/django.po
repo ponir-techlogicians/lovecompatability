@@ -76,6 +76,9 @@ msgstr "من اختبر مع"
 msgid "Open to see"
 msgstr "افتح لترى"
 
+msgid "Open to see by app"
+msgstr "افتحه عبر التطبيق للمشاهدة"
+
 msgid "Payment"
 msgstr "الدفع"
 

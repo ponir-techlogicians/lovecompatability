@@ -76,6 +76,9 @@ msgstr "Wer hat getestet mit"
 msgid "Open to see"
 msgstr "Zum Anzeigen öffnen"
 
+msgid "Open to see by app"
+msgstr "In der App öffnen, um es zu sehen"
+
 msgid "Payment"
 msgstr "Zahlung"
 

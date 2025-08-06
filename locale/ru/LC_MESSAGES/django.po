@@ -76,6 +76,9 @@ msgstr "Кто тестировал с"
 msgid "Open to see"
 msgstr "Открыть для просмотра"
 
+msgid "Open to see by app"
+msgstr "Откройте в приложении, чтобы посмотреть"
+
 msgid "Payment"
 msgstr "Оплата"
 

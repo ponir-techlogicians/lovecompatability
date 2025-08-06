@@ -76,6 +76,9 @@ msgstr "Vem testade med"
 msgid "Open to see"
 msgstr "Öppna för att se"
 
+msgid "Open to see by app"
+msgstr "Öppna för att se i appen"
+
 msgid "Payment"
 msgstr "Betalning"
 

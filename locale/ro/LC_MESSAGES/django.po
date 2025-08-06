@@ -76,6 +76,9 @@ msgstr "Cine a testat cu"
 msgid "Open to see"
 msgstr "Deschide pentru a vedea"
 
+msgid "Open to see by app"
+msgstr "Deschide pentru a vedea în aplicație"
+
 msgid "Payment"
 msgstr "Plată"
 

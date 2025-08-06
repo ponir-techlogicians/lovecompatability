@@ -76,6 +76,9 @@ msgstr "Siapa yang diuji dengan"
 msgid "Open to see"
 msgstr "Buka untuk melihat"
 
+msgid "Open to see by app"
+msgstr "Buka untuk melihat di aplikasi"
+
 msgid "Payment"
 msgstr "Pembayaran"
 

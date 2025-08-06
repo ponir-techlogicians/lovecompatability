@@ -76,6 +76,9 @@ msgstr "Ai đã thử với"
 msgid "Open to see"
 msgstr "Mở để xem"
 
+msgid "Open to see by app"
+msgstr "Mở để xem bằng ứng dụng"
+
 msgid "Payment"
 msgstr "Thanh toán"
 

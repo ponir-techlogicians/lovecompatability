@@ -76,6 +76,9 @@ msgstr "Kdo testoval s"
 msgid "Open to see"
 msgstr "Otevřít k zobrazení"
 
+msgid "Open to see by app"
+msgstr "Otevřete pro zobrazení v aplikaci"
+
 msgid "Payment"
 msgstr "Platba"
 
