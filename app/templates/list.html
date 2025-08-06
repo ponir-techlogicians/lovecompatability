@@ -206,6 +206,11 @@
         document.getElementById("popup").classList.remove("hidden");
     });
 
+    document.getElementById("checkout-button-app").addEventListener("click", function () {
+        window.location.href = "{% url 'download' %}"
+    });
+
+
     document.querySelector(".close-popup").addEventListener("click", function () {
         document.getElementById("popup").classList.add("hidden");
     });

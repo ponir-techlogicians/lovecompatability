@@ -15,7 +15,9 @@ from lovecompitability.settings import LANGUAGE_SESSION_KEY
 from .models import CompatibilityResult
 import stripe
 from django.utils.translation import activate, get_language
-
+from django.views import View
+from django.http import HttpResponseRedirect
+import re
 from .query_helper import filter_and_count
 from .utils import get_name_compatibility_with_5steps, get_name_compatibility, split_names_safe, GLOBAL_STROKE_DICT
 
@@ -804,3 +806,16 @@ class SearchBasicView(TemplateView):
 
 class PrivacyView(TemplateView):
     template_name = "privacy.html"
+
+class DownloadRedirectView(View):
+    def get(self, request, *args, **kwargs):
+        user_agent = request.META.get('HTTP_USER_AGENT', '').lower()
+
+        # Basic detection
+        if re.search("iphone|ipad|ipod", user_agent):
+            return HttpResponseRedirect("https://apps.apple.com/app/idXXXXXXXXX")  # Replace with your App Store URL
+        elif "android" in user_agent:
+            return HttpResponseRedirect("https://play.google.com/store/apps/details?id=com.example.app")  # Replace with your Play Store URL
+        else:
+            # Fallback: Redirect to a website or landing page
+            return HttpResponseRedirect("https://yourwebsite.com/app")  # Optiona
