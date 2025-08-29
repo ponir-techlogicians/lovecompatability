@@ -807,6 +807,9 @@ class SearchBasicView(TemplateView):
 class PrivacyView(TemplateView):
     template_name = "privacy.html"
 
+class TermsView(TemplateView):
+    template_name = "terms_of_use.html"
+
 class DownloadRedirectView(View):
     def get(self, request, *args, **kwargs):
         user_agent = request.META.get('HTTP_USER_AGENT', '').lower()

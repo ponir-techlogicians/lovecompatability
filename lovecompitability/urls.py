@@ -17,7 +17,7 @@ Including another URLconf
 from django.contrib import admin
 from django.shortcuts import redirect
 from django.urls import path,include
-from app.views import CalculateView, PrivacyView, DownloadRedirectView
+from app.views import CalculateView, PrivacyView, DownloadRedirectView, TermsView
 
 urlpatterns = [
     path('admin/', admin.site.urls),
@@ -25,6 +25,7 @@ urlpatterns = [
     path('app/calculate/', lambda request: redirect('/')),
     path('', CalculateView.as_view(), name='calculate'),
     path('privacy/', PrivacyView.as_view(), name='privacy'),
+    path('terms/', TermsView.as_view(), name='privacy'),
 
     path('download/', DownloadRedirectView.as_view(), name='download'),
 ]
