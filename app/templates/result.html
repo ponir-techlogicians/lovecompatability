@@ -33,11 +33,12 @@
 
             }, function (error) {
                 console.warn("Location access denied, proceeding without location.");
-                window.location.href = '{% url "search" %}'; // Redirect if permission is denied
+
+                //window.location.href = '{% url "search" %}'; // Redirect if permission is denied
             });
         } else {
             alert("{% trans 'Geolocation is not supported by this browser.' %}");
-            window.location.href = '{% url "search" %}'; // Redirect if geolocation is unavailable
+            //window.location.href = '{% url "search" %}'; // Redirect if geolocation is unavailable
         }
     }
 </script>
