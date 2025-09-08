@@ -1,0 +1,28 @@
+{% extends "layout/main.html" %}
+{% load static %}
+{% load i18n %}
+{% block content %}
+    <style>
+    html, body {
+        background-color: black !important;
+        margin: 0;
+        padding: 0;
+        min-height: 100vh;
+    }
+    footer {
+        background-color: black !important;
+        border-top-color: #333 !important;
+    }
+    footer a {
+        color: #999 !important;
+    }
+</style>
+<div class="loveWrap desktop23" style="background-color: black; color: white;">
+    <div class="headline" style="color: white;">
+        <h1 style="color: white;">Contact Us</h1>
+        <hr style="border: 1px solid white; width: 100%; margin: 20px auto;">
+    </div>
+    <p>If you need any support or have questions, please contact us:</p>
+    <p>Email: <a href="mailto:crushometer.official@gmail.com">crushometer.official@gmail.com</a></p>
+</div>
+{% endblock %}

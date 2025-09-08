@@ -810,6 +810,9 @@ class PrivacyView(TemplateView):
 class TermsView(TemplateView):
     template_name = "terms_of_use.html"
 
+class SupportView(TemplateView):
+    template_name = "support.html"
+
 class DownloadRedirectView(View):
     def get(self, request, *args, **kwargs):
         user_agent = request.META.get('HTTP_USER_AGENT', '').lower()

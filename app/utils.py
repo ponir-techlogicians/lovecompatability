@@ -554,29 +554,54 @@ def decompose_korean_syllable(char):
     return [char]
 
 
-def split_names_safe(name1, name2):
-    words1 = name1.split()  # Split name1 into words
-    words2 = name2.split()  # Split name2 into words
+def split_first_name_force(name: str) -> tuple[str, str]:
+    """Always split a name into two parts, even if short."""
+    length = len(name)
+    if length == 1:
+        return name, "_"
+    elif length == 2:
+        return name[0], name[1]
+    else:
+        split_point = (length // 2) + (length % 2)  # first part gets extra if odd
+        return name[:split_point], name[split_point:]
 
+
+def split_names_safe(name1: str, name2: str) -> list[str]:
+    """Split names safely into 6 parts based on language rules."""
+    lang = get_language()
+    print('lang', lang)
+
+    words1 = name1.split()
+    words2 = name2.split()
+
+    print('name1',words1)
+    print('name2',words2)
+
+    # Determine which part to split based on language
+    if lang in ('ko', 'hu', 'vi'):
+        # Split last names
+        split1 = split_first_name_force(words1[1] if len(words1) > 1 else words1[0])
+        print('split1',split1)
+        split2 = split_first_name_force(words2[1] if len(words2) > 1 else words2[0])
+        print('split2',split2)
+        words1 = [split1[0], split1[1], words1[0] if len(words1) > 1 else words1[0]]
+        words2 = [split2[0], split2[1], words2[0] if len(words2) > 1 else words2[0]]
+    else:
+        # Split first names
+        split1 = split_first_name_force(words1[0])
+        split2 = split_first_name_force(words2[0])
+        words1 = [split1[0], split1[1], words1[1] if len(words1) > 1 else "_"]
+        words2 = [split2[0], split2[1], words2[1] if len(words2) > 1 else "_"]
+
+    # Merge in alternating pattern
     merged = []
-    max_len = max(len(words1), len(words2))
+    for i in range(3):
+        merged.append(words1[i])
+        merged.append(words2[i])
+    print('merged', merged)
+    return merged[:6]
 
-    # Merge names in an alternating pattern
-    for i in range(max_len):
-        if i < len(words1):
-            merged.append(words1[i])
-        if i < len(words2):
-            merged.append(words2[i])
 
-    # Ensure the final list has exactly 6 elements, filling with "_"
-    if len(merged) <= 4:
-        while len(merged) <= 4:
-            merged.append("_")
-        return merged[:4]
-    if len(merged) > 4:
-        while len(merged) < 6:
-            merged.append("_")
-        return merged[:6]
 
 def get_total_stroke(word: str,language=None) -> int:
     """Return the total stroke count for a word."""
@@ -637,16 +662,47 @@ def split_names_into_4(name1: str, name2: str) -> list:
     return merged
 
 
-def get_number_of_split(name1: str, name2: str) -> int:
-    """Return the number of times the names are split into 6 tokens."""
-    parts1 = name1.split()
-    parts2 = name2.split()
-    merged = []
-    for i in range(3):
-        if i < len(parts1):
-            merged.append(parts1[i])
-        if i < len(parts2):
-            merged.append(parts2[i])
+def split_first_name(first_name: str) -> tuple[str, str]:
+    """Always split the first name into two parts."""
+    length = len(first_name)
+    print(f'length of first name: {first_name}', length)
+    if length == 1:
+        return first_name, "_"
+    elif length == 2:
+        return first_name[0], first_name[1]
+    else:
+        split_point = (length // 2) + (length % 2)  # first part gets extra if odd
+        return first_name[:split_point], first_name[split_point:]
+
+
+def get_number_of_split(name1: str, name2: str) -> list[str]:
+    """
+    Return a list of name parts where first names (or last names for specific languages)
+    are split and merged.
+    Assumes name format: {first_name} {last_name}
+    """
+    # Split the names into first and last
+    name1_first, name1_last = name1.split()
+    name2_first, name2_last = name2.split()
+
+    # Determine which name to split based on language
+    lang = get_language()
+    if lang in ('ko', 'hu', 'vi'):
+        n1_part1, n1_part2 = split_first_name(name1_last)
+        n2_part1, n2_part2 = split_first_name(name2_last)
+    else:
+        n1_part1, n1_part2 = split_first_name(name1_first)
+        n2_part1, n2_part2 = split_first_name(name2_first)
+
+    print(n1_part1, n1_part2)
+
+    # Merge into final list
+    merged = [n1_part1]
+    merged.append(n1_part2)
+    merged.append(name1_last)
+    merged.append(n2_part1)
+    merged.append(n2_part2)
+    merged.append(name2_last)
 
     return merged
 
@@ -676,6 +732,7 @@ def get_name_compatibility_with_5steps(name1: str, name2: str,language=None) -> 
     """Get compatibility score with 5 steps starting from 6 tokens."""
     #set_current_language()
     splits = get_number_of_split(name1, name2)
+    print('splits:', splits)
     if len(splits) > 4:
         six_parts = split_names_into_6(name1, name2)
         initial_strokes = [get_total_stroke(word,language=language) for word in six_parts]
