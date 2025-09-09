@@ -274,9 +274,9 @@ class CalculateView(TemplateView):
 
         if get_language() == 'ko' or get_language() == 'hu' or get_language()=='vi':
             # Korean name format
-            name1_first = request.POST.get("name1_first", "").strip()
+            name1_first = request.POST.get("name1_first", "").strip() # last
             name1_middle = request.POST.get("name1_middle", "").strip()
-            name1_last = request.POST.get("name1_last", "").strip()
+            name1_last = request.POST.get("name1_last", "").strip() # first
             name2_first = request.POST.get("name2_first", "").strip()
             name2_middle = request.POST.get("name2_middle", "").strip()
             name2_last = request.POST.get("name2_last", "").strip()
@@ -303,6 +303,7 @@ class CalculateView(TemplateView):
         # compatibility_score = get_name_compatibility(name1, name2)
         compatibility_score,steps = get_name_compatibility_with_5steps(name1, name2)
 
+
         # Save to database
         result = CompatibilityResult.objects.create(
             name1=name1,
@@ -319,7 +320,7 @@ class CalculateView(TemplateView):
         # context['name_parts'] = name_parts
         # context['result'] = result
         # return render(request, 'result.html', context)
-
+        # return
         return redirect(result.get_absolute_url())
 
     def get(self, request, *args, **kwargs):

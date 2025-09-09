@@ -84,9 +84,9 @@ class CalculateAPIView(APIView):
         language = request.data.get("language", "").strip()
         if language == 'ko' or language == 'hu' or language=='vi':
             # Korean name format
-            name1_first = request.data.get("name1_first", "").strip()
+            name1_first = request.data.get("name1_first", "").strip()  # lastname
             name1_middle = request.data.get("name1_middle", "").strip()
-            name1_last = request.data.get("name1_last", "").strip()
+            name1_last = request.data.get("name1_last", "").strip() # firstname
             name2_first = request.data.get("name2_first", "").strip()
             name2_middle = request.data.get("name2_middle", "").strip()
             name2_last = request.data.get("name2_last", "").strip()

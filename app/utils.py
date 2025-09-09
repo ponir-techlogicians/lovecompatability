@@ -568,38 +568,74 @@ def split_first_name_force(name: str) -> tuple[str, str]:
 
 def split_names_safe(name1: str, name2: str) -> list[str]:
     """Split names safely into 6 parts based on language rules."""
+    # lang = get_language()
+    # print('lang', lang)
+    #
+    # words1 = name1.split()
+    # words2 = name2.split()
+    #
+    # print('name1',words1)
+    # print('name2',words2)
+    #
+    # # Determine which part to split based on language
+    # if lang in ('ko', 'hu', 'vi'):
+    #     # Split last names
+    #     split1 = split_first_name_force(words1[1] if len(words1) > 1 else words1[0])
+    #     print('split1',split1)
+    #     split2 = split_first_name_force(words2[1] if len(words2) > 1 else words2[0])
+    #     print('split2',split2)
+    #     words1 = [split1[0], split1[1], words1[0] if len(words1) > 1 else words1[0]]
+    #     words2 = [split2[0], split2[1], words2[0] if len(words2) > 1 else words2[0]]
+    # else:
+    #     # Split first names
+    #     split1 = split_first_name_force(words1[0])
+    #     split2 = split_first_name_force(words2[0])
+    #     words1 = [split1[0], split1[1], words1[1] if len(words1) > 1 else "_"]
+    #     words2 = [split2[0], split2[1], words2[1] if len(words2) > 1 else "_"]
+    #
+    # # Merge in alternating pattern
+    # merged = []
+    # for i in range(3):
+    #     merged.append(words1[i])
+    #     merged.append(words2[i])
+    # print('merged', merged)
+    # return merged[:6]
+    # Split the names into first and last
+    name1_first, name1_last = name1.split()
+    name2_first, name2_last = name2.split()
+
+    print("spliting.....")
+    print(name1_first, name1_last)
+    print(name2_first, name2_last)
+
+    # Determine which name to split based on language
     lang = get_language()
-    print('lang', lang)
-
-    words1 = name1.split()
-    words2 = name2.split()
-
-    print('name1',words1)
-    print('name2',words2)
-
-    # Determine which part to split based on language
     if lang in ('ko', 'hu', 'vi'):
-        # Split last names
-        split1 = split_first_name_force(words1[1] if len(words1) > 1 else words1[0])
-        print('split1',split1)
-        split2 = split_first_name_force(words2[1] if len(words2) > 1 else words2[0])
-        print('split2',split2)
-        words1 = [split1[0], split1[1], words1[0] if len(words1) > 1 else words1[0]]
-        words2 = [split2[0], split2[1], words2[0] if len(words2) > 1 else words2[0]]
+        n1_part1, n1_part2 = split_first_name(name1_last)
+        n2_part1, n2_part2 = split_first_name(name2_last)
+        merged = [name1_first]
+        merged.append(name2_first)
+        merged.append(n1_part1)
+        merged.append(n2_part1)
+        merged.append(n1_part2)
+        merged.append(n2_part2)
     else:
-        # Split first names
-        split1 = split_first_name_force(words1[0])
-        split2 = split_first_name_force(words2[0])
-        words1 = [split1[0], split1[1], words1[1] if len(words1) > 1 else "_"]
-        words2 = [split2[0], split2[1], words2[1] if len(words2) > 1 else "_"]
+        n1_part1, n1_part2 = split_first_name(name1_first)
+        n2_part1, n2_part2 = split_first_name(name2_first)
+        merged = [n1_part1]
+        merged.append(n2_part1)
+        merged.append(n1_part2)
+        merged.append(n2_part2)
+        merged.append(name1_last)
+        merged.append(name2_last)
 
-    # Merge in alternating pattern
-    merged = []
-    for i in range(3):
-        merged.append(words1[i])
-        merged.append(words2[i])
-    print('merged', merged)
-    return merged[:6]
+    print("after splitting....")
+    print(n1_part1, n1_part2)
+    print(n2_part1, n2_part2)
+
+    # Merge into final list
+
+    return merged
 
 
 
@@ -675,7 +711,7 @@ def split_first_name(first_name: str) -> tuple[str, str]:
         return first_name[:split_point], first_name[split_point:]
 
 
-def get_number_of_split(name1: str, name2: str) -> list[str]:
+def get_number_of_split(name1: str, name2: str,language=None) -> list[str]:
     """
     Return a list of name parts where first names (or last names for specific languages)
     are split and merged.
@@ -685,24 +721,40 @@ def get_number_of_split(name1: str, name2: str) -> list[str]:
     name1_first, name1_last = name1.split()
     name2_first, name2_last = name2.split()
 
+    print("spliting.....")
+    print(name1_first, name1_last)
+    print(name2_first, name2_last)
+
     # Determine which name to split based on language
-    lang = get_language()
+    if language:
+        lang = language
+    else:
+        lang = get_language()
     if lang in ('ko', 'hu', 'vi'):
         n1_part1, n1_part2 = split_first_name(name1_last)
         n2_part1, n2_part2 = split_first_name(name2_last)
+        merged = [name1_first]
+        merged.append(name2_first)
+        merged.append(n1_part1)
+        merged.append(n2_part1)
+        merged.append(n1_part2)
+        merged.append(n2_part2)
     else:
         n1_part1, n1_part2 = split_first_name(name1_first)
         n2_part1, n2_part2 = split_first_name(name2_first)
+        merged = [n1_part1]
+        merged.append(n2_part1)
+        merged.append(n1_part2)
+        merged.append(n2_part2)
+        merged.append(name1_last)
+        merged.append(name2_last)
 
+    print("after splitting....")
     print(n1_part1, n1_part2)
+    print(n2_part1, n2_part2)
 
     # Merge into final list
-    merged = [n1_part1]
-    merged.append(n1_part2)
-    merged.append(name1_last)
-    merged.append(n2_part1)
-    merged.append(n2_part2)
-    merged.append(name2_last)
+
 
     return merged
 
@@ -731,11 +783,11 @@ def adjacency_sum_steps_fixed_3(arr: list) -> list:
 def get_name_compatibility_with_5steps(name1: str, name2: str,language=None) -> tuple:
     """Get compatibility score with 5 steps starting from 6 tokens."""
     #set_current_language()
-    splits = get_number_of_split(name1, name2)
+    splits = get_number_of_split(name1, name2,language=language)
     print('splits:', splits)
     if len(splits) > 4:
-        six_parts = split_names_into_6(name1, name2)
-        initial_strokes = [get_total_stroke(word,language=language) for word in six_parts]
+        #six_parts = split_names_into_6(name1, name2)
+        initial_strokes = [get_total_stroke(word,language=language) for word in splits]
         steps = adjacency_sum_steps_fixed_5(initial_strokes)
         final_score = int("".join(map(str, steps[-1])))
         return final_score, steps
