@@ -128,6 +128,7 @@ class CalculateAPIView(APIView):
 class ResultDetailAPIView(APIView):
     def get(self, request, id, *args, **kwargs):
         try:
+            lang = request.query_params.get('lang')
             result = CompatibilityResult.objects.get(pk=id)
         except CompatibilityResult.DoesNotExist:
             return Response({"error": "Result not found."}, status=status.HTTP_404_NOT_FOUND)
@@ -136,7 +137,7 @@ class ResultDetailAPIView(APIView):
             "compatibility_score": result.compatibility_score,
             "name1": result.name1,
             "name2": result.name2,
-            "name_parts": split_names_safe(result.name1, result.name2),
+            "name_parts": split_names_safe(result.name1, result.name2,lang=lang),
             "result": CompatibilityResultSerializer(result).data
         }
 

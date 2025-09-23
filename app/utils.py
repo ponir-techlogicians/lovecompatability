@@ -566,7 +566,7 @@ def split_first_name_force(name: str) -> tuple[str, str]:
         return name[:split_point], name[split_point:]
 
 
-def split_names_safe(name1: str, name2: str) -> list[str]:
+def split_names_safe(name1: str, name2: str,lang:None) -> list[str]:
     """Split names safely into 6 parts based on language rules."""
     # lang = get_language()
     # print('lang', lang)
@@ -609,7 +609,11 @@ def split_names_safe(name1: str, name2: str) -> list[str]:
     print(name2_first, name2_last)
 
     # Determine which name to split based on language
-    lang = get_language()
+    if not lang:
+        lang = get_language()
+    else:
+        lang = lang
+
     if lang in ('ko', 'hu', 'vi'):
         n1_part1, n1_part2 = split_first_name(name1_last)
         n2_part1, n2_part2 = split_first_name(name2_last)
