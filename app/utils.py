@@ -609,7 +609,7 @@ def split_names_safe(name1: str, name2: str,lang:None) -> list[str]:
     print(name2_first, name2_last)
 
     # Determine which name to split based on language
-    if not lang:
+    if lang is None:
         lang = get_language()
     else:
         lang = lang
